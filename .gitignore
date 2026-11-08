@@ -1,0 +1,21 @@
+.build/
+.swiftpm/
+.DS_Store
+DerivedData/
+*.xcuserstate
+.impeccable/review/
+.build-tools/
+
+.build-*.log
+
+# Local design review state and generated comparison archives
+.impeccable/
+Documentation/VisualComparison/
+*.xcresult/
+xcuserdata/
+
+# Local credentials and signing artifacts
+.env
+.env.*
+*.p12
+*.mobileprovision

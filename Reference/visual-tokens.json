@@ -1,0 +1,10 @@
+{
+  "source": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+  "captured": "2026-11-06",
+  "method": "Live DOM computed styles; CSS Lab D50 converted to sRGB",
+  "light": {"background":"lab(100% 0 0)","foreground":"lab(0% 0 0)","muted":"lab(96.52% 0 0)","mutedForeground":"lab(48.496% 0 0)","border":"lab(90.952% 0 0)","destructive":"lab(48.4493% 77.4328 61.5452)","inputBackground":"input / 50%"},
+  "dark": {"background":"lab(2.75381% 0 0)","foreground":"lab(98.26% 0 0)","muted":"lab(15.204% 0 0)","mutedForeground":"lab(66.128% 0 0)","border":"white / 10%","destructive":"lab(63.7053% 60.745 31.3109)","accent":"lab(27.036% 0 0)","inputBackground":"white / 7.5%"},
+  "prompt": {"width":512,"height":112,"radius":18,"border":"transparent (unfocused)","iconButton":32,"selectorFont":14,"selectorHeight":32},
+  "citation": {"font":12,"lineHeight":16,"height":24,"horizontalPadding":10},
+  "trace": {"font":14,"lineHeight":20,"gap":8,"icon":16}
+}

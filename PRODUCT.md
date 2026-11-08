@@ -1,0 +1,18 @@
+# AIElements Swift
+<!-- impeccable:product-schema 1 -->
+## Platform
+ios
+
+Also macOS; both platforms explicitly confirmed by the user.
+## Stack
+Swift requested by user; SwiftUI and Swift Package Manager selected for native reuse.
+## Users
+Developers embedding AI interfaces in other Apple-platform projects.
+## Product Purpose
+Reproduce every pattern on https://ui.shadcn.com/docs/ai-elements as reusable native components.
+## Capabilities and Constraints
+The 21 patterns listed on 2026-11-05 define the current scope. iOS 17+ and macOS 14+. No model provider dependency. Host owns networking, execution, persistence and approval decisions. Gallery uses clearly labeled local demo data.
+## Brand Commitments
+User requests pixel-level fidelity to the reference, including Geist, Lucide, neutral colors, spacing, and both appearances. This overrides platform-default font/icon styling. Native navigation and accessibility remain supported.
+## Evidence on Hand
+Official Markdown snapshots in Reference/; live browser inspection of Tool and Prompt Input. Original website is the visual authority; no new visual direction requested.

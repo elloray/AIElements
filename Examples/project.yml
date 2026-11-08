@@ -1,0 +1,43 @@
+name: AIElementsDemo
+options:
+  bundleIdPrefix: dev.aielements
+  deploymentTarget:
+    iOS: '17.0'
+    macOS: '14.0'
+packages:
+  AIElements:
+    path: ..
+targets:
+  AIElementsDemo:
+    type: application
+    platform: iOS
+    sources:
+      - path: ../Sources/AIElementsGallery
+    dependencies:
+      - package: AIElements
+        product: AIElements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.aielements.gallery
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        TARGETED_DEVICE_FAMILY: '1,2'
+        CODE_SIGNING_ALLOWED: NO
+        SWIFT_VERSION: '5.9'
+    scheme:
+      gatherCoverageData: false
+  AIElementsMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: ../Sources/AIElementsGallery
+    dependencies:
+      - package: AIElements
+        product: AIElements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.aielements.gallery.mac
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        SWIFT_VERSION: '5.9'
