@@ -44,7 +44,16 @@ try store.finish()
 ./aielements ui validate /tmp/report.jsonl
 ```
 
-基础组件以 shadcn/ui 为视觉参考；当前尚未移植全部基础组件。详见 [覆盖范围与原生差异](Documentation/StreamingUI.md#component-catalog)、[同宽截图与验证记录](Documentation/StreamingUI-Validation.md)。
+当前支持以下 **15 种协议节点**，可以由流式数据逐步创建和更新：
+
+| 用途 | 节点 |
+| --- | --- |
+| 布局与内容 | `Stack`、`Row`、`Card`、`Text`、`Separator` |
+| 操作与状态 | `Button`、`Badge`、`Progress` |
+| 表单 | `Input`、`Select`、`Switch` |
+| 数据展示 | `Table`、`BarChart`、`LineChart`、`AreaChart` |
+
+基础组件以 [shadcn/ui 基础组件](https://ui.shadcn.com/docs/components)及图表示例为视觉参考；当前尚未移植全部基础组件或图表变体。节点属性、绑定和回调见 [协议目录](Documentation/StreamingUI.md#component-catalog)，最新视觉结果见 [15 种基础组件同宽验收](Documentation/Foundation-Visual-Validation.md)。
 
 ## 安装
 
@@ -230,28 +239,34 @@ xcodegen generate --spec Examples/project.yml
 
 ## 验证与已知差异
 
-项目以原站为视觉基准，已对 21 个默认示例及待审批态进行 **360 CSS px / pt、2×、浅深色、iOS / macOS** 对照。最新本地验证记录：iOS 包测试 30 项、macOS 包测试 29 项，以及 8 项针对性交互测试通过。详见 [验证范围](Documentation/VALIDATION.md)。
+项目以原站为视觉基准，分别记录原有 AI Elements 模式与新增基础组件的验证范围：
+
+- **15 种基础节点（2026-11-08 第二轮）**：重新采集 30 张原站、60 张原生浅深色截图，以 **360 CSS px / SwiftUI pt** 画布形成 30 张「原站 / macOS / iOS」对照图；修正深色 Progress 填充颜色，并补全无标签 Select 的辅助功能名称。详见 [逐项结果与全部截图](Documentation/Foundation-Visual-Validation.md)。
+- **构建与测试**：最新一轮 macOS `swift test` 共 **51 项通过**（组件库 31、协议 11、CLI 9）；iOS 和 macOS 示例均通过 Debug 构建，iOS 模拟器完成安装、启动与截图导出。此处不将 macOS 单元测试计为 iOS 测试。
+- **iOS 触控区**：默认密度下 Button、Input、Select、Switch 的外层布局高度均实测为 **44 pt**，结合命中区实现检查；没有通过压缩触控区来匹配网页高度。[尺寸记录](Reference/foundation-control-sizes.json)。
+- **原有 21 个模式**：已对默认示例及待审批态做过 360 CSS px / pt、2×、浅深色、双端对照；此前 iOS 包测试 30 项、macOS 包测试 29 项及 8 项针对性交互测试通过。这些为此前验收记录，不代表本轮重跑，详见 [验证范围](Documentation/VALIDATION.md)。
 
 ```bash
 swift test
 swift run AIElementsGallery --snapshots
+swift run AIElementsGallery --foundation-snapshots --output .build/foundation-audit/native
 ```
 
-第二条命令生成本机截图，不提交生成物。仓库保留精选预览；反复生成的历史截图、构建缓存和机器日志不纳入版本控制。
+后两条命令分别导出 macOS 的 AI Elements 模式截图和 15 种基础组件截图；两端复现方法见对应验收报告。仓库保留精选预览及 30 张基础组件对照图，原始截图、反复生成的历史截图、构建缓存和机器日志不纳入版本控制。
 
 ![Inline Citation 同宽对比：Web、iOS、macOS](Documentation/Images/citation-comparison-light.png)
 
-**还原目标不等于零像素误差。** SwiftUI、UIKit / AppKit 与浏览器仍有字形栅格化、系统菜单、输入法和取整差异；iOS 触控布局也刻意保留原生可用性。没有覆盖原站每个动画和悬停状态，也没有实测所有最低支持系统版本。
+**还原目标不等于零像素误差。** SwiftUI、UIKit / AppKit 与浏览器仍有字形栅格化、系统菜单、输入法、取整和截图色彩合成差异；iOS 触控布局也刻意保留原生可用性。基础组件截图比较默认状态，没有覆盖所有展开、聚焦、禁用、动画、悬停或辅助字号状态。本轮 iOS 使用模拟器，未做真机或所有最低支持系统版本验收。
 
 Markdown 支持常见富文本、列表、表格、图片及流式代码块；数学公式、Mermaid 和额外的语法高亮器可由宿主接入。此包不包含模型供应商 SDK。
 
 ## 致谢与许可
 
-本项目的核心视觉参考来自 **[shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements)**。感谢 [shadcn](https://github.com/shadcn) 及 [shadcn/ui 贡献者](https://github.com/shadcn-ui/ui/graphs/contributors) 提供这些界面模式和示例。
+本项目的核心视觉参考来自 **[shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements)**、[基础组件](https://ui.shadcn.com/docs/components)及[图表示例](https://ui.shadcn.com/charts/bar)。感谢 [shadcn](https://github.com/shadcn) 及 [shadcn/ui 贡献者](https://github.com/shadcn-ui/ui/graphs/contributors) 提供这些界面模式、设计和示例。
 
 | 来源 | 本项目中的用途 | 许可 |
 | --- | --- | --- |
-| [shadcn/ui](https://github.com/shadcn-ui/ui) | 原始 AI Elements 模式、视觉参考、示例及 `Reference/` 快照 | [MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md)，保留 Copyright (c) 2023 shadcn |
+| [shadcn/ui](https://github.com/shadcn-ui/ui) | 原始 AI Elements 模式、基础组件与图表设计、参考示例、对照截图及 `Reference/` 快照 | [MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md)，保留 Copyright (c) 2023 shadcn |
 | [Geist / Geist Mono](https://github.com/vercel/geist-font) | 随包分发的未修改字体 | [SIL OFL 1.1](Sources/AIElements/Resources/Geist-LICENSE) |
 | [Lucide](https://lucide.dev) | 转换为 SwiftUI 路径的图标 | [ISC](Sources/AIElements/Resources/Lucide-LICENSE) |
 
