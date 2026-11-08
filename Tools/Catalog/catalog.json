@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/elloray/AIElements.git",
+  "attribution": "Unofficial SwiftUI port; original patterns and visual design by shadcn/ui. Not affiliated with shadcn or Vercel. See THIRD_PARTY_NOTICES.md in the repository.",
+  "components": [
+    {
+      "id": "chain-of-thought",
+      "name": "Chain of Thought",
+      "symbols": [
+        "AIChainOfThought"
+      ],
+      "summary": "思考链：展开检查步骤与详细内容。",
+      "notes": [
+        "Use stable AIStep IDs so expansion survives streaming updates."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "ChainOfThoughtExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought"
+    },
+    {
+      "id": "chat",
+      "name": "Chat",
+      "symbols": [
+        "AIChat",
+        "AIConversation"
+      ],
+      "summary": "聊天：组合消息、输入框和宿主提交回调。",
+      "notes": [
+        "Keep message IDs stable while streaming; mutate the existing reply. AIChat does not call a model service."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Message.swift"
+      ],
+      "exampleFile": "AssistantChatView.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/chat"
+    },
+    {
+      "id": "checkpoint",
+      "name": "Checkpoint",
+      "symbols": [
+        "AICheckpoint"
+      ],
+      "summary": "检查点：恢复按钮与宿主回调。",
+      "notes": [
+        "The host implements restoration; the component does not modify files."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "CheckpointExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint"
+    },
+    {
+      "id": "confirmation",
+      "name": "Confirmation",
+      "symbols": [
+        "AIConfirmation"
+      ],
+      "summary": "审批：异步批准、拒绝与失败重试。",
+      "notes": [
+        "For real approvals use submitDecision (async throws). A successful decision is not proof the underlying operation completed."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "ConfirmationExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/confirmation"
+    },
+    {
+      "id": "context",
+      "name": "Context",
+      "symbols": [
+        "AIContext"
+      ],
+      "summary": "上下文：显示 token 用量与容量。",
+      "notes": [
+        "Counts come from the host; this view does not measure model usage."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "ContextExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/context"
+    },
+    {
+      "id": "file-tree",
+      "name": "File Tree",
+      "symbols": [
+        "AIFileTree"
+      ],
+      "summary": "文件树：选择路径并控制展开状态。",
+      "notes": [
+        "A node with children: nil is a file; children: [] is an empty folder. Keep iOS comfortable density for 44 pt targets."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "FileTreeExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/file-tree"
+    },
+    {
+      "id": "inline-citation",
+      "name": "Inline Citation",
+      "symbols": [
+        "AICitedText",
+        "AIInlineCitation"
+      ],
+      "summary": "行内引用：正文中的来源胶囊与预览。",
+      "notes": [
+        "Use AICitedText for citations inside wrapping prose; AIInlineCitation is a standalone control."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/InlineText.swift",
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "InlineCitationExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation"
+    },
+    {
+      "id": "message",
+      "name": "Message",
+      "symbols": [
+        "AIMessage",
+        "AIMessageResponse",
+        "AIMessageActions"
+      ],
+      "summary": "消息：用户气泡、Markdown 和操作区。",
+      "notes": [
+        "Use AIMessageText for user text and AIMessageResponse for Markdown. Place actions in footer, outside the bubble."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Message.swift",
+        "Sources/AIElements/Markdown.swift"
+      ],
+      "exampleFile": "MessageExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/message"
+    },
+    {
+      "id": "model-selector",
+      "name": "Model Selector",
+      "symbols": [
+        "AIModelSelector"
+      ],
+      "summary": "模型选择：模型分组与推理强度。",
+      "notes": [
+        "Model identifiers are host configuration, not built-in provider integrations."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/PromptInput.swift"
+      ],
+      "exampleFile": "ModelSelectorExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/model-selector"
+    },
+    {
+      "id": "plan",
+      "name": "Plan",
+      "symbols": [
+        "AIPlan"
+      ],
+      "summary": "计划：展示步骤状态与完成数。",
+      "notes": [
+        "Maintain stable step IDs; isExpanded can be controlled by the host."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "PlanExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/plan"
+    },
+    {
+      "id": "prompt-input",
+      "name": "Prompt Input",
+      "symbols": [
+        "AIPromptInput"
+      ],
+      "summary": "输入框：草稿、附件、发送和停止回调。",
+      "notes": [
+        "Clear draft and increment attachmentResetID only after the host accepts submission. onStop should cancel the host task."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/PromptInput.swift"
+      ],
+      "exampleFile": "PromptInputExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input"
+    },
+    {
+      "id": "queue",
+      "name": "Queue",
+      "symbols": [
+        "AIQueue"
+      ],
+      "summary": "队列：待办、运行中与已完成分组。",
+      "notes": [
+        "onSelect is a host callback; AIQueue is not a scheduler."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "QueueExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/queue"
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning",
+      "symbols": [
+        "AIReasoning"
+      ],
+      "summary": "推理：展示流式内容与思考用时。",
+      "notes": [
+        "Text is verbatim by default; opt into rendersMarkdown when appropriate. Use provider-visible summaries, not hidden chain-of-thought."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "ReasoningExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/reasoning"
+    },
+    {
+      "id": "sources",
+      "name": "Sources",
+      "symbols": [
+        "AISources"
+      ],
+      "summary": "来源：展开来源列表与外部链接。",
+      "notes": [
+        "Empty sources are hidden unless showsEmptyState is true. Host supplies source metadata."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "SourcesExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/sources"
+    },
+    {
+      "id": "stack-trace",
+      "name": "Stack Trace",
+      "symbols": [
+        "AIStackTrace"
+      ],
+      "summary": "错误栈：错误展开与源码定位回调。",
+      "notes": [
+        "onOpenFrame passes parsed metadata; the host chooses how to navigate to source. Keep iOS 44 pt targets."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/CodeAndTools.swift"
+      ],
+      "exampleFile": "StackTraceExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace"
+    },
+    {
+      "id": "subagent",
+      "name": "Subagent",
+      "symbols": [
+        "AISubagent"
+      ],
+      "summary": "子任务：嵌套执行轨迹与结果。",
+      "notes": [
+        "This renders a subtask; it does not spawn an AI agent."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "SubagentExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/subagent"
+    },
+    {
+      "id": "suggestion",
+      "name": "Suggestion",
+      "symbols": [
+        "AISuggestion",
+        "AISuggestions"
+      ],
+      "summary": "建议：横向可点选的提示词。",
+      "notes": [
+        "Use onSelect to fill a draft or dispatch a host action."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/ActionsAndSources.swift"
+      ],
+      "exampleFile": "SuggestionExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/suggestion"
+    },
+    {
+      "id": "task",
+      "name": "Task",
+      "symbols": [
+        "AITask"
+      ],
+      "summary": "任务：折叠步骤、运行与失败状态。",
+      "notes": [
+        "Status may be inferred from steps or explicitly provided by the host."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Trace.swift"
+      ],
+      "exampleFile": "TaskExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/task"
+    },
+    {
+      "id": "terminal",
+      "name": "Terminal",
+      "symbols": [
+        "AITerminal"
+      ],
+      "summary": "终端：命令、输出与退出码状态。",
+      "notes": [
+        "The command string is display-only. Nonzero exitCode presents failure. Execution belongs to the host."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/CodeAndTools.swift"
+      ],
+      "exampleFile": "TerminalExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/terminal"
+    },
+    {
+      "id": "test-results",
+      "name": "Test Results",
+      "symbols": [
+        "AITestResults"
+      ],
+      "summary": "测试结果：测试套件、失败详情与跳过状态。",
+      "notes": [
+        "For startup use suites: [], isRunning: true. commandError describes a failure to launch tests."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/CodeAndTools.swift"
+      ],
+      "exampleFile": "TestResultsExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/test-results"
+    },
+    {
+      "id": "tool",
+      "name": "Tool",
+      "symbols": [
+        "AITool"
+      ],
+      "summary": "工具：调用输入、输出与执行状态。",
+      "notes": [
+        "Use AIToolPhase for provider-neutral state mapping. The view never runs a command or tool."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/CodeAndTools.swift"
+      ],
+      "exampleFile": "ToolExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements/base/tool"
+    }
+  ]
+}

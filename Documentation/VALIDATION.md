@@ -1,5 +1,22 @@
 # Validation
 
+## CLI and Skill pass — 2026-11-08
+
+- `swift test`: **29 component tests + 8 CLI tests** passed on macOS.
+- `python3 Scripts/validate-cli.py --ios`: all **21 shipped CLI examples** and the
+  generated consumer package compiled on macOS and for iOS Simulator (arm64 and x86_64).
+  Also verified JSON/error exit contracts, a local dependency path with spaces and
+  quotes, remote revision manifest parsing, and project Skill installation.
+- Release CLI installed into a separate prefix and ran after relocation, including
+  a path with spaces; confirmed it read the relocated resource bundle. Reinstall
+  refused to overwrite the existing installation.
+- Skill frontmatter passed the skill-creator validator. Codex/Claude Code skill
+  folders were generated and checked; automatic invocation inside those clients
+  was not exercised as an end-to-end client test.
+
+This pass adds developer tooling only. It does not claim a new simulator UI run or
+repeat of the screenshots below. Commands and maintenance notes: [CLI guide](CLI.md).
+
 ## Latest focused pass — 2026-11-08
 
 - Environment: iPhone 17 Pro simulator, iOS 27.0; macOS 27.0.1.

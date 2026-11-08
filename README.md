@@ -4,6 +4,8 @@
 
 将 shadcn/ui AI Elements 的 21 个界面模式实现为可复用的 SwiftUI 组件。包含浅深色主题、Geist 字体、Lucide 矢量图标和可交互示例，无第三方运行时依赖。
 
+同时提供 **`aielements` CLI + `aielements-swiftui` Agent Skill**：让 AI 编程工具查询当前组件 API、读取完整 Swift 示例，并生成可接入现有 App 的 UI Package。[直接开始使用 CLI 和 Skill ↓](#ai-编程工具cli--skill)
+
 > **非官方项目 / Unofficial port**：原始界面模式、视觉设计及参考示例来自 [shadcn/ui](https://github.com/shadcn-ui/ui)。本仓库由 elloray 独立维护，不隶属于 shadcn、shadcn/ui 或 Vercel，也不代表其官方 Swift 产品或背书。原作者及资源许可详见 [致谢与许可](#致谢与许可)。
 
 ![SwiftUI Tool 组件深色预览](Documentation/Images/tool-dark.png)
@@ -46,6 +48,73 @@ let package = Package(
 ```
 
 本地开发也可用 `.package(path: "../AIElements")`，或在 Xcode 中选择 **Add Local…**。
+
+## AI 编程工具：CLI + Skill
+
+CLI 在 **macOS 14+ / Swift 5.9+** 上运行，不依赖 Node.js 或模型 API。它与 SwiftUI 库分开构建；App 引用 `AIElements` 时不会带入 CLI 和 Skill 资源。
+
+### 安装 CLI
+
+```bash
+git clone https://github.com/elloray/AIElements.git
+cd AIElements
+sh Scripts/install-cli.sh --prefix "$HOME/.local"
+export PATH="$HOME/.local/bin:$PATH"
+aielements help
+```
+
+安装脚本会一起复制可执行文件和所需资源 bundle；不要只移动二进制。将 PATH 配置加入你使用的 shell 后，其他项目也能调用。无需安装时，在库目录运行 `swift run aielements …`；在其他目录运行 `swift run --package-path /path/to/AIElements aielements …`。
+
+### 查询和生成
+
+```bash
+aielements list --json
+aielements list --search "文件树"
+aielements show AIFileTree --json
+aielements example chat
+
+# 先查看将生成的内容，再创建新目录。
+aielements init --path ./AssistantUI --name AssistantUI --dry-run --json
+aielements init --path ./AssistantUI --name AssistantUI
+```
+
+`show` 返回符号、源码位置、使用约束、原站链接和完整 Swift 示例；`example` 只输出源码。21 个组件均有示例，随 CLI 离线分发。JSON 含 `schemaVersion: 1`，失败时错误写入 stderr 并返回非零状态。
+
+`init` 生成 **可复用的 SwiftUI Package**，不是完整 Xcode App。将生成的目录作为本地 Package 加入现有 App，链接 `AssistantUI` 产品后使用：
+
+```swift
+import AssistantUI
+
+// 在宿主 View 中：
+AssistantChatView()
+```
+
+生成的界面只接收本地消息，AI 请求由宿主接入。远程依赖默认跟踪 `main`；可用 `--revision <完整 commit SHA>` 固定版本，或 `--local-package /path/to/AIElements` 引用本机库。生成器和 Skill 安装命令均拒绝覆盖已有目录。
+
+### 给 AI 工具安装 Skill
+
+在**要开发的 App 项目根目录**执行对应命令，`--path` 是完整的 Skill 目录：
+
+```bash
+# Codex：项目级 Skill
+aielements skill install --path .agents/skills/aielements-swiftui
+
+# Claude Code：项目级 Skill
+aielements skill install --path .claude/skills/aielements-swiftui
+```
+
+项目目录遵循 [Codex Skills 文档](https://developers.openai.com/codex/skills)和 [Claude Code Skills 文档](https://code.claude.com/docs/en/skills)。安装后可在 Codex 中使用 `$aielements-swiftui`，或在 Claude Code 中使用 `/aielements-swiftui`。未出现时重新打开项目会话。其他支持 `SKILL.md` 的工具可按其约定复制 [Skill 目录](Tools/Skills/aielements-swiftui)；也可用 `aielements skill print` 读取全文。
+
+例如，在 Codex 中输入：
+
+```text
+使用 $aielements-swiftui，为当前 App 加一个 AI 聊天页。
+先查 chat、prompt-input、reasoning、tool 的 CLI 示例，沿用项目现有的模型服务。
+支持 iOS 和 macOS、系统浅深色，iOS 保留 44 pt 触控区。
+发送失败保留草稿和附件，流式响应保持消息 ID 稳定，停止按钮取消请求。
+```
+
+Skill 指导工具选择组件、接入状态与回调并验证宿主构建；不会安装模型 SDK、执行示例中的终端命令或替你配置凭据。完整命令、更新方法和验证脚本见 [CLI 指南](Documentation/CLI.md)。
 
 ## 快速开始
 
