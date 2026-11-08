@@ -3,7 +3,24 @@
 `aielements` 是本仓库随源码分发的 Swift 命令行工具，目前支持 macOS 14+、Swift 5.9+。
 组件库仍支持 iOS/iPadOS 17+ 和 macOS 14+。CLI 目标只依赖 Foundation，不依赖 SwiftUI 库目标；App 产品不包含 CLI 的目录和 Skill。
 
-## 安装与更新
+## Clone 后直接使用
+
+推荐让 AI 工具按 [README 中的提示](../README.md#ai-编程工具cli--skill)自行 clone 并读取 Skill。也可以手动执行：
+
+```sh
+git clone https://github.com/elloray/AIElements.git
+cd AIElements
+./aielements help
+./aielements show chat --json
+```
+
+仓库根目录的 `aielements` 脚本会自动构建和运行 CLI，并复用 SwiftPM 缓存，不需要安装或配置 PATH。在宿主项目目录用 `/path/to/AIElements/aielements …` 调用即可；生成文件的相对路径仍以**调用时的工作目录**为准。保留 checkout，后续即可继续查询。
+
+Skill 可以直接读取 `Tools/Skills/aielements-swiftui/SKILL.md`，不要求预先注册到 AI 工具。按需更新 checkout 时保留本地改动，并让工具与宿主锁定的库版本保持一致。
+
+以下命令表中的命令均接在 `./aielements`（或 checkout 的完整脚本路径）后面。
+
+## 可选：固定安装与更新
 
 在仓库根目录运行：
 
@@ -17,7 +34,7 @@ aielements version
 
 已有安装会被拒绝覆盖。更新时，可选择新 prefix 并调整 PATH，或先把自己已有的 `lib/aielements` 目录和 `bin/aielements` 启动脚本移到备份位置，再运行安装。Skill 也不自动覆盖：先把旧 Skill 文件夹移到备份位置，再安装新的版本。库、CLI 和 Skill 应来自匹配的 checkout，避免 API 不一致。
 
-不需要固定安装时，使用：
+入口脚本等价于下面的 SwiftPM 命令：
 
 ```sh
 swift run --package-path /path/to/AIElements aielements list --json
@@ -54,7 +71,7 @@ swift run --package-path /path/to/AIElements aielements list --json
 
 ## 自动化输出约定
 
-- 标准输出是命令结果，不包含进度日志。使用 `swift run` 时 SwiftPM 自身可能在 stderr 输出构建信息；需要严格 JSON 协议时调用安装后的 `aielements`。
+- 标准输出是命令结果，不包含进度日志。使用 checkout 入口或 `swift run` 时 SwiftPM 自身可能在 stderr 输出构建信息；需要严格 JSON 协议时调用安装后的 `aielements`。
 - JSON 顶层 `schemaVersion` 固定为整数 `1`。消费者应容忍新增字段。
 - `list` 含 `components` 数组；`show` / `example` 含 `component`、`code` 和 `attribution`。
 - 写入命令含 `dryRun`、`destination` 和 `files`（每项为 `path`、`content`）。
@@ -66,7 +83,7 @@ swift run --package-path /path/to/AIElements aielements list --json
 
 [aielements-swiftui](../Tools/Skills/aielements-swiftui/SKILL.md) 使用通用 SKILL.md 格式，可单独复制，不依赖当前机器的路径。它在需要时查询 CLI；CLI 不可用时可读取库 checkout 中的目录及示例。
 
-项目级安装：Codex 使用 `.agents/skills/aielements-swiftui`，Claude Code 使用 `.claude/skills/aielements-swiftui`。目录与加载行为见 [Codex 官方文档](https://developers.openai.com/codex/skills)、[Claude Code 官方文档](https://code.claude.com/docs/en/skills)。其他工具是否自动发现由其自身实现决定；不支持 Skill 的工具仍可直接调用 CLI。
+如果希望 AI 工具自动发现 Skill，可在宿主项目目录执行 `/path/to/AIElements/aielements skill install --path <目标 Skill 目录>`。项目级安装：Codex 使用 `.agents/skills/aielements-swiftui`，Claude Code 使用 `.claude/skills/aielements-swiftui`。目录与加载行为见 [Codex 官方文档](https://developers.openai.com/codex/skills)、[Claude Code 官方文档](https://code.claude.com/docs/en/skills)。其他工具是否自动发现由其自身实现决定；不支持 Skill 的工具仍可直接调用 CLI。
 
 Skill 不授予额外执行权限，不替宿主选择模型提供商，不更改签名身份。生成的聊天示例是本地 UI，模型调用、取消、审批后的执行以及附件上传由宿主负责。它同时保留非官方 shadcn/ui 移植的来源声明。
 

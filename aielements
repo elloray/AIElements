@@ -1,0 +1,9 @@
+#!/bin/sh
+# Run from a checkout without installing a binary or changing the caller's cwd.
+set -eu
+repo=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if ! command -v swift >/dev/null 2>&1; then
+    echo 'AIElements needs Swift 5.9+ on macOS. Install/select Xcode, then run this command again.' >&2
+    exit 1
+fi
+exec swift run --quiet --package-path "$repo" aielements "$@"

@@ -9,22 +9,36 @@ Use this package's actual Swift API rather than translating React props. It is a
 independent, unofficial port of shadcn/ui AI Elements. Preserve upstream attribution
 and applicable licenses when copying or redistributing reference material.
 
+## Start from a checkout
+
+This file can be read directly from the repository; installing a Skill or global CLI
+is optional. Reuse a known AIElements checkout. If none exists, clone
+`https://github.com/elloray/AIElements.git` into a new suitable directory, normally
+beside the host project. Do not replace an existing directory or copy the library's
+sources into the app. Read the checkout's README for integration instructions.
+
+Use the checkout's `aielements` script. It builds the CLI on first use and reuses
+SwiftPM's build cache afterward; no installation or PATH change is required.
+It requires macOS and Swift 5.9+. Keep the host project as the working directory;
+paths passed to the CLI are relative to that directory.
+
 ## Discover the API
 
-Use the installed `aielements` CLI, or `swift run --package-path /path/to/AIElements aielements`
-with a known local checkout. Query only the components needed for the task:
+Replace `/path/to/AIElements` below with the actual checkout path. Query only the
+components needed for the task:
 
 ```sh
-aielements list --search chat --json
-aielements show chat --json
-aielements example prompt-input
+/path/to/AIElements/aielements list --search chat --json
+/path/to/AIElements/aielements show chat --json
+/path/to/AIElements/aielements example prompt-input
 ```
 
 `show` includes public symbol names, implementation paths, behavioral notes, the
 original design URL, and a complete Swift source example. IDs such as `file-tree`
 and symbols such as `AIFileTree` both work. JSON uses `schemaVersion: 1`;
-errors are on stderr with nonzero exit status. Examples and the catalog ship with
-the CLI; queries do not call a model service or require network access.
+errors are on stderr with nonzero exit status. The checkout launcher may also emit
+SwiftPM diagnostics on stderr. Examples and the catalog ship with the CLI; queries
+do not call a model service or require network access after the checkout is available.
 
 If the CLI is unavailable, read `Tools/Catalog/catalog.json` and the relevant
 `Tools/Catalog/Examples/*.swift` in the library checkout. If neither is available,
@@ -41,7 +55,7 @@ Compare the installed library revision with the CLI checkout when APIs differ.
   pinned revision. Do not invent a version tag. Commit the host's resolved version
   or pin a commit when reproducibility is needed.
 - For a requested new reusable UI package, preview with
-  `aielements init --path NEW_DIR --name AssistantUI --dry-run --json`, then run
+  `/path/to/AIElements/aielements init --path NEW_DIR --name AssistantUI --dry-run --json`, then run
   without `--dry-run`. `--local-package PATH` uses a checkout;
   `--revision FULL_SHA` pins the remote package. The result exposes
   `AssistantChatView()` to an existing app. It is not an Xcode app project.
