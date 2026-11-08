@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "id": "text",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Text",
+      "props": {
+        "text": "Build a native interface as data arrives.",
+        "variant": "body"
+      }
+    }
+  },
+  "state": {}
+}

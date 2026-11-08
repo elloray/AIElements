@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "id": "badge",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Badge",
+      "props": {
+        "text": "Ready",
+        "variant": "secondary"
+      }
+    }
+  },
+  "state": {}
+}

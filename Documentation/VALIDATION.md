@@ -1,5 +1,25 @@
 # Validation
 
+## Foundation CLI and Skill sync — 2026-11-08
+
+- Catalog now exposes **37 Swift examples**: 21 AI patterns, 15 foundation nodes,
+  and one streaming integration. Protocol types are distinguished from native
+  Swift symbols; shared chart symbols ask for a specific variant.
+- `swift test`: **51 tests passed** (31 components, 11 protocol, 9 CLI). Existing
+  catalog tests now cover every entry, protocol type, resource, and symbol lookup;
+  document round-trip checks cover all **16** bundled complete UI documents.
+- `python3 Scripts/validate-cli.py --ios`: all **37** examples compiled together
+  in an independent consumer package on macOS and iOS Simulator. Real CLI checks
+  covered 16 documents, successful/incomplete JSONL, raw-artifact `--json` output,
+  error contracts, revision pins, generated packages, and Skill installation.
+- Skill frontmatter validation passed. After the final documentation update,
+  checked that packaged `skill print` and a fresh `skill install` match the source.
+  No end-to-end invocation by an external AI coding client was tested.
+
+This pass updates tooling, guides, and example resources; it does not change
+component rendering or repeat simulator UI/visual interaction tests. See the
+[CLI guide](CLI.md) and [foundation visual audit](Foundation-Visual-Validation.md).
+
 ## CLI and Skill pass — 2026-11-08
 
 - `swift test`: **29 component tests + 8 CLI tests** passed on macOS.

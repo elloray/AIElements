@@ -31,12 +31,28 @@ failure = subprocess.run([str(cli), "show", "does-not-exist", "--json"], text=Tr
 assert failure.returncode == 2 and failure.stdout == "", failure
 assert json.loads(failure.stderr)["exitCode"] == 2
 catalog = json.loads(invoke("list", "--json"))
-assert catalog["schemaVersion"] == 1 and len(catalog["components"]) == 21
+assert catalog["schemaVersion"] == 1 and len(catalog["components"]) == 37
 
 scratch = repo / ".build" / "cli-validation"
 scratch.mkdir(parents=True, exist_ok=True)
 with tempfile.TemporaryDirectory(prefix="run-", dir=scratch) as temporary:
     root = Path(temporary)
+    # Validate each complete document and the progressive JSONL example through
+    # the executable, including raw-artifact output when --json is supplied.
+    documents = ["dashboard"] + [c["id"] for c in catalog["components"] if c.get("protocolType")]
+    for name in documents:
+        data = invoke("ui", "example", name)
+        assert data == invoke("ui", "example", name, "--json")
+        path = root / (name + ".json")
+        path.write_text(data)
+        assert json.loads(invoke("ui", "validate", str(path), "--json"))["valid"]
+    stream = root / "report.jsonl"
+    stream.write_text(invoke("ui", "stream"))
+    assert json.loads(invoke("ui", "validate", str(stream), "--json"))["valid"]
+    stream.write_text("\n".join(stream.read_text().splitlines()[:-1]))
+    incomplete = subprocess.run([str(cli), "ui", "validate", str(stream), "--json"], text=True, capture_output=True)
+    assert incomplete.returncode != 0 and incomplete.stdout == ""
+    assert json.loads(incomplete.stderr)["exitCode"] != 0
     # The alias catches local-package identity assumptions and Swift string escaping.
     alias = root / 'local library "quoted"'
     alias.symlink_to(repo, target_is_directory=True)
@@ -68,5 +84,5 @@ with tempfile.TemporaryDirectory(prefix="run-", dir=scratch) as temporary:
         run("xcodebuild", "-scheme", "AssistantUI", "-destination", "generic/platform=iOS Simulator",
             "-derivedDataPath", str(root / "DerivedData"), "CODE_SIGNING_ALLOWED=NO", "build", cwd=feature)
 
-print("CLI validation passed: JSON/error contracts, 21 examples, generated package, revision pin, and skill installation"
+print("CLI validation passed: JSON/error contracts, 37 Swift examples, 16 UI documents, complete/incomplete JSONL, generated package, revision pin, and skill installation"
       + ("; macOS + iOS Simulator compilation." if args.ios else "; macOS compilation."))

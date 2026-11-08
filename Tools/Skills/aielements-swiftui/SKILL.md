@@ -1,12 +1,12 @@
 ---
 name: aielements-swiftui
-description: Build or modify native SwiftUI AI interfaces with the elloray/AIElements library on iOS, iPadOS, and macOS. Use for integrating its chat, prompt input, reasoning summaries, tool output, approvals, citations, task components, and streaming generative interfaces with forms and charts. Does not apply to React shadcn projects or model backend implementation alone.
+description: Build or modify native SwiftUI interfaces with elloray/AIElements on iOS, iPadOS, and macOS. Use for its AI chat patterns, foundation components, forms, tables, charts, and streamed JSONL interfaces with host action callbacks. Does not apply to React shadcn projects or model backend implementation alone.
 ---
 
 # AIElements SwiftUI
 
 Use this package's actual Swift API rather than translating React props. It is an
-independent, unofficial port of shadcn/ui AI Elements. Preserve upstream attribution
+independent, unofficial port of shadcn/ui AI Elements, foundation designs and charts. Preserve upstream attribution
 and applicable licenses when copying or redistributing reference material.
 
 ## Start from a checkout
@@ -31,11 +31,17 @@ components needed for the task:
 /path/to/AIElements/aielements list --search chat --json
 /path/to/AIElements/aielements show chat --json
 /path/to/AIElements/aielements example prompt-input
+/path/to/AIElements/aielements show select --json
+/path/to/AIElements/aielements show LineChart --json
 ```
 
 `show` includes public symbol names, implementation paths, behavioral notes, the
-original design URL, and a complete Swift source example. IDs such as `file-tree`
-and symbols such as `AIFileTree` both work. JSON uses `schemaVersion: 1`;
+original design URL, and a complete Swift source example. The catalog contains
+21 AI patterns, 15 foundation nodes, and one `streaming-ui` integration example.
+IDs such as `file-tree`, symbols such as `AIFileTree`, and protocol types such as
+`LineChart` work. Shared `AIChart` symbols require choosing `bar-chart`, `line-chart`,
+or `area-chart`. `protocolType` identifies a JSON node; an empty `symbols` array
+means no standalone Swift constructor is exposed. JSON envelopes use `schemaVersion: 1`;
 errors are on stderr with nonzero exit status. The checkout launcher may also emit
 SwiftPM diagnostics on stderr. Examples and the catalog ship with the CLI; queries
 do not call a model service or require network access after the checkout is available.
@@ -102,22 +108,70 @@ Original patterns: [shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-element
 ## Stream native interfaces
 
 For AI-generated interactive UI, read `Documentation/StreamingUI.md` in the checkout.
-Run `aielements ui schema`, `ui example dashboard`, and `ui stream` to obtain the
-actual catalog and wire examples. `ui schema/example/stream` emit raw protocol files.
-Fallback resources are in `Sources/AIElementsUIProtocol/Resources/`.
+Use the same checkout script for all commands; a global CLI is not required:
+
+```sh
+/path/to/AIElements/aielements example streaming-ui
+/path/to/AIElements/aielements ui schema
+/path/to/AIElements/aielements ui example select > /tmp/select.json
+/path/to/AIElements/aielements ui validate /tmp/select.json
+/path/to/AIElements/aielements ui stream > /tmp/report.jsonl
+/path/to/AIElements/aielements ui validate /tmp/report.jsonl
+```
+
+`example COMPONENT` emits Swift; `ui example NAME` emits a complete JSON document.
+NAME accepts `dashboard` or any of the 15 foundation slugs below. `ui stream` emits
+incremental dashboard events as JSONL. `ui schema/example/stream` emit raw artifacts
+even with `--json`, not CLI result envelopes. Fallback files are in
+`Sources/AIElementsUIProtocol/Resources/`; Swift examples are in `Tools/Catalog/Examples/`.
+
+| Protocol types | CLI slugs |
+| --- | --- |
+| Stack, Row, Card, Text, Separator | stack, row, card, text, separator |
+| Button, Badge, Progress | button, badge, progress |
+| Input, Select, Switch | input, select, switch |
+| Table | table |
+| BarChart, LineChart, AreaChart | bar-chart, line-chart, area-chart |
+
+For native composition, query `show` for exact constructors. Stack/Row/Text/Badge/
+Separator examples use the renderer; do not invent AIStack/AIRow/AIText/AISeparator.
+The existing `AIBadge` helper is not the protocol Badge's five-variant API.
+Card defaults to `standard`; use `chart` for the roomier chart example. Native
+Card header/footer view slots and AIInput secure/accessory options are not JSON
+properties. `AIProgress` uses `total` in Swift, `max` in JSON. Table footer keys
+match columns; alignment is leading/trailing. Charts need unique stable row labels
+and numeric values for every series; inspect the schema for limits and supported props.
 
 Use one `@StateObject AIUIStore` per surface and `AIUIRenderer(store:onEvent:)` inside
 `AIMessage` or another view. Feed each arriving JSONL byte chunk into `receive` on the
-main actor; do not wait for a full document. Extract SSE `data:` payloads before
-decoding/applying events. Call `finish` on EOF and `interrupt` on cancel/failure.
+main actor; do not wait for a full document or try to decode incomplete JSON tokens.
+For SSE, extract each complete `data:` payload, decode `AIUIStreamEvent`, and call
+`apply`; never feed raw SSE headers to `receive`. Call `finish` on JSONL EOF and
+inspect session.phase/errorMessage: a syntactically complete stream without
+surface.complete still fails. Call `interrupt` on cancel/failure, including errors
+from direct `apply`; reset before retrying with a fresh begin. Connect stream
+termination to the host network task's cancellation.
 
 Generate begin/update/complete lines incrementally, with stable node IDs and ordered
-revisions. Each update replaces a named whole node; include its events/bindings again.
-Initialize state once and avoid overwriting user drafts during later chart updates.
-The host handles declared actions and returns updates; never evaluate AI-generated
-code or dispatch arbitrary action names. Do not claim OpenAI/A2UI wire compatibility.
+revisions: after begin, baseRevision equals the current server revision and revision
+increments by one. Each update replaces a named whole node; include its
+events/bindings/children again. Missing children can render placeholders during
+generation but must exist by completion. Initialize state once and avoid overwriting
+user drafts during later chart updates. Editable Input/Select/Switch nodes need
+bindings.value pointing to initialized state; Switch values must be boolean.
+Button needs events.press and an onEvent handler. Action events include only declared
+stateKeys, not the whole form automatically. The host dispatches known actions and
+can return another update/complete pair after completion; local edits do not advance
+server revision. Never evaluate AI-generated code or arbitrary action names.
+Persist the completed document, not a partial decoder buffer; restore with load or
+AIChatMessage.parts .ui(document) and handle AIChat.onUIEvent. Do not claim OpenAI/A2UI
+wire compatibility.
 
-Validate output with `aielements ui validate file.jsonl`. Verify partial rendering,
+`ui validate` accepts complete documents or successful complete/removed JSONL streams,
+not unfinished fragments; it checks runtime semantics as well as JSON syntax.
+Verify partial rendering,
 UTF-8 splitting, interruption/retry, form edits during streaming, and iOS/macOS
 light/dark behavior. Preserve iOS 44 pt targets. Current foundation catalog has
 15 types; inspect the schema before promising any unsupported shadcn variant.
+For visual work, use `Documentation/Foundation-Visual-Validation.md`: default-state
+same-width evidence covers both themes/platforms, not every interaction or device.

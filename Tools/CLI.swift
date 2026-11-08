@@ -32,14 +32,14 @@ public struct CLI {
         let catalog = try Catalog.bundled()
         switch command {
         case "ui":
-            guard let action = args.first else { throw CLIError.usage("Usage: aielements ui schema | example [dashboard|bar-chart] | stream | validate PATH") }
+            guard let action = args.first else { throw CLIError.usage("Usage: aielements ui schema | example [NAME] | stream | validate PATH") }
             args.removeFirst()
             switch action {
             case "schema", "stream", "example":
                 let name: String
                 if action == "example" {
                     name = args.isEmpty ? "dashboard" : args.removeFirst()
-                    guard ["dashboard", "bar-chart"].contains(name) else { throw CLIError.usage("Unknown UI example. Use dashboard or bar-chart.") }
+                    guard AIUIResources.exampleNames.contains(name) else { throw CLIError.usage("Unknown UI example. Choose: \(AIUIResources.exampleNames.joined(separator: ", ")).") }
                 } else { name = action == "stream" ? "dashboard-stream" : "schema" }
                 try noExtra(args)
                 return String(decoding: try AIUIResources.data(named: name), as: UTF8.self).trimmingCharacters(in: .newlines)
@@ -66,9 +66,9 @@ public struct CLI {
             }
             let items = catalog.components.filter { item in
                 guard let query else { return true }
-                return ([item.id, item.name, item.summary] + item.symbols).joined(separator: " ").localizedCaseInsensitiveContains(query)
+                return ([item.id, item.name, item.summary, item.protocolType ?? ""] + item.symbols).joined(separator: " ").localizedCaseInsensitiveContains(query)
             }
-            return json ? try encode(ListResult(components: items)) : items.map { "\($0.id)\t\($0.symbols.joined(separator: ", "))\n  \($0.summary)" }.joined(separator: "\n")
+            return json ? try encode(ListResult(components: items)) : items.map { "\($0.id)\t\($0.symbols.isEmpty ? "Protocol: " + ($0.protocolType ?? "") : $0.symbols.joined(separator: ", "))\n  \($0.summary)" }.joined(separator: "\n")
         case "show", "example":
             guard args.count == 1 else { throw CLIError.usage("Usage: aielements \(command) COMPONENT [--json]") }
             let component = try catalog.component(args[0])
@@ -79,7 +79,8 @@ public struct CLI {
             # \(component.name)
             \(component.summary)
 
-            Symbols: \(component.symbols.joined(separator: ", "))
+            Symbols: \(component.symbols.isEmpty ? "Use AIUIRenderer; no standalone Swift type" : component.symbols.joined(separator: ", "))
+            \(component.protocolType.map { "Protocol node: \($0) — aielements ui example \(component.id)\n" } ?? "")
             Source: \(component.sourceFiles.joined(separator: ", "))
             Upstream design: \(component.upstream)
             \(catalog.attribution)
@@ -239,17 +240,23 @@ public struct CLI {
     aielements skill print [--json]
     aielements skill install --path NEW_SKILL_DIR [--dry-run] [--json]
     aielements ui schema                       JSON Schema for documents and stream events
-    aielements ui example [dashboard|bar-chart] Complete UI document JSON
+    aielements ui example [NAME]              Complete JSON: dashboard or foundation slug
     aielements ui stream                       Progressive dashboard events as JSONL
     aielements ui validate PATH [--json]        Validate .json or complete .jsonl stream
     aielements version [--json]
     aielements help [--json]
 
     COMPONENT accepts a slug (file-tree), a quoted name, or a Swift symbol (AIFileTree).
+    Catalog: 21 AI patterns + 15 foundation nodes + streaming-ui integration.
+    Foundation slugs: stack, row, card, text, button, badge, input, select, switch,
+                      progress, separator, table, bar-chart, line-chart, area-chart.
+    Protocol type names (BarChart) work in show/example. Shared AIChart symbols
+    require a specific chart slug. example emits Swift; ui example emits JSON.
     init creates a reusable UI package for an existing app, not an Xcode app project.
     --path names the full NEW destination directory; existing paths are refused.
     --dry-run reports files without writing. Remote dependency defaults to branch main.
-    JSON has schemaVersion: 1. Errors go to stderr; exit 2 = usage, 1 = I/O, 0 = success.
+    JSON envelopes have schemaVersion: 1; ui schema/example/stream emit raw artifacts
+    even with --json. Errors go to stderr; exit 2 = usage, 1 = I/O/validation, 0 = success.
     """
 }
 

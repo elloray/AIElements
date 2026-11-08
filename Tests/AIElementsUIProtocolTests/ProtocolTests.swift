@@ -36,7 +36,7 @@ final class ProtocolTests: XCTestCase {
         XCTAssertEqual(session.document?.state["reportName"], .string("Edited during generation"))
     }
     func testExamplesValidateAndRoundTrip() throws {
-        for name in ["dashboard", "bar-chart"] {
+        for name in AIUIResources.exampleNames {
             let doc = try AIUIDocument.decode(AIUIResources.data(named: name))
             XCTAssertEqual(try AIUIDocument.decode(JSONEncoder().encode(doc)), doc)
         }

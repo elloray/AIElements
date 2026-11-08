@@ -1,5 +1,6 @@
 import Foundation
 import XCTest
+import AIElementsUIProtocol
 @testable import AIElementsCLIKit
 
 final class CLIKitTests: XCTestCase {
@@ -10,9 +11,12 @@ final class CLIKitTests: XCTestCase {
         let stream = try cli.run(["ui", "stream"])
         try stream.write(to: dir.appendingPathComponent("report.jsonl"), atomically: true, encoding: .utf8)
         XCTAssertEqual(try object(cli.run(["ui", "validate", "report.jsonl", "--json"], directory: dir))["valid"] as? Bool, true)
-        let doc = try cli.run(["ui", "example", "dashboard"])
-        try doc.write(to: dir.appendingPathComponent("report.json"), atomically: true, encoding: .utf8)
-        XCTAssertNoThrow(try cli.run(["ui", "validate", "report.json"], directory: dir))
+        for name in AIUIResources.exampleNames {
+            let doc = try cli.run(["ui", "example", name])
+            XCTAssertEqual(doc, try cli.run(["ui", "example", name, "--json"]))
+            try doc.write(to: dir.appendingPathComponent("report.json"), atomically: true, encoding: .utf8)
+            XCTAssertNoThrow(try cli.run(["ui", "validate", "report.json"], directory: dir), name)
+        }
         XCTAssertEqual(try object(cli.run(["ui", "schema"]))["$schema"] as? String, "https://json-schema.org/draft/2020-12/schema")
         let incomplete = stream.split(separator: "\n").dropLast().joined(separator: "\n")
         try incomplete.write(to: dir.appendingPathComponent("incomplete.jsonl"), atomically: true, encoding: .utf8)
@@ -34,12 +38,25 @@ final class CLIKitTests: XCTestCase {
     func testEveryCatalogEntryHasAnExampleAndUniqueIdentity() throws {
         let catalog = try Catalog.bundled()
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.components.count, 21)
-        XCTAssertEqual(Set(catalog.components.map(\.id)).count, 21)
-        XCTAssertEqual(Set(catalog.components.map(\.exampleFile)).count, 21)
+        XCTAssertEqual(catalog.components.count, 37)
+        XCTAssertEqual(Set(catalog.components.map(\.id)).count, 37)
+        XCTAssertEqual(Set(catalog.components.map(\.exampleFile)).count, 37)
+        XCTAssertEqual(Set(catalog.components.compactMap(\.protocolType)), Set(AIUIComponentCatalog.types))
+        XCTAssertEqual(Set(catalog.components.filter { $0.protocolType != nil }.map(\.id)), Set(AIUIResources.exampleNames.filter { $0 != "dashboard" }))
         for component in catalog.components {
             XCTAssertFalse(try catalog.example(component).isEmpty)
-            XCTAssertEqual(try catalog.component(component.symbols[0]).id, component.id)
+            XCTAssertEqual(try catalog.component(component.id).id, component.id)
+            XCTAssertEqual(try catalog.component(component.name).id, component.id)
+            if let type = component.protocolType {
+                XCTAssertEqual(try catalog.component(type).id, component.id)
+                let doc = try AIUIDocument.decode(AIUIResources.data(named: component.id))
+                XCTAssertTrue(doc.nodes.values.contains { $0.type == type })
+            }
+            for symbol in component.symbols {
+                let matches = catalog.components.filter { $0.symbols.contains(symbol) }
+                if matches.count == 1 { XCTAssertEqual(try catalog.component(symbol).id, component.id) }
+                else { XCTAssertThrowsError(try catalog.component(symbol)) }
+            }
         }
     }
 
@@ -54,9 +71,11 @@ final class CLIKitTests: XCTestCase {
     }
 
     func testJSONAndRawSourceAgree() throws {
-        let output = try object(cli.run(["show", "AIChat", "--json"]))
-        XCTAssertEqual(output["schemaVersion"] as? Int, 1)
-        XCTAssertEqual(output["code"] as? String, try cli.run(["example", "chat"]))
+        for component in try Catalog.bundled().components {
+            let output = try object(cli.run(["show", component.id, "--json"]))
+            XCTAssertEqual(output["schemaVersion"] as? Int, 1)
+            XCTAssertEqual(output["code"] as? String, try cli.run(["example", component.id]))
+        }
         let help = try object(cli.run(["help", "--json"]))
         XCTAssertEqual(help["schemaVersion"] as? Int, 1)
     }

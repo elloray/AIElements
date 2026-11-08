@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "id": "select",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Select",
+      "props": {
+        "label": "Fruit",
+        "placeholder": "Select a fruit",
+        "options": [
+          {
+            "value": "apple",
+            "label": "Apple"
+          },
+          {
+            "value": "banana",
+            "label": "Banana"
+          }
+        ]
+      },
+      "bindings": {
+        "value": "fruit"
+      },
+      "events": {
+        "change": {
+          "name": "change_fruit",
+          "stateKeys": [
+            "fruit"
+          ]
+        }
+      }
+    }
+  },
+  "state": {
+    "fruit": ""
+  }
+}

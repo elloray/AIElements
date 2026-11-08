@@ -345,6 +345,303 @@
       ],
       "exampleFile": "ToolExample.swift",
       "upstream": "https://ui.shadcn.com/docs/ai-elements/base/tool"
+    },
+    {
+      "id": "stack",
+      "name": "Stack",
+      "protocolType": "Stack",
+      "symbols": [],
+      "summary": "纵向布局：按间距组合子节点。",
+      "notes": [
+        "Protocol layout node, rendered by AIUIRenderer; there is no AIStack constructor. gap is 0...48 pt.",
+        "Run aielements ui example stack for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle.",
+        "The upstream link is a layout/text reference, not a same-named shadcn component."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift"
+      ],
+      "exampleFile": "StackExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/separator"
+    },
+    {
+      "id": "row",
+      "name": "Row",
+      "protocolType": "Row",
+      "symbols": [],
+      "summary": "横向布局：空间不足时回退为纵向。",
+      "notes": [
+        "Protocol layout node, rendered by AIUIRenderer; horizontal layout falls back to a vertical stack when needed, not a wrapping flow layout.",
+        "Run aielements ui example row for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle.",
+        "The upstream link is a layout/text reference, not a same-named shadcn component."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift"
+      ],
+      "exampleFile": "RowExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/badge"
+    },
+    {
+      "id": "card",
+      "name": "Card",
+      "protocolType": "Card",
+      "symbols": [
+        "AICard",
+        "AICardStyle"
+      ],
+      "summary": "卡片：基础与图表样式、标题和页脚。",
+      "notes": [
+        "Use style standard (16 pt insets) for base cards and chart for chart-gallery cards. Native headerAction/footerContent slots are not JSON properties.",
+        "Run aielements ui example card for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "CardExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/card"
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "protocolType": "Text",
+      "symbols": [],
+      "summary": "文字：正文、标题、弱化、说明与标签。",
+      "notes": [
+        "Protocol Text is rendered by AIUIRenderer; variants are body/title/muted/caption/label. Do not invent an AIText constructor.",
+        "Run aielements ui example text for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle.",
+        "The upstream link is a layout/text reference, not a same-named shadcn component."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift"
+      ],
+      "exampleFile": "TextExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/separator"
+    },
+    {
+      "id": "button",
+      "name": "Button",
+      "protocolType": "Button",
+      "symbols": [
+        "AIFoundationButtonStyle",
+        "AIFoundationVariant"
+      ],
+      "summary": "按钮：五种外观与宿主操作回调。",
+      "notes": [
+        "Native Button uses AIFoundationButtonStyle. Protocol Button needs events.press and an AIUIRenderer onEvent callback to be enabled. Preserve iOS comfortable density.",
+        "Run aielements ui example button for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "ButtonExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/button"
+    },
+    {
+      "id": "badge",
+      "name": "Badge",
+      "protocolType": "Badge",
+      "symbols": [],
+      "summary": "徽章：主色、次要、描边、透明与危险状态。",
+      "notes": [
+        "Protocol Badge has five foundation variants; the existing AIBadge helper is a different API and is not a drop-in variant selector.",
+        "Run aielements ui example badge for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift"
+      ],
+      "exampleFile": "BadgeExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/badge"
+    },
+    {
+      "id": "input",
+      "name": "Input",
+      "protocolType": "Input",
+      "symbols": [
+        "AIInput"
+      ],
+      "summary": "输入：绑定草稿与变更事件。",
+      "notes": [
+        "Native AIInput uses a Binding<String>; protocol Input needs bindings.value and an initial state key to be editable. secure and labelAccessory are native-only slots.",
+        "Run aielements ui example input for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "InputExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/input"
+    },
+    {
+      "id": "select",
+      "name": "Select",
+      "protocolType": "Select",
+      "symbols": [
+        "AISelect",
+        "AISelectOption"
+      ],
+      "summary": "选择器：占位文字、选项与状态绑定。",
+      "notes": [
+        "Use placeholder for an empty selection; options use id in Swift and value in JSON. Protocol editing requires bindings.value and initialized state. Menus are native.",
+        "Run aielements ui example select for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "SelectExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/select"
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "protocolType": "Switch",
+      "symbols": [
+        "AISwitch"
+      ],
+      "summary": "开关：布尔状态与变更回调。",
+      "notes": [
+        "Native AISwitch uses Binding<Bool>; protocol Switch requires a boolean state binding. Keep the iOS outer hit target at 44 pt.",
+        "Run aielements ui example switch for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "SwitchExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/switch"
+    },
+    {
+      "id": "progress",
+      "name": "Progress",
+      "protocolType": "Progress",
+      "symbols": [
+        "AIProgress"
+      ],
+      "summary": "进度：数值、总量与浅深色轨道。",
+      "notes": [
+        "Native API uses total; JSON uses max. Keep max positive; the default is 100. Dark fill follows the primary theme color.",
+        "Run aielements ui example progress for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationComponents.swift"
+      ],
+      "exampleFile": "ProgressExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/progress"
+    },
+    {
+      "id": "separator",
+      "name": "Separator",
+      "protocolType": "Separator",
+      "symbols": [],
+      "summary": "分隔线：主题边框色的横线。",
+      "notes": [
+        "Protocol Separator is a horizontal 1 pt theme-border line. It has no orientation property or standalone AISeparator constructor.",
+        "Run aielements ui example separator for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift"
+      ],
+      "exampleFile": "SeparatorExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/separator"
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "protocolType": "Table",
+      "symbols": [
+        "AITable",
+        "AITableColumn"
+      ],
+      "summary": "表格：列宽、对齐、强调、合计与说明。",
+      "notes": [
+        "Column alignment is leading/trailing, preferred width 24...600; row/footer keys match column keys. Caption sits below the table.",
+        "Run aielements ui example table for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/FoundationTable.swift"
+      ],
+      "exampleFile": "TableExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/components/base/table"
+    },
+    {
+      "id": "bar-chart",
+      "name": "Bar Chart",
+      "protocolType": "BarChart",
+      "symbols": [
+        "AIChart",
+        "AIChartKind",
+        "AIChartRow",
+        "AIChartSeries"
+      ],
+      "summary": "柱状图：多序列数据与选择回调。",
+      "notes": [
+        "Use AIChart(.bar). Protocol series keys map to numeric data values; row labels must be unique. Up to 5 series and 200 rows; no stacked variant.",
+        "Run aielements ui example bar-chart for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Chart.swift"
+      ],
+      "exampleFile": "BarChartExample.swift",
+      "upstream": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default"
+    },
+    {
+      "id": "line-chart",
+      "name": "Line Chart",
+      "protocolType": "LineChart",
+      "symbols": [
+        "AIChart",
+        "AIChartKind",
+        "AIChartRow",
+        "AIChartSeries"
+      ],
+      "summary": "折线图：自然三次曲线与选择回调。",
+      "notes": [
+        "Use AIChart(.line) with natural cubic curves. Stable unique row labels preserve selection; up to 5 series and 200 rows.",
+        "Run aielements ui example line-chart for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Chart.swift"
+      ],
+      "exampleFile": "LineChartExample.swift",
+      "upstream": "https://ui.shadcn.com/view/new-york-v4/chart-line-default"
+    },
+    {
+      "id": "area-chart",
+      "name": "Area Chart",
+      "protocolType": "AreaChart",
+      "symbols": [
+        "AIChart",
+        "AIChartKind",
+        "AIChartRow",
+        "AIChartSeries"
+      ],
+      "summary": "面积图：自然曲线、40% 填充与选择回调。",
+      "notes": [
+        "Use AIChart(.area) with natural curves and solid fill at 40% opacity. No gradient, stacked, pie, radar, or zoom variant is provided.",
+        "Run aielements ui example area-chart for complete JSON; see Documentation/StreamingUI.md for properties, bindings, events and lifecycle."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/Chart.swift"
+      ],
+      "exampleFile": "AreaChartExample.swift",
+      "upstream": "https://ui.shadcn.com/view/new-york-v4/chart-area-default"
+    },
+    {
+      "id": "streaming-ui",
+      "name": "Streaming UI",
+      "symbols": [
+        "AIUIStore",
+        "AIUIRenderer"
+      ],
+      "summary": "流式界面：逐段接收 JSONL，保留输入并回传宿主操作。",
+      "notes": [
+        "Independent JSONL protocol, not OpenAI/A2UI wire compatibility. Read Documentation/StreamingUI.md.",
+        "Use one store per surface on MainActor. receive bytes incrementally, finish at EOF, interrupt on cancellation/failure, reset before a fresh begin.",
+        "Whole-node updates replace events/bindings too. Do not overwrite user drafts with repeated initial state.",
+        "Run aielements ui stream for JSONL; aielements ui validate file.jsonl requires a complete successful stream. SSE data payloads must be decoded before apply; raw SSE is not JSONL."
+      ],
+      "sourceFiles": [
+        "Sources/AIElements/GenerativeUI.swift",
+        "Sources/AIElementsUIProtocol/Streaming.swift"
+      ],
+      "exampleFile": "StreamingUIExample.swift",
+      "upstream": "https://ui.shadcn.com/docs/ai-elements"
     }
   ]
 }

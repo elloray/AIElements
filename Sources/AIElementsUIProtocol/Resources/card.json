@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "id": "card",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Card",
+      "children": [
+        "title",
+        "detail"
+      ],
+      "props": {
+        "title": "Report",
+        "description": "Monthly summary",
+        "style": "standard",
+        "footer": "Updated just now"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "props": {
+        "text": "Visitors",
+        "variant": "label"
+      }
+    },
+    "detail": {
+      "type": "Text",
+      "props": {
+        "text": "1,234 this month",
+        "variant": "muted"
+      }
+    }
+  },
+  "state": {}
+}

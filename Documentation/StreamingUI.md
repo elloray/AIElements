@@ -129,6 +129,8 @@ Read the executable schema for precise permitted properties and bounds:
 ```sh
 ./aielements ui schema
 ./aielements ui example dashboard > /tmp/dashboard.json
+./aielements ui example select > /tmp/select.json
+./aielements example streaming-ui  # Swift host integration, not protocol JSON
 ./aielements ui stream > /tmp/dashboard.jsonl
 ./aielements ui validate /tmp/dashboard.json
 ./aielements ui validate /tmp/dashboard.jsonl --json
@@ -137,6 +139,13 @@ Read the executable schema for precise permitted properties and bounds:
 `ui schema/example/stream` emit the raw protocol artifact (even with `--json`). Other
 CLI JSON output retains its CLI envelope. `ui validate` checks runtime semantics too;
 JSON Schema alone does not detect graph cycles, missing references, or revision gaps.
+
+Every foundation type has a complete `ui example` document, using its lowercase
+slug (`stack`, `row`, `card`, `text`, `button`, `badge`, `input`, `select`, `switch`,
+`progress`, `separator`, `table`, `bar-chart`, `line-chart`, `area-chart`). Use
+`show TYPE` for notes and Swift code; `example TYPE` emits only Swift. These commands
+also accept protocol names such as `LineChart`; `ui example` takes the slug.
+`show AIChart` asks for a chart variant because all three share the same native API.
 
 ## State and action round trip
 

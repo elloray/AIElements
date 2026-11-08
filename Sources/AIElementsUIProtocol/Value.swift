@@ -111,8 +111,9 @@ public enum AIUIError: Error, LocalizedError {
 }
 
 public enum AIUIResources {
+    public static let exampleNames = ["dashboard", "stack", "row", "card", "text", "button", "badge", "input", "select", "switch", "progress", "separator", "table", "bar-chart", "line-chart", "area-chart"]
     public static func data(named name: String) throws -> Data {
-        guard ["schema", "dashboard", "bar-chart", "dashboard-stream"].contains(name) else { throw AIUIError.invalid("Unknown UI resource: \(name)") }
+        guard (exampleNames + ["schema", "dashboard-stream"]).contains(name) else { throw AIUIError.invalid("Unknown UI resource: \(name)") }
         let file = name == "dashboard-stream" ? "dashboard.jsonl" : "\(name).json"
         guard let url = Bundle.module.url(forResource: file, withExtension: nil, subdirectory: "Resources")
                 ?? Bundle.module.url(forResource: file, withExtension: nil) else { throw AIUIError.invalid("Missing UI resource: \(name)") }

@@ -40,6 +40,8 @@ try store.finish()
 ```bash
 ./aielements ui schema
 ./aielements ui example dashboard
+./aielements ui example select
+./aielements example streaming-ui
 ./aielements ui stream > /tmp/report.jsonl
 ./aielements ui validate /tmp/report.jsonl
 ```
@@ -119,7 +121,7 @@ cd AIElements
 /path/to/AIElements/aielements example prompt-input
 ```
 
-`show` 提供使用说明、原站链接和完整 Swift 示例；`example` 输出源码。21 个组件均有示例，JSON 输出便于 AI 工具读取。
+`show` 提供使用说明、原站链接和完整 Swift 示例；`example` 输出源码。目录覆盖 **21 个 AI 模式 + 15 种基础节点 + 1 个流式接入示例**，共 37 项；例如 `show select`、`show LineChart`、`example streaming-ui`。`ui example select` 则输出可校验的协议 JSON。CLI 的 `--json` 查询结果便于 AI 工具读取。
 
 CLI 还可以生成新的 UI Package、安装项目级 Skill；这些是可选能力，完整命令见 [CLI 指南](Documentation/CLI.md)。已有 App 直接按 [使用指南](Documentation/Usage.md) 接入组件即可。
 

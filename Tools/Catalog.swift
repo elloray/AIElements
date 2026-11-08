@@ -9,6 +9,8 @@ public struct Component: Codable {
     public let sourceFiles: [String]
     public let exampleFile: String
     public let upstream: String
+    /// Present for the 15 JSON protocol nodes; symbols only name actual Swift APIs.
+    public let protocolType: String?
 }
 
 public struct Catalog: Codable {
@@ -24,9 +26,14 @@ public struct Catalog: Codable {
 
     public func component(_ query: String) throws -> Component {
         let query = query.lowercased()
-        guard let match = components.first(where: {
-            $0.id == query || $0.name.lowercased() == query || $0.symbols.contains { $0.lowercased() == query }
-        }) else { throw CLIError.usage("Unknown component '\(query)'. Run aielements list.") }
+        if let match = components.first(where: {
+            $0.id == query || $0.name.lowercased() == query || $0.protocolType?.lowercased() == query
+        }) { return match }
+        let matches = components.filter { $0.symbols.contains { $0.lowercased() == query } }
+        guard matches.count <= 1 else {
+            throw CLIError.usage("Shared Swift symbol '\(query)'. Choose a component: \(matches.map(\.id).joined(separator: ", ")).")
+        }
+        guard let match = matches.first else { throw CLIError.usage("Unknown component '\(query)'. Run aielements list.") }
         return match
     }
 
