@@ -10,6 +10,8 @@ public enum AIIconName: String, CaseIterable, Sendable {
     case circleAlert = "circle-alert"
     case chevronRight = "chevron-right"
     case chevronDown = "chevron-down"
+    case trendingUp = "trending-up"
+    case chevronsUpDown = "chevrons-up-down"
     case arrowUp = "arrow-up"
     case arrowDown = "arrow-down"
     case arrowUpRight = "arrow-up-right"
@@ -115,6 +117,12 @@ private struct IconShape: Shape {
             p.move(to: CGPoint(x: 9.000000, y: 18.000000))
             p.addLine(to: CGPoint(x: 15.000000, y: 12.000000))
             p.addLine(to: CGPoint(x: 9.000000, y: 6.000000))
+        case .trendingUp:
+            p.move(to: CGPoint(x: 22, y: 7)); p.addLine(to: CGPoint(x: 13.5, y: 15.5)); p.addLine(to: CGPoint(x: 8.5, y: 10.5)); p.addLine(to: CGPoint(x: 2, y: 17))
+            p.move(to: CGPoint(x: 16, y: 7)); p.addLine(to: CGPoint(x: 22, y: 7)); p.addLine(to: CGPoint(x: 22, y: 13))
+        case .chevronsUpDown:
+            p.move(to: CGPoint(x: 7, y: 15)); p.addLine(to: CGPoint(x: 12, y: 20)); p.addLine(to: CGPoint(x: 17, y: 15))
+            p.move(to: CGPoint(x: 7, y: 9)); p.addLine(to: CGPoint(x: 12, y: 4)); p.addLine(to: CGPoint(x: 17, y: 9))
         case .chevronDown:
             p.move(to: CGPoint(x: 6.000000, y: 9.000000))
             p.addLine(to: CGPoint(x: 12.000000, y: 15.000000))

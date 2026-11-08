@@ -5,6 +5,21 @@ import XCTest
 final class CLIKitTests: XCTestCase {
     private let cli = CLI()
 
+    func testStreamArtifactsAndValidation() throws {
+        let dir = try temporaryDirectory()
+        let stream = try cli.run(["ui", "stream"])
+        try stream.write(to: dir.appendingPathComponent("report.jsonl"), atomically: true, encoding: .utf8)
+        XCTAssertEqual(try object(cli.run(["ui", "validate", "report.jsonl", "--json"], directory: dir))["valid"] as? Bool, true)
+        let doc = try cli.run(["ui", "example", "dashboard"])
+        try doc.write(to: dir.appendingPathComponent("report.json"), atomically: true, encoding: .utf8)
+        XCTAssertNoThrow(try cli.run(["ui", "validate", "report.json"], directory: dir))
+        XCTAssertEqual(try object(cli.run(["ui", "schema"]))["$schema"] as? String, "https://json-schema.org/draft/2020-12/schema")
+        let incomplete = stream.split(separator: "\n").dropLast().joined(separator: "\n")
+        try incomplete.write(to: dir.appendingPathComponent("incomplete.jsonl"), atomically: true, encoding: .utf8)
+        XCTAssertThrowsError(try cli.run(["ui", "validate", "incomplete.jsonl"], directory: dir))
+        XCTAssertThrowsError(try cli.run(["ui", "example", "unknown"]))
+    }
+
     private func temporaryDirectory() throws -> URL {
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)

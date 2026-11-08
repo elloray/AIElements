@@ -89,6 +89,10 @@ struct DemoView: View {
     }
     @ViewBuilder private var component: some View {
         switch pattern {
+        case .generativeUI: GenerativeDemo()
+        case .barChart: FoundationChartDemo()
+        case .lineChart: FoundationChartDemo(kind: .line)
+        case .areaChart: FoundationChartDemo(kind: .area)
         case .chainOfThought:
             question("Why is the checkout deploy so slow?")
             AIChainOfThought(steps: [

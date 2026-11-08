@@ -8,6 +8,10 @@ import AppKit
 struct GalleryApp: App {
     init() {
         #if os(macOS)
+        if CommandLine.arguments.contains("--ui-snapshots") {
+            MainActor.assumeIsolated { UIFixtureExporter.export() }
+            exit(0)
+        }
         if CommandLine.arguments.contains("--snapshots") {
             MainActor.assumeIsolated { SnapshotExporter.export() }
             exit(0)
@@ -15,7 +19,13 @@ struct GalleryApp: App {
         #endif
     }
     var body: some Scene {
-        WindowGroup("AI Elements · Swift") { GalleryView() }
+        WindowGroup("AI Elements · Swift") {
+            if let index = CommandLine.arguments.firstIndex(of: "--ui-preview"), CommandLine.arguments.indices.contains(index + 1) {
+                ScrollView { UIFixtureView(name: CommandLine.arguments[index + 1]).frame(width: 360).padding(.vertical, 20) }
+                    .frame(maxWidth: .infinity).background(CommandLine.arguments.contains("--dark") ? AITheme.dark.background : .white)
+                    .preferredColorScheme(CommandLine.arguments.contains("--dark") ? .dark : .light)
+            } else { GalleryView() }
+        }
         #if os(macOS)
         .defaultSize(width: 1120, height: 820)
         #endif
@@ -84,11 +94,14 @@ enum Pattern: String, CaseIterable, Identifiable {
     case chainOfThought = "chain-of-thought", chat, checkpoint, confirmation, context, fileTree = "file-tree"
     case inlineCitation = "inline-citation", message, modelSelector = "model-selector", plan, promptInput = "prompt-input"
     case queue, reasoning, sources, stackTrace = "stack-trace", subagent, suggestion, task, terminal, testResults = "test-results", tool
+    case generativeUI = "generative-ui", barChart = "bar-chart", lineChart = "line-chart", areaChart = "area-chart"
     var id: String { rawValue }
-    var title: String { rawValue.split(separator: "-").map { $0.capitalized }.joined(separator: " ") }
-    var url: URL { URL(string: "https://ui.shadcn.com/docs/ai-elements/base/\(rawValue)")! }
+    var title: String { self == .generativeUI ? "Generative UI" : rawValue.split(separator: "-").map { $0.capitalized }.joined(separator: " ") }
+    var url: URL { URL(string: [.generativeUI, .barChart, .lineChart, .areaChart].contains(self) ? "https://ui.shadcn.com/docs/components/chart" : "https://ui.shadcn.com/docs/ai-elements/base/\(rawValue)")! }
     var subtitle: String {
         switch self {
+        case .generativeUI: "An interface that arrives progressively: controls first, chart data next."
+        case .barChart, .lineChart, .areaChart: "Native charts using shadcn/ui card geometry and chart tokens."
         case .chainOfThought: "A summary that expands into the steps an agent took."
         case .chat: "A conversation that keeps your place while the reply streams."
         case .checkpoint: "A point in the conversation you can return to."
@@ -114,6 +127,8 @@ enum Pattern: String, CaseIterable, Identifiable {
     }
     var example: String {
         switch self {
+        case .generativeUI: "AIUIRenderer(store: store) { event in\n    handle(event)\n}\n// Feed each network chunk into try store.receive(bytes)"
+        case .barChart, .lineChart, .areaChart: "AIChart(.bar, data: rows, series: series)\n    .aspectRatio(16 / 9, contentMode: .fit)"
         case .chainOfThought: "AIChainOfThought(steps: steps, defaultOpen: true)"
         case .chat: "AIChat(messages: messages, isStreaming: isStreaming)"
         case .checkpoint: "AICheckpoint(\"Checkpoint saved\") {\n    restoreConversation()\n}"

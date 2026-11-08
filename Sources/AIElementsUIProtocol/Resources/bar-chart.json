@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "id": "visitors",
+  "revision": 0,
+  "root": "card",
+  "nodes": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Bar Chart",
+        "description": "January - June 2024",
+        "footer": "Trending up by 5.2% this month",
+        "footnote": "Showing total visitors for the last 6 months",
+        "footerIcon": "trending-up"
+      },
+      "children": [
+        "chart"
+      ]
+    },
+    "chart": {
+      "type": "BarChart",
+      "props": {
+        "label": "Monthly visitors",
+        "data": [
+          {
+            "label": "January",
+            "desktop": 186
+          },
+          {
+            "label": "February",
+            "desktop": 305
+          },
+          {
+            "label": "March",
+            "desktop": 237
+          },
+          {
+            "label": "April",
+            "desktop": 73
+          },
+          {
+            "label": "May",
+            "desktop": 209
+          },
+          {
+            "label": "June",
+            "desktop": 214
+          }
+        ],
+        "series": [
+          {
+            "key": "desktop",
+            "label": "Desktop"
+          }
+        ]
+      },
+      "events": {
+        "select": {
+          "name": "select_month"
+        }
+      }
+    }
+  },
+  "state": {}
+}

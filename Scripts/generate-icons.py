@@ -2,7 +2,7 @@
 import urllib.request,json,tarfile,io,pathlib,xml.etree.ElementTree as ET
 from fontTools.pens.recordingPen import RecordingPen
 from fontTools.svgLib import SVGPath
-names='terminal circle-check circle circle-dot circle-x circle-alert chevron-right chevron-down arrow-up arrow-down arrow-up-right plus x copy check rotate-ccw thumbs-up thumbs-down globe search file file-text file-code folder folder-open route list-todo list-checks loader-circle bot paperclip square flask-conical ellipsis sun moon circle-dashed pencil wrap-text layers message-circle-dashed rotate-cw'.split()
+names='terminal circle-check circle circle-dot circle-x circle-alert chevron-right chevron-down chevrons-up-down trending-up arrow-up arrow-down arrow-up-right plus x copy check rotate-ccw thumbs-up thumbs-down globe search file file-text file-code folder folder-open route list-todo list-checks loader-circle bot paperclip square flask-conical ellipsis sun moon circle-dashed pencil wrap-text layers message-circle-dashed rotate-cw'.split()
 meta=json.load(urllib.request.urlopen('https://registry.npmjs.org/lucide-static/0.468.0'))
 t=tarfile.open(fileobj=io.BytesIO(urllib.request.urlopen(meta['dist']['tarball']).read()),mode='r:gz')
 def case(n):

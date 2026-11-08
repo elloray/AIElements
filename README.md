@@ -4,6 +4,8 @@
 
 将 shadcn/ui AI Elements 的 21 个界面模式实现为可复用的 SwiftUI 组件。包含浅深色主题、Geist 字体、Lucide 矢量图标和可交互示例，无第三方运行时依赖。
 
+**新增流式生成 UI**：AI 可以先生成卡片、再逐步补齐表单和图表；用户操作回传宿主继续更新。提供独立 JSONL 协议、原生渲染器和 15 种基础节点（含 Bar / Line / Area Chart）。[协议与接入示例](Documentation/StreamingUI.md)。这是独立实现，不是 OpenAI Intelligent UI 的私有协议。
+
 同时提供 **`aielements` CLI + `aielements-swiftui` Agent Skill**：让 AI 编程工具查询当前组件 API、读取完整 Swift 示例，并生成可接入现有 App 的 UI Package。[直接开始使用 CLI 和 Skill ↓](#ai-编程工具cli--skill)
 
 > **非官方项目 / Unofficial port**：原始界面模式、视觉设计及参考示例来自 [shadcn/ui](https://github.com/shadcn-ui/ui)。本仓库由 elloray 独立维护，不隶属于 shadcn、shadcn/ui 或 Vercel，也不代表其官方 Swift 产品或背书。原作者及资源许可详见 [致谢与许可](#致谢与许可)。
@@ -16,6 +18,33 @@
 - 同一个 `AIElements` Swift Package 产品用于两端。
 - 组件提供界面、状态呈现和回调；模型调用、命令执行、附件上传及数据持久化由宿主负责。
 - 以 2026-11-05 保存的官方目录为最初范围，并持续对照原站复核；21 个模式不等于原站所有子状态或旧版 AI SDK Elements 的全部组件。
+
+## 流式 UI
+
+```swift
+@StateObject private var store = AIUIStore()
+
+// 放在 AIMessage 或其他 SwiftUI 页面中
+AIUIRenderer(store: store) { event in
+    handleAction(event)
+}
+
+// 每收到一段网络数据就调用（MainActor），无需等完整界面
+try store.receive(chunk)
+// 连接结束：检查最后一帧是否完整，保留被中断时的界面
+try store.finish()
+```
+
+在示例 App 中选择 **Generative UI**，可查看逐步生成、Stop / Replay、输入与图表交互。CLI 可直接输出 schema、完整文档、流式样例并校验：
+
+```bash
+./aielements ui schema
+./aielements ui example dashboard
+./aielements ui stream > /tmp/report.jsonl
+./aielements ui validate /tmp/report.jsonl
+```
+
+基础组件以 shadcn/ui 为视觉参考；当前尚未移植全部基础组件。详见 [覆盖范围与原生差异](Documentation/StreamingUI.md#component-catalog)、[同宽截图与验证记录](Documentation/StreamingUI-Validation.md)。
 
 ## 安装
 

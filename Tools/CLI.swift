@@ -1,4 +1,5 @@
 import Foundation
+import AIElementsUIProtocol
 
 public enum CLIError: Error, CustomStringConvertible {
     case usage(String)
@@ -30,6 +31,33 @@ public struct CLI {
         }
         let catalog = try Catalog.bundled()
         switch command {
+        case "ui":
+            guard let action = args.first else { throw CLIError.usage("Usage: aielements ui schema | example [dashboard|bar-chart] | stream | validate PATH") }
+            args.removeFirst()
+            switch action {
+            case "schema", "stream", "example":
+                let name: String
+                if action == "example" {
+                    name = args.isEmpty ? "dashboard" : args.removeFirst()
+                    guard ["dashboard", "bar-chart"].contains(name) else { throw CLIError.usage("Unknown UI example. Use dashboard or bar-chart.") }
+                } else { name = action == "stream" ? "dashboard-stream" : "schema" }
+                try noExtra(args)
+                return String(decoding: try AIUIResources.data(named: name), as: UTF8.self).trimmingCharacters(in: .newlines)
+            case "validate":
+                guard args.count == 1 else { throw CLIError.usage("Usage: aielements ui validate document.json | stream.jsonl") }
+                let url = resolve(args[0], in: directory)
+                let data = try Data(contentsOf: url)
+                var revision = 0
+                if url.pathExtension == "jsonl" {
+                    var decoder = AIUIStreamDecoder(); var session = AIUISession()
+                    try decoder.append(data) { try session.apply($0) }
+                    for frame in try decoder.finish() { try session.apply(frame) }
+                    guard session.phase == .complete || session.phase == .removed else { throw CLIError.usage("Stream did not complete successfully.") }
+                    revision = session.document?.revision ?? 0
+                } else { revision = try AIUIDocument.decode(data).revision }
+                return json ? try encode(UIValidationResult(valid: true, revision: revision)) : "Valid UI \(url.lastPathComponent) (revision \(revision))"
+            default: throw CLIError.usage("Unknown ui action '\(action)'.")
+            }
         case "list":
             var query: String?
             if !args.isEmpty {
@@ -210,6 +238,10 @@ public struct CLI {
                     [--local-package PATH | --revision COMMIT_SHA] [--dry-run] [--json]
     aielements skill print [--json]
     aielements skill install --path NEW_SKILL_DIR [--dry-run] [--json]
+    aielements ui schema                       JSON Schema for documents and stream events
+    aielements ui example [dashboard|bar-chart] Complete UI document JSON
+    aielements ui stream                       Progressive dashboard events as JSONL
+    aielements ui validate PATH [--json]        Validate .json or complete .jsonl stream
     aielements version [--json]
     aielements help [--json]
 
@@ -244,6 +276,7 @@ private struct Options {
 }
 
 private struct Version: Encodable { let schemaVersion = 1; let version: String }
+private struct UIValidationResult: Encodable { let schemaVersion = 1; let valid: Bool; let revision: Int }
 private struct HelpResult: Encodable { let schemaVersion = 1; let help: String }
 private struct ListResult: Encodable { let schemaVersion = 1; let components: [Component] }
 private struct ComponentResult: Encodable { let schemaVersion = 1; let component: Component; let code: String; let attribution: String }

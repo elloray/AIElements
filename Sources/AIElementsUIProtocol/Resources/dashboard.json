@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "id": "report",
+  "revision": 0,
+  "root": "layout",
+  "state": {
+    "reportName": "Visitors report",
+    "period": "six-months",
+    "compare": false
+  },
+  "nodes": {
+    "layout": {
+      "type": "Stack",
+      "children": [
+        "intro",
+        "report",
+        "filters",
+        "submit"
+      ]
+    },
+    "intro": {
+      "type": "Text",
+      "props": {
+        "text": "Here is the visitor report. Select a month to inspect it, or adjust the report below."
+      }
+    },
+    "report": {
+      "type": "Card",
+      "props": {
+        "title": "Bar Chart",
+        "description": "January - June 2024",
+        "footer": "Trending up by 5.2% this month",
+        "footnote": "Showing total visitors for the last 6 months",
+        "footerIcon": "trending-up"
+      },
+      "children": [
+        "chart"
+      ]
+    },
+    "chart": {
+      "type": "BarChart",
+      "props": {
+        "label": "Monthly visitors",
+        "data": [
+          {
+            "label": "January",
+            "desktop": 186
+          },
+          {
+            "label": "February",
+            "desktop": 305
+          },
+          {
+            "label": "March",
+            "desktop": 237
+          },
+          {
+            "label": "April",
+            "desktop": 73
+          },
+          {
+            "label": "May",
+            "desktop": 209
+          },
+          {
+            "label": "June",
+            "desktop": 214
+          }
+        ],
+        "series": [
+          {
+            "key": "desktop",
+            "label": "Desktop"
+          }
+        ]
+      },
+      "events": {
+        "select": {
+          "name": "select_month"
+        }
+      }
+    },
+    "filters": {
+      "type": "Stack",
+      "children": [
+        "name",
+        "period",
+        "compare"
+      ]
+    },
+    "name": {
+      "type": "Input",
+      "props": {
+        "label": "Report name",
+        "placeholder": "Name your report"
+      },
+      "bindings": {
+        "value": "reportName"
+      }
+    },
+    "period": {
+      "type": "Select",
+      "props": {
+        "label": "Period",
+        "options": [
+          {
+            "label": "Last 6 months",
+            "value": "six-months"
+          },
+          {
+            "label": "Last 3 months",
+            "value": "three-months"
+          }
+        ]
+      },
+      "bindings": {
+        "value": "period"
+      },
+      "events": {
+        "change": {
+          "name": "change_period",
+          "stateKeys": [
+            "period"
+          ]
+        }
+      }
+    },
+    "compare": {
+      "type": "Switch",
+      "props": {
+        "label": "Compare with mobile"
+      },
+      "bindings": {
+        "value": "compare"
+      },
+      "events": {
+        "change": {
+          "name": "toggle_comparison",
+          "stateKeys": [
+            "compare"
+          ]
+        }
+      }
+    },
+    "submit": {
+      "type": "Button",
+      "props": {
+        "label": "Save report"
+      },
+      "events": {
+        "press": {
+          "name": "save_report",
+          "stateKeys": [
+            "reportName",
+            "period",
+            "compare"
+          ]
+        }
+      }
+    }
+  }
+}

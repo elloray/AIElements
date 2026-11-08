@@ -103,6 +103,7 @@ public struct AIFileNode: Identifiable, Equatable, Sendable {
 }
 public enum AIMessageRole: String, Codable, Hashable, Sendable { case user, assistant, system }
 public enum AIMessagePart: Hashable, Sendable {
+    case ui(AIUIDocument)
     case text(String)
     case reasoning(text: String, isStreaming: Bool, duration: TimeInterval? = nil)
     case tool(name: String, status: AIStatus, input: String? = nil, output: String? = nil)

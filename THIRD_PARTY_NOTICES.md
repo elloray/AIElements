@@ -5,6 +5,7 @@ The Swift implementation is distributed under the MIT license in [LICENSE](LICEN
 ## shadcn/ui
 
 Visual patterns and reference examples: https://ui.shadcn.com/docs/ai-elements
+Foundation components and charts: https://ui.shadcn.com/docs/components and https://ui.shadcn.com/charts/bar
 Source project: https://github.com/shadcn-ui/ui
 License: [MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Copyright (c) 2023 shadcn.
 The Swift implementation is an independent native port and is not an official shadcn or Vercel product.

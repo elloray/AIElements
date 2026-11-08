@@ -49,11 +49,12 @@ struct AIChoiceMenu: View {
 }
 #if os(macOS)
 import AppKit
-private struct NativeChoiceMenu: NSViewRepresentable {
+struct NativeChoiceMenu: NSViewRepresentable {
     var label: String
     var choices: [AIChoice]
     var selected: String
     var onSelect: (String) -> Void
+    @Environment(\.isEnabled) private var enabled
     func makeCoordinator() -> Coordinator { Coordinator() }
     func makeNSView(context: Context) -> NSButton {
         let button = NSButton(title: "", target: context.coordinator, action: #selector(Coordinator.open(_:)))
@@ -62,7 +63,7 @@ private struct NativeChoiceMenu: NSViewRepresentable {
         return button
     }
     func updateNSView(_ button: NSButton, context: Context) {
-        context.coordinator.parent = self; button.isEnabled = !choices.isEmpty
+        context.coordinator.parent = self; button.isEnabled = enabled && !choices.isEmpty
         button.setAccessibilityLabel(label); button.setAccessibilityValue(choices.first { $0.id == selected }?.title)
     }
     final class Coordinator: NSObject {

@@ -30,8 +30,10 @@ staging=$(mktemp -d "$prefix/lib/.aielements-install.XXXXXX")
 trap 'rm -rf "$staging"' EXIT HUP INT TERM
 cp "$build/aielements" "$staging/aielements"
 cp -R "$bundle" "$staging/AIElements_AIElementsCLIKit.bundle"
+cp -R "$build/AIElements_AIElementsUIProtocol.bundle" "$staging/AIElements_AIElementsUIProtocol.bundle"
 # Test the relocated executable before exposing it through PATH.
 "$staging/aielements" list --json > /dev/null
+"$staging/aielements" ui stream > /dev/null
 # mkdir claims the final directory without overwriting a concurrently created path.
 mkdir "$destination"
 cp -R "$staging/." "$destination/"

@@ -1,6 +1,6 @@
 ---
 name: aielements-swiftui
-description: Build or modify native SwiftUI AI interfaces with the elloray/AIElements library on iOS, iPadOS, and macOS. Use for integrating its chat, prompt input, reasoning summaries, tool output, approvals, citations, and task components. Does not apply to React shadcn projects or model backend implementation alone.
+description: Build or modify native SwiftUI AI interfaces with the elloray/AIElements library on iOS, iPadOS, and macOS. Use for integrating its chat, prompt input, reasoning summaries, tool output, approvals, citations, task components, and streaming generative interfaces with forms and charts. Does not apply to React shadcn projects or model backend implementation alone.
 ---
 
 # AIElements SwiftUI
@@ -98,3 +98,26 @@ Do not change signing identities or add model credentials to make a UI demo run.
 For more state and attachment details, read `Documentation/Usage.md` in the library
 checkout or [the published guide](https://github.com/elloray/AIElements/blob/main/Documentation/Usage.md).
 Original patterns: [shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements).
+
+## Stream native interfaces
+
+For AI-generated interactive UI, read `Documentation/StreamingUI.md` in the checkout.
+Run `aielements ui schema`, `ui example dashboard`, and `ui stream` to obtain the
+actual catalog and wire examples. `ui schema/example/stream` emit raw protocol files.
+Fallback resources are in `Sources/AIElementsUIProtocol/Resources/`.
+
+Use one `@StateObject AIUIStore` per surface and `AIUIRenderer(store:onEvent:)` inside
+`AIMessage` or another view. Feed each arriving JSONL byte chunk into `receive` on the
+main actor; do not wait for a full document. Extract SSE `data:` payloads before
+decoding/applying events. Call `finish` on EOF and `interrupt` on cancel/failure.
+
+Generate begin/update/complete lines incrementally, with stable node IDs and ordered
+revisions. Each update replaces a named whole node; include its events/bindings again.
+Initialize state once and avoid overwriting user drafts during later chart updates.
+The host handles declared actions and returns updates; never evaluate AI-generated
+code or dispatch arbitrary action names. Do not claim OpenAI/A2UI wire compatibility.
+
+Validate output with `aielements ui validate file.jsonl`. Verify partial rendering,
+UTF-8 splitting, interruption/retry, form edits during streaming, and iOS/macOS
+light/dark behavior. Preserve iOS 44 pt targets. Current foundation catalog has
+15 types; inspect the schema before promising any unsupported shadcn variant.

@@ -16,9 +16,11 @@ public struct AITheme: Sendable {
     public var primaryButtonLabel: Color?
     public var outlineButtonFill: Color?
     public var inputBackground: Color
+    public var cardBackground: Color
     public init(background: Color, foreground: Color, muted: Color, mutedForeground: Color,
                 border: Color, destructive: Color, radius: CGFloat = 14, accent: Color? = nil, inputBackground: Color? = nil,
-                primaryButtonFill: Color? = nil, primaryButtonLabel: Color? = nil, outlineButtonFill: Color? = nil) {
+                primaryButtonFill: Color? = nil, primaryButtonLabel: Color? = nil, outlineButtonFill: Color? = nil, cardBackground: Color? = nil) {
+        self.cardBackground = cardBackground ?? background
         self.primaryButtonFill = primaryButtonFill
         self.primaryButtonLabel = primaryButtonLabel
         self.outlineButtonFill = outlineButtonFill
@@ -29,7 +31,7 @@ public struct AITheme: Sendable {
     // CSS Lab D50 tokens captured from the reference, converted to sRGB (2026-11-06).
     public static let light = AITheme(background: .white, foreground: .black, muted: Color(white: 0.960587), mutedForeground: Color(white: 0.451519), border: Color(white: 0.898161), destructive: Color(red: 0.906411, green: 0, blue: 0.042121), inputBackground: Color(white: 0.898161).opacity(0.5))
     public static let dark = AITheme(background: Color(white: 0.039388), foreground: Color(white: 0.980256), muted: Color(white: 0.149382), mutedForeground: Color(white: 0.630163), border: .white.opacity(0.10), destructive: Color(red: 1, green: 0.391179, blue: 0.403845), accent: Color(white: 0.250471), inputBackground: .white.opacity(0.075),
-                                     primaryButtonFill: Color(white: 229 / 255), primaryButtonLabel: Color(white: 23 / 255), outlineButtonFill: .clear)
+                                     primaryButtonFill: Color(white: 229 / 255), primaryButtonLabel: Color(white: 23 / 255), outlineButtonFill: .clear, cardBackground: Color(white: 23 / 255))
 
 }
 private struct AIThemeKey: EnvironmentKey { static let defaultValue: AITheme? = nil }

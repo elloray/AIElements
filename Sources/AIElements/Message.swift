@@ -148,7 +148,9 @@ public struct AIChat: View {
     /// The host replaces the approval part with its updated tool state after accepting the decision.
     public var onToolApproval: ((String, AIConfirmationDecision) async throws -> Void)?
     public var messageContent: ((AIChatMessage) -> AnyView)?
-    public init(messages: [AIChatMessage], isStreaming: Bool = false, onEdit: ((AIChatMessage) -> Void)? = nil, onRetry: ((AIChatMessage) -> Void)? = nil, onToolApproval: ((String, AIConfirmationDecision) async throws -> Void)? = nil, messageContent: ((AIChatMessage) -> AnyView)? = nil) {
+    public var onUIEvent: ((AIUIEvent) -> Void)?
+    public init(messages: [AIChatMessage], isStreaming: Bool = false, onEdit: ((AIChatMessage) -> Void)? = nil, onRetry: ((AIChatMessage) -> Void)? = nil, onToolApproval: ((String, AIConfirmationDecision) async throws -> Void)? = nil, onUIEvent: ((AIUIEvent) -> Void)? = nil, messageContent: ((AIChatMessage) -> AnyView)? = nil) {
+        self.onUIEvent = onUIEvent
         self.messages = messages; self.isStreaming = isStreaming; self.onEdit = onEdit; self.onRetry = onRetry; self.messageContent = messageContent; self.onToolApproval = onToolApproval
     }
     public var body: some View {
@@ -200,6 +202,7 @@ public struct AIChat: View {
     }
     @ViewBuilder private func partView(_ part: AIMessagePart) -> some View {
         switch part {
+        case .ui(let document): ChatUISurface(document: document, onEvent: onUIEvent).id(document.id)
         case .text(let text): AIMessageResponse(text)
         case .reasoning(let text, let streaming, let duration): AIReasoning(text, isStreaming: streaming, duration: duration)
         case .tool(let name, let status, let input, let output): AITool(name, status: status, input: input, output: output)
