@@ -109,7 +109,7 @@ public struct AIProgress: View {
             if let label { Text(label).aiFont(14, weight: .medium) }
             GeometryReader { proxy in
                 Capsule().fill(theme.muted).overlay(alignment: .leading) {
-                    Rectangle().fill(theme.foreground).frame(width: proxy.size.width * fraction)
+                    Rectangle().fill(theme.primaryButtonFill ?? theme.foreground).frame(width: proxy.size.width * fraction)
                 }.clipShape(Capsule())
             }.frame(height: 4)
         }.accessibilityElement(children: .ignore).accessibilityLabel(label ?? "Progress")
@@ -192,14 +192,14 @@ public struct AISelect: View {
             if !label.isEmpty { AITextLabel(label, weight: .medium).padding(.vertical, -2) }
             #if os(macOS)
             selectLabel.overlay {
-                NativeChoiceMenu(label: label, choices: options.map { AIChoice(id: $0.id, title: $0.label) }, selected: selection) { selection = $0 }
+                NativeChoiceMenu(label: label.isEmpty ? placeholder : label, choices: options.map { AIChoice(id: $0.id, title: $0.label) }, selected: selection) { selection = $0 }
             }.disabled(options.isEmpty)
             #else
             Menu {
                 ForEach(options) { option in Button(option.label) { selection = option.id } }
             } label: { selectLabel }
                 .buttonStyle(.plain).disabled(options.isEmpty)
-                .accessibilityLabel(label).accessibilityValue(selectedLabel)
+                .accessibilityLabel(label.isEmpty ? placeholder : label).accessibilityValue(selectedLabel)
             #endif
         }.foregroundStyle(theme.foreground)
     }

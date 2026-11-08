@@ -4,6 +4,15 @@ import AIElements
 /// Reproducible, same-content fixtures for the official foundation examples.
 enum FoundationAudit {
     static let names = ["stack", "row", "card", "text", "button", "badge", "input", "select", "switch", "progress", "separator", "table", "bar-chart", "line-chart", "area-chart"]
+    /// Measure the actual controls without the screenshot canvas or optional labels.
+    static func control(_ name: String) -> AnyView {
+        switch name {
+        case "button": return AnyView(Button("Button") {}.buttonStyle(AIFoundationButtonStyle()))
+        case "input": return AnyView(AIInput("", text: .constant(""), placeholder: "Enter text").frame(width: 320))
+        case "select": return AnyView(AISelect("", options: [.init("apple", label: "Apple")], selection: .constant(""), placeholder: "Select a fruit").frame(width: 192))
+        default: return AnyView(AISwitch("Airplane Mode", isOn: .constant(false)))
+        }
+    }
     static func document(_ name: String) throws -> AIUIDocument {
         if name.hasSuffix("chart") {
             var doc = try AIUIDocument.decode(AIUIResources.data(named: "bar-chart"))
@@ -123,6 +132,15 @@ import AppKit
         let args = CommandLine.arguments
         let folder = args.firstIndex(of: "--output").map { args[$0 + 1] } ?? ".build/foundation-audit/native"
         let root = URL(fileURLWithPath: folder); try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
+        var controlSizes: [String: [String: CGFloat]] = [:]
+        for name in ["button", "input", "select", "switch"] {
+            let host = NSHostingView(rootView: FoundationAudit.control(name))
+            let size = host.fittingSize
+            controlSizes[name] = ["width": size.width, "height": size.height]
+        }
+        if let data = try? JSONSerialization.data(withJSONObject: controlSizes, options: [.prettyPrinted, .sortedKeys]) {
+            try? data.write(to: root.appendingPathComponent("mac-control-sizes.json"))
+        }
         for name in FoundationAudit.names {
             for scheme in [ColorScheme.light, .dark] {
                 let theme: AITheme = scheme == .dark ? .dark : .light
@@ -149,6 +167,15 @@ import UIKit
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
         let window = UIWindow(windowScene: scene); window.windowLevel = .alert + 1
+        var controlSizes: [String: [String: CGFloat]] = [:]
+        for name in ["button", "input", "select", "switch"] {
+            let host = UIHostingController(rootView: FoundationAudit.control(name)); host.safeAreaRegions = []
+            let size = host.sizeThatFits(in: CGSize(width: 360, height: 2000))
+            controlSizes[name] = ["width": size.width, "height": size.height]
+        }
+        if let data = try? JSONSerialization.data(withJSONObject: controlSizes, options: [.prettyPrinted, .sortedKeys]) {
+            try? data.write(to: root.appendingPathComponent("ios-control-sizes.json"))
+        }
         for name in FoundationAudit.names {
             for scheme in [ColorScheme.light, .dark] {
                 let theme: AITheme = scheme == .dark ? .dark : .light

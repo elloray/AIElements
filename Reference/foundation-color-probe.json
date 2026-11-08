@@ -1,0 +1,16 @@
+{
+  "captured": "2026-11-08",
+  "source": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+  "method": "Composite computed card background and area fill in a 1x1 sRGB OffscreenCanvas. Native screenshot sample is approximately [71, 93, 116]; a one-level channel difference remains.",
+  "browser": {
+    "alpha": "0.4",
+    "background": "lab(7.78201 -0.0000149012 0)",
+    "fill": "lab(77.5052 -6.4629 -36.42)",
+    "sRGBComposite": [
+      71,
+      93,
+      117,
+      255
+    ]
+  }
+}

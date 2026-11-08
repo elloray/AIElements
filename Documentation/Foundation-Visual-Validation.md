@@ -1,8 +1,25 @@
 # 15 种基础组件同宽视觉验收
 
-2026-11-08。本轮核对 15 种新增基础节点，修复后分别导出 macOS、iOS 的浅色和深色界面，并与 shadcn 官方示例逐项并排。下方共有 **30 张对照图**，每张从左到右是 **原站、macOS、iOS**，对应 30 张网页截图与 60 张原生截图。
+2026-11-08。两轮核对 15 种新增基础节点，修复后分别导出 macOS、iOS 的浅色和深色界面，并与 shadcn 官方示例逐项并排。下方共有 **30 张对照图**，每张从左到右是 **原站、macOS、iOS**，对应 30 张网页截图与 60 张原生截图。
 
 本轮没有扩展为 shadcn 全组件、全变体认证；原有 21 个 AI Elements 模式也不是本轮截图矩阵的对象。
+
+## 第二轮复核
+
+重新采集全部 **30 张官方截图和 60 张原生截图**，下方对照图已更新为第二轮结果。修复深色 Progress 误用前景白色的问题，改用与原站一致的主色；同时为没有可见标签的 Select 补上占位文字作为辅助功能名称。
+
+两端重新编译，51 项测试通过。实际默认密度控件的布局尺寸如下，测量不包含截图画布或可选标签：
+
+| 控件 | macOS 高度 | iOS 高度 |
+| --- | ---: | ---: |
+| Button | 32 pt | 44 pt |
+| Input | 32 pt | 44 pt |
+| Select | 32 pt | 44 pt |
+| Switch | 19 pt | 44 pt |
+
+iOS 保留外层 44 pt 命中区域，未用缩小控件外框来追平网页高度。尺寸由原生 hosting view 实测，另结合 `.aiHitTarget` 实现检查；这不是自动化边缘点击或完整 VoiceOver 验收。[原始尺寸记录](../Reference/foundation-control-sizes.json)。
+
+深色面积图额外做了浏览器 sRGB 合成实验：官方 Lab 色值与 40% 透明度合成为 RGB(71, 93, 117)，iOS 截图约为 RGB(71, 93, 116)。这支持剩余差异主要来自截图色彩管理/合成路径的判断；保留一档通道值误差，不以显示器截图颜色反向修改语义色。[实验记录](../Reference/foundation-color-probe.json)。
 
 ## 比较方法
 
@@ -15,7 +32,7 @@
 
 ## 逐项结果
 
-| 节点 | 官方参照与本轮修正 | 浅色 | 深色 |
+| 节点 | 官方参照与累计修正 | 浅色 | 深色 |
 | --- | --- | --- | --- |
 | Stack | [Separator 示例](https://ui.shadcn.com/docs/components/base/separator)：16/6 间距、14 pt medium 标题和 20 pt 正文行高；修复 iOS 首行模糊 | [查看](Images/Foundation/stack-light.png) | [查看](Images/Foundation/stack-dark.png) |
 | Row | [Badge 示例横排](https://ui.shadcn.com/docs/components/base/badge)：8 pt 间隔，跟随徽章宽度；窄空间仍可纵向回退 | [查看](Images/Foundation/row-light.png) | [查看](Images/Foundation/row-dark.png) |
@@ -26,7 +43,7 @@
 | Input | [无标签输入框](https://ui.shadcn.com/docs/components/base/input)：去掉空标签占位、32 pt 外观高度、占位字重、深色背景与 15% 边框 | [查看](Images/Foundation/input-light.png) | [查看](Images/Foundation/input-dark.png) |
 | Select | [水果选择器](https://ui.shadcn.com/docs/components/base/select)：32 pt 高、10 pt 圆角、单向下箭头、占位文字颜色与深色输入边框 | [查看](Images/Foundation/select-light.png) | [查看](Images/Foundation/select-dark.png) |
 | Switch | [Airplane Mode](https://ui.shadcn.com/docs/components/base/switch)：32×18.4 外观、16 pt 滑块、8 pt 标签间隔和深色关闭状态的浅色滑块 | [查看](Images/Foundation/switch-light.png) | [查看](Images/Foundation/switch-dark.png) |
-| Progress | [66% 进度](https://ui.shadcn.com/docs/components/base/progress)：8→4 pt 轨道，改为 muted 底色，固定同一进度值 | [查看](Images/Foundation/progress-light.png) | [查看](Images/Foundation/progress-dark.png) |
+| Progress | [66% 进度](https://ui.shadcn.com/docs/components/base/progress)：8→4 pt 轨道，改为 muted 底色，固定同一进度值；第二轮修正深色填充为主色 | [查看](Images/Foundation/progress-light.png) | [查看](Images/Foundation/progress-dark.png) |
 | Separator | [横向分隔线](https://ui.shadcn.com/docs/components/base/separator)：核对 1 pt 高度和浅深色边框色，无额外装饰 | [查看](Images/Foundation/separator-light.png) | [查看](Images/Foundation/separator-dark.png) |
 | Table | [发票表格](https://ui.shadcn.com/docs/components/base/table)：移除每列至少 96 pt 的限制，匹配紧凑行高、首列宽度/字重、金额右对齐、合计行和说明间距；修复 iOS 表头模糊 | [查看](Images/Foundation/table-light.png) | [查看](Images/Foundation/table-dark.png) |
 | BarChart | [默认柱状图](https://ui.shadcn.com/view/new-york-v4/chart-bar-default)：卡片总高、4 条网格、暗色轴标签和字形基线 | [查看](Images/Foundation/bar-chart-light.png) | [查看](Images/Foundation/bar-chart-dark.png) |
@@ -46,6 +63,8 @@
 Select 展开使用原生菜单，输入使用原生编辑行为；截图矩阵比较默认/关闭状态，不声称所有 hover、focus、disabled、菜单展开、VoiceOver、辅助字号和横屏状态都已完成同宽视觉验收。本轮 iOS 是模拟器渲染与构建验证，没有真机验收。
 
 ## 构建与行为验证
+
+第二轮重新执行两端构建、51 项测试与全部截图导出；以下交互及独立消费者检查为第一轮记录。
 
 - **51 项单元测试通过**：31 项组件库、11 项协议、9 项 CLI。新增自然曲线端点/曲率连续性、图表坐标映射和新增表现属性的非法输入验证。
 - iOS 与 macOS 示例均通过 Debug 编译；iOS 安装、启动并导出全部 30 张浅深色组件截图。

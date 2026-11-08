@@ -1,0 +1,42 @@
+{
+  "captured": "2026-11-08",
+  "pass": 2,
+  "unit": "pt",
+  "method": "Intrinsic size of the actual default-density controls without screenshot canvas or optional labels; NSHostingView.fittingSize and UIHostingController.sizeThatFits. Layout measurement, not automated hit-testing.",
+  "macOS": {
+    "button": {
+      "height": 32,
+      "width": 66
+    },
+    "input": {
+      "height": 32,
+      "width": 320
+    },
+    "select": {
+      "height": 32,
+      "width": 192
+    },
+    "switch": {
+      "height": 19,
+      "width": 135
+    }
+  },
+  "iOS": {
+    "button": {
+      "height": 44,
+      "width": 66
+    },
+    "input": {
+      "height": 44,
+      "width": 320
+    },
+    "select": {
+      "height": 44,
+      "width": 192
+    },
+    "switch": {
+      "height": 44,
+      "width": 135
+    }
+  }
+}
