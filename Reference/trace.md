@@ -326,25 +326,25 @@ export function TraceDemo() {
 
 Every line has the same shape, so reasoning, tool calls, sources and plans built from `Trace` look and behave the same.
 
-Use `Trace` for the steps an agent takes, like calling a tool, running a subagent or editing a file. Use [Message](/docs/components/base/message) for its reply, and [Marker](/docs/components/base/marker) for notes and dividers between turns.
+Use `Trace` for the steps an agent takes, like calling a tool, running a subagent or editing a file. Use [Message](https://ui.shadcn.com/docs/components/base/message) for its reply, and [Marker](https://ui.shadcn.com/docs/components/base/marker) for notes and dividers between turns.
 
 ## Built with Trace
 
-Every pattern below is a composition of `Trace` parts. See [AI Elements](/docs/ai-elements) for examples and code.
+Every pattern below is a composition of `Trace` parts. See [AI Elements](https://ui.shadcn.com/docs/ai-elements) for examples and code.
 
 | Pattern                                                     | Shows                                                            |
 | ----------------------------------------------------------- | ---------------------------------------------------------------- |
-| [Chain of Thought](/docs/ai-elements/base/chain-of-thought) | A summary that expands into the steps behind it.                 |
-| [Plan](/docs/ai-elements/base/plan)                         | The steps the agent plans to take, and how far it has got.       |
-| [Queue](/docs/ai-elements/base/queue)                       | The agent's todo list, split into what is left and what is done. |
-| [Reasoning](/docs/ai-elements/base/reasoning)               | The agent's thinking as it streams.                              |
-| [Sources](/docs/ai-elements/base/sources)                   | The links the agent used for a reply.                            |
-| [Stack Trace](/docs/ai-elements/base/stack-trace)           | A failed tool call and its stack frames.                         |
-| [Subagent](/docs/ai-elements/base/subagent)                 | A subagent run, with its tool calls and result.                  |
-| [Task](/docs/ai-elements/base/task)                         | The steps the agent takes, as it takes them.                     |
-| [Terminal](/docs/ai-elements/base/terminal)                 | A command the agent runs, with its output as it streams.         |
-| [Test Results](/docs/ai-elements/base/test-results)         | A test run by the agent, with its suites and failures.           |
-| [Tool](/docs/ai-elements/base/tool)                         | A tool call the agent makes, from input to output.               |
+| [Chain of Thought](https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought) | A summary that expands into the steps behind it.                 |
+| [Plan](https://ui.shadcn.com/docs/ai-elements/base/plan)                         | The steps the agent plans to take, and how far it has got.       |
+| [Queue](https://ui.shadcn.com/docs/ai-elements/base/queue)                       | The agent's todo list, split into what is left and what is done. |
+| [Reasoning](https://ui.shadcn.com/docs/ai-elements/base/reasoning)               | The agent's thinking as it streams.                              |
+| [Sources](https://ui.shadcn.com/docs/ai-elements/base/sources)                   | The links the agent used for a reply.                            |
+| [Stack Trace](https://ui.shadcn.com/docs/ai-elements/base/stack-trace)           | A failed tool call and its stack frames.                         |
+| [Subagent](https://ui.shadcn.com/docs/ai-elements/base/subagent)                 | A subagent run, with its tool calls and result.                  |
+| [Task](https://ui.shadcn.com/docs/ai-elements/base/task)                         | The steps the agent takes, as it takes them.                     |
+| [Terminal](https://ui.shadcn.com/docs/ai-elements/base/terminal)                 | A command the agent runs, with its output as it streams.         |
+| [Test Results](https://ui.shadcn.com/docs/ai-elements/base/test-results)         | A test run by the agent, with its suites and failures.           |
+| [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool)                         | A tool call the agent makes, from input to output.               |
 
 ## Installation
 
@@ -1085,7 +1085,7 @@ export function TraceSources() {
 
 ```
 
-See [Sources](/docs/ai-elements/base/sources) for more examples.
+See [Sources](https://ui.shadcn.com/docs/ai-elements/base/sources) for more examples.
 
 ## Chain of Thought
 
@@ -1168,7 +1168,7 @@ export function TraceSteps() {
 
 ```
 
-See [Chain of Thought](/docs/ai-elements/base/chain-of-thought) and [Task](/docs/ai-elements/base/task) for more examples.
+See [Chain of Thought](https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought) and [Task](https://ui.shadcn.com/docs/ai-elements/base/task) for more examples.
 
 ## Commit
 
@@ -1595,11 +1595,11 @@ export function TraceThinking() {
 
 ```
 
-See [Reasoning](/docs/ai-elements/base/reasoning) for more examples.
+See [Reasoning](https://ui.shadcn.com/docs/ai-elements/base/reasoning) for more examples.
 
 ## Tool
 
-Render tool parts from the AI SDK. Map the tool part as in [Tool](/docs/ai-elements/base/tool#states).
+Render tool parts from the AI SDK. Map the tool part as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 ```tsx
 "use client"
@@ -1803,7 +1803,7 @@ export function TraceToolCalls() {
 
 ```
 
-See [Tool](/docs/ai-elements/base/tool) for more examples.
+See [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool) for more examples.
 
 ## Accessibility
 
@@ -1815,7 +1815,7 @@ See [Tool](/docs/ai-elements/base/tool) for more examples.
 - When a link opens a new tab, add "(opens in a new tab)" to the title with `sr-only`.
 - Status is shown with color and motion, so put it in the title too. Write "Running pnpm build" while it runs and "Failed to run pnpm build" when it errors.
 - The shimmer on a running title stops when the reader prefers reduced motion. The title still says what is happening.
-- Inside a [Message Scroller](/docs/components/base/message-scroller), each line is announced once when it is added.
+- Inside a [Message Scroller](https://ui.shadcn.com/docs/components/base/message-scroller), each line is announced once when it is added.
 - `TraceCollapsibleContent` mutes its text. If you put a block with a muted background inside it, give the block `text-foreground` so it keeps its contrast. `CodeBlock` sets its own text color.
 
 ## API Reference
@@ -1863,7 +1863,7 @@ Secondary text after the title, such as a count or a duration. It does not trunc
 
 ### TraceCollapsible
 
-A row that expands. It accepts the props of [`Collapsible`](/docs/components/base/collapsible).
+A row that expands. It accepts the props of [`Collapsible`](https://ui.shadcn.com/docs/components/base/collapsible).
 
 | Prop           | Type                      | Default | Description                                             |
 | -------------- | ------------------------- | ------- | ------------------------------------------------------- |

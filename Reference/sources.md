@@ -159,7 +159,7 @@ Sources is built with `Trace` with a `TraceCollapsible` for the list.
 
 ## Installation
 
-Sources is built with the [Trace](/docs/components/base/trace) component.
+Sources is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) component.
 
 <CodeTabs>
 
@@ -300,4 +300,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

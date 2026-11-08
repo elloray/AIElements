@@ -343,7 +343,7 @@ Chain of Thought is built with `Trace` with a `TraceCollapsible` for the summary
 
 ## Installation
 
-Chain of Thought is built with the [Trace](/docs/components/base/trace), [Code Block](/docs/components/base/code-block) and [Badge](/docs/components/base/badge) components.
+Chain of Thought is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace), [Code Block](https://ui.shadcn.com/docs/components/base/code-block) and [Badge](https://ui.shadcn.com/docs/components/base/badge) components.
 
 <CodeTabs>
 
@@ -465,7 +465,7 @@ When a step runs a web search, show the results as a `Badge` for each hostname i
 
 ## AI SDK
 
-Render each tool part as a step. `running` is true while tool parts stream and before the reply starts. Set the summary's status and title from the steps. The summary opens while the steps run, as in [Trace](/docs/components/base/trace#open-state).
+Render each tool part as a step. `running` is true while tool parts stream and before the reply starts. Set the summary's status and title from the steps. The summary opens while the steps run, as in [Trace](https://ui.shadcn.com/docs/components/base/trace#open-state).
 
 ```tsx showLineNumbers
 const [open, setOpen] = React.useState<boolean>()
@@ -490,7 +490,7 @@ const failed = steps.filter((part) => part.state === "output-error").length
 </TraceCollapsible>
 ```
 
-`StepLine` renders one tool part as a `TraceLine`, as in [Tool](/docs/ai-elements/base/tool#states).
+`StepLine` renders one tool part as a `TraceLine`, as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 ## Migrating from AI SDK Elements
 
@@ -516,4 +516,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

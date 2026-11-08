@@ -145,7 +145,7 @@ Reasoning is built with `Trace` with a `TraceCollapsible` for the thinking.
 
 ## Installation
 
-Reasoning is built with the [Trace](/docs/components/base/trace) component.
+Reasoning is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) component.
 
 <CodeTabs>
 
@@ -274,7 +274,7 @@ export function ReasoningDuration() {
 
 ## AI SDK
 
-Render each `reasoning` part as a line. It starts as a plain `TraceLine` and becomes a `TraceCollapsible` once text arrives, so there is nothing to open before the model has written anything. It opens while the model thinks and closes when it finishes. If the person opens or closes it, their choice wins. See [Open State](/docs/components/base/trace#open-state).
+Render each `reasoning` part as a line. It starts as a plain `TraceLine` and becomes a `TraceCollapsible` once text arrives, so there is nothing to open before the model has written anything. It opens while the model thinks and closes when it finishes. If the person opens or closes it, their choice wins. See [Open State](https://ui.shadcn.com/docs/components/base/trace#open-state).
 
 ```tsx showLineNumbers
 function ReasoningLine({ text, running }: { text: string; running: boolean }) {
@@ -346,4 +346,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

@@ -189,7 +189,7 @@ Tool is built with `Trace` with a `TraceCollapsible` for each call that has outp
 
 ## Installation
 
-Tool is built with the [Trace](/docs/components/base/trace) and [Code Block](/docs/components/base/code-block) components.
+Tool is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) and [Code Block](https://ui.shadcn.com/docs/components/base/code-block) components.
 
 <CodeTabs>
 
@@ -603,11 +603,11 @@ export function ToolSheet() {
 
 ```
 
-See [Trace](/docs/components/base/trace#dialog).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#dialog).
 
 ## Approval
 
-A pending approval is a question for the person, not a step the agent took, so it sits outside `Trace` as an `Item`. Once the person answers, the tool goes back to being a line. See [Confirmation](/docs/ai-elements/base/confirmation).
+A pending approval is a question for the person, not a step the agent took, so it sits outside `Trace` as an `Item`. Once the person answers, the tool goes back to being a line. See [Confirmation](https://ui.shadcn.com/docs/ai-elements/base/confirmation).
 
 ```tsx
 "use client"
@@ -912,4 +912,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

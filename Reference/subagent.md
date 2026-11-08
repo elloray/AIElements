@@ -310,7 +310,7 @@ Subagent is built with `Trace` with a `TraceCollapsible` for the run and a neste
 
 ## Installation
 
-Subagent is built with the [Trace](/docs/components/base/trace), [Code Block](/docs/components/base/code-block) and [Badge](/docs/components/base/badge) components.
+Subagent is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace), [Code Block](https://ui.shadcn.com/docs/components/base/code-block) and [Badge](https://ui.shadcn.com/docs/components/base/badge) components.
 
 <CodeTabs>
 
@@ -448,7 +448,7 @@ export function SubagentRunning() {
 
 ## Details
 
-Put the task the subagent was given at the top of the content, with its model and tools as [Badge](/docs/components/base/badge) items. Show how long it ran in a `TraceDescription` after the title.
+Put the task the subagent was given at the top of the content, with its model and tools as [Badge](https://ui.shadcn.com/docs/components/base/badge) items. Show how long it ran in a `TraceDescription` after the title.
 
 ```tsx
 import { CircleCheckIcon } from "lucide-react"
@@ -513,7 +513,7 @@ export function SubagentDetails() {
 
 ## AI SDK
 
-With the AI SDK, a subagent is a tool whose `execute` yields the subagent's `UIMessage` as it streams. Render the tool part as the line and `part.output.parts` as the nested `Trace`. Map each nested tool part as in [Tool](/docs/ai-elements/base/tool#states).
+With the AI SDK, a subagent is a tool whose `execute` yields the subagent's `UIMessage` as it streams. Render the tool part as the line and `part.output.parts` as the nested `Trace`. Map each nested tool part as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 Each yield is a preliminary output: the part is `output-available` with `preliminary: true`. The final output replaces it, so check `preliminary` before you show "Ran".
 
@@ -548,4 +548,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

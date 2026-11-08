@@ -4,7 +4,7 @@
 
 ## 360 宽截图复核后的修复 · 2026-11-06
 
-[逐项对照和修复前后的可见高度](VisualComparison/README.md)覆盖全部 21 个示例，以及 Confirmation 的待审批阶段。改动集中在输入工具栏、审批流、消息与日志换行、引用基线和嵌套列表间距。iOS 默认保留 44 pt 触控区；需要原站紧凑间距时，宿主可设置 `.aiControlDensity(.reference)`。
+本地历史同宽截图对照（生成物不纳入 Git；公开验证摘要见 [VALIDATION.md](VALIDATION.md)）覆盖全部 21 个示例，以及 Confirmation 的待审批阶段。改动集中在输入工具栏、审批流、消息与日志换行、引用基线和嵌套列表间距。iOS 默认保留 44 pt 触控区；需要原站紧凑间距时，宿主可设置 `.aiControlDensity(.reference)`。
 
 ## 第二轮逐项修复
 

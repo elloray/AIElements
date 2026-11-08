@@ -258,11 +258,11 @@ export function PromptInputDemo() {
 
 ```
 
-Prompt Input is the field the person types into to message the agent. It is an [Input Group](/docs/components/base/input-group) with a textarea, an attach button, the [Model Selector](/docs/ai-elements/base/model-selector) menus and a send button. Attached files show as [Attachment](/docs/components/base/attachment) chips above the text.
+Prompt Input is the field the person types into to message the agent. It is an [Input Group](https://ui.shadcn.com/docs/components/base/input-group) with a textarea, an attach button, the [Model Selector](https://ui.shadcn.com/docs/ai-elements/base/model-selector) menus and a send button. Attached files show as [Attachment](https://ui.shadcn.com/docs/components/base/attachment) chips above the text.
 
 ## Installation
 
-Prompt Input is built with the [Input Group](/docs/components/base/input-group), [Attachment](/docs/components/base/attachment) and [Dropdown Menu](/docs/components/base/dropdown-menu) components.
+Prompt Input is built with the [Input Group](https://ui.shadcn.com/docs/components/base/input-group), [Attachment](https://ui.shadcn.com/docs/components/base/attachment) and [Dropdown Menu](https://ui.shadcn.com/docs/components/base/dropdown-menu) components.
 
 <CodeTabs>
 
@@ -351,11 +351,11 @@ import {
 
 ## Attachments
 
-The attach button opens a hidden file input. Show each file as an [Attachment](/docs/components/base/attachment) in an addon with `align="block-start"`, with a button to remove it.
+The attach button opens a hidden file input. Show each file as an [Attachment](https://ui.shadcn.com/docs/components/base/attachment) in an addon with `align="block-start"`, with a button to remove it.
 
 ## Model and Effort
 
-Put the two [Model Selector](/docs/ai-elements/base/model-selector) menus in the `block-end` addon, between the attach and send buttons. Move `ml-auto` from the send button to the first menu trigger, so both menus sit next to the send button.
+Put the two [Model Selector](https://ui.shadcn.com/docs/ai-elements/base/model-selector) menus in the `block-end` addon, between the attach and send buttons. Move `ml-auto` from the send button to the first menu trigger, so both menus sit next to the send button.
 
 ## Keyboard
 

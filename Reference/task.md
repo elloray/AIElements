@@ -229,7 +229,7 @@ Task is built with `Trace` with a `TraceCollapsible` for each task.
 
 Both are a list of steps under a collapsible line. The difference is when the steps are known.
 
-Use [Plan](/docs/ai-elements/base/plan) when the agent decides the steps before it starts. Use Task when the steps come from the work itself, and the agent only knows the next one once it has taken the last.
+Use [Plan](https://ui.shadcn.com/docs/ai-elements/base/plan) when the agent decides the steps before it starts. Use Task when the steps come from the work itself, and the agent only knows the next one once it has taken the last.
 
 |               | Plan                                   | Task                                            |
 | ------------- | -------------------------------------- | ----------------------------------------------- |
@@ -240,7 +240,7 @@ Use [Plan](/docs/ai-elements/base/plan) when the agent decides the steps before 
 
 ## Installation
 
-Task is built with the [Trace](/docs/components/base/trace) component.
+Task is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) component.
 
 <CodeTabs>
 
@@ -377,4 +377,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

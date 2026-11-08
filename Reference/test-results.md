@@ -294,7 +294,7 @@ Test Results is built with `Trace` with a `TraceCollapsible` for the run and for
 
 ## Installation
 
-Test Results is built with the [Trace](/docs/components/base/trace) and [Code Block](/docs/components/base/code-block) components.
+Test Results is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) and [Code Block](https://ui.shadcn.com/docs/components/base/code-block) components.
 
 <CodeTabs>
 
@@ -589,7 +589,7 @@ export function TestResultsSuites() {
 
 ## AI SDK
 
-Run the tests as a tool and render its output. The tool states map the same way as in [Tool](/docs/ai-elements/base/tool#states).
+Run the tests as a tool and render its output. The tool states map the same way as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 ```tsx showLineNumbers
 const tests = part.output.suites.flatMap((suite) => suite.tests)
@@ -638,4 +638,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

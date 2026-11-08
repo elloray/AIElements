@@ -248,11 +248,11 @@ function ReasoningRow({ text, running }: { text: string; running: boolean }) {
 
 ```
 
-Confirmation asks the person for a yes or no before a tool runs. The question is an [Item](/docs/components/base/item) with Deny and Approve buttons. Once the person answers, the call becomes a [Tool](/docs/ai-elements/base/tool) line.
+Confirmation asks the person for a yes or no before a tool runs. The question is an [Item](https://ui.shadcn.com/docs/components/base/item) with Deny and Approve buttons. Once the person answers, the call becomes a [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool) line.
 
 ## Installation
 
-Confirmation is built with the [Item](/docs/components/base/item) and [Button](/docs/components/base/button) components.
+Confirmation is built with the [Item](https://ui.shadcn.com/docs/components/base/item) and [Button](https://ui.shadcn.com/docs/components/base/button) components.
 
 <CodeTabs>
 
@@ -335,11 +335,11 @@ useChat({
 
 Approve streams the tool output. Deny streams `output-denied`. Either way, the part becomes a Tool line.
 
-See [Tool](/docs/ai-elements/base/tool#approval).
+See [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#approval).
 
 ## AI SDK Helper
 
-To script an approval with [`createChat`](/docs/helpers/ai-sdk), set `needsApproval` on the tool. The `output` streams after approval, and the next agent turn reads `toolCall.approved`.
+To script an approval with [`createChat`](https://ui.shadcn.com/docs/helpers/ai-sdk), set `needsApproval` on the tool. The `output` streams after approval, and the next agent turn reads `toolCall.approved`.
 
 ```ts showLineNumbers
 const chat = createChat()

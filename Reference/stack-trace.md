@@ -270,7 +270,7 @@ Stack Trace is built with `Trace` with a `TraceCollapsible` for the frames.
 
 ## Installation
 
-Stack Trace is built with the [Trace](/docs/components/base/trace) and [Code Block](/docs/components/base/code-block) components.
+Stack Trace is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) and [Code Block](https://ui.shadcn.com/docs/components/base/code-block) components.
 
 <CodeTabs>
 
@@ -484,7 +484,7 @@ if (part.state === "output-error") {
 }
 ```
 
-Map the other tool states as in [Tool](/docs/ai-elements/base/tool#states).
+Map the other tool states as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 ## Migrating from AI SDK Elements
 
@@ -511,4 +511,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

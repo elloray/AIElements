@@ -139,11 +139,11 @@ export function FileTreeDemo() {
 
 ```
 
-File Tree is the files the agent changed, shown as folders you can open. A folder is a [Collapsible](/docs/components/base/collapsible). A file is a [Button](/docs/components/base/button). For a single file the agent read or edited, use a [Tool](/docs/ai-elements/base/tool) line instead.
+File Tree is the files the agent changed, shown as folders you can open. A folder is a [Collapsible](https://ui.shadcn.com/docs/components/base/collapsible). A file is a [Button](https://ui.shadcn.com/docs/components/base/button). For a single file the agent read or edited, use a [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool) line instead.
 
 ## Installation
 
-File Tree is built with the [Collapsible](/docs/components/base/collapsible) and [Button](/docs/components/base/button) components.
+File Tree is built with the [Collapsible](https://ui.shadcn.com/docs/components/base/collapsible) and [Button](https://ui.shadcn.com/docs/components/base/button) components.
 
 <CodeTabs>
 
@@ -226,7 +226,7 @@ if (node.type === "folder") {
 </Button>
 ```
 
-See [Collapsible](/docs/components/base/collapsible#file-tree).
+See [Collapsible](https://ui.shadcn.com/docs/components/base/collapsible#file-tree).
 
 ## Migrating from AI SDK Elements
 

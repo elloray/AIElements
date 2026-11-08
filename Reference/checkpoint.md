@@ -130,11 +130,11 @@ export function CheckpointDemo() {
 
 ```
 
-Checkpoint is a point in the conversation you can return to. It is a [Marker](/docs/components/base/marker) after a turn, with a Restore button. Restore keeps that turn and drops every message after it.
+Checkpoint is a point in the conversation you can return to. It is a [Marker](https://ui.shadcn.com/docs/components/base/marker) after a turn, with a Restore button. Restore keeps that turn and drops every message after it.
 
 ## Installation
 
-Checkpoint is built with the [Marker](/docs/components/base/marker) and [Button](/docs/components/base/button) components.
+Checkpoint is built with the [Marker](https://ui.shadcn.com/docs/components/base/marker) and [Button](https://ui.shadcn.com/docs/components/base/button) components.
 
 <CodeTabs>
 
@@ -191,7 +191,7 @@ Render a marker after the turn, with a button that restores it.
 </Marker>
 ```
 
-See [Marker](/docs/components/base/marker#separator).
+See [Marker](https://ui.shadcn.com/docs/components/base/marker#separator).
 
 ## AI SDK
 
@@ -204,7 +204,7 @@ setMessages(messages.slice(0, index + 1))
 
 ## AI SDK Helper
 
-To script a checkpoint with [`createChat`](/docs/helpers/ai-sdk), write it as a data part on the agent's turn. Send the same `id` again only when you mean to update that checkpoint.
+To script a checkpoint with [`createChat`](https://ui.shadcn.com/docs/helpers/ai-sdk), write it as a data part on the agent's turn. Send the same `id` again only when you mean to update that checkpoint.
 
 ```ts showLineNumbers
 const chat = createChat()

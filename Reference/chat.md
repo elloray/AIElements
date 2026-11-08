@@ -462,11 +462,11 @@ function ToolRow({ part, streaming }: { part: ToolPart; streaming: boolean }) {
 
 ```
 
-Chat is the thread of a conversation with the agent. Each turn is a [Message](/docs/ai-elements/base/message) inside [Message Scroller](/docs/components/base/message-scroller). The person's message is the scroll anchor, so a new question settles near the top and the reply streams in under it. The field is a [Prompt Input](/docs/ai-elements/base/prompt-input).
+Chat is the thread of a conversation with the agent. Each turn is a [Message](https://ui.shadcn.com/docs/ai-elements/base/message) inside [Message Scroller](https://ui.shadcn.com/docs/components/base/message-scroller). The person's message is the scroll anchor, so a new question settles near the top and the reply streams in under it. The field is a [Prompt Input](https://ui.shadcn.com/docs/ai-elements/base/prompt-input).
 
 ## Installation
 
-Chat is built with the [Message Scroller](/docs/components/base/message-scroller), [Message](/docs/components/base/message), [Bubble](/docs/components/base/bubble), and [Input Group](/docs/components/base/input-group) components.
+Chat is built with the [Message Scroller](https://ui.shadcn.com/docs/components/base/message-scroller), [Message](https://ui.shadcn.com/docs/components/base/message), [Bubble](https://ui.shadcn.com/docs/components/base/bubble), and [Input Group](https://ui.shadcn.com/docs/components/base/input-group) components.
 
 <CodeTabs>
 
@@ -533,11 +533,11 @@ npx shadcn@latest add message-scroller message bubble input-group
 
 `scrollAnchor` goes on the person's turn. `autoScroll` follows the reply while the person stays at the live edge.
 
-See [Message Scroller](/docs/components/base/message-scroller).
+See [Message Scroller](https://ui.shadcn.com/docs/components/base/message-scroller).
 
 ## AI SDK Helper
 
-To build without a model, script the conversation with [`createChat`](/docs/helpers/ai-sdk). Each agent turn streams reasoning, a tool call and a reply. `chat.next()` fills the field with the next scripted message, and a string `fallback` replies once the script runs out.
+To build without a model, script the conversation with [`createChat`](https://ui.shadcn.com/docs/helpers/ai-sdk). Each agent turn streams reasoning, a tool call and a reply. `chat.next()` fills the field with the next scripted message, and a string `fallback` replies once the script runs out.
 
 ```ts showLineNumbers
 const chat = createChat()

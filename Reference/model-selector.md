@@ -189,7 +189,7 @@ export function ModelSelectorDemo() {
 
 ## Installation
 
-Model Selector is built with the [Dropdown Menu](/docs/components/base/dropdown-menu) and [Input Group](/docs/components/base/input-group) components.
+Model Selector is built with the [Dropdown Menu](https://ui.shadcn.com/docs/components/base/dropdown-menu) and [Input Group](https://ui.shadcn.com/docs/components/base/input-group) components.
 
 <CodeTabs>
 

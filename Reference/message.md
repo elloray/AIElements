@@ -146,11 +146,11 @@ function MessageAction({
 
 ```
 
-Use Message for one turn in a thread. The person's text is a [Bubble](/docs/components/base/bubble) on a [Message](/docs/components/base/message) with `align="end"`. The agent's reply is markdown on a Message, with actions under it. A thread of these turns is [Chat](/docs/ai-elements/base/chat).
+Use Message for one turn in a thread. The person's text is a [Bubble](https://ui.shadcn.com/docs/components/base/bubble) on a [Message](https://ui.shadcn.com/docs/components/base/message) with `align="end"`. The agent's reply is markdown on a Message, with actions under it. A thread of these turns is [Chat](https://ui.shadcn.com/docs/ai-elements/base/chat).
 
 ## Installation
 
-Message is built with the [Message](/docs/components/base/message), [Bubble](/docs/components/base/bubble), and [Tooltip](/docs/components/base/tooltip) components.
+Message is built with the [Message](https://ui.shadcn.com/docs/components/base/message), [Bubble](https://ui.shadcn.com/docs/components/base/bubble), and [Tooltip](https://ui.shadcn.com/docs/components/base/tooltip) components.
 
 <CodeTabs>
 
@@ -222,7 +222,7 @@ import { Message, MessageContent, MessageFooter } from "@/components/ui/message"
 </Message>
 ```
 
-See [Message](/docs/components/base/message).
+See [Message](https://ui.shadcn.com/docs/components/base/message).
 
 ## Actions
 
@@ -235,7 +235,7 @@ Put actions in `MessageFooter`. It follows the message alignment, so on the pers
 
 ## Markdown
 
-The reply streams as markdown. Render it with [Streamdown](https://streamdown.ai) and route fenced code to a [Code Block](/docs/components/base/code-block#markdown), so code in the reply gets line numbers and a copy button.
+The reply streams as markdown. Render it with [Streamdown](https://streamdown.ai) and route fenced code to a [Code Block](https://ui.shadcn.com/docs/components/base/code-block#markdown), so code in the reply gets line numbers and a copy button.
 
 ## AI SDK
 

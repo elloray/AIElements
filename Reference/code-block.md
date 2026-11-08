@@ -97,7 +97,7 @@ export function CodeBlockDemo() {
 
 ```
 
-`CodeBlock` displays code, terminal output, logs and diffs. It has a header with a title and actions, line numbers, wrapping, diff and highlighted lines, and a small size for tool output in a [Trace](/docs/components/base/trace).
+`CodeBlock` displays code, terminal output, logs and diffs. It has a header with a title and actions, line numbers, wrapping, diff and highlighted lines, and a small size for tool output in a [Trace](https://ui.shadcn.com/docs/components/base/trace).
 
 Syntax highlighting is optional and lives in a separate hook, so a block that only shows plain output stays small.
 
@@ -672,7 +672,7 @@ export function CodeBlockHeight() {
 
 ```
 
-`CodeBlockContent` fades its edges with [`scroll-fade`](/docs/utils/scroll-fade) as it scrolls: left and right by default, top and bottom when it wraps. Add `scroll-fade-y` to a capped block that does not wrap.
+`CodeBlockContent` fades its edges with [`scroll-fade`](https://ui.shadcn.com/docs/utils/scroll-fade) as it scrolls: left and right by default, top and bottom when it wraps. Add `scroll-fade-y` to a capped block that does not wrap.
 
 ## Show More
 
@@ -1064,7 +1064,7 @@ export function CodeBlockTrace() {
 
 ## Tabs
 
-Show several files with [Tabs](/docs/components/base/tabs), one `CodeBlock` in each `TabsContent`.
+Show several files with [Tabs](https://ui.shadcn.com/docs/components/base/tabs), one `CodeBlock` in each `TabsContent`.
 
 ```tsx
 "use client"
@@ -1165,7 +1165,7 @@ export function CodeBlockTabs() {
 
 ## Message
 
-Put a `CodeBlock` between paragraphs inside a [Message](/docs/components/base/message).
+Put a `CodeBlock` between paragraphs inside a [Message](https://ui.shadcn.com/docs/components/base/message).
 
 ```tsx
 "use client"
@@ -1235,7 +1235,7 @@ export function CodeBlockChat() {
 
 ## Typeset
 
-A `CodeBlock` inside a [`typeset`](/docs/typeset) container keeps its own styles and gets the same space above as a paragraph.
+A `CodeBlock` inside a [`typeset`](https://ui.shadcn.com/docs/typeset) container keeps its own styles and gets the same space above as a paragraph.
 
 ```tsx
 "use client"
@@ -1300,7 +1300,7 @@ export function CodeBlockTypeset() {
 
 ## RTL
 
-To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl). Code always reads left to right. The header follows the page direction.
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](https://ui.shadcn.com/docs/rtl). Code always reads left to right. The header follows the page direction.
 
 ```tsx
 "use client"
@@ -1990,7 +1990,7 @@ Holds buttons at the end of the header. As a direct child of `CodeBlock`, it flo
 
 ### CodeBlockCopyButton
 
-A ghost icon button that copies `value` to the clipboard. It accepts the props of [`Button`](/docs/components/base/button).
+A ghost icon button that copies `value` to the clipboard. It accepts the props of [`Button`](https://ui.shadcn.com/docs/components/base/button).
 
 | Prop        | Type     | Default | Description                                |
 | ----------- | -------- | ------- | ------------------------------------------ |

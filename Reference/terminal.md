@@ -254,7 +254,7 @@ Terminal is built with `Trace` with a `TraceCollapsible` for each command.
 
 ## Installation
 
-Terminal is built with the [Trace](/docs/components/base/trace) and [Code Block](/docs/components/base/code-block) components.
+Terminal is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) and [Code Block](https://ui.shadcn.com/docs/components/base/code-block) components.
 
 <CodeTabs>
 
@@ -402,11 +402,11 @@ export function TerminalError() {
 | Exited with `0`          | none        | Ran pnpm build               |
 | Exited with another code | `"error"`   | pnpm lint exited with code 1 |
 
-The command is a tool call, so its states map the same way as in [Tool](/docs/ai-elements/base/tool#states).
+The command is a tool call, so its states map the same way as in [Tool](https://ui.shadcn.com/docs/ai-elements/base/tool#states).
 
 ## Open While Running
 
-Open the line once the first output arrives, so the output is visible while the command runs. Leave it open or closed after that, as in [Trace](/docs/components/base/trace#open-state).
+Open the line once the first output arrives, so the output is visible while the command runs. Leave it open or closed after that, as in [Trace](https://ui.shadcn.com/docs/components/base/trace#open-state).
 
 ## AI SDK
 
@@ -460,4 +460,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

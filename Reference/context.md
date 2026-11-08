@@ -75,11 +75,11 @@ export function ContextDemo() {
 
 ```
 
-Context shows how much of the model's context window the conversation has used. It is a [Hover Card](/docs/components/base/hover-card) with a [Progress](/docs/components/base/progress) bar.
+Context shows how much of the model's context window the conversation has used. It is a [Hover Card](https://ui.shadcn.com/docs/components/base/hover-card) with a [Progress](https://ui.shadcn.com/docs/components/base/progress) bar.
 
 ## Installation
 
-Context is built with the [Hover Card](/docs/components/base/hover-card) and [Progress](/docs/components/base/progress) components.
+Context is built with the [Hover Card](https://ui.shadcn.com/docs/components/base/hover-card) and [Progress](https://ui.shadcn.com/docs/components/base/progress) components.
 
 <CodeTabs>
 

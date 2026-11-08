@@ -147,11 +147,11 @@ export function SuggestionDemo() {
 
 ```
 
-Suggestion is a prompt you send without typing. Each one is a [Button](/docs/components/base/button) with the prompt as its label. Put a row of them above the [Prompt Input](/docs/ai-elements/base/prompt-input).
+Suggestion is a prompt you send without typing. Each one is a [Button](https://ui.shadcn.com/docs/components/base/button) with the prompt as its label. Put a row of them above the [Prompt Input](https://ui.shadcn.com/docs/ai-elements/base/prompt-input).
 
 ## Installation
 
-Suggestion is built with the [Button](/docs/components/base/button) component.
+Suggestion is built with the [Button](https://ui.shadcn.com/docs/components/base/button) component.
 
 <CodeTabs>
 
@@ -217,7 +217,7 @@ import { Button } from "@/components/ui/button"
 
 ## Scrolling
 
-The row scrolls sideways when the suggestions do not fit. [`scroll-fade-x`](/docs/utils/scroll-fade) fades the edge that has more to show, and `shrink-0` keeps each label on one line.
+The row scrolls sideways when the suggestions do not fit. [`scroll-fade-x`](https://ui.shadcn.com/docs/utils/scroll-fade) fades the edge that has more to show, and `shrink-0` keeps each label on one line.
 
 ## AI SDK
 

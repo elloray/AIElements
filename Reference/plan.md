@@ -194,11 +194,11 @@ Plan is the list of steps the agent decides on before it starts, such as the ste
 
 Plan is built with `Trace` with a `TraceCollapsible` for the plan.
 
-When the steps are not known up front, use [Task](/docs/ai-elements/base/task#task-or-plan) instead.
+When the steps are not known up front, use [Task](https://ui.shadcn.com/docs/ai-elements/base/task#task-or-plan) instead.
 
 ## Installation
 
-Plan is built with the [Trace](/docs/components/base/trace) component.
+Plan is built with the [Trace](https://ui.shadcn.com/docs/components/base/trace) component.
 
 <CodeTabs>
 
@@ -395,4 +395,4 @@ Keep every export, with the same name and props, so the code that imports it kee
 
 ## API Reference
 
-See [Trace](/docs/components/base/trace#api-reference).
+See [Trace](https://ui.shadcn.com/docs/components/base/trace#api-reference).

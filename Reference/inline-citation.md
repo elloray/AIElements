@@ -109,13 +109,13 @@ export function InlineCitationDemo() {
 
 ```
 
-Inline Citation is a source that sits in the sentence it supports. It is a [Hover Card](/docs/components/base/hover-card) on a [Button](/docs/components/base/button).
+Inline Citation is a source that sits in the sentence it supports. It is a [Hover Card](https://ui.shadcn.com/docs/components/base/hover-card) on a [Button](https://ui.shadcn.com/docs/components/base/button).
 
-To show a list of sources after the reply, use [Sources](/docs/ai-elements/base/sources).
+To show a list of sources after the reply, use [Sources](https://ui.shadcn.com/docs/ai-elements/base/sources).
 
 ## Installation
 
-Inline Citation is built with the [Hover Card](/docs/components/base/hover-card) and [Button](/docs/components/base/button) components.
+Inline Citation is built with the [Hover Card](https://ui.shadcn.com/docs/components/base/hover-card) and [Button](https://ui.shadcn.com/docs/components/base/button) components.
 
 <CodeTabs>
 
