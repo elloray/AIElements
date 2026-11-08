@@ -354,6 +354,13 @@ extension NativeTextParagraph: UIViewRepresentable {
     func makeUIView(context: Context) -> ParagraphTextView {
         let view = ParagraphTextView(frame: .zero, textContainer: context.coordinator.makeTextContainer())
         view.isEditable = false; view.isScrollEnabled = false; view.backgroundColor = .clear
+        // This is an inline, non-scrolling paragraph. UIKit's scroll-edge blur
+        // must not fade its first/last lines on iOS 26 and later.
+        if #available(iOS 26.0, *) {
+            view.topEdgeEffect.isHidden = true; view.bottomEdgeEffect.isHidden = true
+            view.leftEdgeEffect.isHidden = true; view.rightEdgeEffect.isHidden = true
+        }
+
         view.textContainerInset = .zero; view.textContainer.lineFragmentPadding = 0
         return view
     }

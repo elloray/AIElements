@@ -4,12 +4,12 @@ public enum AIUIComponentCatalog {
     public static let types = ["Stack", "Row", "Card", "Text", "Button", "Badge", "Input", "Select", "Switch", "Progress", "Separator", "Table", "BarChart", "LineChart", "AreaChart"]
     static let properties: [String: Set<String>] = [
         "Stack": ["gap"], "Row": ["gap"],
-        "Card": ["title", "description", "footer", "footerIcon", "footnote"],
+        "Card": ["style", "title", "description", "footer", "footerIcon", "footnote"],
         "Text": ["text", "variant"], "Button": ["label", "variant", "disabled"],
         "Badge": ["text", "variant"], "Input": ["label", "placeholder", "value", "disabled"],
-        "Select": ["label", "value", "options", "disabled"], "Switch": ["label", "value", "disabled"],
+        "Select": ["placeholder", "label", "value", "options", "disabled"], "Switch": ["label", "value", "disabled"],
         "Progress": ["label", "value", "max"], "Separator": [],
-        "Table": ["columns", "rows", "caption"],
+        "Table": ["columns", "rows", "caption", "footer"],
         "BarChart": ["data", "series", "height", "label", "legend"],
         "LineChart": ["data", "series", "height", "label", "legend"],
         "AreaChart": ["data", "series", "height", "label", "legend"]
@@ -93,14 +93,15 @@ private func validateProps(_ props: [String: AIUIValue], type: String, id: Strin
     if let icon = props["footerIcon"], icon.string != "trending-up" { throw fail("Unknown footerIcon.") }
     let text = Set(["title", "description", "footer", "footerIcon", "footnote", "text", "variant", "label", "placeholder", "caption"])
     for (key, value) in props {
-        if text.contains(key), value.string == nil { throw fail("\(key) must be text.") }
+        if text.contains(key), !(type == "Table" && key == "footer"), value.string == nil { throw fail("\(key) must be text.") }
         if ["disabled", "legend"].contains(key), value.bool == nil { throw fail("\(key) must be boolean.") }
         if ["height", "gap", "max"].contains(key), value.number == nil { throw fail("\(key) must be numeric.") }
     }
+    if let style = props["style"], !["standard", "chart"].contains(style.string ?? "") { throw fail("Unknown Card style.") }
     if let height = props["height"]?.number, !(120...600).contains(height) { throw fail("height must be 120...600.") }
     if let gap = props["gap"]?.number, !(0...48).contains(gap) { throw fail("gap must be 0...48.") }
     if let variant = props["variant"]?.string {
-        let variants = type == "Text" ? ["body", "title", "caption", "muted"] : ["primary", "secondary", "outline", "ghost", "destructive"]
+        let variants = type == "Text" ? ["body", "title", "caption", "muted", "label"] : ["primary", "secondary", "outline", "ghost", "destructive"]
         guard variants.contains(variant) else { throw fail("Unknown variant.") }
     }
     if let value = props["value"] {
@@ -142,11 +143,16 @@ private func validateProps(_ props: [String: AIUIValue], type: String, id: Strin
         if !allowIncomplete, props["series"] == nil || props["data"] == nil { throw fail("Chart requires series and data.") }
     }
     if type == "Table" {
+        if let footer = props["footer"], footer.object == nil { throw fail("Table footer must be an object.") }
         if let columns = props["columns"] {
             guard let array = columns.array, !array.isEmpty, array.count <= 12 else { throw fail("Table requires 1...12 columns.") }
             var keys = Set<String>()
             for column in array {
                 guard let item = column.object, let key = item["key"]?.string, keys.insert(key).inserted, item["label"]?.string != nil else { throw fail("Table columns require unique keys and labels.") }
+                if let width = item["width"], width.number == nil || !(24...600).contains(width.number ?? 0) { throw fail("Column width must be 24...600.") }
+                if let alignment = item["alignment"], !["leading", "trailing"].contains(alignment.string ?? "") { throw fail("Unknown column alignment.") }
+                if let emphasized = item["emphasized"], emphasized.bool == nil { throw fail("Column emphasis must be boolean.") }
+
             }
         }
         if let rows = props["rows"], rows.array == nil || rows.array!.contains(where: { $0.object == nil }) { throw fail("Table rows must be objects.") }

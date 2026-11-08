@@ -65,6 +65,7 @@ private struct UIRenderNode: View {
     var onEvent: ((AIUIEvent) -> Void)?
     var child: (String) -> AnyView
     @Theme private var theme
+    @Environment(\.colorScheme) private var scheme
     private var props: [String: AIUIValue] { node.resolved(in: document.state) }
     private func text(_ key: String, _ fallback: String = "") -> String { props[key]?.string ?? fallback }
     private var children: [String] { node.children ?? [] }
@@ -85,28 +86,38 @@ private struct UIRenderNode: View {
                 VStack(alignment: .leading, spacing: props["gap"]?.number ?? 12) { ForEach(children, id: \.self) { child($0) } }
             }
         case "Card":
-            AICard(props["title"]?.string, description: props["description"]?.string, footer: props["footer"]?.string, footnote: props["footnote"]?.string, footerIcon: text("footerIcon") == "trending-up" ? .trendingUp : nil) {
+            AICard(props["title"]?.string, description: props["description"]?.string, footer: props["footer"]?.string, footnote: props["footnote"]?.string, footerIcon: text("footerIcon") == "trending-up" ? .trendingUp : nil, style: .init(rawValue: text("style")) ?? .standard) {
                 VStack(alignment: .leading, spacing: 16) { ForEach(children, id: \.self) { child($0) } }
             }
         case "Text":
-            Text(text("text")).aiFont(text("variant") == "title" ? 20 : text("variant") == "caption" ? 12 : 14,
-                                     weight: text("variant") == "title" ? .semibold : .regular)
-                .foregroundStyle(["muted", "caption"].contains(text("variant")) ? theme.mutedForeground : theme.foreground)
-                .fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
+            if ["body", "muted", ""].contains(text("variant")) {
+                NativeTextParagraph(verbatim: text("text"))
+                    .environment(\.aiParagraphLineHeight, 20)
+                    .environment(\.aiParagraphMuted, text("variant") == "muted")
+            } else {
+                AITextLabel(text("text"), size: text("variant") == "title" ? 20 : text("variant") == "caption" ? 12 : 14,
+                            weight: text("variant") == "title" ? .semibold : text("variant") == "label" ? .medium : .regular,
+                            color: text("variant") == "caption" ? theme.mutedForeground : theme.foreground)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.vertical, text("variant") == "label" ? -2 : 0)
+            }
         case "Badge":
-            Text(text("text")).aiFont(12, weight: .medium).padding(.horizontal, 8).padding(.vertical, 2)
-                .foregroundStyle(variant == .primary ? theme.background : variant == .destructive ? .white : theme.foreground)
-                .background(variant == .primary ? theme.foreground : variant == .destructive ? theme.destructive : variant == .outline ? .clear : theme.muted, in: Capsule())
+            AITextLabel(text("text"), size: 12, weight: .medium,
+                        color: variant == .primary ? (theme.primaryButtonLabel ?? theme.background) : variant == .destructive ? theme.destructive : theme.foreground)
+                .padding(.horizontal, 9).frame(minHeight: 20)
+                .background(variant == .primary ? (theme.primaryButtonFill ?? theme.foreground) : variant == .destructive ? theme.destructive.opacity(scheme == .dark ? 0.2 : 0.1) : [.outline, .ghost].contains(variant) ? .clear : theme.muted, in: Capsule())
                 .overlay(Capsule().strokeBorder(variant == .outline ? theme.border : .clear, lineWidth: 1))
         case "Button":
-            Button(text("label")) { emit("press") }.buttonStyle(AIFoundationButtonStyle(variant))
+            Button { emit("press") } label: {
+                AITextLabel(text("label"), weight: .medium, color: variant == .primary ? (theme.primaryButtonLabel ?? theme.background) : variant == .destructive ? theme.destructive : theme.foreground)
+            }.buttonStyle(AIFoundationButtonStyle(variant))
                 .disabled(disabled || onEvent == nil || node.events?["press"] == nil || store.session.phase == .failed)
         case "Input": AIInput(text("label"), text: stringBinding, placeholder: text("placeholder")).disabled(disabled || node.bindings?["value"] == nil)
         case "Select":
             AISelect(text("label"), options: (props["options"]?.array ?? []).compactMap {
                 guard let item = $0.object, let value = item["value"]?.string, let label = item["label"]?.string else { return nil }
                 return AISelectOption(value, label: label)
-            }, selection: stringBinding).disabled(disabled || node.bindings?["value"] == nil)
+            }, selection: stringBinding, placeholder: text("placeholder", "Select…")).disabled(disabled || node.bindings?["value"] == nil)
         case "Switch":
             AISwitch(text("label"), isOn: Binding(get: { props["value"]?.bool ?? false }, set: {
                 store.setValue(.bool($0), nodeID: id); emit("change", value: .bool($0))
@@ -136,30 +147,15 @@ private struct UIRenderNode: View {
         }
     }
     private var table: some View {
-        let columns = (props["columns"]?.array ?? []).compactMap(\.object)
-        let rows = (props["rows"]?.array ?? []).compactMap(\.object)
-        return VStack(spacing: 12) {
-            ScrollView(.horizontal) {
-                Grid(alignment: .leading, horizontalSpacing: 0, verticalSpacing: 0) {
-                    GridRow {
-                        ForEach(columns.indices, id: \.self) { index in
-                            Text(columns[index]["label"]?.string ?? "").aiFont(14, weight: .medium).padding(8).frame(minWidth: 96, minHeight: 40, alignment: .leading)
-                        }
-                    }
-                    Rectangle().fill(theme.border).frame(height: 1).gridCellColumns(max(1, columns.count))
-                    ForEach(rows.indices, id: \.self) { row in
-                        GridRow {
-                            ForEach(columns.indices, id: \.self) { col in
-                                Text(rows[row][columns[col]["key"]?.string ?? ""]?.displayText ?? "—").aiFont().padding(8).frame(minWidth: 96, minHeight: 40, alignment: .leading)
-                            }
-                        }
-                        if row < rows.count - 1 { Rectangle().fill(theme.border).frame(height: 1).gridCellColumns(max(1, columns.count)) }
-                    }
-                }
-            }
-            if let caption = props["caption"]?.string { Text(caption).aiFont().foregroundStyle(theme.mutedForeground) }
-        }.foregroundStyle(theme.foreground)
+        AITable(columns: (props["columns"]?.array ?? []).compactMap { value in
+            guard let column = value.object, let key = column["key"]?.string, let label = column["label"]?.string else { return nil }
+            return AITableColumn(key, label: label, width: column["width"]?.number,
+                                 alignment: column["alignment"]?.string == "trailing" ? .trailing : .leading,
+                                 emphasized: column["emphasized"]?.bool ?? false)
+        }, rows: (props["rows"]?.array ?? []).compactMap { $0.object?.mapValues(\.displayText) },
+        caption: props["caption"]?.string, footer: props["footer"]?.object?.mapValues(\.displayText))
     }
+
 }
 
 struct ChatUISurface: View {

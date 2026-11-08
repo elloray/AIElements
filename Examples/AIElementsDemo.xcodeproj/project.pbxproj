@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BD5E832E6C4404C96577292 /* GenerativeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37E935421B3A176BA690EA /* GenerativeDemo.swift */; };
+		241DFE71475EBFFA6A10C196 /* FoundationAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF40FF041A23ED3519EEF86 /* FoundationAudit.swift */; };
+		50FBAEF5741DCDDEED596BF1 /* FoundationAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF40FF041A23ED3519EEF86 /* FoundationAudit.swift */; };
 		578BAC4284650650559AEF80 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF3E571FFB42BFECE6D8C4 /* GalleryApp.swift */; };
 		5FAAF63E5AB54F43E33A6D8A /* AIElements in Frameworks */ = {isa = PBXBuildFile; productRef = B095868D6D4D2CEC093A68C4 /* AIElements */; };
 		618A4239625D78081293F7E3 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D418F979457169E815E1E /* DemoView.swift */; };
@@ -26,6 +28,7 @@
 		849D418F979457169E815E1E /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		ACAF3E571FFB42BFECE6D8C4 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
 		CAE30FB3CF97C488F2A7291B /* AIElementsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIElementsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF40FF041A23ED3519EEF86 /* FoundationAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationAudit.swift; sourceTree = "<group>"; };
 		EF37E935421B3A176BA690EA /* GenerativeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				849D418F979457169E815E1E /* DemoView.swift */,
+				DCF40FF041A23ED3519EEF86 /* FoundationAudit.swift */,
 				ACAF3E571FFB42BFECE6D8C4 /* GalleryApp.swift */,
 				EF37E935421B3A176BA690EA /* GenerativeDemo.swift */,
 				72489EFA630239F70CA5E52D /* ValidationFixtures.swift */,
@@ -168,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				618A4239625D78081293F7E3 /* DemoView.swift in Sources */,
+				241DFE71475EBFFA6A10C196 /* FoundationAudit.swift in Sources */,
 				578BAC4284650650559AEF80 /* GalleryApp.swift in Sources */,
 				D673D3D24D1F2C05E9F9A608 /* GenerativeDemo.swift in Sources */,
 				9E3600D726D069EA02A46DC5 /* ValidationFixtures.swift in Sources */,
@@ -179,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B4CA0B00009290D1BFD84E /* DemoView.swift in Sources */,
+				50FBAEF5741DCDDEED596BF1 /* FoundationAudit.swift in Sources */,
 				B451B62675DAE7B3A523FF89 /* GalleryApp.swift in Sources */,
 				0BD5E832E6C4404C96577292 /* GenerativeDemo.swift in Sources */,
 				DB70A25D60799A1FE726F8CF /* ValidationFixtures.swift in Sources */,

@@ -4,7 +4,7 @@
 
 将 shadcn/ui AI Elements 的 21 个界面模式实现为可复用的 SwiftUI 组件。包含浅深色主题、Geist 字体、Lucide 矢量图标和可交互示例，无第三方运行时依赖。
 
-**新增流式生成 UI**：AI 可以先生成卡片、再逐步补齐表单和图表；用户操作回传宿主继续更新。提供独立 JSONL 协议、原生渲染器和 15 种基础节点（含 Bar / Line / Area Chart）。[协议与接入示例](Documentation/StreamingUI.md)。这是独立实现，不是 OpenAI Intelligent UI 的私有协议。
+**新增流式生成 UI**：AI 可以先生成卡片、再逐步补齐表单和图表；用户操作回传宿主继续更新。提供独立 JSONL 协议、原生渲染器和 15 种基础节点（含 Bar / Line / Area Chart）。[协议与接入示例](Documentation/StreamingUI.md)。[15 种基础组件双端浅深色对照](Documentation/Foundation-Visual-Validation.md)。这是独立实现，不是 OpenAI Intelligent UI 的私有协议。
 
 同时提供 **`aielements` CLI + `aielements-swiftui` Agent Skill**：让 AI 编程工具查询当前组件 API、读取完整 Swift 示例，并生成可接入现有 App 的 UI Package。[直接开始使用 CLI 和 Skill ↓](#ai-编程工具cli--skill)
 

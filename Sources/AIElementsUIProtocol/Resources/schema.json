@@ -199,6 +199,12 @@
                   "enum": [
                     "trending-up"
                   ]
+                },
+                "style": {
+                  "enum": [
+                    "standard",
+                    "chart"
+                  ]
                 }
               },
               "additionalProperties": false
@@ -222,6 +228,16 @@
                   "maxLength": 128
                 },
                 "footnote": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                },
+                "footerIcon": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                },
+                "style": {
                   "type": "string",
                   "minLength": 1,
                   "maxLength": 128
@@ -521,6 +537,10 @@
                 },
                 "disabled": {
                   "type": "boolean"
+                },
+                "placeholder": {
+                  "type": "string",
+                  "maxLength": 32768
                 }
               },
               "additionalProperties": false
@@ -544,6 +564,11 @@
                   "maxLength": 128
                 },
                 "disabled": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                },
+                "placeholder": {
                   "type": "string",
                   "minLength": 1,
                   "maxLength": 128
@@ -747,7 +772,39 @@
               "type": "object",
               "properties": {
                 "columns": {
-                  "$ref": "#/$defs/value"
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 12,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "key",
+                      "label"
+                    ],
+                    "properties": {
+                      "key": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      },
+                      "width": {
+                        "type": "number",
+                        "minimum": 24,
+                        "maximum": 600
+                      },
+                      "alignment": {
+                        "enum": [
+                          "leading",
+                          "trailing"
+                        ]
+                      },
+                      "emphasized": {
+                        "type": "boolean"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
                 },
                 "rows": {
                   "$ref": "#/$defs/value"
@@ -755,6 +812,12 @@
                 "caption": {
                   "type": "string",
                   "maxLength": 32768
+                },
+                "footer": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/$defs/value"
+                  }
                 }
               },
               "additionalProperties": false
@@ -773,6 +836,11 @@
                   "maxLength": 128
                 },
                 "caption": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                },
+                "footer": {
                   "type": "string",
                   "minLength": 1,
                   "maxLength": 128

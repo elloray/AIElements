@@ -43,11 +43,11 @@ public struct AIChart: View {
         VStack(spacing: 12) {
             GeometryReader { proxy in
                 let rows = cleanData
-                let metrics = ChartMetrics(rows: rows, series: series, size: proxy.size)
+                let metrics = ChartMetrics(rows: rows, series: series, size: proxy.size, kind: kind)
                 Canvas { context, size in
-                    for index in 0...4 {
+                    for index in [0, 2, 3, 4] {
                         let y = metrics.top + metrics.height * CGFloat(index) / 4
-                        var path = Path(); path.move(to: CGPoint(x: 5, y: y)); path.addLine(to: CGPoint(x: size.width - 5, y: y))
+                        var path = Path(); path.move(to: CGPoint(x: metrics.left, y: y)); path.addLine(to: CGPoint(x: size.width - metrics.left, y: y))
                         context.stroke(path, with: .color(theme.border.opacity(0.5)), lineWidth: 1)
                     }
                     for (seriesIndex, series) in series.prefix(5).enumerated() {
@@ -68,20 +68,19 @@ public struct AIChart: View {
                             }
                         }
                         if kind != .bar, let first = points.first {
-                            line.move(to: first)
-                            for point in points.dropFirst() { line.addLine(to: point) }
+                            line = NaturalChartCurve.path(points)
                             if kind == .area, let last = points.last {
                                 var area = line; area.addLine(to: CGPoint(x: last.x, y: metrics.y(0)))
                                 area.addLine(to: CGPoint(x: first.x, y: metrics.y(0))); area.closeSubpath()
-                                context.fill(area, with: .linearGradient(Gradient(colors: [color.opacity(0.4), color.opacity(0.05)]), startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: size.height)))
+                                context.fill(area, with: .color(color.opacity(0.4)))
                             }
-                            context.stroke(line, with: .color(color), lineWidth: 2)
+                            context.stroke(line, with: .color(color), lineWidth: kind == .area ? 1 : 2)
                             if points.count == 1 { context.fill(Path(ellipseIn: CGRect(x: first.x - 3, y: first.y - 3, width: 6, height: 6)), with: .color(color)) }
                         }
                     }
                     let stride = max(1, Int(ceil(CGFloat(rows.count) * 34 / max(1, size.width))))
                     for index in rows.indices where index % stride == 0 {
-                        context.draw(Text(String(rows[index].label.prefix(3))).font(AITypography.font(12)).foregroundColor(theme.mutedForeground),
+                        context.draw(Text(String(rows[index].label.prefix(3))).font(AITypography.font(12)).foregroundColor(Color(white: 0.4)),
                                      at: CGPoint(x: metrics.x(index), y: metrics.top + metrics.height + 20))
                     }
                 }.contentShape(Rectangle())
@@ -126,7 +125,7 @@ public struct AIChart: View {
     }
     private func select(at x: CGFloat, metrics: ChartMetrics, rows: [AIChartRow], emit: Bool) {
         guard !rows.isEmpty else { return }
-        let index = min(rows.count - 1, max(0, Int((x - 5) / metrics.band)))
+        let index = rows.indices.min { abs(metrics.x($0) - x) < abs(metrics.x($1) - x) } ?? 0
         selected = rows[index].label
         if emit { onSelect?(rows[index]) }
     }
@@ -145,22 +144,32 @@ public struct AIChart: View {
     }
 }
 
-private struct ChartMetrics {
+struct ChartMetrics {
     var minimum: Double
     var maximum: Double
     var band: CGFloat
     var height: CGFloat
-    let top: CGFloat = 5
-    init(rows: [AIChartRow], series: [AIChartSeries], size: CGSize) {
+    var top: CGFloat
+    var left: CGFloat
+    var points: Bool
+    var count: Int
+    var plotWidth: CGFloat
+    init(rows: [AIChartRow], series: [AIChartSeries], size: CGSize, kind: AIChartKind) {
+        points = kind != .bar; count = rows.count
+        top = points ? 0 : 5; left = points ? 12 : 5
+        plotWidth = max(1, size.width - 2 * left)
         let values = rows.flatMap { row in series.compactMap { row.values[$0.id] }.filter { $0.isFinite && abs($0) <= 1e15 } }
         let low = min(0, values.min() ?? 0), high = max(0, values.max() ?? 1)
         let range = max(1, high - low)
         let power = pow(10, floor(log10(range / 4)))
         let step = ceil(range / 4 / power) * power
         minimum = floor(low / step) * step; maximum = max(minimum + step, ceil(high / step) * step)
-        band = max(1, size.width - 10) / CGFloat(max(1, rows.count))
-        height = max(1, size.height.rounded() - 40)
+        band = plotWidth / CGFloat(max(1, rows.count))
+        height = max(1, size.height.rounded() - (points ? 30 : 40))
     }
-    func x(_ index: Int) -> CGFloat { 5 + band * (CGFloat(index) + 0.5) }
+    func x(_ index: Int) -> CGFloat {
+        if points { return left + (count > 1 ? plotWidth * CGFloat(index) / CGFloat(count - 1) : plotWidth / 2) }
+        return left + band * (CGFloat(index) + 0.5)
+    }
     func y(_ value: Double) -> CGFloat { top + height * (1 - min(1, max(0, (value - minimum) / (maximum - minimum)))) }
 }

@@ -90,24 +90,39 @@ It does **not** implement every shadcn component or every chart variant.
 | Types | Properties |
 | --- | --- |
 | `Stack`, `Row` | `gap`; `children` IDs (`Row` wraps vertically when needed) |
-| `Card` | `title`, `description`, `footer`, `footerIcon: "trending-up"`, `footnote`; `children` IDs |
-| `Text` | `text`, `variant`: body/title/muted/caption |
+| `Card` | `style: standard/chart` (default standard), `title`, `description`, `footer`, `footerIcon: "trending-up"`, `footnote`; `children` IDs |
+| `Text` | `text`, `variant`: body/title/muted/caption/label |
 | `Button` | `label`, `variant`, `disabled`; `events.press` |
 | `Badge` | `text`, `variant` |
 | `Input` | `label`, `placeholder`, `value`, `disabled`; `bindings.value`, `events.change` |
-| `Select` | `label`, `options: [{value,label}]`, `value`, `disabled`; binding/change |
+| `Select` | `label`, `placeholder`, `options: [{value,label}]`, `value`, `disabled`; binding/change |
 | `Switch` | `label`, boolean `value`, `disabled`; binding/change |
 | `Progress` | `label`, numeric `value`, positive `max` |
 | `Separator` | No properties |
-| `Table` | `columns: [{key,label}]`, `rows: [{key:value}]`, `caption` |
+| `Table` | `columns: [{key,label,width?,alignment?,emphasized?}]`, `rows: [{key:value}]`, `footer: {key:value}`, `caption` |
 | `BarChart`, `LineChart`, `AreaChart` | `label`, `series: [{key,label}]`, `data: [{label,key:number}]`, `height`, `legend`; `events.select` |
 
 Variant values for Button/Badge: `primary`, `secondary`, `outline`, `ghost`, `destructive`.
 Charts support up to five series and 200 rows, signed values, empty/loading data,
-tap/hover tooltips and VoiceOver value navigation. Line/area currently use straight
-segments; curved, stacked, pie, radar, and zoom variants are not implemented.
+tap/hover tooltips and VoiceOver value navigation. Line/area use natural cubic
+curves; Area uses the reference solid fill at 40% opacity. Stacked, pie, radar,
+and zoom variants are not implemented.
 Native controls use the shadcn geometry/tokens, with iOS interactive areas at least
 44 pt. Native text rasterization, native menus, and Dynamic Type differ from the web.
+
+`AICard` defaults to the current base-component geometry (16 pt insets). Use
+`style: .chart` / JSON `"style": "chart"` for the chart gallery's 25 pt inset including
+its border. Bundled chart/dashboard documents explicitly select that style.
+The native Card API also accepts `headerAction` and `footerContent` views; native
+`AIInput` supports secure entry and a label accessory. These composition slots are
+SwiftUI APIs, not additional executable actions in the JSON protocol.
+
+Table column alignment accepts `leading` or `trailing`; optional widths are preferred
+widths (24...600 pt). Content may widen the table and scroll rather than truncate.
+Footer values use column keys. Select's placeholder appears when its bound value is
+empty. `Text`'s `label` variant uses 14 pt medium text with a compact line box.
+
+[15-component same-width light/dark comparison](Foundation-Visual-Validation.md).
 
 Read the executable schema for precise permitted properties and bounds:
 

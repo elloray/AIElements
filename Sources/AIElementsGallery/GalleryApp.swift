@@ -8,6 +8,9 @@ import AppKit
 struct GalleryApp: App {
     init() {
         #if os(macOS)
+        if CommandLine.arguments.contains("--foundation-snapshots") {
+            MainActor.assumeIsolated { FoundationAuditExporter.export() }; exit(0)
+        }
         if CommandLine.arguments.contains("--ui-snapshots") {
             MainActor.assumeIsolated { UIFixtureExporter.export() }
             exit(0)
@@ -20,7 +23,15 @@ struct GalleryApp: App {
     }
     var body: some Scene {
         WindowGroup("AI Elements · Swift") {
-            if let index = CommandLine.arguments.firstIndex(of: "--ui-preview"), CommandLine.arguments.indices.contains(index + 1) {
+            if CommandLine.arguments.contains("--foundation-snapshots") {
+                Text("Capturing foundation fixtures")
+                    #if os(iOS)
+                    .task { await FoundationAuditExporter.export() }
+                    #endif
+            } else if let index = CommandLine.arguments.firstIndex(of: "--foundation-preview"), CommandLine.arguments.indices.contains(index + 1) {
+                ScrollView { FoundationAuditView(name: CommandLine.arguments[index + 1]).padding(.vertical, 20) }
+                    .frame(maxWidth: .infinity).preferredColorScheme(CommandLine.arguments.contains("--dark") ? .dark : .light)
+            } else if let index = CommandLine.arguments.firstIndex(of: "--ui-preview"), CommandLine.arguments.indices.contains(index + 1) {
                 ScrollView { UIFixtureView(name: CommandLine.arguments[index + 1]).frame(width: 360).padding(.vertical, 20) }
                     .frame(maxWidth: .infinity).background(CommandLine.arguments.contains("--dark") ? AITheme.dark.background : .white)
                     .preferredColorScheme(CommandLine.arguments.contains("--dark") ? .dark : .light)

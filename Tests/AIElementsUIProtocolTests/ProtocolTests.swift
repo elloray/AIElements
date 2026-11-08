@@ -3,6 +3,21 @@ import XCTest
 @testable import AIElementsUIProtocol
 
 final class ProtocolTests: XCTestCase {
+    func testFoundationPresentationPropertiesValidateAndRejectMalformedValues() throws {
+        var doc = AIUIDocument(id: "table", root: "root", nodes: ["root": .init("Table", props: [
+            "columns": .array([.object(["key": .string("amount"), "label": .string("Amount"), "alignment": .string("trailing"), "width": .number(100), "emphasized": .bool(true)])]),
+            "rows": .array([]), "footer": .object(["amount": .string("$2,500.00")])])])
+        try doc.validate()
+        doc.nodes["root"]?.props?["footer"] = .string("invalid")
+        XCTAssertThrowsError(try doc.validate())
+        doc.nodes["root"] = .init("Card", props: ["style": .string("chart")])
+        try doc.validate()
+        doc.nodes["root"]?.props?["style"] = .number(1)
+        XCTAssertThrowsError(try doc.validate())
+        doc.nodes["root"] = .init("Table", props: ["columns": .array([.object(["key": .string("x"), "label": .string("X"), "width": .number(-1)])])])
+        XCTAssertThrowsError(try doc.validate())
+    }
+
     func testBundledStreamShowsPartialDataAndPreservesDraft() throws {
         var session = AIUISession(); var decoder = AIUIStreamDecoder()
         var partialCounts: [Int] = []

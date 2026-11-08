@@ -1,0 +1,296 @@
+{
+  "captured": "2026-11-08",
+  "canvasWidth": 360,
+  "unit": "CSS px",
+  "notes": "Official rendered DOM measurements; source snippets and raw screenshots are kept in ignored local audit evidence. Stack/Row/Text map to Separator/Badge example layouts.",
+  "samples": {
+    "card-light": {
+      "width": 360,
+      "height": 357,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "16px 0px 0px",
+      "gap": "16px",
+      "radius": "14px",
+      "color": "lab(0 0 0)",
+      "background": "lab(100 0 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "card-dark": {
+      "width": 360,
+      "height": 357,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "16px 0px 0px",
+      "gap": "16px",
+      "radius": "14px",
+      "color": "lab(98.26 0 0)",
+      "background": "lab(7.78201 -0.0000149012 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "button-light": {
+      "width": 65.71875,
+      "height": 32,
+      "font": "500 14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px 10px",
+      "gap": "6px",
+      "radius": "10px",
+      "color": "lab(98.26 0 0)",
+      "background": "lab(0 0 0)",
+      "border": "rgba(0, 0, 0, 0)"
+    },
+    "button-dark": {
+      "width": 65.71875,
+      "height": 32,
+      "font": "500 14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px 10px",
+      "gap": "6px",
+      "radius": "10px",
+      "color": "lab(7.78201 -0.0000149012 0)",
+      "background": "lab(90.952 0 -0.0000119209)",
+      "border": "rgba(0, 0, 0, 0)"
+    },
+    "badge-light": {
+      "width": 360,
+      "height": 20,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "8px",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "badge-dark": {
+      "width": 360,
+      "height": 20,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "8px",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "input-light": {
+      "width": 320,
+      "height": 32,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "4px 10px",
+      "gap": "normal",
+      "radius": "10px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "input-dark": {
+      "width": 320,
+      "height": 32,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "4px 10px",
+      "gap": "normal",
+      "radius": "10px",
+      "color": "lab(98.26 0 0)",
+      "background": "oklab(0.999998 -0.00000980496 0.0000234246 / 0.045)",
+      "border": "lab(100 0 0 / 0.15)"
+    },
+    "select-light": {
+      "width": 192,
+      "height": 32,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "8px 8px 8px 10px",
+      "gap": "6px",
+      "radius": "10px",
+      "color": "lab(48.496 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "select-dark": {
+      "width": 192,
+      "height": 32,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "8px 8px 8px 10px",
+      "gap": "6px",
+      "radius": "10px",
+      "color": "lab(66.128 -0.0000298023 0.0000119209)",
+      "background": "oklab(0.999998 -0.00000980496 0.0000234246 / 0.045)",
+      "border": "lab(100 0 0 / 0.15)"
+    },
+    "switch-light": {
+      "width": 134.6875,
+      "height": 18.390625,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "switch-dark": {
+      "width": 134.6875,
+      "height": 18.390625,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "progress-light": {
+      "width": 216,
+      "height": 4,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "12px",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "progress-dark": {
+      "width": 216,
+      "height": 4,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "12px",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "separator-light": {
+      "width": 360,
+      "height": 1,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "lab(90.952 0 -0.0000119209)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "separator-dark": {
+      "width": 360,
+      "height": 1,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "lab(100 0 0 / 0.1)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "table-light": {
+      "width": 360,
+      "height": 371.5,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "table-dark": {
+      "width": 360,
+      "height": 371.5,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "stack-light": {
+      "width": 360,
+      "height": 113,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "16px",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "stack-dark": {
+      "width": 360,
+      "height": 113,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "16px",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "row-light": {
+      "width": 360,
+      "height": 20,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "8px",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "row-dark": {
+      "width": 360,
+      "height": 20,
+      "font": "15px / 26.25px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "8px",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "text-light": {
+      "width": 360,
+      "height": 40,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(0 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(90.952 0 -0.0000119209)"
+    },
+    "text-dark": {
+      "width": 360,
+      "height": 40,
+      "font": "14px / 20px Geist, \"Geist Fallback\"",
+      "padding": "0px",
+      "gap": "normal",
+      "radius": "0px",
+      "color": "lab(98.26 0 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "lab(100 0 0 / 0.1)"
+    },
+    "line-chart-light": {
+      "width": 360,
+      "height": 354.375
+    },
+    "line-chart-dark": {
+      "width": 360,
+      "height": 354.375
+    },
+    "area-chart-light": {
+      "width": 360,
+      "height": 354.375
+    },
+    "area-chart-dark": {
+      "width": 360,
+      "height": 354.375
+    },
+    "bar-chart-light": {
+      "width": 360,
+      "height": 354.375
+    },
+    "bar-chart-dark": {
+      "width": 360,
+      "height": 354.375
+    }
+  }
+}

@@ -1,4 +1,8 @@
-# Streaming UI validation — 2026-11-08
+# Streaming UI initial validation — 2026-11-08
+
+**Historical first-pass record.** The later [15-component visual audit](Foundation-Visual-Validation.md)
+supersedes the visual limitations and counts below: Line/Area now use natural curves,
+all 15 types have light/dark original/macOS/iOS comparisons, and 51 tests pass.
 
 Scope: new protocol/renderer and first foundation catalog; existing 21 AI Elements
 patterns remain. This is not a claim that all shadcn components or chart variants
