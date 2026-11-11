@@ -1,0 +1,12 @@
+{
+  "source": "Unmodified native emulator screencap",
+  "captured": "2026-11-11",
+  "apkSHA256": "c6ea0252c8c72dbdd9280ab35ecacfbc6ee6b00f4499ffb1ec47d72730bf4f8f",
+  "files": {
+    "phone-chat-light.png": "be3a6fd7c3910c427539acd5a4b48151fab77b6513710487ff5ac179b9353f33",
+    "phone-large-chat.png": "cf4016f1f46772ed55ff4d8264e1608be25c9572efb25c2122124e368d382058",
+    "phone-large-table.png": "a2946a589e4c4af549a9aff8873e0570292acdddee1bd8351313a0585364de0a",
+    "tablet-portrait-chat-dark.png": "870e6d80057599d8b32f687625637de814920f31f55150adb09ef95c6de36183",
+    "tablet-landscape-table-dark.png": "ef1724ef7415c8a32e6f65ef6fccebdcdfca446fd8aabb514bcddc3eaa446c92"
+  }
+}

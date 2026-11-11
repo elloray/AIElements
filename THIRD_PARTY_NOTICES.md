@@ -33,3 +33,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Android distribution
+
+The Android implementation under `Android/` also uses the existing shadcn reference patterns. Unmodified Geist fonts are copied into Android font resources; Geist and Lucide license texts are bundled under `META-INF/licenses`. Lucide paths are transcribed from the Swift implementation into Compose Canvas paths. AndroidX/Compose (Apache 2.0) and kotlinx.serialization (Apache 2.0) are Gradle dependencies; their upstream licenses apply. The Gradle wrapper is provided under Apache 2.0. The repository MIT license covers the original Kotlin implementation, not a relicensing of these dependencies.

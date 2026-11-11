@@ -1,0 +1,14 @@
+{
+  "type": "unmodified native Android emulator screenshot",
+  "captured": "2026-11-11",
+  "sourceDirectory": "/Volumes/DevProjects/AiElements/.build/android-polish2-2026-11-11/gallery",
+  "files": {
+    "phone-chat-light.png": "afe7c15f8a1b89d1e072c4236da34faa85b333a33b4a765c75b95a6c5d3b8119",
+    "phone-chat-dark.png": "b03739ab19cf95b46d17b85ca957c74dcd403e6a924d1857061bf71d701f60a1",
+    "phone-large-text-chat.png": "b5a6936fe0a7408e39c02fed3039d7220e07b4be83a09e5389edf37c4176503d",
+    "phone-large-text-confirmation.png": "b3ef4fba5bc9092e5052b738bde1544a394e52b21ddd94b3e39b0e6b6e01b442",
+    "phone-landscape-chat-dark.png": "90f657581f7c02fc1e9bf2b810e8ec999eb65994fe5d927f68e22c561c9745ff",
+    "tablet-portrait-generative-ui-dark.png": "5a5734b9b75c31137d409615c790de3ccaca00c0012e3d32600a391c85dcb2fb",
+    "tablet-landscape-chat-dark.png": "d6daa79fca35d45c7a494edff3294c1b5b1c3198a32eb8e7bcca864b2afc55f2"
+  }
+}

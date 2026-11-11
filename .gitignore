@@ -19,3 +19,11 @@ xcuserdata/
 .env.*
 *.p12
 *.mobileprovision
+
+# Android local toolchains and generated output
+Android/.gradle/
+Android/.kotlin/
+Android/**/build/
+Android/local.properties
+Android/*.jks
+Android/*.keystore
