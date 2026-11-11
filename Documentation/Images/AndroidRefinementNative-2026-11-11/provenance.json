@@ -1,0 +1,44 @@
+[
+  {
+    "file": "phone-large-text-prompt-input.png",
+    "source": ".build/android-refine-2026-11-11/gallery/phone-large-text-prompt-input.png",
+    "sha256": "e49482fa9d5cb6a79e13e82467249f4cb9ecd6d04defea961c2bead5f8700229",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  },
+  {
+    "file": "phone-large-text-generative-ui.png",
+    "source": ".build/android-refine-2026-11-11/gallery/phone-large-text-generative-ui.png",
+    "sha256": "27ff7b2a5dcd3ed470f1e95e03a448ed16899b10deb2407ef1a3f4952ce8f709",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  },
+  {
+    "file": "phone-large-text-inline-citation.png",
+    "source": ".build/android-refine-2026-11-11/gallery/phone-large-text-inline-citation.png",
+    "sha256": "77eb9c19958188722db765f3779be18ef80f83c0e00416d49d09e4cd6fc4967c",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  },
+  {
+    "file": "phone-landscape-chat-dark.png",
+    "source": ".build/android-refine-2026-11-11/gallery/phone-landscape-chat-dark.png",
+    "sha256": "ee2e72a163a121e74afe0ac7814e4a7f1df2f250613a8c936ef204bfe59768b4",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  },
+  {
+    "file": "tablet-portrait-area-chart-dark.png",
+    "source": ".build/android-refine-2026-11-11/gallery/tablet-portrait-area-chart-dark.png",
+    "sha256": "03857e680c77728b8a043e2b62e8fecd6fbed637af2dc3a423c3f03e728b8080",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  },
+  {
+    "file": "tablet-light.png",
+    "source": ".build/android-refine-2026-11-11/gallery/tablet-light.png",
+    "sha256": "693443f38cab15637e2915c163b9926c479098fcb59114d207a47960034eec27",
+    "captureDate": "2026-11-11",
+    "origin": "API 35 emulator native gallery capture; no retouching"
+  }
+]

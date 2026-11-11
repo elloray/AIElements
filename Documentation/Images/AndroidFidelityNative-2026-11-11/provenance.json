@@ -1,0 +1,10 @@
+{
+  "sourceDirectory": ".build/android-polish4-2026-11-11/gallery",
+  "files": {
+    "phone-input-dark.png": "6ab3e9ea03bbf16e75b289c3aebd17cfc3fcdf1c74fc74d24ba9dae53a983663",
+    "phone-select-light.png": "2ac15a7ba667793dfc0f3b5bdcb109368a0100c00783281b8afd89d89ff0fed6",
+    "phone-large-select.png": "05a5d823cf276ed6be9a13413b9cef9b02eeb861cf71899876c9635113cd3ef3",
+    "tablet-portrait-input-dark.png": "53dc2ca56dbef8fe2604f06d5ed5320cfc517eff7d631f771465b9a186009bb6",
+    "tablet-landscape-select-dark.png": "60c75a30e38a2d06a2ae75666a185200705f8580f32ca250c43052fa7aa3bbc0"
+  }
+}

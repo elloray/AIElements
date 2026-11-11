@@ -1,0 +1,1926 @@
+{
+  "chain-of-thought-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/chain-of-thought-light.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 297.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "chain-of-thought-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/chain-of-thought-dark.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 297.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "chat-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/chat-light.jpg",
+    "webRect": {
+      "bottom": 1091,
+      "height": 800,
+      "left": 460,
+      "right": 820,
+      "top": 291,
+      "width": 360,
+      "x": 460,
+      "y": 291
+    },
+    "webHeight": 800,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 800.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "chat-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/chat-dark.jpg",
+    "webRect": {
+      "bottom": 1091,
+      "height": 800,
+      "left": 460,
+      "right": 820,
+      "top": 291,
+      "width": 360,
+      "x": 460,
+      "y": 291
+    },
+    "webHeight": 800,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 800.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "checkpoint-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/checkpoint-light.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 290.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "checkpoint-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/checkpoint-dark.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 290.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "confirmation-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/confirmation-light.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 288.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "confirmation-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/confirmation-dark.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 288.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "confirmation-approval-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/confirmation-approval-light.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 327.61905,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "confirmation-approval-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/confirmation-approval-dark.jpg",
+    "webRect": {
+      "bottom": 595,
+      "height": 288,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 288,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 327.61905,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "context-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/context-light.jpg",
+    "webRect": {
+      "bottom": 431,
+      "height": 124,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 124,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 144.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "context-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/context-dark.jpg",
+    "webRect": {
+      "bottom": 431,
+      "height": 124,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 124,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 144.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "file-tree-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/file-tree-light.jpg",
+    "webRect": {
+      "bottom": 551,
+      "height": 244,
+      "left": 480,
+      "right": 800,
+      "top": 307,
+      "width": 320,
+      "x": 480,
+      "y": 307
+    },
+    "webHeight": 244,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 384.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "file-tree-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/file-tree-dark.jpg",
+    "webRect": {
+      "bottom": 551,
+      "height": 244,
+      "left": 480,
+      "right": 800,
+      "top": 307,
+      "width": 320,
+      "x": 480,
+      "y": 307
+    },
+    "webHeight": 244,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 384.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "inline-citation-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/inline-citation-light.jpg",
+    "webRect": {
+      "bottom": 681,
+      "height": 374,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 374,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 369.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "inline-citation-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/inline-citation-dark.jpg",
+    "webRect": {
+      "bottom": 681,
+      "height": 374,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 374,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 369.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "message-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/message-light.jpg",
+    "webRect": {
+      "bottom": 741.25,
+      "height": 434.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 434.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 459.8095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "message-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/message-dark.jpg",
+    "webRect": {
+      "bottom": 741.25,
+      "height": 434.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 434.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 459.8095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "model-selector-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/model-selector-light.jpg",
+    "webRect": {
+      "bottom": 491,
+      "height": 160,
+      "left": 460,
+      "right": 820,
+      "top": 331,
+      "width": 360,
+      "x": 460,
+      "y": 331
+    },
+    "webHeight": 160,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 160.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "model-selector-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/model-selector-dark.jpg",
+    "webRect": {
+      "bottom": 491,
+      "height": 160,
+      "left": 460,
+      "right": 820,
+      "top": 331,
+      "width": 360,
+      "x": 460,
+      "y": 331
+    },
+    "webHeight": 160,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 160.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "plan-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/plan-light.jpg",
+    "webRect": {
+      "bottom": 674.5,
+      "height": 367.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 367.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 409.14285,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "plan-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/plan-dark.jpg",
+    "webRect": {
+      "bottom": 674.5,
+      "height": 367.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 367.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 409.14285,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "prompt-input-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/prompt-input-light.jpg",
+    "webRect": {
+      "bottom": 467,
+      "height": 160,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 160,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 160.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "prompt-input-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/prompt-input-dark.jpg",
+    "webRect": {
+      "bottom": 467,
+      "height": 160,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 160,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 160.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "queue-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/queue-light.jpg",
+    "webRect": {
+      "bottom": 651.75,
+      "height": 344.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 344.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 473.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "queue-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/queue-dark.jpg",
+    "webRect": {
+      "bottom": 651.75,
+      "height": 344.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 344.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 473.5238,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "reasoning-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/reasoning-light.jpg",
+    "webRect": {
+      "bottom": 724.25,
+      "height": 417.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 417.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 438.85715,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "reasoning-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/reasoning-dark.jpg",
+    "webRect": {
+      "bottom": 724.25,
+      "height": 417.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 417.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 438.85715,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "sources-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/sources-light.jpg",
+    "webRect": {
+      "bottom": 646.5,
+      "height": 339.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 339.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 448.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "sources-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/sources-dark.jpg",
+    "webRect": {
+      "bottom": 646.5,
+      "height": 339.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 339.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 448.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "stack-trace-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/stack-trace-light.jpg",
+    "webRect": {
+      "bottom": 691.75,
+      "height": 384.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 384.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 513.9048,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "stack-trace-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/stack-trace-dark.jpg",
+    "webRect": {
+      "bottom": 691.75,
+      "height": 384.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 384.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 513.9048,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "subagent-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/subagent-light.jpg",
+    "webRect": {
+      "bottom": 766.75,
+      "height": 459.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 459.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 549.3333,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "subagent-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/subagent-dark.jpg",
+    "webRect": {
+      "bottom": 766.75,
+      "height": 459.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 459.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 549.3333,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "suggestion-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/suggestion-light.jpg",
+    "webRect": {
+      "bottom": 503,
+      "height": 196,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 196,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 224.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "suggestion-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/suggestion-dark.jpg",
+    "webRect": {
+      "bottom": 503,
+      "height": 196,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 196,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 224.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "task-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/task-light.jpg",
+    "webRect": {
+      "bottom": 606.5,
+      "height": 299.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 299.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 368.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "task-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/task-dark.jpg",
+    "webRect": {
+      "bottom": 606.5,
+      "height": 299.5,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 299.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 368.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "terminal-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/terminal-light.jpg",
+    "webRect": {
+      "bottom": 839.75,
+      "height": 532.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 532.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 613.3333,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "terminal-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/terminal-dark.jpg",
+    "webRect": {
+      "bottom": 839.75,
+      "height": 532.75,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 532.75,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 613.3333,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "test-results-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/test-results-light.jpg",
+    "webRect": {
+      "bottom": 809.25,
+      "height": 502.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 502.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 599.619,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "test-results-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/test-results-dark.jpg",
+    "webRect": {
+      "bottom": 809.25,
+      "height": 502.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 502.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 599.619,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "tool-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/tool-light.jpg",
+    "webRect": {
+      "bottom": 627.25,
+      "height": 320.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 320.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 401.90475,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "tool-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/tool-dark.jpg",
+    "webRect": {
+      "bottom": 627.25,
+      "height": 320.25,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "webHeight": 320.25,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 401.90475,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "stack-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/stack-light.jpg",
+    "webRect": {
+      "bottom": 467.5,
+      "height": 113,
+      "left": 460,
+      "right": 820,
+      "top": 354.5,
+      "width": 360,
+      "x": 460,
+      "y": 354.5
+    },
+    "webHeight": 113,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 113.90476,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "stack-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/stack-dark.jpg",
+    "webRect": {
+      "bottom": 467.5,
+      "height": 113,
+      "left": 460,
+      "right": 820,
+      "top": 354.5,
+      "width": 360,
+      "x": 460,
+      "y": 354.5
+    },
+    "webHeight": 113,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 113.90476,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "row-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/row-light.jpg",
+    "webRect": {
+      "bottom": 421,
+      "height": 20,
+      "left": 460,
+      "right": 820,
+      "top": 401,
+      "width": 360,
+      "x": 460,
+      "y": 401
+    },
+    "webHeight": 20,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "row-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/row-dark.jpg",
+    "webRect": {
+      "bottom": 421,
+      "height": 20,
+      "left": 460,
+      "right": 820,
+      "top": 401,
+      "width": 360,
+      "x": 460,
+      "y": 401
+    },
+    "webHeight": 20,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "card-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/card-light.jpg",
+    "webRect": {
+      "bottom": 685.5,
+      "height": 357,
+      "left": 460,
+      "right": 820,
+      "top": 328.5,
+      "width": 360,
+      "x": 460,
+      "y": 328.5
+    },
+    "webHeight": 357,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 401.90475,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "card-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/card-dark.jpg",
+    "webRect": {
+      "bottom": 685.5,
+      "height": 357,
+      "left": 460,
+      "right": 820,
+      "top": 328.5,
+      "width": 360,
+      "x": 460,
+      "y": 328.5
+    },
+    "webHeight": 357,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 401.90475,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "text-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/text-light.jpg",
+    "webRect": {
+      "bottom": 467.5,
+      "height": 40,
+      "left": 460,
+      "right": 820,
+      "top": 427.5,
+      "width": 360,
+      "x": 460,
+      "y": 427.5
+    },
+    "webHeight": 40,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child > :last-child",
+    "androidHeightDp": 40.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "text-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/text-dark.jpg",
+    "webRect": {
+      "bottom": 467.5,
+      "height": 40,
+      "left": 460,
+      "right": 820,
+      "top": 427.5,
+      "width": 360,
+      "x": 460,
+      "y": 427.5
+    },
+    "webHeight": 40,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child > :last-child",
+    "androidHeightDp": 40.38095,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "button-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/button-light.jpg",
+    "webRect": {
+      "bottom": 266,
+      "height": 32,
+      "left": 547.140625,
+      "right": 612.8515625,
+      "top": 234,
+      "width": 65.7109375,
+      "x": 547.140625,
+      "y": 234
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview button.bg-primary",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "button-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/button-dark.jpg",
+    "webRect": {
+      "bottom": 266,
+      "height": 32,
+      "left": 547.140625,
+      "right": 612.8515625,
+      "top": 234,
+      "width": 65.7109375,
+      "x": 547.140625,
+      "y": 234
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview button.bg-primary",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "badge-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/badge-light.jpg",
+    "webRect": {
+      "bottom": 421,
+      "height": 20,
+      "left": 460,
+      "right": 820,
+      "top": 401,
+      "width": 360,
+      "x": 460,
+      "y": 401
+    },
+    "webHeight": 20,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "badge-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/badge-dark.jpg",
+    "webRect": {
+      "bottom": 421,
+      "height": 20,
+      "left": 460,
+      "right": 820,
+      "top": 401,
+      "width": 360,
+      "x": 460,
+      "y": 401
+    },
+    "webHeight": 20,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "input-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/input-light.jpg",
+    "webRect": {
+      "bottom": 266,
+      "height": 32,
+      "left": 420,
+      "right": 740,
+      "top": 234,
+      "width": 320,
+      "x": 420,
+      "y": 234
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": "input[placeholder=\"Enter text\"]",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "input-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/input-dark.jpg",
+    "webRect": {
+      "bottom": 266,
+      "height": 32,
+      "left": 420,
+      "right": 740,
+      "top": 234,
+      "width": 320,
+      "x": 420,
+      "y": 234
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": "input[placeholder=\"Enter text\"]",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "select-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/select-light.jpg",
+    "webRect": {
+      "bottom": 451,
+      "height": 32,
+      "left": 544,
+      "right": 736,
+      "top": 419,
+      "width": 192,
+      "x": 544,
+      "y": 419
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "select-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/select-dark.jpg",
+    "webRect": {
+      "bottom": 451,
+      "height": 32,
+      "left": 544,
+      "right": 736,
+      "top": 419,
+      "width": 192,
+      "x": 544,
+      "y": 419
+    },
+    "webHeight": 32,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "switch-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/switch-light.jpg",
+    "webRect": {
+      "bottom": 444.1953125,
+      "height": 18.3984375,
+      "left": 572.65625,
+      "right": 707.3359375,
+      "top": 425.796875,
+      "width": 134.6796875,
+      "x": 572.65625,
+      "y": 425.796875
+    },
+    "webHeight": 18.3984375,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "switch-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/switch-dark.jpg",
+    "webRect": {
+      "bottom": 444.1953125,
+      "height": 18.3984375,
+      "left": 572.65625,
+      "right": 707.3359375,
+      "top": 425.796875,
+      "width": 134.6796875,
+      "x": 572.65625,
+      "y": 425.796875
+    },
+    "webHeight": 18.3984375,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "progress-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/progress-light.jpg",
+    "webRect": {
+      "bottom": 437,
+      "height": 4,
+      "left": 532,
+      "right": 748,
+      "top": 433,
+      "width": 216,
+      "x": 532,
+      "y": 433
+    },
+    "webHeight": 4,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "progress-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/progress-dark.jpg",
+    "webRect": {
+      "bottom": 437,
+      "height": 4,
+      "left": 532,
+      "right": 748,
+      "top": 433,
+      "width": 216,
+      "x": 532,
+      "y": 433
+    },
+    "webHeight": 4,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "separator-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/separator-light.jpg",
+    "webRect": {
+      "bottom": 411.5,
+      "height": 1,
+      "left": 460,
+      "right": 820,
+      "top": 410.5,
+      "width": 360,
+      "x": 460,
+      "y": 410.5
+    },
+    "webHeight": 1,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview [role=separator]",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "separator-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/separator-dark.jpg",
+    "webRect": {
+      "bottom": 411.5,
+      "height": 1,
+      "left": 460,
+      "right": 820,
+      "top": 410.5,
+      "width": 360,
+      "x": 460,
+      "y": 410.5
+    },
+    "webHeight": 1,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview [role=separator]",
+    "androidHeightDp": 64.0,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": true
+  },
+  "table-light": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/table-light.jpg",
+    "webRect": {
+      "bottom": 692.75,
+      "height": 371.5,
+      "left": 460,
+      "right": 820,
+      "top": 321.25,
+      "width": 360,
+      "x": 460,
+      "y": 321.25
+    },
+    "webHeight": 371.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 374.85715,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "table-dark": {
+    "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/table-dark.jpg",
+    "webRect": {
+      "bottom": 692.75,
+      "height": 371.5,
+      "left": 460,
+      "right": 820,
+      "top": 321.25,
+      "width": 360,
+      "x": 460,
+      "y": 321.25
+    },
+    "webHeight": 371.5,
+    "webViewport": {
+      "height": 1200,
+      "width": 1280
+    },
+    "selector": ".preview > :first-child",
+    "androidHeightDp": 374.85715,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "bar-chart-light": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/bar-chart-light.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "bar-chart-dark": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/bar-chart-dark.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "line-chart-light": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/line-chart-light.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "line-chart-dark": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/line-chart-dark.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "area-chart-light": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/area-chart-light.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  },
+  "area-chart-dark": {
+    "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+    "captureDate": "2026-11-11",
+    "webCapturePath": ".build/android-recheck-2026-11-11/web/area-chart-dark.jpg",
+    "webRect": {
+      "bottom": 354.375,
+      "height": 354.375,
+      "left": 0,
+      "right": 360,
+      "top": 0,
+      "width": 360,
+      "x": 0,
+      "y": 0
+    },
+    "webHeight": 354.375,
+    "webViewport": {
+      "height": 1000,
+      "width": 360
+    },
+    "selector": "[data-slot=card]",
+    "androidHeightDp": 354.66666,
+    "canvasWidth": 360,
+    "androidDensity": 2.625,
+    "androidWidthDp": 360.0,
+    "paddedControl": false
+  }
+}

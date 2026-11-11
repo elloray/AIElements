@@ -4,6 +4,8 @@
 
 将 shadcn/ui AI Elements 的 21 个界面模式实现为可复用的 SwiftUI 组件。包含浅深色主题、Geist 字体、Lucide 矢量图标和可交互示例，无第三方运行时依赖。
 
+**Android 版本**：新增原生 Kotlin + Jetpack Compose 组件库和示例画廊，覆盖同名 21 个 AI 模式及 15 种基础节点，复用本仓库的流式 UI 协议与样例。Android 8.0+，支持浅深色和手机／平板布局。[Android 接入与运行](Android/README.md) · [安卓验证记录](Documentation/Android-Validation.md) · [安卓同宽视觉对比](Documentation/Android-Visual-Fidelity-2026-11-11.md)。安卓是独立实现，差异见接入文档；下文的 Swift 安装方式和 CLI 仍用于 Apple 平台。
+
 **新增流式生成 UI**：AI 可以先生成卡片、再逐步补齐表单和图表；用户操作回传宿主继续更新。提供独立 JSONL 协议、原生渲染器和 15 种基础节点（含 Bar / Line / Area Chart）。[协议与接入示例](Documentation/StreamingUI.md)。[15 种基础组件双端浅深色对照](Documentation/Foundation-Visual-Validation.md)。这是独立实现，不是 OpenAI Intelligent UI 的私有协议。
 
 同时提供 **`aielements` CLI + `aielements-swiftui` Agent Skill**：让 AI 编程工具查询当前组件 API、读取完整 Swift 示例，并生成可接入现有 App 的 UI Package。[直接开始使用 CLI 和 Skill ↓](#ai-编程工具cli--skill)

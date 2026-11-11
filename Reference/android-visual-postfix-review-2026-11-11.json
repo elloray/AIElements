@@ -1,0 +1,961 @@
+{
+  "date": "2026-11-11",
+  "branch": "codex/android-port",
+  "androidCapture": "fresh: 74 states; 1 batch test passed",
+  "webCapture": "74 same-day references reused; 3 fresh light-mode spot checks",
+  "captureLog": ".build/android-postfix-review-2026-11-11/capture.log",
+  "webSpotchecks": {
+    "date": "2026-11-11",
+    "prompt": {
+      "bottom": 467,
+      "height": 160,
+      "left": 460,
+      "right": 820,
+      "top": 307,
+      "width": 360,
+      "x": 460,
+      "y": 307
+    },
+    "fileTree": {
+      "buttons": [
+        {
+          "rect": {
+            "bottom": 359,
+            "height": 28,
+            "left": 480,
+            "right": 800,
+            "top": 331,
+            "width": 320,
+            "x": 480,
+            "y": 331
+          },
+          "text": "app"
+        },
+        {
+          "rect": {
+            "bottom": 387,
+            "height": 28,
+            "left": 496,
+            "right": 800,
+            "top": 359,
+            "width": 304,
+            "x": 496,
+            "y": 359
+          },
+          "text": "layout.tsx"
+        },
+        {
+          "rect": {
+            "bottom": 415,
+            "height": 28,
+            "left": 496,
+            "right": 800,
+            "top": 387,
+            "width": 304,
+            "x": 496,
+            "y": 387
+          },
+          "text": "page.tsx"
+        },
+        {
+          "rect": {
+            "bottom": 443,
+            "height": 28,
+            "left": 480,
+            "right": 800,
+            "top": 415,
+            "width": 320,
+            "x": 480,
+            "y": 415
+          },
+          "text": "components"
+        },
+        {
+          "rect": {
+            "bottom": 471,
+            "height": 28,
+            "left": 496,
+            "right": 800,
+            "top": 443,
+            "width": 304,
+            "x": 496,
+            "y": 443
+          },
+          "text": "ui"
+        },
+        {
+          "rect": {
+            "bottom": 499,
+            "height": 28,
+            "left": 512,
+            "right": 800,
+            "top": 471,
+            "width": 288,
+            "x": 512,
+            "y": 471
+          },
+          "text": "button.tsx"
+        },
+        {
+          "rect": {
+            "bottom": 527,
+            "height": 28,
+            "left": 496,
+            "right": 800,
+            "top": 499,
+            "width": 304,
+            "x": 496,
+            "y": 499
+          },
+          "text": "login-form.tsx"
+        }
+      ],
+      "root": {
+        "bottom": 551,
+        "height": 244,
+        "left": 480,
+        "right": 800,
+        "top": 307,
+        "width": 320,
+        "x": 480,
+        "y": 307
+      }
+    },
+    "barChart": {
+      "width": 360,
+      "height": 354.375
+    }
+  },
+  "records": {
+    "chain-of-thought-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/chain-of-thought-light.png",
+      "androidSHA256": "c6af2f689821114ecac2e60eac16508ceecb99e286faa7e917515cfbdfc24e2f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "4f51768e065e191f84390496730466a3e1be43468b76f8f4f0cbbe8072cf2924",
+      "pairSHA256": "dcbe7a6bcb64729b7916e5a5cd2e3bcfda2483bd0e6c61f7ac26c1e0f7ded8ec",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+      "androidHeightDp": 297.5238,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "chain-of-thought-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/chain-of-thought-dark.png",
+      "androidSHA256": "291a546abf8b5b5fc4e3f64cf9d0963afbe41add0e5ec231adec9c3544fc72be",
+      "matchesPreviousCapture": true,
+      "webSHA256": "0b6f7e320ca47fb918f35e9f245bf5e3bd9d17dce8a3d72f24157b78bf7b184c",
+      "pairSHA256": "17bb3f477a1065f4231e24245c5f508673f5c8cc8998f054250cd959d18c9ac6",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+      "androidHeightDp": 297.5238,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "chat-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/chat-light.png",
+      "androidSHA256": "7acc473dc39e2449db72dd78805ea731a78017b1ca3477fff16356a11b01d521",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c05815af94204447dbee1c88aea7248d56009886ef19de1c5f7094eeac05c30e",
+      "pairSHA256": "c6f41a1b88ba46278bec9bcac40debb4850b721d67a42ed8f810d40498f05305",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+      "androidHeightDp": 800.0,
+      "webHeightPx": 800,
+      "canvasWidth": 360
+    },
+    "chat-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/chat-dark.png",
+      "androidSHA256": "1400c0ad814bc9f1c50afe0e836afd3bc70dcf1fb54835b44d0d7744a207ded6",
+      "matchesPreviousCapture": true,
+      "webSHA256": "2ee73f172b637041557a4ee140e5d79e53423f5af38a417fbd69f7f7c2d495aa",
+      "pairSHA256": "09a6ee629b34ace5367b625c4e95cbc8fea7c62d5571d7bca17541d661517244",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+      "androidHeightDp": 800.0,
+      "webHeightPx": 800,
+      "canvasWidth": 360
+    },
+    "checkpoint-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/checkpoint-light.png",
+      "androidSHA256": "5244c4c2e2a28e3254bbce6036912facfefafd5a9c3d70c4095577b93d49da96",
+      "matchesPreviousCapture": true,
+      "webSHA256": "7366ac75d5e7575e995f1f69ce04fa288a7a65d621504ac7543e337668d4e701",
+      "pairSHA256": "4fea92d6d0ce07112ddd077279f83121df181ed53304e49d76a7a0e63fc6557e",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+      "androidHeightDp": 290.66666,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "checkpoint-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/checkpoint-dark.png",
+      "androidSHA256": "81337f0c0e6ce2b42ae0cf9e63d91cb2911bc14967f1dd10582fb2fe1f257d45",
+      "matchesPreviousCapture": true,
+      "webSHA256": "4119cf7573817b78be5fa868eba6fd808f941596a6a68bbbd4672e96ba04cc6e",
+      "pairSHA256": "cf7d1996670b743d09aa618f69a3f6dd8acedd282944a15259255fd847e4a0fb",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+      "androidHeightDp": 290.66666,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "confirmation-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/confirmation-light.png",
+      "androidSHA256": "003ee7437a43194cee56a921a02325810c95b405e8664f9f612101a2b2b6f2b9",
+      "matchesPreviousCapture": true,
+      "webSHA256": "74c14e5a868b432017aea8ef6c7b4076381365a000a59ff83c8071708189773a",
+      "pairSHA256": "385ec846f8e080e5cadd2f0e42a6d7f8b7fcf18a03de524394075881bff081c5",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "androidHeightDp": 288.0,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "confirmation-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/confirmation-dark.png",
+      "androidSHA256": "247834e7e0aa00f0cd89e20a7ce7907eda3f83c144627768523390caf4456515",
+      "matchesPreviousCapture": true,
+      "webSHA256": "b787a9fbf7fb8661c1a4c27b4e48fb8be13499dbb4411013cc691d4101496ed4",
+      "pairSHA256": "23c912545282fc07e312a1ad5e529b478d40cbf065227328c507af6f8c263209",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "androidHeightDp": 288.0,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "confirmation-approval-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/confirmation-approval-light.png",
+      "androidSHA256": "58cf9b7e32ceb8c855d5a4b0a414f3a1f40b6b3ca7f6f7cb7922774271cfecca",
+      "matchesPreviousCapture": true,
+      "webSHA256": "746207c8bf85e1255323a7e148d326badd94f47b659ff7585b8fbb82968428eb",
+      "pairSHA256": "3f011e1438b12b73a71891c23addf03c8295fe35fd47d565da08fae818177794",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "androidHeightDp": 327.61905,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "confirmation-approval-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/confirmation-approval-dark.png",
+      "androidSHA256": "bb06b057b9860d061aa33791a39bcd5b10911fc8ce30de07c590d78e2c9de04e",
+      "matchesPreviousCapture": true,
+      "webSHA256": "188a0e98248d167f5009e1ac22431c779c67daf54b53dbe53360e0f22af52424",
+      "pairSHA256": "8699b9c3c37b6315fc11021bb37c84d5401259e1d70d4a63cfb46d9b6b3f0123",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "androidHeightDp": 327.61905,
+      "webHeightPx": 288,
+      "canvasWidth": 360
+    },
+    "context-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/context-light.png",
+      "androidSHA256": "867b51de00ec473286d38d47202a00e8b41d4f5af9ad46bee1b8ae7a9eb2bd46",
+      "matchesPreviousCapture": true,
+      "webSHA256": "d4dafaea07d304210ed5b5eac0889966e49ced93af04a820d947755473c7df6a",
+      "pairSHA256": "417e33626eaf5b76cede2b8549f1695c4a60b60c7ac3b1c8a3ea5d31048e145f",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+      "androidHeightDp": 144.0,
+      "webHeightPx": 124,
+      "canvasWidth": 360
+    },
+    "context-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/context-dark.png",
+      "androidSHA256": "1a43aad056e79ad852e4cee637c90625d16a07ff30f782e669d75fe478f30d36",
+      "matchesPreviousCapture": true,
+      "webSHA256": "4c11b1881147bea6b534e4f5186cd8246ed4a115fefc715401d3ae59e8edf25c",
+      "pairSHA256": "af45e625139ce6f276dff9b6e68dd21e7c1c7cb300f977d7d3eddb63932af189",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+      "androidHeightDp": 144.0,
+      "webHeightPx": 124,
+      "canvasWidth": 360
+    },
+    "file-tree-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/file-tree-light.png",
+      "androidSHA256": "c5d1627f805f3f96638b619b60e85726d139107eb5439be6c87fc9244d5574bf",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c07a32184deea1bf945f7bdfa84775346446da221a2af3d397b0ca42a2a88f5d",
+      "pairSHA256": "f0d19ecfa77f68669c4c9312cf2dc2f22b503caaaa81c89b98ccb7ff26aaf8bb",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+      "androidHeightDp": 384.0,
+      "webHeightPx": 244,
+      "canvasWidth": 360
+    },
+    "file-tree-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/file-tree-dark.png",
+      "androidSHA256": "3d46a9072d1361cd78bed69b31fd76e793d1e2f527d1ef084f016dd31cfe4879",
+      "matchesPreviousCapture": true,
+      "webSHA256": "e503a5ff56ebc47570ceebae8ce644d81a171baf1f3494850248baf22ef3ebed",
+      "pairSHA256": "74b00f9dd20108832e67bd9721afa3d78a3c546b4021d8f57a42e4248f5241f2",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+      "androidHeightDp": 384.0,
+      "webHeightPx": 244,
+      "canvasWidth": 360
+    },
+    "inline-citation-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/inline-citation-light.png",
+      "androidSHA256": "e57ff06fdf2b81e03a9df0e0116b4007e4f772f664b30092c1c589dabaed0136",
+      "matchesPreviousCapture": true,
+      "webSHA256": "461e933b61f3c55edea6678eee018583ec684017f0d347a9372219dc3abbcc41",
+      "pairSHA256": "9633017743f53883bee97ba9180ff4d4e7b0c83969813f2df19d7720020ff012",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+      "androidHeightDp": 369.5238,
+      "webHeightPx": 374,
+      "canvasWidth": 360
+    },
+    "inline-citation-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/inline-citation-dark.png",
+      "androidSHA256": "016471224d0021d02355d9938b438699b39f87bf1d86e92aa76dd4c845c5d3a4",
+      "matchesPreviousCapture": true,
+      "webSHA256": "19d58210c43d66a0d3b4831b0e39a6501cc8a7c9a33bbddfa9ba54b983acef4a",
+      "pairSHA256": "b4c2c8fe7d23ecf400da6671750e483a4e8cf97bbde2c035e885edeb64f875c5",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+      "androidHeightDp": 369.5238,
+      "webHeightPx": 374,
+      "canvasWidth": 360
+    },
+    "message-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/message-light.png",
+      "androidSHA256": "292da3a17adc25f9e1bada54e3790dda70ed9fb1f043bc9e56183d50745dc20c",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c3a812e44255e64715538e2a64df257785f405a22bea7c466920811a6fbd7e93",
+      "pairSHA256": "324f61b2f5874a4022230333d3f89050d8f4af7b902cd27398e94a314d3cc5f3",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+      "androidHeightDp": 459.8095,
+      "webHeightPx": 434.25,
+      "canvasWidth": 360
+    },
+    "message-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/message-dark.png",
+      "androidSHA256": "c7503bced02452cb89d8352970698101bcc5cca9d6fad767919ffd6a3bbcce60",
+      "matchesPreviousCapture": true,
+      "webSHA256": "9e55ca5ea0e06975e415e63b442a0eacd00898e25c062ed3e0e8c3d716c4a601",
+      "pairSHA256": "f500ebcc025a87dc51ff3b96450aa1df4f2f90a8239a766154f0ac5d7888c852",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+      "androidHeightDp": 459.8095,
+      "webHeightPx": 434.25,
+      "canvasWidth": 360
+    },
+    "model-selector-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/model-selector-light.png",
+      "androidSHA256": "8b2f3fe33e052a8afee356e391c767c41f3b3c8246db843dd291494687d63175",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c09091852fc53fa4670f37b66ea35ee3c9b6e8736472fc799e5814197858699e",
+      "pairSHA256": "c3777101300886101cada05f61b167e8fc15e8f3d29517f60a1aa35b63629c5b",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+      "androidHeightDp": 160.38095,
+      "webHeightPx": 160,
+      "canvasWidth": 360
+    },
+    "model-selector-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/model-selector-dark.png",
+      "androidSHA256": "c49de895d1edab3ae23cfe1ce85b327d14de51f028a946fd20cea47266f409ae",
+      "matchesPreviousCapture": true,
+      "webSHA256": "8f9d5a0b607c455f36d5fcc4783f6a52382ac9f05aefac3333c480023236efaa",
+      "pairSHA256": "3b106dc269ecfa85967bfaf76f7ffffc536761ce1b37f0eb61a5c5259c360a02",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+      "androidHeightDp": 160.38095,
+      "webHeightPx": 160,
+      "canvasWidth": 360
+    },
+    "plan-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/plan-light.png",
+      "androidSHA256": "5335efde54f20a55fa11f9691a58ec1704ae1bb367d5b8fbef9428c7e4fcfe36",
+      "matchesPreviousCapture": true,
+      "webSHA256": "e3c00a6b963d916665ba39e15192d1c08ddbfea5fc52dcb2de4bfdfacb07cd37",
+      "pairSHA256": "fd0ea85bf1cd2517362998aa3b184c08958770aa457eaf5395776ba0a5c44a9d",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+      "androidHeightDp": 409.14285,
+      "webHeightPx": 367.5,
+      "canvasWidth": 360
+    },
+    "plan-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/plan-dark.png",
+      "androidSHA256": "a06bea6fe1eca5e84c6deb85300c2c58b79591e79e0e04d43329169e3d78fec5",
+      "matchesPreviousCapture": true,
+      "webSHA256": "433b796cab35ab38506561c56ebb828008984b338a4ec91e135c37a965aa784a",
+      "pairSHA256": "4b9b779b050f4f43b1b8207810535b7e6c9134796d736f604e517403ed3c5dde",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+      "androidHeightDp": 409.14285,
+      "webHeightPx": 367.5,
+      "canvasWidth": 360
+    },
+    "prompt-input-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/prompt-input-light.png",
+      "androidSHA256": "8b2f3fe33e052a8afee356e391c767c41f3b3c8246db843dd291494687d63175",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c09091852fc53fa4670f37b66ea35ee3c9b6e8736472fc799e5814197858699e",
+      "pairSHA256": "cabee9405a8cd994cf3a6b04ea4d30742d5bb559c7e3b2f9a700c8036bcd3c43",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+      "androidHeightDp": 160.38095,
+      "webHeightPx": 160,
+      "canvasWidth": 360
+    },
+    "prompt-input-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/prompt-input-dark.png",
+      "androidSHA256": "c49de895d1edab3ae23cfe1ce85b327d14de51f028a946fd20cea47266f409ae",
+      "matchesPreviousCapture": true,
+      "webSHA256": "8f9d5a0b607c455f36d5fcc4783f6a52382ac9f05aefac3333c480023236efaa",
+      "pairSHA256": "41942c6686c1bc2f524a7091b5eb5981649d951b6333b99544917194b10dc570",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+      "androidHeightDp": 160.38095,
+      "webHeightPx": 160,
+      "canvasWidth": 360
+    },
+    "queue-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/queue-light.png",
+      "androidSHA256": "87920648000f2ab0f2a709852bcad87543ff487a62ba34bd733a6aa65aa475e4",
+      "matchesPreviousCapture": true,
+      "webSHA256": "b6e98287b8e2aae5034f9b0aa42ea2065f900dec1608d381ee76c0681ed01217",
+      "pairSHA256": "618bd433e79adb1b0508886aad1860c8be57e1ce3ebe92b563dfacdd4638fc19",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+      "androidHeightDp": 473.5238,
+      "webHeightPx": 344.75,
+      "canvasWidth": 360
+    },
+    "queue-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/queue-dark.png",
+      "androidSHA256": "e100bb30c1787abc31a6e803686f3ac639d0200f15eec6bb171583bd1ede054a",
+      "matchesPreviousCapture": true,
+      "webSHA256": "f799c800e66e4f68321d251a9e96daf95b2e4ae216b0c84b10d1cdff8648b49b",
+      "pairSHA256": "326f2c265fb2d60b71e0871e7b2ed24db643b5c741c303df180f686591ce3b8b",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+      "androidHeightDp": 473.5238,
+      "webHeightPx": 344.75,
+      "canvasWidth": 360
+    },
+    "reasoning-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/reasoning-light.png",
+      "androidSHA256": "84f08f6f71b5c16a2336da4b228c49f7a12275537fc44125144539ba163c8609",
+      "matchesPreviousCapture": true,
+      "webSHA256": "5f82e42da00898258ebfba4b1816c424217b188f5f95b97d3c6a14dc681a7099",
+      "pairSHA256": "67aadaa0c12d62a6db6bbc2e9e395c3fa4f9ce38fcb79a63bd1cba22d3c760b8",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+      "androidHeightDp": 438.85715,
+      "webHeightPx": 417.25,
+      "canvasWidth": 360
+    },
+    "reasoning-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/reasoning-dark.png",
+      "androidSHA256": "f70dc886ac6e54ac77d89553df48b40e70990128598b8e1efc083378f43d4ece",
+      "matchesPreviousCapture": true,
+      "webSHA256": "d29eaf55fcf828faa2c10f243cc183a0c541a93216d80ba69a101decac27c215",
+      "pairSHA256": "e0360444d21e6964edd301f6be91842420f5c410dc6dbe250caa4982e0bc1e9a",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+      "androidHeightDp": 438.85715,
+      "webHeightPx": 417.25,
+      "canvasWidth": 360
+    },
+    "sources-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/sources-light.png",
+      "androidSHA256": "84d2f9bd46bc500a3333b003cabd2e8f16fad31a566fa606ac17b465aa19f66b",
+      "matchesPreviousCapture": true,
+      "webSHA256": "21cfc18676174f41baf529309f75ca0581961b77baf214cb1de56229d5f48883",
+      "pairSHA256": "5f2d0579851bfb9861ebf63d4ce48e679655a90e56e22b779627580cfbf309a5",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+      "androidHeightDp": 448.38095,
+      "webHeightPx": 339.5,
+      "canvasWidth": 360
+    },
+    "sources-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/sources-dark.png",
+      "androidSHA256": "d1b521510baf36dbc00122a6ee2890cfaea804a413f39f50da8e899575db7903",
+      "matchesPreviousCapture": true,
+      "webSHA256": "3e3e18387c516f42249ad222cf7db30031ada0bad785ca0be1cc8b0a15fd3647",
+      "pairSHA256": "411ff115ab8fcd597728c5ba63fe63795ab126a1986fb8d8c90ea04ee9f5db8b",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+      "androidHeightDp": 448.38095,
+      "webHeightPx": 339.5,
+      "canvasWidth": 360
+    },
+    "stack-trace-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/stack-trace-light.png",
+      "androidSHA256": "78209b4b9fa110f96a4e6a55e4ec3c7bd7d4178d5c0ddbc29bbe3a84cab25426",
+      "matchesPreviousCapture": true,
+      "webSHA256": "25b4cced20f4d39d8ff9eed14b74705ac60990494240d4d7b357787ab07dd2f3",
+      "pairSHA256": "96de1663b884d8bae439aa4ecb5f3f6e2e34d5643bc48a62090aa8ec355cf128",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+      "androidHeightDp": 513.9048,
+      "webHeightPx": 384.75,
+      "canvasWidth": 360
+    },
+    "stack-trace-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/stack-trace-dark.png",
+      "androidSHA256": "9bc404a1e6f157bd1ca023fa29ce15268d780b481b47479dc753766c43be83ec",
+      "matchesPreviousCapture": true,
+      "webSHA256": "a1d6dfeeac008cd2b682d072a970a77a7321eb7854dac3961cd692f1d30a93bc",
+      "pairSHA256": "da6318b86a7b779bf984e03a69372e24b7d39e1a6ef8ace58117e6a3e03e40b1",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+      "androidHeightDp": 513.9048,
+      "webHeightPx": 384.75,
+      "canvasWidth": 360
+    },
+    "subagent-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/subagent-light.png",
+      "androidSHA256": "2665c364a6d0aee3d6ba70fb63d4a5761dc07dc1062d30a3c5ae09bad4d71b64",
+      "matchesPreviousCapture": true,
+      "webSHA256": "3e25de406a6fe9fd2765a7e8239a14981492db9370052a2090f1970138c0fdfd",
+      "pairSHA256": "009f4b74e5c624716557b0598d829fb540599e0fe81e020574078f23e6d698db",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+      "androidHeightDp": 549.3333,
+      "webHeightPx": 459.75,
+      "canvasWidth": 360
+    },
+    "subagent-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/subagent-dark.png",
+      "androidSHA256": "8c67fc42e85afd4a316ab5da7751120b32cff92bba8cf2680935a63c6e2a2d8f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "d3c567f9ef32a1da5c78dc62552ca9619f36beadddd63e89b91d5f36ec9d5612",
+      "pairSHA256": "49b8ff177f32ed10b2beef0195a3bec542180aef73f7a6eac57d26009dfc0fe2",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+      "androidHeightDp": 549.3333,
+      "webHeightPx": 459.75,
+      "canvasWidth": 360
+    },
+    "suggestion-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/suggestion-light.png",
+      "androidSHA256": "c362600e8bdc40ea664ce7d57f771784cce1f0ac3497b539a1b8f7e196ad3101",
+      "matchesPreviousCapture": true,
+      "webSHA256": "df1b51e5a42eeba5f09c66c618e747a587216cf405ff9834a697f8b10606ebce",
+      "pairSHA256": "1063c92356e5172eb992602460100e63f58a1981df71f6cb4ea2c78e8f302ad6",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+      "androidHeightDp": 224.38095,
+      "webHeightPx": 196,
+      "canvasWidth": 360
+    },
+    "suggestion-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/suggestion-dark.png",
+      "androidSHA256": "ee0c7ace7d44dd54bdb8a15995d03511fa320d70b931a67a07274efa0e60bdcc",
+      "matchesPreviousCapture": true,
+      "webSHA256": "dca022c6ce6261aafd83f39b42ec89cb729f6be7020f180e1612af65f4078d8d",
+      "pairSHA256": "5802bfdde6397cb0f49f741d5ae8626bf91d90886dbfc75538be1fe8e6041d66",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+      "androidHeightDp": 224.38095,
+      "webHeightPx": 196,
+      "canvasWidth": 360
+    },
+    "task-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/task-light.png",
+      "androidSHA256": "7372f2bf15546bb5d2d9ae2c8b15d4ae7a1f69658ea2f73c64169ada5ed18694",
+      "matchesPreviousCapture": true,
+      "webSHA256": "1ee2ffcb384f668cee93dfdf08b12f5cf31baa18f4065fa9351fb0be85ff3201",
+      "pairSHA256": "55fcb61776f9805886479b797867f5a2b107f9f13fc2c840cceac993ceb5b04f",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+      "androidHeightDp": 368.38095,
+      "webHeightPx": 299.5,
+      "canvasWidth": 360
+    },
+    "task-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/task-dark.png",
+      "androidSHA256": "f7d07a8d072b8ca61a39c709a5dfdffa34a21765663cefc16e885dd138618c56",
+      "matchesPreviousCapture": true,
+      "webSHA256": "14bb5527d43a6ab869985ceb86b4bc5909b54d5148e57baac0fa2e462819c7c7",
+      "pairSHA256": "09c0bcb5a6f545d61bd59e6a25cb1ef182464ac99f9448d86453ef2d72eb5020",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+      "androidHeightDp": 368.38095,
+      "webHeightPx": 299.5,
+      "canvasWidth": 360
+    },
+    "terminal-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/terminal-light.png",
+      "androidSHA256": "ecedbb8ffe710a7afeab8c99e70fec0863ebc07d1fb13918dcc0f028758f6f7f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "6776ec0824053cbc640e589d0d8ce415c436da87d606944eee14d95916d21c28",
+      "pairSHA256": "eb9b5d262b77b4fde501c08775d15e992c4a3ee581acd522f0cede5064be25c7",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+      "androidHeightDp": 613.3333,
+      "webHeightPx": 532.75,
+      "canvasWidth": 360
+    },
+    "terminal-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/terminal-dark.png",
+      "androidSHA256": "485e12bc03c3ad422f6273905a7ff50c05293cd382b747d715ba809062dfd836",
+      "matchesPreviousCapture": true,
+      "webSHA256": "5bacd5bd7eb5ad531c77b483252b89edb816f31938b8f0e2f17c1210ea6af97e",
+      "pairSHA256": "f3854cbd0bd2910a8600e1495d88fde25586f1d152691ead089ff722fdcb390f",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+      "androidHeightDp": 613.3333,
+      "webHeightPx": 532.75,
+      "canvasWidth": 360
+    },
+    "test-results-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/test-results-light.png",
+      "androidSHA256": "7fe9c4cfd43ba506756633455fe96087f6e96d9ffcff6812e9629609fae15b8f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "2fbad6a6519bf68ee89f5722979aa87ab2530eef68069b94aa5e7234ebca4fea",
+      "pairSHA256": "dc168fed717d7b967d468a576a588bff02b1e63fd792fa4470401c5d9c6a7dd1",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+      "androidHeightDp": 599.619,
+      "webHeightPx": 502.25,
+      "canvasWidth": 360
+    },
+    "test-results-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/test-results-dark.png",
+      "androidSHA256": "9e6ab2bc5ffc2cc818850621e705e436f16b98b92b83e69be47df4889ac55bc3",
+      "matchesPreviousCapture": true,
+      "webSHA256": "21add49b1f19d35283d6850372bc214a8438fb6f57577d81ff3ca7e091debe29",
+      "pairSHA256": "5fc845255a89b1cc5677d349b8c3d6b2ebabbe3d6e603f7614a479651e4cd61a",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+      "androidHeightDp": 599.619,
+      "webHeightPx": 502.25,
+      "canvasWidth": 360
+    },
+    "tool-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/tool-light.png",
+      "androidSHA256": "2caed3c135a63209460d24547ba8db06b9cce3172be40774823622818139e011",
+      "matchesPreviousCapture": true,
+      "webSHA256": "c4649126928539ba2f813acf0bd2d6ca753f0aed8186e3c7ec59716e38d62acb",
+      "pairSHA256": "43e0717aa1348c9313d930887e2339d2a6763915946a26bd607526253f959c33",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+      "androidHeightDp": 401.90475,
+      "webHeightPx": 320.25,
+      "canvasWidth": 360
+    },
+    "tool-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/tool-dark.png",
+      "androidSHA256": "b9cbea024ee4d453031f0d7f71542d44bd0736f7651e5596fc2a9d11ab70b6c9",
+      "matchesPreviousCapture": true,
+      "webSHA256": "4c20a7c3481db399cba5b4f486e2185e6d059955ee02909b7063995a40becb96",
+      "pairSHA256": "9246e062932df9cbe3d1f1fa01d8cd28b18cc354268ef2ad0f4b898b669642a8",
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+      "androidHeightDp": 401.90475,
+      "webHeightPx": 320.25,
+      "canvasWidth": 360
+    },
+    "stack-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/stack-light.png",
+      "androidSHA256": "6bf46c72883621ce8e95d684c63f3f85a042fc3e657d2eaf436b1a9827fe55fe",
+      "matchesPreviousCapture": true,
+      "webSHA256": "6e4c0fe87f83c3dbd27387d9606cad07485704e84402b6206b20590c6cb624b3",
+      "pairSHA256": "2f35e27dc05752a38d8385b6762e42d3c68a5c058086aa2a3c76302fa15e4a60",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 113.90476,
+      "webHeightPx": 113,
+      "canvasWidth": 360
+    },
+    "stack-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/stack-dark.png",
+      "androidSHA256": "ce731894d266ec7eeefa9ea126489bd07dad37055476e7c1396dce39b802a831",
+      "matchesPreviousCapture": true,
+      "webSHA256": "289301ea7c638ec3fae91dd1758ff9d1f0b9980d641b10c2a4f73dd36ace2f6e",
+      "pairSHA256": "b591595756705f07c6bf7d6eb46e5d0e390cc3b1101ef865bd80f18a09a6c42a",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 113.90476,
+      "webHeightPx": 113,
+      "canvasWidth": 360
+    },
+    "row-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/row-light.png",
+      "androidSHA256": "df6879edd0055dfe3d2316224742e41098d9a24588ac0fff6c13148eaaed81e8",
+      "matchesPreviousCapture": true,
+      "webSHA256": "fcd5384e374df895bd60e8e0b773267d926ffaebb1e5481bdfd89494a988b843",
+      "pairSHA256": "cbaa24129bfd86063e3c02b5bcb9bf8a566aafffc3f9c637183f927fdb9c1b4c",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 20,
+      "canvasWidth": 360
+    },
+    "row-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/row-dark.png",
+      "androidSHA256": "e06973a3a1f79aa9bc0a5a52a99eae0fe3946516203681bbe14b525ed55f53a5",
+      "matchesPreviousCapture": true,
+      "webSHA256": "10a999712bab09c78639f9d2fc43c494207000b19d8c2f4f2515415f17a53307",
+      "pairSHA256": "006b001b1bdd6aa1a009eb40165bab6b1abe088e6226f1bf385f45db2e0b115a",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 20,
+      "canvasWidth": 360
+    },
+    "card-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/card-light.png",
+      "androidSHA256": "a73d47563c8113ee6e38908b0b2524a1273d1a69e3e112d40ba0d78c1f8990f1",
+      "matchesPreviousCapture": true,
+      "webSHA256": "cd549fa6a5abaa4f422442cb732e75f8b9ce27627019b6c7c2f52140eecb82f4",
+      "pairSHA256": "ada0ee3b56fe24b1360e38e006978f72890a409073964b0e32641b1496653843",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+      "androidHeightDp": 401.90475,
+      "webHeightPx": 357,
+      "canvasWidth": 360
+    },
+    "card-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/card-dark.png",
+      "androidSHA256": "857788ff91435f5df83a68405eb4a149741555f0feaca191ceabadee6f6e0275",
+      "matchesPreviousCapture": true,
+      "webSHA256": "916dfc9ed3c492ef8ca3f4029934d0e3642d93f766b6449c7d99924b3c97107b",
+      "pairSHA256": "f67f4cc3999efa3aa3ff46a82df36b31e126cbd1355813b44bb7bb87fa80d82c",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+      "androidHeightDp": 401.90475,
+      "webHeightPx": 357,
+      "canvasWidth": 360
+    },
+    "text-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/text-light.png",
+      "androidSHA256": "3d441c087b48fc1280de596b1903411f4d960b300f5dc0c468719e8c48bf5bba",
+      "matchesPreviousCapture": true,
+      "webSHA256": "183156474972f2769eecdfb1376824a3c468235298b056a491caba5a90b5c531",
+      "pairSHA256": "c5bb2922a63beb1cba83d5824b5f4264dc9c4f06876d4174beb6fa5921ec6c2d",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 40.38095,
+      "webHeightPx": 40,
+      "canvasWidth": 360
+    },
+    "text-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/text-dark.png",
+      "androidSHA256": "60692f3fbef15ad5610e425733907b47a97d2ef8300841d508ff657678f58f80",
+      "matchesPreviousCapture": true,
+      "webSHA256": "3f0ba78c0796e0b54b53df734eb99908766bf7a88469ae414aa17f8cb7e07923",
+      "pairSHA256": "9b5e16b85f27bb18ce5fe6fad40ecae9b5d4394a000d9fb5764522bd2057eb92",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 40.38095,
+      "webHeightPx": 40,
+      "canvasWidth": 360
+    },
+    "button-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/button-light.png",
+      "androidSHA256": "82a7465fc17ee221710f6fc76b23b3cfe394701b648e1fe0a9f28e10790a06fb",
+      "matchesPreviousCapture": true,
+      "webSHA256": "a4548af404f2f11c057024ac5b205bcd21956743f11806106bc31eb6b00d8260",
+      "pairSHA256": "f6aa0977f178ec66c16e399866783da56aa73f27d22f8825f73fe0fc989ea9e5",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "button-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/button-dark.png",
+      "androidSHA256": "e5b761390ec33d64a235e14450505c5a24e76c5215c2226aaed49ce3691ff2a3",
+      "matchesPreviousCapture": true,
+      "webSHA256": "f1b04020c1a57d43c3518db77fd030d6974952a7103b8047e1f0a23894405095",
+      "pairSHA256": "3b9587cb92bd2e824d03637475d57c8ebd2683d27bf2ffa7eb4f1818bf0c58ae",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "badge-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/badge-light.png",
+      "androidSHA256": "df6879edd0055dfe3d2316224742e41098d9a24588ac0fff6c13148eaaed81e8",
+      "matchesPreviousCapture": true,
+      "webSHA256": "fcd5384e374df895bd60e8e0b773267d926ffaebb1e5481bdfd89494a988b843",
+      "pairSHA256": "dd1f56d55a2c1055a29924d6475145609c4ed5642f60ebf69ab968f559605520",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 20,
+      "canvasWidth": 360
+    },
+    "badge-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/badge-dark.png",
+      "androidSHA256": "e06973a3a1f79aa9bc0a5a52a99eae0fe3946516203681bbe14b525ed55f53a5",
+      "matchesPreviousCapture": true,
+      "webSHA256": "10a999712bab09c78639f9d2fc43c494207000b19d8c2f4f2515415f17a53307",
+      "pairSHA256": "dbee900caf605d05d7f518a0d35907737a8433fa440c1215787374fdcb589bfc",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 20,
+      "canvasWidth": 360
+    },
+    "input-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/input-light.png",
+      "androidSHA256": "2212ccd3b2d18db2c0fc24abd8939f8c7cf1d26249f07b2287b76822f6ba9d94",
+      "matchesPreviousCapture": true,
+      "webSHA256": "ddde1330d9783ef9f1c68823739085c0c06cf16e29bb9dbb9f23280e3a442ad3",
+      "pairSHA256": "1d800d4058d4a16840c29c9914ffbabd931c4fde8c9c6495c63b2de155c5cf2d",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "input-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/input-dark.png",
+      "androidSHA256": "4d90188fd672657209e0d0ecd835a2edc6622da6753c878ee315300cdd94099c",
+      "matchesPreviousCapture": true,
+      "webSHA256": "85b94ec63bccb91433e8132defbe908283e3257bd02beee697e886cba22d9602",
+      "pairSHA256": "6b66216227f5eec8fe65dc34bfdfbfa94d451ddae5b841ff816346630ea5a273",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "select-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/select-light.png",
+      "androidSHA256": "144ec02f4e64664738bbba29fa5eb6e9d867abb4cdbf5a4316bfb59387d70bad",
+      "matchesPreviousCapture": true,
+      "webSHA256": "7f27c9cd59f23ee79c8b7408472dbb392ff8d8b40e883208718de70368c1f68e",
+      "pairSHA256": "36d90aafec47670e57f9291121847b3a337f5f02077d42e57848143cdb1e3358",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "select-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/select-dark.png",
+      "androidSHA256": "3de77a1f7f7f8a4ee23272e70bca1925231c5f81a34d5d10b6a0b673ad9df68a",
+      "matchesPreviousCapture": true,
+      "webSHA256": "0fb2a63116a7530e2fc2e17b8903a6deee72e7e021a648a172d1f8c5e758ee97",
+      "pairSHA256": "736969020329d7ff3759a27eb6ede84e03110851d6d0b8a5cf9b2dc525e87796",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 32,
+      "canvasWidth": 360
+    },
+    "switch-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/switch-light.png",
+      "androidSHA256": "e69064b10cfb7bcf49d42013247c758afb0fda11c0a5dc3b09cb2a30416ef9fc",
+      "matchesPreviousCapture": true,
+      "webSHA256": "5934316669281280dff493fb7e5971fb6b1c21d0e65481c1d207f276e9133e78",
+      "pairSHA256": "850dca37cefb92219dc77ab41a829e8f348b0ee23b516150b93b43a25368e5e8",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 18.3984375,
+      "canvasWidth": 360
+    },
+    "switch-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/switch-dark.png",
+      "androidSHA256": "5799b681d717586b9d5b64e5713df00a2af4946c14dfdfb664edb844ea54527d",
+      "matchesPreviousCapture": true,
+      "webSHA256": "5654794f1485b5172e94a165f100e0f275dd438f3497ad0472d87a5eed2b3dc9",
+      "pairSHA256": "2df50dfb97cb9b28203d8edf13d1ec96d2412f5f6fe7e7be270ca231d2e5c6fb",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 18.3984375,
+      "canvasWidth": 360
+    },
+    "progress-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/progress-light.png",
+      "androidSHA256": "e06f732436f9ecabf3cb8a44dd965c280936c171f49a0be570c2ca25a85ea346",
+      "matchesPreviousCapture": true,
+      "webSHA256": "463151a894973f1a56832df69e267757b42bb77a0bb1e0cd97452054c2bb2319",
+      "pairSHA256": "6dabd6e81ba246333d15f1f95bcfd5a633535a6ed163d9e9f2e53ddff538553b",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 4,
+      "canvasWidth": 360
+    },
+    "progress-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/progress-dark.png",
+      "androidSHA256": "32e3930219e03b8316944d6ba96e90cb32087d89f2b17023dc7995af73ae9cb0",
+      "matchesPreviousCapture": true,
+      "webSHA256": "d0c641f5b9cf4f7cd2b3059b959e9733756e4728c6dceecc5c016ec5f0a1aba3",
+      "pairSHA256": "f0029ce245cb664647d4c80adc90ee650eadc80d4b48b96a37b790eb3a04307c",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 4,
+      "canvasWidth": 360
+    },
+    "separator-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/separator-light.png",
+      "androidSHA256": "d7241a832187707dc2c5ca65906cc88a116f127f5d4fb54406ddf5b302f1293f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "529481acb126f40cb66f8734386ab09f975c78db792be994a49f57a706f93c1b",
+      "pairSHA256": "fc0576a334b15796b41b11bbaec81e4de34e2835aaa578a6e8754ad0cba846fd",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 1,
+      "canvasWidth": 360
+    },
+    "separator-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/separator-dark.png",
+      "androidSHA256": "8eda932811822d0ac5a090eae3aeb8998ac31ab7e8ed62dd573f45caa832835e",
+      "matchesPreviousCapture": true,
+      "webSHA256": "638a4f1bf257f460ae7b7cac8732a3e93dcb9c1a44b18d03bea7e6c923e6d4e3",
+      "pairSHA256": "9963e5a0c607c39163b6629a0ac620b49136abb861d3e7434037f9e19bc79278",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "androidHeightDp": 64.0,
+      "webHeightPx": 1,
+      "canvasWidth": 360
+    },
+    "table-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/table-light.png",
+      "androidSHA256": "c80bdc58d49a2c2d918041275056c2c491f5f1239874ae31f6b8dc1a458c6f6f",
+      "matchesPreviousCapture": true,
+      "webSHA256": "379f8a6b2d6159f45b3e1d011548de621ff104c0b3f7bf9debaaecb465874ab3",
+      "pairSHA256": "39e357e29dc9b71986fa1eed7d12751aff202d879e9cfaf2db6486eecd5c2e82",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+      "androidHeightDp": 374.85715,
+      "webHeightPx": 371.5,
+      "canvasWidth": 360
+    },
+    "table-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/table-dark.png",
+      "androidSHA256": "f53bbfb06d31cc1b1babe6812a5cd35b7e7c8d51fbbe1f601e8570da90b8fd1a",
+      "matchesPreviousCapture": true,
+      "webSHA256": "8d63b42019db4f27492a1d0eca50b5f0bb8645850d38a4c262b76139639dcadd",
+      "pairSHA256": "675507bed07a30bc9ff509f6fa3a9114205d8dfee3d41de8f2306481f1108651",
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+      "androidHeightDp": 374.85715,
+      "webHeightPx": 371.5,
+      "canvasWidth": 360
+    },
+    "bar-chart-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/bar-chart-light.png",
+      "androidSHA256": "9a20a9500bec5e324bf77e04ea4ab3593af083bf14220833b5e3d19a54c61181",
+      "matchesPreviousCapture": true,
+      "webSHA256": "96d8b70828e1589f8c36ae382b810ef264e86cfe6c2719c0ae7af5f0225992f5",
+      "pairSHA256": "94aef2c0a3f97af3438ebfe5a6454151e3af0f4327a59bffd703846d67a323b0",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    },
+    "bar-chart-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/bar-chart-dark.png",
+      "androidSHA256": "d347aa71c6adfc8bb65225a03fada8feabbb5edae29075c1a868df702f88b4af",
+      "matchesPreviousCapture": true,
+      "webSHA256": "78adbfbe565aa11a76d41660ce9c9480b1eb0a799a9cf3bf03387d7fe3b6918e",
+      "pairSHA256": "7d5c3756f448e2bb05dc34d31ea7a3011df93dd5b4721368c37e0e6e30a75e3f",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    },
+    "line-chart-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/line-chart-light.png",
+      "androidSHA256": "fb733bef8ce2a6fb9e9cf7559b03e0b6032812c1a1619302e49f91cb33f3b07a",
+      "matchesPreviousCapture": true,
+      "webSHA256": "bae8406231f042e163063b995dac7aa1f4b54216045d8f5be76bcaa18ec60464",
+      "pairSHA256": "08c9480d87c1c4d7abba77d17112db739424cc879c56eb81039a5a3d80cdf43e",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    },
+    "line-chart-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/line-chart-dark.png",
+      "androidSHA256": "80c87c2e36198a8b58233bb1217b78c6b99e84fc2eb31d3a70e45cde16f06c34",
+      "matchesPreviousCapture": true,
+      "webSHA256": "234a9ebbe50f3d2d6ba6ea3cf89b394843e9b30498af0465260b2393af1f40d9",
+      "pairSHA256": "74f8d4ef9af8e01d931d8a54c32aa00b5f08ee66ae6a9b4abdc465e1be179e60",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    },
+    "area-chart-light": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/area-chart-light.png",
+      "androidSHA256": "48351e63b39972ea5604fe350125b453bbcbc0b272e1a0a0e178d9d1202098cc",
+      "matchesPreviousCapture": true,
+      "webSHA256": "ac6ea5c4c367b5afc33b29d01d25c8339cdb4142ad44b2606072c40697e15bcd",
+      "pairSHA256": "b64b72388339b928bb1780c8e5b0c1e4220146e97a9a48923413671653824239",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    },
+    "area-chart-dark": {
+      "androidPath": ".build/android-postfix-review-2026-11-11/android/area-chart-dark.png",
+      "androidSHA256": "c47ccf99060a3ae95ac3e6fdd4cd04cee4bfb8a8e57ea0c511ba41d7641ed886",
+      "matchesPreviousCapture": true,
+      "webSHA256": "0870c31dc9771c05d49e56f02facd09679a284ae08132a612d6ad93411c9a434",
+      "pairSHA256": "25491f5b434360f088c149372153ac010fd6b5a37ccfc4fef9779799f5d500e0",
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+      "androidHeightDp": 354.66666,
+      "webHeightPx": 354.375,
+      "canvasWidth": 360
+    }
+  },
+  "sourceSHA256": {
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/InteractionTest.kt": "49994cc7abdad1700afd2a32b74a088b2aac38c4f4e729e6b077dc6240d41376",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualAuditFixtures.kt": "9251272bf514f9b2eeb53bae283f3f5dcf664c0768ceaa47c32a490a89d65deb",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualAuditTest.kt": "bbc250f5d6addf7ce68d692698238bf84c991cbfbf7835882b1a0bbe9c029593",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualParityInteractionTest.kt": "7effc1dece0c4103b3f15d5ccc815b5f9dd4dd87a742366dbe35cf8ccf94e487",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/ChartGeometry.kt": "5e144fc3ed300039ab963163aed5d50fe0ab192d8e87cdde6d66e068c14b0090",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Chat.kt": "5e5459b69efa504cd3779c366e6b9f9c11ad845f59b2c0cdf508b518e65e0b84",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Content.kt": "bb29404fb11e06f5dda5dd5c8bbb189cf374efc7fefad55e95734d40bacd9aa7",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/DataDisplay.kt": "b50ff744bb90e86b727c326da57b1a8a56e8974d26bfd304a6afad68746c1219",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/GenerativeUI.kt": "ef296488a170a4b7f5aa4c4d5e2f4a4ce41acf2b9077dcaf23aaabd35c470083",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Icons.kt": "fcc34d7afbae77e3790b2c8ddf4aded1229de0d82dc04e038a3608bcfc838d29",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Primitives.kt": "852055ff71495791d7fe2549decd90854258d876c523148412aa4906dd4d1ad0",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Theme.kt": "73bd2827274c4504ed65984606b2bc5ce7af142ab0f0d35904df7b46a3c6e732",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Traces.kt": "09b8d4fa4a74c3fffeace8b612fdca1f7b2ea456db85dd9afa9cab701e6d72bf",
+    "Android/aielements/src/test/kotlin/dev/aielements/compose/ChartGeometryTest.kt": "338723c4ced023431a670644cab9a42ae057648d7d0e297c8342faa3b6c977c2"
+  }
+}

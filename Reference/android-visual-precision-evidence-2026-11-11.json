@@ -1,0 +1,1476 @@
+{
+  "date": "2026-11-11",
+  "branch": "codex/android-port",
+  "webRecapturedThisPass": true,
+  "nativeRecapturedThisPass": true,
+  "comparisonCount": 74,
+  "galleryCount": 20,
+  "validation": {
+    "deviceTests": 23,
+    "lintErrors": 0,
+    "lintWarnings": 13,
+    "device": "Android 15 API 35 ARM64; comparison density 2.625; font scale 1.0",
+    "largeFontTableTest": "320 dp, font scale 1.5; separate rows and scrollable amount verified"
+  },
+  "artifacts": {
+    "Android/gallery/build/outputs/apk/debug/gallery-debug.apk": "c6ea0252c8c72dbdd9280ab35ecacfbc6ee6b00f4499ffb1ec47d72730bf4f8f",
+    "Android/aielements/build/outputs/aar/aielements-release.aar": "2d3f8b7c3febfd88e4912abbc2d881c6426cfaa0cc6a606fe1ddf213a5fd2baf"
+  },
+  "sources": {
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/ChartGeometry.kt": "5e144fc3ed300039ab963163aed5d50fe0ab192d8e87cdde6d66e068c14b0090",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Chat.kt": "3e6d89be464c36b62160e8b7e02a2ca2f00d7ef8ea447403a0208b0ab10b04dc",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Content.kt": "26d933f58439eab8b233c413ccaac13fd15c3d77b29b5164156d8f0a21fd7d58",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Traces.kt": "daa13f710b6bb4cb30a3feaf4e902252d1b0ceb16d98c9d636f3eb13d843d007",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Theme.kt": "73bd2827274c4504ed65984606b2bc5ce7af142ab0f0d35904df7b46a3c6e732",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/GenerativeUI.kt": "77ba6606edc6a609b646801a0832dd65cef6ca9651fdf4d317409dc4b2623b01",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/DataDisplay.kt": "c2c4eca4d35232779484feb4cf6e524214136ca180cc72073965dc1c777b4da8",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Icons.kt": "fcc34d7afbae77e3790b2c8ddf4aded1229de0d82dc04e038a3608bcfc838d29",
+    "Android/aielements/src/main/kotlin/dev/aielements/compose/Primitives.kt": "11616f8af241bc823873e4b4e87d65f5a0aac6780214dfc70a5365ec61614ebd",
+    "Android/aielements/src/test/kotlin/dev/aielements/compose/ChartGeometryTest.kt": "338723c4ced023431a670644cab9a42ae057648d7d0e297c8342faa3b6c977c2",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/InteractionTest.kt": "49994cc7abdad1700afd2a32b74a088b2aac38c4f4e729e6b077dc6240d41376",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualAuditFixtures.kt": "90516221b8c11b72857f9a976f5c20d1ec4c30eb2dc493efa7ae2c973d7dd8f5",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualAuditTest.kt": "bbc250f5d6addf7ce68d692698238bf84c991cbfbf7835882b1a0bbe9c029593",
+    "Android/aielements/src/androidTest/kotlin/dev/aielements/compose/VisualParityInteractionTest.kt": "3f0aa2a377d34f167e45662968835268044dc3f23ea3bde9c0c29a168949d2b7"
+  },
+  "logs": {
+    ".build/android-polish3-2026-11-11/build.log": "47ecf08193652c9d2b92eaacdc24cdae8f726f129b37e6a5e0e61f1fe049b113",
+    ".build/android-polish3-2026-11-11/instrumentation.log": "ac76f385f024fb26204ec0491b616c0cea529c033e54abe441b2e05ff18ecaae",
+    ".build/android-polish3-2026-11-11/gallery-retry.log": "bbb952760f020ab348c1e74a58ae254e089e535a3d5e47fc64bac00d9fe5ded4"
+  },
+  "comparisons": {
+    "chat-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+      "webSHA256": "ad873921cd1c228ea590838753a7d823343c3fd9b1806faab6b06146dfe20445",
+      "androidSHA256": "2cb6a03eeca7d458129221cae96c0e8be6824cab31ba7fa7690bd888b81c725f",
+      "pairSHA256": "ae9ebbadb35201a29da110014aab879d0c212d686b1e1e6948648555c97b4dc5",
+      "webRect": {
+        "bottom": 1091,
+        "height": 800,
+        "left": 460,
+        "right": 820,
+        "top": 291,
+        "width": 360,
+        "x": 460,
+        "y": 291
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 800.0,
+      "nativeDensity": 2.625
+    },
+    "chat-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chat",
+      "webSHA256": "befe50b0364e83da782aaf1fe37b6c751e94d7de1d661996a3cac7e2f190947c",
+      "androidSHA256": "be5f140b1bfb7f4b2aed7283ae6d6a9073510dc9248cfd39f95c5e03944535c5",
+      "pairSHA256": "974093287d465a6dd76267b3a9e4f0b8989674f0a41945a41fa1c1f52d8c7439",
+      "webRect": {
+        "bottom": 1091,
+        "height": 800,
+        "left": 460,
+        "right": 820,
+        "top": 291,
+        "width": 360,
+        "x": 460,
+        "y": 291
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 800.0,
+      "nativeDensity": 2.625
+    },
+    "table-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+      "webSHA256": "084e2c325f2428e95712d82e10097d390c01d4c42c18d57eef58dffcf16623c6",
+      "androidSHA256": "842f4014d7e8b9d4eeb988a3e545782420f3e14ac50282fc46101885841dedbf",
+      "pairSHA256": "39710ee2dd44225f499e16a95721d54f338c4fe14b98a1bc5e2bfb4133ca42b1",
+      "webRect": {
+        "bottom": 692.75,
+        "height": 371.5,
+        "left": 460,
+        "right": 820,
+        "top": 321.25,
+        "width": 360,
+        "x": 460,
+        "y": 321.25
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 371.42856,
+      "nativeDensity": 2.625
+    },
+    "table-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/table",
+      "webSHA256": "8d63b42019db4f27492a1d0eca50b5f0bb8645850d38a4c262b76139639dcadd",
+      "androidSHA256": "3322f552c8443f6dd6f2690b2ba206712b808ac6380a5631b66d8257f64d20e0",
+      "pairSHA256": "f6a91b53355bda5e2b06b3a052a3ca830a24d4c56f9b9bdf5fcc8f45946ba6d6",
+      "webRect": {
+        "bottom": 692.75,
+        "height": 371.5,
+        "left": 460,
+        "right": 820,
+        "top": 321.25,
+        "width": 360,
+        "x": 460,
+        "y": 321.25
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 371.42856,
+      "nativeDensity": 2.625
+    },
+    "area-chart-light": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+      "webSHA256": "ac6ea5c4c367b5afc33b29d01d25c8339cdb4142ad44b2606072c40697e15bcd",
+      "androidSHA256": "48351e63b39972ea5604fe350125b453bbcbc0b272e1a0a0e178d9d1202098cc",
+      "pairSHA256": "b64b72388339b928bb1780c8e5b0c1e4220146e97a9a48923413671653824239",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    },
+    "area-chart-dark": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-area-default",
+      "webSHA256": "0870c31dc9771c05d49e56f02facd09679a284ae08132a612d6ad93411c9a434",
+      "androidSHA256": "c47ccf99060a3ae95ac3e6fdd4cd04cee4bfb8a8e57ea0c511ba41d7641ed886",
+      "pairSHA256": "25491f5b434360f088c149372153ac010fd6b5a37ccfc4fef9779799f5d500e0",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    },
+    "card-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+      "webSHA256": "cd549fa6a5abaa4f422442cb732e75f8b9ce27627019b6c7c2f52140eecb82f4",
+      "androidSHA256": "c23927598956bbe970ffa36399b9989782c8041d34d68e866556fbc8369bd950",
+      "pairSHA256": "d6de448361b075438d95ace6d389eb3c345451f93b3ce0b65273e04168f317e2",
+      "webRect": {
+        "bottom": 685.5,
+        "height": 357,
+        "left": 460,
+        "right": 820,
+        "top": 328.5,
+        "width": 360,
+        "x": 460,
+        "y": 328.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 378.2857,
+      "nativeDensity": 2.625
+    },
+    "card-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/card",
+      "webSHA256": "d33efc58de8f760f5c070defb1cd3ead984d2f7288101f2c179a75ecb1cae166",
+      "androidSHA256": "58ccea4202e9dfc8d112c64cb870883a3496114fb8c1bab06ff352f887e0849f",
+      "pairSHA256": "77b51dc53219a0bd7c663dbf05d49a780df47c6bea98f42a9e285df0dc24afc5",
+      "webRect": {
+        "bottom": 685.5,
+        "height": 357,
+        "left": 460,
+        "right": 820,
+        "top": 328.5,
+        "width": 360,
+        "x": 460,
+        "y": 328.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 378.2857,
+      "nativeDensity": 2.625
+    },
+    "message-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+      "webSHA256": "c3a812e44255e64715538e2a64df257785f405a22bea7c466920811a6fbd7e93",
+      "androidSHA256": "5d8be9b81c5d77032a6eabaf1cb22c9a713184c6e87c3778a9aab636b41d89e2",
+      "pairSHA256": "d2343aba20cfd80e4020fb68bf1e7db991de26162e7f7cb9bef0b177c782e1c3",
+      "webRect": {
+        "bottom": 741.25,
+        "height": 434.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 459.8095,
+      "nativeDensity": 2.625
+    },
+    "message-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/message",
+      "webSHA256": "bf1620af424bfcdbdf05b14043fd1ccd93226c860a4262e7753df926fa3c3214",
+      "androidSHA256": "5bef47438a4cd9681440e2d73e95a5f709fb14157968726f3118e3b045ac1a20",
+      "pairSHA256": "91b3da52dfbf820e594c3d96287ebcc58ed781f10877f908bf1d372a6612f42a",
+      "webRect": {
+        "bottom": 741.25,
+        "height": 434.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 459.8095,
+      "nativeDensity": 2.625
+    },
+    "chain-of-thought-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+      "webSHA256": "4f51768e065e191f84390496730466a3e1be43468b76f8f4f0cbbe8072cf2924",
+      "androidSHA256": "c6af2f689821114ecac2e60eac16508ceecb99e286faa7e917515cfbdfc24e2f",
+      "pairSHA256": "dcbe7a6bcb64729b7916e5a5cd2e3bcfda2483bd0e6c61f7ac26c1e0f7ded8ec",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 297.5238,
+      "nativeDensity": 2.625
+    },
+    "chain-of-thought-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/chain-of-thought",
+      "webSHA256": "0b6f7e320ca47fb918f35e9f245bf5e3bd9d17dce8a3d72f24157b78bf7b184c",
+      "androidSHA256": "291a546abf8b5b5fc4e3f64cf9d0963afbe41add0e5ec231adec9c3544fc72be",
+      "pairSHA256": "17bb3f477a1065f4231e24245c5f508673f5c8cc8998f054250cd959d18c9ac6",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 297.5238,
+      "nativeDensity": 2.625
+    },
+    "checkpoint-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+      "webSHA256": "7366ac75d5e7575e995f1f69ce04fa288a7a65d621504ac7543e337668d4e701",
+      "androidSHA256": "4aa9c0171c9545fe99e6cd5020a7e793c10c174bd27d2fa5dc1e1ae6335b1e28",
+      "pairSHA256": "c7551b1205f1cde9d14a34f3a01f6cd6ba618a7f6ee967afe37fa439d950ffbf",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 290.66666,
+      "nativeDensity": 2.625
+    },
+    "checkpoint-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/checkpoint",
+      "webSHA256": "4119cf7573817b78be5fa868eba6fd808f941596a6a68bbbd4672e96ba04cc6e",
+      "androidSHA256": "5b587a8f9bb932648fdc2bfee3f5c140a821bbd4c1f3bdab5635fb0ed4dcb78a",
+      "pairSHA256": "05c9fb27d3f069e53cb917e21fa6851ae146875cec63c7559c306b5b8c9cc507",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 290.66666,
+      "nativeDensity": 2.625
+    },
+    "context-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+      "webSHA256": "d4dafaea07d304210ed5b5eac0889966e49ced93af04a820d947755473c7df6a",
+      "androidSHA256": "867b51de00ec473286d38d47202a00e8b41d4f5af9ad46bee1b8ae7a9eb2bd46",
+      "pairSHA256": "417e33626eaf5b76cede2b8549f1695c4a60b60c7ac3b1c8a3ea5d31048e145f",
+      "webRect": {
+        "bottom": 431,
+        "height": 124,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 144.0,
+      "nativeDensity": 2.625
+    },
+    "context-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/context",
+      "webSHA256": "0470b0d5d9cf192537c37c1d55441a47cd400938890db9e9cb9965cb00af9c3c",
+      "androidSHA256": "1a43aad056e79ad852e4cee637c90625d16a07ff30f782e669d75fe478f30d36",
+      "pairSHA256": "cddb7bd06a3ee0489392d909fbdfc2428278a0a31398a93e69522527931056ad",
+      "webRect": {
+        "bottom": 431,
+        "height": 124,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 144.0,
+      "nativeDensity": 2.625
+    },
+    "inline-citation-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+      "webSHA256": "461e933b61f3c55edea6678eee018583ec684017f0d347a9372219dc3abbcc41",
+      "androidSHA256": "e57ff06fdf2b81e03a9df0e0116b4007e4f772f664b30092c1c589dabaed0136",
+      "pairSHA256": "9633017743f53883bee97ba9180ff4d4e7b0c83969813f2df19d7720020ff012",
+      "webRect": {
+        "bottom": 681,
+        "height": 374,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 369.5238,
+      "nativeDensity": 2.625
+    },
+    "inline-citation-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/inline-citation",
+      "webSHA256": "19d58210c43d66a0d3b4831b0e39a6501cc8a7c9a33bbddfa9ba54b983acef4a",
+      "androidSHA256": "016471224d0021d02355d9938b438699b39f87bf1d86e92aa76dd4c845c5d3a4",
+      "pairSHA256": "b4c2c8fe7d23ecf400da6671750e483a4e8cf97bbde2c035e885edeb64f875c5",
+      "webRect": {
+        "bottom": 681,
+        "height": 374,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 369.5238,
+      "nativeDensity": 2.625
+    },
+    "model-selector-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+      "webSHA256": "c09091852fc53fa4670f37b66ea35ee3c9b6e8736472fc799e5814197858699e",
+      "androidSHA256": "8b2f3fe33e052a8afee356e391c767c41f3b3c8246db843dd291494687d63175",
+      "pairSHA256": "c3777101300886101cada05f61b167e8fc15e8f3d29517f60a1aa35b63629c5b",
+      "webRect": {
+        "bottom": 491,
+        "height": 160,
+        "left": 460,
+        "right": 820,
+        "top": 331,
+        "width": 360,
+        "x": 460,
+        "y": 331
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 160.38095,
+      "nativeDensity": 2.625
+    },
+    "model-selector-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/model-selector",
+      "webSHA256": "8f9d5a0b607c455f36d5fcc4783f6a52382ac9f05aefac3333c480023236efaa",
+      "androidSHA256": "c49de895d1edab3ae23cfe1ce85b327d14de51f028a946fd20cea47266f409ae",
+      "pairSHA256": "3b106dc269ecfa85967bfaf76f7ffffc536761ce1b37f0eb61a5c5259c360a02",
+      "webRect": {
+        "bottom": 491,
+        "height": 160,
+        "left": 460,
+        "right": 820,
+        "top": 331,
+        "width": 360,
+        "x": 460,
+        "y": 331
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 160.38095,
+      "nativeDensity": 2.625
+    },
+    "prompt-input-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+      "webSHA256": "c09091852fc53fa4670f37b66ea35ee3c9b6e8736472fc799e5814197858699e",
+      "androidSHA256": "8b2f3fe33e052a8afee356e391c767c41f3b3c8246db843dd291494687d63175",
+      "pairSHA256": "cabee9405a8cd994cf3a6b04ea4d30742d5bb559c7e3b2f9a700c8036bcd3c43",
+      "webRect": {
+        "bottom": 467,
+        "height": 160,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 160.38095,
+      "nativeDensity": 2.625
+    },
+    "prompt-input-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/prompt-input",
+      "webSHA256": "8f9d5a0b607c455f36d5fcc4783f6a52382ac9f05aefac3333c480023236efaa",
+      "androidSHA256": "c49de895d1edab3ae23cfe1ce85b327d14de51f028a946fd20cea47266f409ae",
+      "pairSHA256": "41942c6686c1bc2f524a7091b5eb5981649d951b6333b99544917194b10dc570",
+      "webRect": {
+        "bottom": 467,
+        "height": 160,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 160.38095,
+      "nativeDensity": 2.625
+    },
+    "plan-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+      "webSHA256": "e3c00a6b963d916665ba39e15192d1c08ddbfea5fc52dcb2de4bfdfacb07cd37",
+      "androidSHA256": "5335efde54f20a55fa11f9691a58ec1704ae1bb367d5b8fbef9428c7e4fcfe36",
+      "pairSHA256": "fd0ea85bf1cd2517362998aa3b184c08958770aa457eaf5395776ba0a5c44a9d",
+      "webRect": {
+        "bottom": 674.5,
+        "height": 367.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 409.14285,
+      "nativeDensity": 2.625
+    },
+    "plan-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/plan",
+      "webSHA256": "433b796cab35ab38506561c56ebb828008984b338a4ec91e135c37a965aa784a",
+      "androidSHA256": "a06bea6fe1eca5e84c6deb85300c2c58b79591e79e0e04d43329169e3d78fec5",
+      "pairSHA256": "4b9b779b050f4f43b1b8207810535b7e6c9134796d736f604e517403ed3c5dde",
+      "webRect": {
+        "bottom": 674.5,
+        "height": 367.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 409.14285,
+      "nativeDensity": 2.625
+    },
+    "queue-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+      "webSHA256": "b6e98287b8e2aae5034f9b0aa42ea2065f900dec1608d381ee76c0681ed01217",
+      "androidSHA256": "87920648000f2ab0f2a709852bcad87543ff487a62ba34bd733a6aa65aa475e4",
+      "pairSHA256": "618bd433e79adb1b0508886aad1860c8be57e1ce3ebe92b563dfacdd4638fc19",
+      "webRect": {
+        "bottom": 651.75,
+        "height": 344.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 473.5238,
+      "nativeDensity": 2.625
+    },
+    "queue-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/queue",
+      "webSHA256": "f799c800e66e4f68321d251a9e96daf95b2e4ae216b0c84b10d1cdff8648b49b",
+      "androidSHA256": "e100bb30c1787abc31a6e803686f3ac639d0200f15eec6bb171583bd1ede054a",
+      "pairSHA256": "326f2c265fb2d60b71e0871e7b2ed24db643b5c741c303df180f686591ce3b8b",
+      "webRect": {
+        "bottom": 651.75,
+        "height": 344.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 473.5238,
+      "nativeDensity": 2.625
+    },
+    "sources-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+      "webSHA256": "21cfc18676174f41baf529309f75ca0581961b77baf214cb1de56229d5f48883",
+      "androidSHA256": "84d2f9bd46bc500a3333b003cabd2e8f16fad31a566fa606ac17b465aa19f66b",
+      "pairSHA256": "5f2d0579851bfb9861ebf63d4ce48e679655a90e56e22b779627580cfbf309a5",
+      "webRect": {
+        "bottom": 646.5,
+        "height": 339.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 448.38095,
+      "nativeDensity": 2.625
+    },
+    "sources-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/sources",
+      "webSHA256": "3e3e18387c516f42249ad222cf7db30031ada0bad785ca0be1cc8b0a15fd3647",
+      "androidSHA256": "d1b521510baf36dbc00122a6ee2890cfaea804a413f39f50da8e899575db7903",
+      "pairSHA256": "411ff115ab8fcd597728c5ba63fe63795ab126a1986fb8d8c90ea04ee9f5db8b",
+      "webRect": {
+        "bottom": 646.5,
+        "height": 339.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 448.38095,
+      "nativeDensity": 2.625
+    },
+    "stack-trace-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+      "webSHA256": "25b4cced20f4d39d8ff9eed14b74705ac60990494240d4d7b357787ab07dd2f3",
+      "androidSHA256": "78209b4b9fa110f96a4e6a55e4ec3c7bd7d4178d5c0ddbc29bbe3a84cab25426",
+      "pairSHA256": "96de1663b884d8bae439aa4ecb5f3f6e2e34d5643bc48a62090aa8ec355cf128",
+      "webRect": {
+        "bottom": 691.75,
+        "height": 384.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 513.9048,
+      "nativeDensity": 2.625
+    },
+    "stack-trace-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/stack-trace",
+      "webSHA256": "a1d6dfeeac008cd2b682d072a970a77a7321eb7854dac3961cd692f1d30a93bc",
+      "androidSHA256": "9bc404a1e6f157bd1ca023fa29ce15268d780b481b47479dc753766c43be83ec",
+      "pairSHA256": "da6318b86a7b779bf984e03a69372e24b7d39e1a6ef8ace58117e6a3e03e40b1",
+      "webRect": {
+        "bottom": 691.75,
+        "height": 384.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 513.9048,
+      "nativeDensity": 2.625
+    },
+    "subagent-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+      "webSHA256": "3e25de406a6fe9fd2765a7e8239a14981492db9370052a2090f1970138c0fdfd",
+      "androidSHA256": "0b68efcb1e61d5bf39d04c1e937bf210c489d5666bb63b0e6b8a826e428c6a0f",
+      "pairSHA256": "392a4736bf99c01c4dcb91016599014a7cf7f18648fa8206f9f227c8d809fe33",
+      "webRect": {
+        "bottom": 766.75,
+        "height": 459.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 557.3333,
+      "nativeDensity": 2.625
+    },
+    "subagent-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/subagent",
+      "webSHA256": "d3c567f9ef32a1da5c78dc62552ca9619f36beadddd63e89b91d5f36ec9d5612",
+      "androidSHA256": "cd404b35ee51b70645d040e162dcd25540494135317abd0d438ff2d7c2b8e208",
+      "pairSHA256": "5ba52178d51b1e4bf76a01c94faf78e33f4729b9995b337d6612a399145e8438",
+      "webRect": {
+        "bottom": 766.75,
+        "height": 459.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 557.3333,
+      "nativeDensity": 2.625
+    },
+    "suggestion-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+      "webSHA256": "df1b51e5a42eeba5f09c66c618e747a587216cf405ff9834a697f8b10606ebce",
+      "androidSHA256": "f35423c3ecca5e0d73206156a4ae042ea1cde7548007e1072df1cffb641c35be",
+      "pairSHA256": "bd24f61b614976eb7080174a0de5bf640601b466914e9d4ff0ef21c04e6f5c4f",
+      "webRect": {
+        "bottom": 503,
+        "height": 196,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 224.38095,
+      "nativeDensity": 2.625
+    },
+    "suggestion-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/suggestion",
+      "webSHA256": "dca022c6ce6261aafd83f39b42ec89cb729f6be7020f180e1612af65f4078d8d",
+      "androidSHA256": "72147b63a7ddc2a858df63aad5f42362f5f5942e9b9e949c5bca0119eb3b79f2",
+      "pairSHA256": "129f793bc0bba280eaed3b35963c7ce7d3a2a2159dfd188dfddf8d4faf8188da",
+      "webRect": {
+        "bottom": 503,
+        "height": 196,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 224.38095,
+      "nativeDensity": 2.625
+    },
+    "task-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+      "webSHA256": "1ee2ffcb384f668cee93dfdf08b12f5cf31baa18f4065fa9351fb0be85ff3201",
+      "androidSHA256": "7372f2bf15546bb5d2d9ae2c8b15d4ae7a1f69658ea2f73c64169ada5ed18694",
+      "pairSHA256": "55fcb61776f9805886479b797867f5a2b107f9f13fc2c840cceac993ceb5b04f",
+      "webRect": {
+        "bottom": 606.5,
+        "height": 299.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 368.38095,
+      "nativeDensity": 2.625
+    },
+    "task-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/task",
+      "webSHA256": "5f9d16c246fe824d0fe1d1b1d1d2a323cf1c9c7f67f00fbe19dc78b7360869b7",
+      "androidSHA256": "f7d07a8d072b8ca61a39c709a5dfdffa34a21765663cefc16e885dd138618c56",
+      "pairSHA256": "fa1c2bb5da3744dd38c2d08384242d3669e692cf79085ed8c056bb5fd50f06a4",
+      "webRect": {
+        "bottom": 606.5,
+        "height": 299.5,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 368.38095,
+      "nativeDensity": 2.625
+    },
+    "terminal-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+      "webSHA256": "6776ec0824053cbc640e589d0d8ce415c436da87d606944eee14d95916d21c28",
+      "androidSHA256": "736f54da92d5f73e2a110d540d528270fae521c67f42d40e8c33f9d402fa4bde",
+      "pairSHA256": "74fa851e89c7252e57cb5a0eba001adb73b717553e2bf3f3b095bdf6c40b0633",
+      "webRect": {
+        "bottom": 839.75,
+        "height": 532.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 613.3333,
+      "nativeDensity": 2.625
+    },
+    "terminal-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/terminal",
+      "webSHA256": "5bacd5bd7eb5ad531c77b483252b89edb816f31938b8f0e2f17c1210ea6af97e",
+      "androidSHA256": "16a7e717776509185f8a54ea16f41c54632bca7921ddc44b52c2d84396275251",
+      "pairSHA256": "14c32148e84501f2707ebb82415d258d7fe75c524a29f37e4231987491b75ada",
+      "webRect": {
+        "bottom": 839.75,
+        "height": 532.75,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 613.3333,
+      "nativeDensity": 2.625
+    },
+    "test-results-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+      "webSHA256": "2fbad6a6519bf68ee89f5722979aa87ab2530eef68069b94aa5e7234ebca4fea",
+      "androidSHA256": "7fe9c4cfd43ba506756633455fe96087f6e96d9ffcff6812e9629609fae15b8f",
+      "pairSHA256": "dc168fed717d7b967d468a576a588bff02b1e63fd792fa4470401c5d9c6a7dd1",
+      "webRect": {
+        "bottom": 809.25,
+        "height": 502.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 599.619,
+      "nativeDensity": 2.625
+    },
+    "test-results-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/test-results",
+      "webSHA256": "21add49b1f19d35283d6850372bc214a8438fb6f57577d81ff3ca7e091debe29",
+      "androidSHA256": "9e6ab2bc5ffc2cc818850621e705e436f16b98b92b83e69be47df4889ac55bc3",
+      "pairSHA256": "5fc845255a89b1cc5677d349b8c3d6b2ebabbe3d6e603f7614a479651e4cd61a",
+      "webRect": {
+        "bottom": 809.25,
+        "height": 502.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 599.619,
+      "nativeDensity": 2.625
+    },
+    "tool-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+      "webSHA256": "c4649126928539ba2f813acf0bd2d6ca753f0aed8186e3c7ec59716e38d62acb",
+      "androidSHA256": "2caed3c135a63209460d24547ba8db06b9cce3172be40774823622818139e011",
+      "pairSHA256": "43e0717aa1348c9313d930887e2339d2a6763915946a26bd607526253f959c33",
+      "webRect": {
+        "bottom": 627.25,
+        "height": 320.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 401.90475,
+      "nativeDensity": 2.625
+    },
+    "tool-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/tool",
+      "webSHA256": "725269770526d7d840d9a2233c0b8bb902740c5326c02f7010de04dd13f4fdcf",
+      "androidSHA256": "b9cbea024ee4d453031f0d7f71542d44bd0736f7651e5596fc2a9d11ab70b6c9",
+      "pairSHA256": "b6636ab27921587dfea4a16aa83af13349d272eb5621bf5e66b852f67a82c5fd",
+      "webRect": {
+        "bottom": 627.25,
+        "height": 320.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 401.90475,
+      "nativeDensity": 2.625
+    },
+    "reasoning-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+      "webSHA256": "5f82e42da00898258ebfba4b1816c424217b188f5f95b97d3c6a14dc681a7099",
+      "androidSHA256": "231d72431ac5aa2a1c76ad38a49bc4488c6906e856b90ae11ac571b265490506",
+      "pairSHA256": "dbe6e4b9698bbae9b1fdce108c5d1056396cdef5154c33a492e054b21f48ebc2",
+      "webRect": {
+        "bottom": 724.25,
+        "height": 417.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 459.0476,
+      "nativeDensity": 2.625
+    },
+    "reasoning-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/reasoning",
+      "webSHA256": "d29eaf55fcf828faa2c10f243cc183a0c541a93216d80ba69a101decac27c215",
+      "androidSHA256": "e50b5f1bebddccbf4c055144be0fce3b4df1b53c3077edb20737fdd22745649d",
+      "pairSHA256": "052def8d15e55a399824a5e7c4caa304323601d2af55a70141b24965bf46e899",
+      "webRect": {
+        "bottom": 724.25,
+        "height": 417.25,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 459.0476,
+      "nativeDensity": 2.625
+    },
+    "file-tree-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+      "webSHA256": "2566a78df45f04765f712a730eebf01d1a8d4bad7e87473381c118182b17cc6d",
+      "androidSHA256": "c5d1627f805f3f96638b619b60e85726d139107eb5439be6c87fc9244d5574bf",
+      "pairSHA256": "ad2b292d76cb8084c3d4325ce5015b8199b42b60708c6ed28179c1a2fe2caa93",
+      "webRect": {
+        "bottom": 551,
+        "height": 244,
+        "left": 480,
+        "right": 800,
+        "top": 307,
+        "width": 320,
+        "x": 480,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 384.0,
+      "nativeDensity": 2.625
+    },
+    "file-tree-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/file-tree",
+      "webSHA256": "2cd3cebfe65afa224f9f6c9453b439afa3e4191564e4cc2db2445632ff9ad04e",
+      "androidSHA256": "3d46a9072d1361cd78bed69b31fd76e793d1e2f527d1ef084f016dd31cfe4879",
+      "pairSHA256": "d1f3b1451c9301175d0ae8406355013ea384e598dca72c153277efe252e61972",
+      "webRect": {
+        "bottom": 551,
+        "height": 244,
+        "left": 480,
+        "right": 800,
+        "top": 307,
+        "width": 320,
+        "x": 480,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 384.0,
+      "nativeDensity": 2.625
+    },
+    "confirmation-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "webSHA256": "74c14e5a868b432017aea8ef6c7b4076381365a000a59ff83c8071708189773a",
+      "androidSHA256": "003ee7437a43194cee56a921a02325810c95b405e8664f9f612101a2b2b6f2b9",
+      "pairSHA256": "385ec846f8e080e5cadd2f0e42a6d7f8b7fcf18a03de524394075881bff081c5",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 288.0,
+      "nativeDensity": 2.625
+    },
+    "confirmation-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "webSHA256": "b787a9fbf7fb8661c1a4c27b4e48fb8be13499dbb4411013cc691d4101496ed4",
+      "androidSHA256": "247834e7e0aa00f0cd89e20a7ce7907eda3f83c144627768523390caf4456515",
+      "pairSHA256": "23c912545282fc07e312a1ad5e529b478d40cbf065227328c507af6f8c263209",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 288.0,
+      "nativeDensity": 2.625
+    },
+    "confirmation-approval-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "webSHA256": "e52dc6f5f59b2d713308eb5ae17ae446c12e9fd81e6732303c99fbb30fffedb9",
+      "androidSHA256": "10effcdfff59046c216ca96aa4c36b5b3421b2353d77de78b24518f0ddcaf28b",
+      "pairSHA256": "53cc4998dd845ab91be478a1cf219706bdb321160300f69321d2e0d28d8094e6",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 327.61905,
+      "nativeDensity": 2.625
+    },
+    "confirmation-approval-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/ai-elements/base/confirmation",
+      "webSHA256": "6d4cb44ee7178324aaebb83babab7a525747d5d065c543ae1a62e7248d84e7fe",
+      "androidSHA256": "577988a19110eb98ae1dcd04c7e31232488bf95cfade9d87079354dc61e57ea7",
+      "pairSHA256": "51c5dc6d3316edfa44de628da5452a6f3b84dbf1eae64c34744d5b633e42faad",
+      "webRect": {
+        "bottom": 595,
+        "height": 288,
+        "left": 460,
+        "right": 820,
+        "top": 307,
+        "width": 360,
+        "x": 460,
+        "y": 307
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 327.61905,
+      "nativeDensity": 2.625
+    },
+    "stack-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "6e4c0fe87f83c3dbd27387d9606cad07485704e84402b6206b20590c6cb624b3",
+      "androidSHA256": "6bf46c72883621ce8e95d684c63f3f85a042fc3e657d2eaf436b1a9827fe55fe",
+      "pairSHA256": "2f35e27dc05752a38d8385b6762e42d3c68a5c058086aa2a3c76302fa15e4a60",
+      "webRect": {
+        "bottom": 467.5,
+        "height": 113,
+        "left": 460,
+        "right": 820,
+        "top": 354.5,
+        "width": 360,
+        "x": 460,
+        "y": 354.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 113.90476,
+      "nativeDensity": 2.625
+    },
+    "stack-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "289301ea7c638ec3fae91dd1758ff9d1f0b9980d641b10c2a4f73dd36ace2f6e",
+      "androidSHA256": "ce731894d266ec7eeefa9ea126489bd07dad37055476e7c1396dce39b802a831",
+      "pairSHA256": "b591595756705f07c6bf7d6eb46e5d0e390cc3b1101ef865bd80f18a09a6c42a",
+      "webRect": {
+        "bottom": 467.5,
+        "height": 113,
+        "left": 460,
+        "right": 820,
+        "top": 354.5,
+        "width": 360,
+        "x": 460,
+        "y": 354.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 113.90476,
+      "nativeDensity": 2.625
+    },
+    "text-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "183156474972f2769eecdfb1376824a3c468235298b056a491caba5a90b5c531",
+      "androidSHA256": "3d441c087b48fc1280de596b1903411f4d960b300f5dc0c468719e8c48bf5bba",
+      "pairSHA256": "c5bb2922a63beb1cba83d5824b5f4264dc9c4f06876d4174beb6fa5921ec6c2d",
+      "webRect": {
+        "bottom": 467.5,
+        "height": 40,
+        "left": 460,
+        "right": 820,
+        "top": 427.5,
+        "width": 360,
+        "x": 460,
+        "y": 427.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 40.38095,
+      "nativeDensity": 2.625
+    },
+    "text-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "3f0ba78c0796e0b54b53df734eb99908766bf7a88469ae414aa17f8cb7e07923",
+      "androidSHA256": "60692f3fbef15ad5610e425733907b47a97d2ef8300841d508ff657678f58f80",
+      "pairSHA256": "9b5e16b85f27bb18ce5fe6fad40ecae9b5d4394a000d9fb5764522bd2057eb92",
+      "webRect": {
+        "bottom": 467.5,
+        "height": 40,
+        "left": 460,
+        "right": 820,
+        "top": 427.5,
+        "width": 360,
+        "x": 460,
+        "y": 427.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 40.38095,
+      "nativeDensity": 2.625
+    },
+    "separator-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "529481acb126f40cb66f8734386ab09f975c78db792be994a49f57a706f93c1b",
+      "androidSHA256": "d7241a832187707dc2c5ca65906cc88a116f127f5d4fb54406ddf5b302f1293f",
+      "pairSHA256": "fc0576a334b15796b41b11bbaec81e4de34e2835aaa578a6e8754ad0cba846fd",
+      "webRect": {
+        "bottom": 411.5,
+        "height": 1,
+        "left": 460,
+        "right": 820,
+        "top": 410.5,
+        "width": 360,
+        "x": 460,
+        "y": 410.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "separator-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/separator",
+      "webSHA256": "638a4f1bf257f460ae7b7cac8732a3e93dcb9c1a44b18d03bea7e6c923e6d4e3",
+      "androidSHA256": "8eda932811822d0ac5a090eae3aeb8998ac31ab7e8ed62dd573f45caa832835e",
+      "pairSHA256": "9963e5a0c607c39163b6629a0ac620b49136abb861d3e7434037f9e19bc79278",
+      "webRect": {
+        "bottom": 411.5,
+        "height": 1,
+        "left": 460,
+        "right": 820,
+        "top": 410.5,
+        "width": 360,
+        "x": 460,
+        "y": 410.5
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "badge-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "webSHA256": "3b688bc6ebbb251edb035e7611585d5ad1da2af83accfc7359dd9d28e46565ee",
+      "androidSHA256": "df6879edd0055dfe3d2316224742e41098d9a24588ac0fff6c13148eaaed81e8",
+      "pairSHA256": "2e3691cf3e850775c3d9726b289b02d1b2b8fbee5a07c9bdc05590877491eb79",
+      "webRect": {
+        "bottom": 421,
+        "height": 20,
+        "left": 460,
+        "right": 820,
+        "top": 401,
+        "width": 360,
+        "x": 460,
+        "y": 401
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "badge-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "webSHA256": "10a999712bab09c78639f9d2fc43c494207000b19d8c2f4f2515415f17a53307",
+      "androidSHA256": "e06973a3a1f79aa9bc0a5a52a99eae0fe3946516203681bbe14b525ed55f53a5",
+      "pairSHA256": "dbee900caf605d05d7f518a0d35907737a8433fa440c1215787374fdcb589bfc",
+      "webRect": {
+        "bottom": 421,
+        "height": 20,
+        "left": 460,
+        "right": 820,
+        "top": 401,
+        "width": 360,
+        "x": 460,
+        "y": 401
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "row-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "webSHA256": "fcd5384e374df895bd60e8e0b773267d926ffaebb1e5481bdfd89494a988b843",
+      "androidSHA256": "df6879edd0055dfe3d2316224742e41098d9a24588ac0fff6c13148eaaed81e8",
+      "pairSHA256": "cbaa24129bfd86063e3c02b5bcb9bf8a566aafffc3f9c637183f927fdb9c1b4c",
+      "webRect": {
+        "bottom": 421,
+        "height": 20,
+        "left": 460,
+        "right": 820,
+        "top": 401,
+        "width": 360,
+        "x": 460,
+        "y": 401
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "row-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/badge",
+      "webSHA256": "10a999712bab09c78639f9d2fc43c494207000b19d8c2f4f2515415f17a53307",
+      "androidSHA256": "e06973a3a1f79aa9bc0a5a52a99eae0fe3946516203681bbe14b525ed55f53a5",
+      "pairSHA256": "006b001b1bdd6aa1a009eb40165bab6b1abe088e6226f1bf385f45db2e0b115a",
+      "webRect": {
+        "bottom": 421,
+        "height": 20,
+        "left": 460,
+        "right": 820,
+        "top": 401,
+        "width": 360,
+        "x": 460,
+        "y": 401
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "button-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+      "webSHA256": "ceddb35bcc687a7c68208cbdae26e12fdc53d39b75aa3a076fbc4d8467002fbc",
+      "androidSHA256": "82a7465fc17ee221710f6fc76b23b3cfe394701b648e1fe0a9f28e10790a06fb",
+      "pairSHA256": "e48a654b6a17b035d36438c05eab2efb41494d206c76edb4906bb1fe1a86419c",
+      "webRect": {
+        "bottom": 2310.625,
+        "height": 32,
+        "left": 607.140625,
+        "right": 672.8515625,
+        "top": 2278.625,
+        "width": 65.7109375,
+        "x": 607.140625,
+        "y": 2278.625
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "button-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/button",
+      "webSHA256": "ae71339d9328c46519ec67a523ea798eaae423fa80e3490ce198ea0bd0577c57",
+      "androidSHA256": "e5b761390ec33d64a235e14450505c5a24e76c5215c2226aaed49ce3691ff2a3",
+      "pairSHA256": "936e164bac93dbde8d9f81a73b8eed353a9c3d683cc3f7bb862e15642996dc57",
+      "webRect": {
+        "bottom": 2310.625,
+        "height": 32,
+        "left": 607.140625,
+        "right": 672.8515625,
+        "top": 2278.625,
+        "width": 65.7109375,
+        "x": 607.140625,
+        "y": 2278.625
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "input-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+      "webSHA256": "d09a81b689db3fe8ccee9549fb4969d93fa9fd5141e9c78ad7191386bef1a149",
+      "androidSHA256": "2212ccd3b2d18db2c0fc24abd8939f8c7cf1d26249f07b2287b76822f6ba9d94",
+      "pairSHA256": "5cdafaa7074a23c0a24eee458d1087416c02768d786b65ed34716199aef2eac6",
+      "webRect": {
+        "bottom": 1367.375,
+        "height": 32,
+        "left": 480,
+        "right": 800,
+        "top": 1335.375,
+        "width": 320,
+        "x": 480,
+        "y": 1335.375
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "input-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/input",
+      "webSHA256": "6fabf7067368434e10282f2c3163eee86eb593a9f316d891e714e94fd723fee3",
+      "androidSHA256": "4d90188fd672657209e0d0ecd835a2edc6622da6753c878ee315300cdd94099c",
+      "pairSHA256": "1d2101b9e8b9e8779b94105eb6dde724c1f4f451a134168936f830c92673cb4a",
+      "webRect": {
+        "bottom": 1367.375,
+        "height": 32,
+        "left": 480,
+        "right": 800,
+        "top": 1335.375,
+        "width": 320,
+        "x": 480,
+        "y": 1335.375
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "select-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+      "webSHA256": "7f27c9cd59f23ee79c8b7408472dbb392ff8d8b40e883208718de70368c1f68e",
+      "androidSHA256": "144ec02f4e64664738bbba29fa5eb6e9d867abb4cdbf5a4316bfb59387d70bad",
+      "pairSHA256": "36d90aafec47670e57f9291121847b3a337f5f02077d42e57848143cdb1e3358",
+      "webRect": {
+        "bottom": 451,
+        "height": 32,
+        "left": 544,
+        "right": 736,
+        "top": 419,
+        "width": 192,
+        "x": 544,
+        "y": 419
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "select-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/select",
+      "webSHA256": "0fb2a63116a7530e2fc2e17b8903a6deee72e7e021a648a172d1f8c5e758ee97",
+      "androidSHA256": "3de77a1f7f7f8a4ee23272e70bca1925231c5f81a34d5d10b6a0b673ad9df68a",
+      "pairSHA256": "736969020329d7ff3759a27eb6ede84e03110851d6d0b8a5cf9b2dc525e87796",
+      "webRect": {
+        "bottom": 451,
+        "height": 32,
+        "left": 544,
+        "right": 736,
+        "top": 419,
+        "width": 192,
+        "x": 544,
+        "y": 419
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "switch-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+      "webSHA256": "5934316669281280dff493fb7e5971fb6b1c21d0e65481c1d207f276e9133e78",
+      "androidSHA256": "e69064b10cfb7bcf49d42013247c758afb0fda11c0a5dc3b09cb2a30416ef9fc",
+      "pairSHA256": "850dca37cefb92219dc77ab41a829e8f348b0ee23b516150b93b43a25368e5e8",
+      "webRect": {
+        "bottom": 444.1953125,
+        "height": 18.3984375,
+        "left": 572.65625,
+        "right": 707.3359375,
+        "top": 425.796875,
+        "width": 134.6796875,
+        "x": 572.65625,
+        "y": 425.796875
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "switch-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/switch",
+      "webSHA256": "5654794f1485b5172e94a165f100e0f275dd438f3497ad0472d87a5eed2b3dc9",
+      "androidSHA256": "5799b681d717586b9d5b64e5713df00a2af4946c14dfdfb664edb844ea54527d",
+      "pairSHA256": "2df50dfb97cb9b28203d8edf13d1ec96d2412f5f6fe7e7be270ca231d2e5c6fb",
+      "webRect": {
+        "bottom": 444.1953125,
+        "height": 18.3984375,
+        "left": 572.65625,
+        "right": 707.3359375,
+        "top": 425.796875,
+        "width": 134.6796875,
+        "x": 572.65625,
+        "y": 425.796875
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "progress-light": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+      "webSHA256": "463151a894973f1a56832df69e267757b42bb77a0bb1e0cd97452054c2bb2319",
+      "androidSHA256": "e06f732436f9ecabf3cb8a44dd965c280936c171f49a0be570c2ca25a85ea346",
+      "pairSHA256": "6dabd6e81ba246333d15f1f95bcfd5a633535a6ed163d9e9f2e53ddff538553b",
+      "webRect": {
+        "bottom": 437,
+        "height": 4,
+        "left": 532,
+        "right": 748,
+        "top": 433,
+        "width": 216,
+        "x": 532,
+        "y": 433
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "progress-dark": {
+      "sourceURL": "https://ui.shadcn.com/docs/components/base/progress",
+      "webSHA256": "d0c641f5b9cf4f7cd2b3059b959e9733756e4728c6dceecc5c016ec5f0a1aba3",
+      "androidSHA256": "32e3930219e03b8316944d6ba96e90cb32087d89f2b17023dc7995af73ae9cb0",
+      "pairSHA256": "f0029ce245cb664647d4c80adc90ee650eadc80d4b48b96a37b790eb3a04307c",
+      "webRect": {
+        "bottom": 437,
+        "height": 4,
+        "left": 532,
+        "right": 748,
+        "top": 433,
+        "width": 216,
+        "x": 532,
+        "y": 433
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 64.0,
+      "nativeDensity": 2.625
+    },
+    "bar-chart-light": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+      "webSHA256": "96d8b70828e1589f8c36ae382b810ef264e86cfe6c2719c0ae7af5f0225992f5",
+      "androidSHA256": "9a20a9500bec5e324bf77e04ea4ab3593af083bf14220833b5e3d19a54c61181",
+      "pairSHA256": "94aef2c0a3f97af3438ebfe5a6454151e3af0f4327a59bffd703846d67a323b0",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    },
+    "bar-chart-dark": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+      "webSHA256": "78adbfbe565aa11a76d41660ce9c9480b1eb0a799a9cf3bf03387d7fe3b6918e",
+      "androidSHA256": "d347aa71c6adfc8bb65225a03fada8feabbb5edae29075c1a868df702f88b4af",
+      "pairSHA256": "7d5c3756f448e2bb05dc34d31ea7a3011df93dd5b4721368c37e0e6e30a75e3f",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    },
+    "line-chart-light": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+      "webSHA256": "bae8406231f042e163063b995dac7aa1f4b54216045d8f5be76bcaa18ec60464",
+      "androidSHA256": "fb733bef8ce2a6fb9e9cf7559b03e0b6032812c1a1619302e49f91cb33f3b07a",
+      "pairSHA256": "08c9480d87c1c4d7abba77d17112db739424cc879c56eb81039a5a3d80cdf43e",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    },
+    "line-chart-dark": {
+      "sourceURL": "https://ui.shadcn.com/view/new-york-v4/chart-line-default",
+      "webSHA256": "234a9ebbe50f3d2d6ba6ea3cf89b394843e9b30498af0465260b2393af1f40d9",
+      "androidSHA256": "80c87c2e36198a8b58233bb1217b78c6b99e84fc2eb31d3a70e45cde16f06c34",
+      "pairSHA256": "74f8d4ef9af8e01d931d8a54c32aa00b5f08ee66ae6a9b4abdc465e1be179e60",
+      "webRect": {
+        "bottom": 354.375,
+        "height": 354.375,
+        "left": 0,
+        "right": 360,
+        "top": 0,
+        "width": 360,
+        "x": 0,
+        "y": 0
+      },
+      "androidWidthDp": 360.0,
+      "androidHeightDp": 354.66666,
+      "nativeDensity": 2.625
+    }
+  },
+  "gallery": {
+    "phone-landscape-chat-dark.png": "17548cc7496ac408f2dc5858daf189f0414625ac7f7852d253c02547745f8055",
+    "tablet-landscape-chat-dark.png": "d8deff606e6dc000d77069282c7d95fcc1271d0a62ca5bcf22c3d17f7bbbfc09",
+    "phone-large-table.png": "a2946a589e4c4af549a9aff8873e0570292acdddee1bd8351313a0585364de0a",
+    "tablet-portrait-table-light.png": "de57408384c1591f7395f9e54b6dd84909e656403ff408833b7c5a336b6d8579",
+    "phone-large-chat.png": "cf4016f1f46772ed55ff4d8264e1608be25c9572efb25c2122124e368d382058",
+    "phone-table-dark.png": "cc52034f20d40a9e91bd3e3a4d284b664f365992e0fb3293ee4b0053308c50c7",
+    "tablet-portrait-chat-light.png": "3a6d646fb598285bc078912d08c3d34a76c9a10c021cae4e37269720ecb5fedc",
+    "phone-landscape-chat-light.png": "d6d0f8247ab161964887f7aac6f83faac065977dbb5458b5a256ff1c99f54a17",
+    "tablet-landscape-chat-light.png": "b7b0df0378db9adce1cac3b844ea7d78941b2bb072f9e7188f6e03766e5ed418",
+    "phone-message-light.png": "6e824deb36c0495d9ef1ad26f8adf38bf8740d84a2f59b0e0aed40509940fae4",
+    "phone-chat-dark.png": "eeca86c8c97efabd4be616e7fa9c071ebf99e8a121c6f19d23d8e4615cff8d0d",
+    "phone-table-light.png": "43ea09137a22d9a47551b84f799f7f01e7b5f109c6932899995513b1b4254078",
+    "tablet-landscape-table-light.png": "8aa6a70b51bbabe7b8ebcee9f9f57def3e7bebac1ebaa335cf0063ecea820069",
+    "phone-message-dark.png": "56b0c17b2e30e6e4c1f6572ec2f32a21261421a76f2427dbec62177c60d86260",
+    "phone-landscape-table-dark.png": "8a3d13d0a3567ce32803d5a1ace3aa86379a7109268ef48587742e0e299bded3",
+    "tablet-landscape-table-dark.png": "ef1724ef7415c8a32e6f65ef6fccebdcdfca446fd8aabb514bcddc3eaa446c92",
+    "phone-landscape-table-light.png": "3c55d7572067f990c41f8e941dd63be59f2d5d6d3eebb3e5adcf7fd3e9f8289d",
+    "tablet-portrait-chat-dark.png": "870e6d80057599d8b32f687625637de814920f31f55150adb09ef95c6de36183",
+    "phone-chat-light.png": "be3a6fd7c3910c427539acd5a4b48151fab77b6513710487ff5ac179b9353f33",
+    "tablet-portrait-table-dark.png": "466b5c58fdf3feeac51859d6eb0bd72ce5673be2d49148b04456f098acc3bbf1"
+  },
+  "websiteCaptureMethod": "CUA browser DOM plus viewport / preview-width overrides; temporary theme changes restored; chart captures wait for stable SVG geometry and refreshed visible compositor; progress 66%.",
+  "exceptions": [
+    "Initial native capture rejected because System UI ANR dialog was foreground. Emulator rebooted and all 20 captures succeeded in retry.",
+    "Chart animation / hydration intermediate images replaced before final comparison.",
+    "No new physical-device or minimum-API validation."
+  ]
+}
