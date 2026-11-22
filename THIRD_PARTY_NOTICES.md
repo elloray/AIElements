@@ -37,3 +37,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Android distribution
 
 The Android implementation under `Android/` also uses the existing shadcn reference patterns. Unmodified Geist fonts are copied into Android font resources; Geist and Lucide license texts are bundled under `META-INF/licenses`. Lucide paths are transcribed from the Swift implementation into Compose Canvas paths. AndroidX/Compose (Apache 2.0) and kotlinx.serialization (Apache 2.0) are Gradle dependencies; their upstream licenses apply. The Gradle wrapper is provided under Apache 2.0. The repository MIT license covers the original Kotlin implementation, not a relicensing of these dependencies.
+
+## HarmonyOS distribution
+
+The ArkUI implementation under `HarmonyOS/` uses the existing shadcn reference patterns. The HAR includes unmodified Geist fonts and SVGs derived from the repository’s Lucide paths. Both upstream license texts are bundled in `aielements/src/main/resources/rawfile/`.

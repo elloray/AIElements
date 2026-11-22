@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "id": "stack",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Stack",
+      "children": [
+        "title",
+        "detail"
+      ],
+      "props": {
+        "gap": 12
+      }
+    },
+    "title": {
+      "type": "Text",
+      "props": {
+        "text": "Visitors",
+        "variant": "label"
+      }
+    },
+    "detail": {
+      "type": "Text",
+      "props": {
+        "text": "1,234 this month",
+        "variant": "muted"
+      }
+    }
+  },
+  "state": {}
+}

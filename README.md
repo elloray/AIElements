@@ -1,25 +1,28 @@
-# AIElements for SwiftUI
+# AIElements
 
-**A native SwiftUI port of [shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements), for iOS, iPadOS, and macOS.**
+**Native [shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements) for Apple platforms, Android, and HarmonyOS.**
 
-将 shadcn/ui AI Elements 的 21 个界面模式实现为可复用的 SwiftUI 组件。包含浅深色主题、Geist 字体、Lucide 矢量图标和可交互示例，无第三方运行时依赖。
+AIElements 将 21 种 AI 界面模式和 15 种基础节点实现为可复用的原生组件。各端提供浅深色主题和交互画廊，复用同一套 JSONL 流式协议与样例。
 
-**Android 版本**：新增原生 Kotlin + Jetpack Compose 组件库和示例画廊，覆盖同名 21 个 AI 模式及 15 种基础节点，复用本仓库的流式 UI 协议与样例。Android 8.0+，支持浅深色和手机／平板布局。[Android 接入与运行](Android/README.md) · [安卓验证记录](Documentation/Android-Validation.md) · [安卓同宽视觉对比](Documentation/Android-Visual-Fidelity-2026-11-11.md)。安卓是独立实现，差异见接入文档；下文的 Swift 安装方式和 CLI 仍用于 Apple 平台。
+| 平台 | 原生组件库 | 接入与运行 |
+| --- | --- | --- |
+| iOS / iPadOS 17+、macOS 14+ | SwiftUI · Swift Package | [安装](#xcode) · [运行 SwiftUI 画廊](#运行示例) |
+| Android 8.0+（API 26） | Kotlin + Jetpack Compose | [Android 指南](Android/README.md) |
+| HarmonyOS NEXT 5.0+（API 12） | ArkTS + ArkUI · HAR | [鸿蒙指南](HarmonyOS/README.md) · [构建鸿蒙画廊](#harmonyos) |
 
-**新增流式生成 UI**：AI 可以先生成卡片、再逐步补齐表单和图表；用户操作回传宿主继续更新。提供独立 JSONL 协议、原生渲染器和 15 种基础节点（含 Bar / Line / Area Chart）。[协议与接入示例](Documentation/StreamingUI.md)。[15 种基础组件双端浅深色对照](Documentation/Foundation-Visual-Validation.md)。这是独立实现，不是 OpenAI Intelligent UI 的私有协议。
+流式 UI 可先显示卡片，再逐步补齐表单和图表。交互事件回传宿主，由宿主继续更新界面。[协议与接入示例](Documentation/StreamingUI.md)
 
-同时提供 **`aielements` CLI + `aielements-swiftui` Agent Skill**：让 AI 编程工具查询当前组件 API、读取完整 Swift 示例，并生成可接入现有 App 的 UI Package。[直接开始使用 CLI 和 Skill ↓](#ai-编程工具cli--skill)
+Swift 开发者可以使用 **`aielements` CLI + `aielements-swiftui` Agent Skill** 查询组件 API、读取 Swift 示例并生成 UI Package。[CLI 和 Skill 快速开始](#ai-编程工具cli--skill)
 
-> **非官方项目 / Unofficial port**：原始界面模式、视觉设计及参考示例来自 [shadcn/ui](https://github.com/shadcn-ui/ui)。本仓库由 elloray 独立维护，不隶属于 shadcn、shadcn/ui 或 Vercel，也不代表其官方 Swift 产品或背书。原作者及资源许可详见 [致谢与许可](#致谢与许可)。
+> **非官方项目 / Unofficial port**。原始界面模式、视觉设计及参考示例来自 shadcn/ui，本仓库由 elloray 独立维护。[致谢与许可](#致谢与许可)
 
 ![SwiftUI Tool 组件深色预览](Documentation/Images/tool-dark.png)
 
 ## 平台与范围
 
-- iOS / iPadOS **17+**，macOS **14+**；Swift tools **5.9+**。
-- 同一个 `AIElements` Swift Package 产品用于两端。
-- 组件提供界面、状态呈现和回调；模型调用、命令执行、附件上传及数据持久化由宿主负责。
-- 以 2026-11-05 保存的官方目录为最初范围，并持续对照原站复核；21 个模式不等于原站所有子状态或旧版 AI SDK Elements 的全部组件。
+- Apple 端共用一个 `AIElements` Swift Package，要求 Swift tools **5.9+**。Android 和鸿蒙组件库分别通过 Gradle 和 OHPM 接入。
+- 组件提供界面、状态呈现和回调。模型调用、命令执行、附件上传及数据持久化由宿主负责。
+- 21 个模式以 2026-11-05 保存的原站目录为范围。各端沿用 Geist、Lucide 和同一套视觉基准，API 和系统交互见各平台指南。
 
 ## 流式 UI
 
@@ -90,6 +93,29 @@ let package = Package(
 ```
 
 本地开发也可用 `.package(path: "../AIElements")`，或在 Xcode 中选择 **Add Local…**。
+
+### Android
+
+用 Android Studio 打开 `Android/`，或从仓库根目录构建示例 APK。
+
+```sh
+cd Android
+./gradlew :gallery:assembleDebug
+```
+
+现有应用可依赖 `aielements` 和 `protocol` 模块。[Android 接入与运行](Android/README.md)
+
+### HarmonyOS
+
+用 DevEco Studio 打开 `HarmonyOS/`，同步工程后运行 `gallery`。配置好 HarmonyOS SDK 和命令行工具后，也可从仓库根目录构建 HAP。
+
+```sh
+cd HarmonyOS
+ohpm install --all
+hvigorw --mode module -p module=gallery@default -p product=default -p buildMode=debug assembleHap
+```
+
+现有应用可通过 `@aielements/arkui` 接入源码或 HAR。[鸿蒙接入与运行](HarmonyOS/README.md)
 
 ## AI 编程工具：CLI + Skill
 
@@ -243,7 +269,12 @@ xcodegen generate --spec Examples/project.yml
 
 ## 验证与已知差异
 
-项目以原站为视觉基准，分别记录原有 AI Elements 模式与新增基础组件的验证范围：
+项目以原站为视觉基准。各平台的验收范围随构建和设备而异。
+
+- **Android**：调试 APK、发布 AAR、单元测试和设备测试已有记录。[Android 验证](Documentation/Android-Validation.md) · [同宽视觉对比](Documentation/Android-Visual-Fidelity-2026-11-11.md)
+- **HarmonyOS**：8 项自动化测试通过，已用 API 12 工具完成 ArkTS 编译、资源打包和未签名 HAP 检查。设备安装与视觉验收待完成。[鸿蒙验证](HarmonyOS/README.md#验证)
+
+### Apple 平台
 
 - **15 种基础节点（2026-11-08 第二轮）**：重新采集 30 张原站、60 张原生浅深色截图，以 **360 CSS px / SwiftUI pt** 画布形成 30 张「原站 / macOS / iOS」对照图；修正深色 Progress 填充颜色，并补全无标签 Select 的辅助功能名称。详见 [逐项结果与全部截图](Documentation/Foundation-Visual-Validation.md)。
 - **构建与测试**：最新一轮 macOS `swift test` 共 **51 项通过**（组件库 31、协议 11、CLI 9）；iOS 和 macOS 示例均通过 Debug 构建，iOS 模拟器完成安装、启动与截图导出。此处不将 macOS 单元测试计为 iOS 测试。
@@ -272,7 +303,7 @@ Markdown 支持常见富文本、列表、表格、图片及流式代码块；�
 | --- | --- | --- |
 | [shadcn/ui](https://github.com/shadcn-ui/ui) | 原始 AI Elements 模式、基础组件与图表设计、参考示例、对照截图及 `Reference/` 快照 | [MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md)，保留 Copyright (c) 2023 shadcn |
 | [Geist / Geist Mono](https://github.com/vercel/geist-font) | 随包分发的未修改字体 | [SIL OFL 1.1](Sources/AIElements/Resources/Geist-LICENSE) |
-| [Lucide](https://lucide.dev) | 转换为 SwiftUI 路径的图标 | [ISC](Sources/AIElements/Resources/Lucide-LICENSE) |
+| [Lucide](https://lucide.dev) | 原生组件的矢量图标 | [ISC](Sources/AIElements/Resources/Lucide-LICENSE) |
 
 Swift 实现以 [MIT License](LICENSE) 分发。第三方材料仍遵循各自许可；完整声明和原始版权文本见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。使用本项目时请保留适用的版权及许可声明。
 
