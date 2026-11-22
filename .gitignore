@@ -27,3 +27,14 @@ Android/**/build/
 Android/local.properties
 Android/*.jks
 Android/*.keystore
+
+# HarmonyOS local toolchains, signing and generated output
+HarmonyOS/.hvigor/
+HarmonyOS/.idea/
+HarmonyOS/**/build/
+HarmonyOS/**/oh_modules/
+HarmonyOS/local.properties
+HarmonyOS/**/oh-package-lock.json5
+HarmonyOS/*.cer
+HarmonyOS/*.p7b
+HarmonyOS/*.jks

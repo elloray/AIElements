@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "id": "progress",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Progress",
+      "props": {
+        "value": 66,
+        "max": 100,
+        "label": "Generating report"
+      }
+    }
+  },
+  "state": {}
+}

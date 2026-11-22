@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "id": "table",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          {
+            "key": "name",
+            "label": "Product",
+            "emphasized": true
+          },
+          {
+            "key": "amount",
+            "label": "Amount",
+            "alignment": "trailing",
+            "width": 100
+          }
+        ],
+        "rows": [
+          {
+            "name": "Subscription",
+            "amount": "$25.00"
+          }
+        ],
+        "footer": {
+          "name": "Total",
+          "amount": "$25.00"
+        },
+        "caption": "This month’s invoices."
+      }
+    }
+  },
+  "state": {}
+}

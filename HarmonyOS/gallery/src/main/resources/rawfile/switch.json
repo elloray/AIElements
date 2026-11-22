@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "id": "switch",
+  "revision": 0,
+  "root": "root",
+  "nodes": {
+    "root": {
+      "type": "Switch",
+      "props": {
+        "label": "Enable alerts"
+      },
+      "bindings": {
+        "value": "enabled"
+      },
+      "events": {
+        "change": {
+          "name": "change_enabled",
+          "stateKeys": [
+            "enabled"
+          ]
+        }
+      }
+    }
+  },
+  "state": {
+    "enabled": false
+  }
+}

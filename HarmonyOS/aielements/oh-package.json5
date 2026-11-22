@@ -1,0 +1,9 @@
+{
+  "name": "@aielements/arkui",
+  "version": "1.0.0",
+  "description": "Native AI Elements components and JSONL protocol for ArkUI",
+  "main": "Index.ets",
+  "author": "AIElements",
+  "license": "MIT",
+  "dependencies": {}
+}

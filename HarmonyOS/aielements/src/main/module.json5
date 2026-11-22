@@ -1,0 +1,7 @@
+{
+  "module": {
+    "name": "aielements",
+    "type": "har",
+    "deviceTypes": ["phone", "tablet"]
+  }
+}

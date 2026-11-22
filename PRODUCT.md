@@ -3,13 +3,15 @@
 ## Platform
 ios
 
-Also macOS; both platforms explicitly confirmed by the user. Android native replica requested on 2026-11-10, implemented separately under Android/.
+Also macOS; both platforms explicitly confirmed by the user. Android native replica requested on 2026-11-10, implemented separately under Android/. HarmonyOS NEXT is implemented under HarmonyOS/.
 ## Stack
 Swift requested by user; SwiftUI and Swift Package Manager selected for native reuse.
 
 Android: Kotlin, Jetpack Compose, Gradle; reusable Compose library, pure Kotlin protocol module, and local example gallery. Android API 26+, with shared JSON protocol fixtures and the existing visual identity.
+
+HarmonyOS: ArkTS, ArkUI, Stage model, API 12+, with a reusable HAR and a local gallery using the shared JSONL fixtures.
 ## Users
-Developers embedding AI interfaces in other Apple-platform projects.
+Developers embedding native AI interfaces in Apple, Android, or HarmonyOS apps.
 ## Product Purpose
 Reproduce every pattern on https://ui.shadcn.com/docs/ai-elements as reusable native components.
 ## Capabilities and Constraints
