@@ -1,8 +1,26 @@
 """Generate native vector paths from pinned Lucide SVGs (ISC license)."""
-import urllib.request,json,tarfile,io,pathlib,xml.etree.ElementTree as ET
+import argparse,urllib.request,json,tarfile,io,pathlib
 from fontTools.pens.recordingPen import RecordingPen
 from fontTools.svgLib import SVGPath
-names='terminal circle-check circle circle-dot circle-x circle-alert chevron-right chevron-down chevrons-up-down trending-up arrow-up arrow-down arrow-up-right plus x copy check rotate-ccw thumbs-up thumbs-down globe search file file-text file-code folder folder-open route list-todo list-checks loader-circle bot paperclip square flask-conical ellipsis sun moon circle-dashed pencil wrap-text layers message-circle-dashed rotate-cw'.split()
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--harmony', action='store_true', help='Also generate tintable ArkUI outlines (requires skia-pathops).')
+options=parser.parse_args()
+if options.harmony:
+ import pathops
+ from fontTools.pens.svgPathPen import SVGPathPen
+
+def harmony_outline(data, target):
+ # API 12 fills SVG paths when applying Image.fillColor. Expand the actual
+ # Lucide strokes first so enclosed regions remain transparent in both themes.
+ path=pathops.Path()
+ SVGPath.fromstring(data).draw(path.getPen())
+ path.stroke(2,pathops.LineCap.ROUND_CAP,pathops.LineJoin.ROUND_JOIN,4)
+ path.convertConicsToQuads(0.02)
+ path.simplify()
+ pen=SVGPathPen(None,ntos=lambda value: f'{value:.3f}'.rstrip('0').rstrip('.') or '0')
+ path.draw(pen)
+ target.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="'+pen.getCommands()+'"/></svg>\n')
+names='terminal circle-check circle circle-dot circle-x circle-alert chevron-right chevron-down chevrons-up-down trending-up arrow-up arrow-down arrow-up-right plus x copy check rotate-ccw thumbs-up thumbs-down globe search file file-text file-code folder folder-open route list-todo list-checks loader-circle bot paperclip square flask-conical ellipsis sun moon circle-dashed pencil wrap-text layers message-circle-dashed rotate-cw cloud bookmark bold italic underline calendar settings git-branch chevron-left chevrons-left chevrons-right panel-left grip-vertical arrow-left arrow-right frame chart-pie map'.split()
 meta=json.load(urllib.request.urlopen('https://registry.npmjs.org/lucide-static/0.468.0'))
 t=tarfile.open(fileobj=io.BytesIO(urllib.request.urlopen(meta['dist']['tarball']).read()),mode='r:gz')
 def case(n):
@@ -27,6 +45,8 @@ private struct IconShape: Shape {
 '''
 for n in names:
  data=t.extractfile(f'package/icons/{n}.svg').read()
+ target=pathlib.Path('HarmonyOS/aielements/src/main/resources/base/media')/('aie_'+n.replace('-','')+'.svg')
+ if options.harmony and target.exists(): harmony_outline(data,target)
  pen=RecordingPen();SVGPath.fromstring(data).draw(pen)
  s+=f'        case .{case(n)}:\n'
  for op,args in pen.value:

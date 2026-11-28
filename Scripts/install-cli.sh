@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installs the binary together with its SwiftPM resource bundle. No sudo needed.
+# Installs the binary together with its SwiftPM resource bundles. No sudo needed.
 set -eu
 
 if [ "$#" -ne 2 ] || [ "$1" != "--prefix" ] || [ -z "$2" ]; then
@@ -30,6 +30,7 @@ staging=$(mktemp -d "$prefix/lib/.aielements-install.XXXXXX")
 trap 'rm -rf "$staging"' EXIT HUP INT TERM
 cp "$build/aielements" "$staging/aielements"
 cp -R "$bundle" "$staging/AIElements_AIElementsCLIKit.bundle"
+cp -R "$build/AIElements_AIElementsCatalog.bundle" "$staging/AIElements_AIElementsCatalog.bundle"
 cp -R "$build/AIElements_AIElementsUIProtocol.bundle" "$staging/AIElements_AIElementsUIProtocol.bundle"
 # Test the relocated executable before exposing it through PATH.
 "$staging/aielements" list --json > /dev/null

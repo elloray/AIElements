@@ -21,6 +21,7 @@ export struct AITable {
   @Prop rows: AITableRow[] = [];
   @Prop caption: string = '';
   @Prop footer: string[] = [];
+  @Prop compact: boolean = false;
 
   @Builder
   private cells(values: string[], header: boolean, footer: boolean) {
@@ -28,19 +29,21 @@ export struct AITable {
       Repeat(this.columns).each((column: RepeatItem<AITableColumn>) => {
         Text(header ? column.item.label : values[column.index] ?? '—')
           .fontSize(14)
+          .lineHeight(this.compact ? 20 : undefined)
           .fontFamily(header || footer || column.item.emphasized ? 'GeistMedium' : 'Geist')
-          .fontColor(header ? AIColors.mutedForeground : AIColors.foreground)
+          .fontColor(header && !this.compact ? AIColors.mutedForeground : AIColors.foreground)
           .textAlign(column.item.trailing ? TextAlign.End : TextAlign.Start)
           .width(column.item.width ?? 108)
-          .padding({ left: 8, right: 8, top: 9, bottom: 9 })
+          .padding({ left: 8, right: 8, top: this.compact ? 8 : 9, bottom: this.compact ? 8 : 9 })
       }).key((column: AITableColumn) => column.key)
     }
+    .constraintSize({ minHeight: this.compact ? (header ? 40 : 37) : undefined })
     .backgroundColor(footer ? AIColors.muted : Color.Transparent)
     .border({ width: { bottom: footer ? 0 : 1 }, color: AIColors.border })
   }
 
   build() {
-    Column({ space: 10 }) {
+    Column({ space: this.compact ? 16 : 10 }) {
       Scroll() {
         Column() {
           this.cells([], true, false)
@@ -58,7 +61,8 @@ export struct AITable {
       .scrollable(ScrollDirection.Horizontal)
       .scrollBar(BarState.Auto)
       if (this.caption) {
-        AIText({ text: this.caption, variant: 'muted' })
+        if (this.compact) { Text(this.caption).fontSize(14).fontFamily('Geist').lineHeight(20).fontColor(AIColors.mutedForeground) }
+        else { AIText({ text: this.caption, variant: 'muted' }) }
       }
     }.width('100%')
   }
@@ -85,6 +89,7 @@ export struct AIChart {
   @Prop @Watch('draw') kind: AIChartKind = AIChartKind.Bar;
   @Prop label: string = 'Chart';
   @Prop plotHeight: number = 184;
+  @Prop compactPlot: boolean = false;
   @Prop legend: boolean = false;
   onSelect: (row: AIChartRow) => void = () => {};
   @State @Watch('draw') selectedLabel: string = '';
@@ -203,6 +208,16 @@ export struct AIChart {
       series.label + ': ' + String(row.values[index] ?? 0)).join(' · ');
   }
 
+  @Builder
+  private dataRows() {
+    Column() {
+      ForEach(this.data, (row: AIChartRow) => {
+        AIButton({ label: this.summary(row), variant: 'ghost', pressed: row.label === this.selectedLabel,
+          onPress: () => this.choose(row) })
+      }, (row: AIChartRow, index: number) => JSON.stringify([String(index), row.label, this.summary(row)]))
+    }.width('100%').alignItems(HorizontalAlign.Start)
+  }
+
   build() {
     Column({ space: 8 }) {
       if (this.series.length === 0 || this.data.length === 0) {
@@ -212,8 +227,11 @@ export struct AIChart {
       } else {
         Canvas(this.canvas)
           .width('100%')
-          .height(this.plotHeight)
+          .height(this.compactPlot ? undefined : this.plotHeight)
+          .aspectRatio(this.compactPlot ? 16 / 9 : undefined)
           .accessibilityText(this.label)
+          .accessibilityVirtualNode(this.dataRows)
+          .parallelGesture(LongPressGesture().onAction(() => { this.showData = true; }))
           .onReady(() => {
             this.ready = true;
             this.draw();
@@ -242,16 +260,11 @@ export struct AIChart {
         ForEach(this.data.filter((row: AIChartRow) => row.label === this.selectedLabel), (row: AIChartRow) => {
           AIText({ text: this.summary(row), variant: 'caption' })
         }, (row: AIChartRow) => row.label)
-        AIButton({ label: this.showData ? 'Hide data' : 'View data', variant: 'ghost',
-          onPress: () => { this.showData = !this.showData; } })
-        if (this.showData) {
-          Column() {
-            ForEach(this.data, (row: AIChartRow) => {
-              AIButton({ label: this.summary(row), variant: 'ghost', pressed: row.label === this.selectedLabel,
-                onPress: () => this.choose(row) })
-            }, (row: AIChartRow) => row.label)
-          }.width('100%').alignItems(HorizontalAlign.Start)
+        if (!this.compactPlot || this.showData) {
+          AIButton({ label: this.showData ? 'Hide data' : 'View data', variant: 'ghost',
+            onPress: () => { this.showData = !this.showData; } })
         }
+        if (this.showData) { this.dataRows() }
       }
     }.width('100%').alignItems(HorizontalAlign.Start)
   }

@@ -1,5 +1,7 @@
 # Validation
 
+2026-11-28 的 shadcn/ui 全组件覆盖、图像测量与运行环境见[原生组件验证](Shadcn-Components.md#如何看视觉对照)和[逐项截图](Images/Shadcn/README.md)。
+
 ## Foundation CLI and Skill sync — 2026-11-08
 
 - Catalog now exposes **37 Swift examples**: 21 AI patterns, 15 foundation nodes,

@@ -4,6 +4,15 @@ const path = require('node:path');
 const test = require('node:test');
 
 const build = process.env.AI_ELEMENTS_TEST_BUILD;
+const { shadcnTableRows } = require(path.join(build, 'shadcn/TableRows.js'));
+test('shadcn email filtering, ordering and row identities survive host data changes', () => {
+  const a = ['Paid', 'a@site.test'], b = ['Open', 'b@site.test'];
+  assert.deepEqual(shadcnTableRows([a, b], ['a','b'], 'Paid', -1, true, 1), []);
+  assert.deepEqual(shadcnTableRows([b, a], ['b','a'], 'A@SITE', 1, true, 1),
+    [{ id: 'a', index: 1, cells: a }]);
+  assert.deepEqual(shadcnTableRows([b, [], a], ['b','empty','a'], '', 1, true).map(r => r.id), ['empty','a','b']);
+  assert.deepEqual(shadcnTableRows([a, a], ['same','same'], '', 1, false).map(r => r.id), ['0','1']);
+});
 const { AIUIComponentCatalog } = require(path.join(build, 'protocol/Models.js'));
 const { AIUISession, AIUIStreamDecoder, decodeDocument } = require(path.join(build, 'protocol/Streaming.js'));
 const { AIUIStore } = require(path.join(build, 'protocol/Store.js'));

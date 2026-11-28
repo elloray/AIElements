@@ -19,14 +19,27 @@
 		B451B62675DAE7B3A523FF89 /* GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF3E571FFB42BFECE6D8C4 /* GalleryApp.swift */; };
 		D673D3D24D1F2C05E9F9A608 /* GenerativeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37E935421B3A176BA690EA /* GenerativeDemo.swift */; };
 		DB70A25D60799A1FE726F8CF /* ValidationFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72489EFA630239F70CA5E52D /* ValidationFixtures.swift */; };
+		F41FD510316D5872EF51F144 /* ShadcnGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B72FF51D24B1D2AE0C1828 /* ShadcnGalleryTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A2D2A07867FFC5724ECBA5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC855359DDC190360BE4422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3519426F781EEADB82E4B02;
+			remoteInfo = AIElementsDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		23DDAF1E353737AD82536299 /* AIElementsDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AIElementsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A590F5311E16B9C458BCC2 /* AiElements */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AiElements; path = ..; sourceTree = SOURCE_ROOT; };
 		72489EFA630239F70CA5E52D /* ValidationFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFixtures.swift; sourceTree = "<group>"; };
 		849D418F979457169E815E1E /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		92807345515A7A91AF376563 /* ShadcnUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ShadcnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAF3E571FFB42BFECE6D8C4 /* GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryApp.swift; sourceTree = "<group>"; };
+		B6B72FF51D24B1D2AE0C1828 /* ShadcnGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadcnGalleryTests.swift; sourceTree = "<group>"; };
 		CAE30FB3CF97C488F2A7291B /* AIElementsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIElementsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF40FF041A23ED3519EEF86 /* FoundationAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationAudit.swift; sourceTree = "<group>"; };
 		EF37E935421B3A176BA690EA /* GenerativeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDemo.swift; sourceTree = "<group>"; };
@@ -57,6 +70,7 @@
 			children = (
 				B58D0440F0A9289E5B92C0E8 /* AIElementsGallery */,
 				72A2C3B7F81AAB4DA5124C3C /* Packages */,
+				67BA801C3666E3A05CB1361E /* ShadcnUITests */,
 				546B279DE4DE64665B42A226 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,8 +80,17 @@
 			children = (
 				23DDAF1E353737AD82536299 /* AIElementsDemo.app */,
 				CAE30FB3CF97C488F2A7291B /* AIElementsMac.app */,
+				92807345515A7A91AF376563 /* ShadcnUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		67BA801C3666E3A05CB1361E /* ShadcnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B72FF51D24B1D2AE0C1828 /* ShadcnGalleryTests.swift */,
+			);
+			path = ShadcnUITests;
 			sourceTree = "<group>";
 		};
 		72A2C3B7F81AAB4DA5124C3C /* Packages */ = {
@@ -94,6 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49F4B5EEFCAA3F2A4D6AE66D /* ShadcnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5D6B3E621E7BC96E2CDED2 /* Build configuration list for PBXNativeTarget "ShadcnUITests" */;
+			buildPhases = (
+				73694D0D67F8D49A5BFD70D8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68944A6E0B2F4306B7E39A91 /* PBXTargetDependency */,
+			);
+			name = ShadcnUITests;
+			packageProductDependencies = (
+			);
+			productName = ShadcnUITests;
+			productReference = 92807345515A7A91AF376563 /* ShadcnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		68A79BF39930E686BBA405F2 /* AIElementsMac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C5E75A5B0EFB9225757873 /* Build configuration list for PBXNativeTarget "AIElementsMac" */;
@@ -141,6 +182,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					49F4B5EEFCAA3F2A4D6AE66D = {
+						TestTargetID = F3519426F781EEADB82E4B02;
+					};
 				};
 			};
 			buildConfigurationList = CA2503F68F9F58090C41915E /* Build configuration list for PBXProject "AIElementsDemo" */;
@@ -162,11 +206,20 @@
 			targets = (
 				F3519426F781EEADB82E4B02 /* AIElementsDemo */,
 				68A79BF39930E686BBA405F2 /* AIElementsMac */,
+				49F4B5EEFCAA3F2A4D6AE66D /* ShadcnUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		73694D0D67F8D49A5BFD70D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41FD510316D5872EF51F144 /* ShadcnGalleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79F27B16788C674ADDCD62BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +245,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68944A6E0B2F4306B7E39A91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3519426F781EEADB82E4B02 /* AIElementsDemo */;
+			targetProxy = 9A2D2A07867FFC5724ECBA5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1498C542F10366D0037C6F55 /* Release */ = {
@@ -233,6 +294,25 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		3D34744D4ABA92D361ACEC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aielements.ShadcnUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIElementsDemo;
+			};
+			name = Release;
 		};
 		53CB55FE6236CC706D95A3DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -294,6 +374,25 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AD3A18AEBEF0C26337B404B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aielements.ShadcnUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AIElementsDemo;
 			};
 			name = Debug;
 		};
@@ -395,6 +494,15 @@
 			buildConfigurations = (
 				DD547CE9DAC624D21B387C92 /* Debug */,
 				7F71DB2D0F2B7B44569BDC87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B5D6B3E621E7BC96E2CDED2 /* Build configuration list for PBXNativeTarget "ShadcnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD3A18AEBEF0C26337B404B /* Debug */,
+				3D34744D4ABA92D361ACEC8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -39,6 +39,17 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49F4B5EEFCAA3F2A4D6AE66D"
+               BuildableName = "ShadcnUITests.xctest"
+               BlueprintName = "ShadcnUITests"
+               ReferencedContainer = "container:AIElementsDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
       </CommandLineArguments>

@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 }
 val patterns = listOf("Chain of Thought", "Chat", "Checkpoint", "Confirmation", "Context", "File Tree", "Inline Citation", "Message", "Model Selector", "Plan", "Prompt Input", "Queue", "Reasoning", "Sources", "Stack Trace", "Subagent", "Suggestion", "Task", "Terminal", "Test Results", "Tool")
 val foundations = AIUIResources.exampleNames.filter { it != "dashboard" }
-fun String.displayName() = split('-').joinToString(" ") { it.replaceFirstChar(Char::uppercase) }
+fun String.displayName() = removePrefix("shadcn/").split('-').joinToString(" ") { it.replaceFirstChar(Char::uppercase) }
 @Composable fun Gallery(initialPattern: String?, initialTheme: String?) {
     var theme by rememberSaveable { mutableStateOf(initialTheme ?: "System") }
     var selected by rememberSaveable { mutableStateOf(initialPattern) }
@@ -37,6 +37,8 @@ fun String.displayName() = split('-').joinToString(" ") { it.replaceFirstChar(Ch
     var themeMenu by remember { mutableStateOf(false) }
     val dark = when (theme) { "Dark" -> true; "Light" -> false; else -> isSystemInDarkTheme() }
     val view = LocalView.current
+    val shadcn = remember(view.context) { AIShadcnCatalog.examples(view.context).associateBy { "shadcn/" + it.id } }
+    fun title(key: String) = shadcn[key]?.title ?: key.displayName()
     SideEffect {
         val activity = view.context as? ComponentActivity
         if (activity != null) WindowCompat.getInsetsController(activity.window, view).apply {
@@ -50,7 +52,7 @@ fun String.displayName() = split('-').joinToString(" ") { it.replaceFirstChar(Ch
                 val wide = maxWidth >= 760.dp && maxHeight >= 480.dp
                 BackHandler(selected != null) { selected = null }
                 Column {
-                    TopAppBar(title = { AIText(if (wide || selected == null) "AIElements" else selected!!.displayName(), variant = "title") },
+                    TopAppBar(title = { AIText(if (wide || selected == null) "AIElements" else title(selected!!), variant = "title") },
                         navigationIcon = { if (!wide && selected != null) AIButton("Back", variant = "ghost") { selected = null } },
                         actions = { Box {
                             AIIconButton(if (dark) AIIconName.moon else AIIconName.sun, "Appearance") { themeMenu = true }
@@ -64,19 +66,19 @@ fun String.displayName() = split('-').joinToString(" ") { it.replaceFirstChar(Ch
                             AIText("Native components for AI interfaces", Modifier.padding(horizontal = 20.dp, vertical = 12.dp), muted = true)
                             AIInput(query, { query = it }, Modifier.padding(horizontal = 20.dp), placeholder = "Search components")
                             LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(12.dp)) {
-                                val groups = listOf("AI patterns · 21" to patterns, "Generative UI" to listOf("Generative UI"), "Foundation · 15" to foundations)
+                                val groups = listOf("AI patterns · 21" to patterns, "Generative UI" to listOf("Generative UI"), "Foundation · 15" to foundations, "shadcn/ui" to shadcn.keys.toList())
                                 groups.forEach { (group, names) ->
-                                    val matches = names.filter { it.displayName().contains(query, ignoreCase = true) }
+                                    val matches = names.filter { title(it).contains(query, ignoreCase = true) }
                                     if (matches.isNotEmpty()) {
                                         item("section:$group") { AIText(group, Modifier.padding(8.dp), muted = true, variant = "caption") }
                                         items(matches, key = { "component:$it" }) { name ->
-                                            ListItem(headlineContent = { AIText(name.displayName()) }, trailingContent = { AIIcon(AIIconName.chevronRight) },
+                                            ListItem(headlineContent = { AIText(title(name)) }, trailingContent = { AIIcon(AIIconName.chevronRight) },
                                                 colors = ListItemDefaults.colors(containerColor = if (selected == name) AITheme.colors.muted else AITheme.colors.background),
                                                 modifier = Modifier.clickable { selected = name })
                                         }
                                     }
                                 }
-                                if ((patterns + foundations + "Generative UI").none { it.displayName().contains(query, true) }) item { AIText("No components match this search.", Modifier.padding(12.dp), muted = true) }
+                                if ((patterns + foundations + shadcn.keys + "Generative UI").none { title(it).contains(query, true) }) item { AIText("No components match this search.", Modifier.padding(12.dp), muted = true) }
                             }
                         }
                         if (wide) VerticalDivider(color = AITheme.colors.border)
@@ -84,11 +86,17 @@ fun String.displayName() = split('-').joinToString(" ") { it.replaceFirstChar(Ch
                             val name = selected ?: "Chat"
                             key(name) {
                                 Column(Modifier.widthIn(max = 720.dp).fillMaxSize().padding(horizontal = 20.dp)) {
-                                    if (wide) AIText(name.displayName(), Modifier.padding(top = 24.dp), variant = "title")
-                                    AIText("Interactive local demo · No model or commands run", Modifier.padding(vertical = 12.dp), muted = true, variant = "caption")
+                                    if (wide) AIText(title(name), Modifier.padding(top = 24.dp), variant = "title")
+                                    if (name !in shadcn) AIText("Interactive local demo · No model or commands run", Modifier.padding(vertical = 12.dp), muted = true, variant = "caption")
                                     if (name == "Chat") ChatDemo(Modifier.weight(1f))
                                     else Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(vertical = 12.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                                        if (name in foundations) FoundationDemo(name) else PatternDemo(name)
+                                        val official = shadcn[name]
+                                        if (official != null) {
+                                            AIText(official.summary, muted = true)
+                                            Box(Modifier.fillMaxWidth().heightIn(min = 160.dp), contentAlignment = Alignment.Center) {
+                                                AIShadcnView(if (official.id == "direction") official.root.copy(variant = "picker") else official.root)
+                                            }
+                                        } else if (name in foundations) FoundationDemo(name) else PatternDemo(name)
                                         Spacer(Modifier.height(24.dp))
                                     }
                                 }

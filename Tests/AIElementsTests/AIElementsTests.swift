@@ -10,6 +10,14 @@ import UIKit
 @testable import AIElements
 
 final class AIElementsTests: XCTestCase {
+    @MainActor func testShadcnChartAcceptsDuplicateSeriesLabelsAndRaggedRows() throws {
+        let chart = AIShadcnNode(.chart, "Revenue", columns: ["Day", "Revenue", "Revenue"],
+                                 rows: [["Mon", "15", "30"], ["Tue", "18"], []])
+        let renderer = ImageRenderer(content: AIShadcnView(chart).frame(width: 360))
+        let image = try XCTUnwrap(renderer.cgImage)
+        XCTAssertGreaterThan(image.height, 100)
+    }
+
     @MainActor private func renderedLines(_ text: NSAttributedString, width: CGFloat) -> [String] {
         let breaker = InlineCodeLineBreaker()
         let container = breaker.makeTextContainer()

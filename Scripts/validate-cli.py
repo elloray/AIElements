@@ -3,6 +3,7 @@
 import argparse
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 import tempfile
@@ -31,7 +32,7 @@ failure = subprocess.run([str(cli), "show", "does-not-exist", "--json"], text=Tr
 assert failure.returncode == 2 and failure.stdout == "", failure
 assert json.loads(failure.stderr)["exitCode"] == 2
 catalog = json.loads(invoke("list", "--json"))
-assert catalog["schemaVersion"] == 1 and len(catalog["components"]) == 37
+assert catalog["schemaVersion"] == 1 and len(catalog["components"]) == 37 + len(json.loads((repo / "Sources/AIElementsCatalog/Resources/shadcn-catalog.json").read_text()))
 
 scratch = repo / ".build" / "cli-validation"
 scratch.mkdir(parents=True, exist_ok=True)
@@ -61,6 +62,12 @@ with tempfile.TemporaryDirectory(prefix="run-", dir=scratch) as temporary:
     assert not feature.exists()
     invoke("init", "--path", str(feature), "--local-package", str(alias))
     sources = feature / "Sources" / "AssistantUI"
+    swift_blocks = re.compile(r"^```swift\n(.*?)^```$", re.MULTILINE | re.DOTALL)
+    guide_examples = swift_blocks.findall((repo / "Documentation/Shadcn-Components.md").read_text())
+    readme_examples = [code for code in swift_blocks.findall((repo / "README.md").read_text()) if "AIShadcnView(" in code]
+    assert guide_examples and readme_examples, "Both the integration guide and README need a Swift example"
+    for index, snippet in enumerate(guide_examples + readme_examples):
+        (sources / f"ShadcnIntegrationExample{index}.swift").write_text(snippet)
     for component in catalog["components"]:
         code = invoke("example", component["id"])
         (sources / component["exampleFile"]).write_text(code)
@@ -84,5 +91,5 @@ with tempfile.TemporaryDirectory(prefix="run-", dir=scratch) as temporary:
         run("xcodebuild", "-scheme", "AssistantUI", "-destination", "generic/platform=iOS Simulator",
             "-derivedDataPath", str(root / "DerivedData"), "CODE_SIGNING_ALLOWED=NO", "build", cwd=feature)
 
-print("CLI validation passed: JSON/error contracts, 37 Swift examples, 16 UI documents, complete/incomplete JSONL, generated package, revision pin, and skill installation"
+print("CLI validation passed: JSON/error contracts, all Swift examples, 16 UI documents, complete/incomplete JSONL, generated package, revision pin, and skill installation"
       + ("; macOS + iOS Simulator compilation." if args.ios else "; macOS compilation."))

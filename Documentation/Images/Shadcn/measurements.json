@@ -1,0 +1,5630 @@
+[
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "web",
+    "height": 198,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 194,
+    "foregroundMeanAbsoluteRGB": 101.12
+  },
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 196,
+    "foregroundMeanAbsoluteRGB": 88.35
+  },
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 82.52
+  },
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "android",
+    "height": 206,
+    "foregroundMeanAbsoluteRGB": 101.68
+  },
+  {
+    "component": "accordion",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 194,
+    "foregroundMeanAbsoluteRGB": 104.25
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 198,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 194,
+    "foregroundMeanAbsoluteRGB": 87.95
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 196,
+    "foregroundMeanAbsoluteRGB": 74.13
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 70.46
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 206,
+    "foregroundMeanAbsoluteRGB": 87.42
+  },
+  {
+    "component": "accordion",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 194,
+    "foregroundMeanAbsoluteRGB": 95.47
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "web",
+    "height": 80,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 82,
+    "foregroundMeanAbsoluteRGB": 72.88
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 83,
+    "foregroundMeanAbsoluteRGB": 67.99
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 83,
+    "foregroundMeanAbsoluteRGB": 66.71
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "android",
+    "height": 88,
+    "foregroundMeanAbsoluteRGB": 73.49
+  },
+  {
+    "component": "alert",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 68.92
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 80,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 82,
+    "foregroundMeanAbsoluteRGB": 19.15
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 83,
+    "foregroundMeanAbsoluteRGB": 17.37
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 83,
+    "foregroundMeanAbsoluteRGB": 16.9
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 88,
+    "foregroundMeanAbsoluteRGB": 19.18
+  },
+  {
+    "component": "alert",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 19.5
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.24
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 22.54
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.99
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.29
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 49.41
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 241.19
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 241.25
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 241.12
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 241.12
+  },
+  {
+    "component": "alert-dialog",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 241.58
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "web",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 202,
+    "foregroundMeanAbsoluteRGB": 14.62
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 14.44
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 14.52
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "android",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 14.42
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 14.47
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 202,
+    "foregroundMeanAbsoluteRGB": 3.01
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 2.87
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 2.89
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 2.87
+  },
+  {
+    "component": "aspect-ratio",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 203,
+    "foregroundMeanAbsoluteRGB": 2.92
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "web",
+    "height": 167,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 157,
+    "foregroundMeanAbsoluteRGB": 37.83
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 156,
+    "foregroundMeanAbsoluteRGB": 36.94
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 157,
+    "foregroundMeanAbsoluteRGB": 36.28
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "android",
+    "height": 162,
+    "foregroundMeanAbsoluteRGB": 32.67
+  },
+  {
+    "component": "attachment",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 161,
+    "foregroundMeanAbsoluteRGB": 33.72
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 167,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 157,
+    "foregroundMeanAbsoluteRGB": 24.29
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 156,
+    "foregroundMeanAbsoluteRGB": 23.7
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 157,
+    "foregroundMeanAbsoluteRGB": 23.33
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 162,
+    "foregroundMeanAbsoluteRGB": 22.09
+  },
+  {
+    "component": "attachment",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 161,
+    "foregroundMeanAbsoluteRGB": 22.84
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.37
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.38
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.27
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.19
+  },
+  {
+    "component": "avatar",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.27
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.98
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.88
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.88
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.66
+  },
+  {
+    "component": "avatar",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.01
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 39.47
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 40.49
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 38.15
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.21
+  },
+  {
+    "component": "badge",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 50.26
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.18
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.86
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 36.1
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 32.58
+  },
+  {
+    "component": "badge",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 45.46
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 70.36
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 67.6
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 68.19
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 81.96
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 77.83
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 63.31
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 59.49
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 61.66
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 71.85
+  },
+  {
+    "component": "breadcrumb",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 72.73
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "web",
+    "height": 167,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 170,
+    "foregroundMeanAbsoluteRGB": 19.09
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 171,
+    "foregroundMeanAbsoluteRGB": 18.59
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 171,
+    "foregroundMeanAbsoluteRGB": 17.51
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "android",
+    "height": 168,
+    "foregroundMeanAbsoluteRGB": 6.26
+  },
+  {
+    "component": "bubble",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 168,
+    "foregroundMeanAbsoluteRGB": 20.82
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 167,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 170,
+    "foregroundMeanAbsoluteRGB": 17.21
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 171,
+    "foregroundMeanAbsoluteRGB": 15.86
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 171,
+    "foregroundMeanAbsoluteRGB": 14.8
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 168,
+    "foregroundMeanAbsoluteRGB": 6.24
+  },
+  {
+    "component": "bubble",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 168,
+    "foregroundMeanAbsoluteRGB": 18.28
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.92
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.05
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.22
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.45
+  },
+  {
+    "component": "button",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 44.39
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.32
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.02
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.63
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.77
+  },
+  {
+    "component": "button",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.56
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.48
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.29
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.2
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.54
+  },
+  {
+    "component": "button-group",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 10.02
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.13
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.02
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.97
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.66
+  },
+  {
+    "component": "button-group",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 10.89
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "web",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 253,
+    "foregroundMeanAbsoluteRGB": 86.63
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 249,
+    "foregroundMeanAbsoluteRGB": 86.45
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 249,
+    "foregroundMeanAbsoluteRGB": 85.06
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "android",
+    "height": 252,
+    "foregroundMeanAbsoluteRGB": 73.39
+  },
+  {
+    "component": "calendar",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 254,
+    "foregroundMeanAbsoluteRGB": 72.23
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 253,
+    "foregroundMeanAbsoluteRGB": 79.17
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 249,
+    "foregroundMeanAbsoluteRGB": 76.29
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 249,
+    "foregroundMeanAbsoluteRGB": 76.1
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 252,
+    "foregroundMeanAbsoluteRGB": 66.61
+  },
+  {
+    "component": "calendar",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 254,
+    "foregroundMeanAbsoluteRGB": 69.21
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "web",
+    "height": 357,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 24.97
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 78.11
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 76.85
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "android",
+    "height": 360,
+    "foregroundMeanAbsoluteRGB": 41.14
+  },
+  {
+    "component": "card",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 334,
+    "foregroundMeanAbsoluteRGB": 80.32
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 357,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 7.27
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 18.61
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 18.53
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 360,
+    "foregroundMeanAbsoluteRGB": 9.48
+  },
+  {
+    "component": "card",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 334,
+    "foregroundMeanAbsoluteRGB": 25.71
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "web",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 24.83
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 25.14
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 24.28
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "android",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 25.23
+  },
+  {
+    "component": "carousel",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 31.34
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.72
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.69
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.66
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.78
+  },
+  {
+    "component": "carousel",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 352,
+    "foregroundMeanAbsoluteRGB": 0.8
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "web",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 51.24
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 49.96
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 48.72
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "android",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 53.96
+  },
+  {
+    "component": "chart",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 353,
+    "foregroundMeanAbsoluteRGB": 54.29
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 190.37
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 190.66
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 354,
+    "foregroundMeanAbsoluteRGB": 190.73
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 355,
+    "foregroundMeanAbsoluteRGB": 189.76
+  },
+  {
+    "component": "chart",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 353,
+    "foregroundMeanAbsoluteRGB": 186.54
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 82.03
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 86.12
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 83.47
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 83.37
+  },
+  {
+    "component": "checkbox",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 106.54
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 62.17
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 66.37
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 65.44
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 65.11
+  },
+  {
+    "component": "checkbox",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 88.05
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "web",
+    "height": 260,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 7.26
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 259,
+    "foregroundMeanAbsoluteRGB": 6.93
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 7.28
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "android",
+    "height": 261,
+    "foregroundMeanAbsoluteRGB": 8.66
+  },
+  {
+    "component": "code-block",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 260,
+    "foregroundMeanAbsoluteRGB": 13.06
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 260,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 198.57
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 259,
+    "foregroundMeanAbsoluteRGB": 199.96
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 262,
+    "foregroundMeanAbsoluteRGB": 197.96
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 261,
+    "foregroundMeanAbsoluteRGB": 197.65
+  },
+  {
+    "component": "code-block",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 260,
+    "foregroundMeanAbsoluteRGB": 194.91
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 70.77
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 71.06
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 67,
+    "foregroundMeanAbsoluteRGB": 76.93
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "android",
+    "height": 68,
+    "foregroundMeanAbsoluteRGB": 72.06
+  },
+  {
+    "component": "collapsible",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 67.34
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 5.66
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 5.51
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 67,
+    "foregroundMeanAbsoluteRGB": 5.67
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 68,
+    "foregroundMeanAbsoluteRGB": 6.04
+  },
+  {
+    "component": "collapsible",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 17.17
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 43.4
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 38.45
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.93
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 43.83
+  },
+  {
+    "component": "combobox",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 42.94
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.26
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.74
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.6
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.67
+  },
+  {
+    "component": "combobox",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 36.61
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.32
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.93
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.7
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.59
+  },
+  {
+    "component": "command",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 45.52
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.41
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.03
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.18
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.84
+  },
+  {
+    "component": "command",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.21
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "web",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 20.98
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 20.51
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 20.31
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "android",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 53.45
+  },
+  {
+    "component": "context-menu",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 57.97
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 21.03
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 18.53
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 18.17
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 49.92
+  },
+  {
+    "component": "context-menu",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 54.09
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "web",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 82.41
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 82.34
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 80.3
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "android",
+    "height": 370,
+    "foregroundMeanAbsoluteRGB": 82.62
+  },
+  {
+    "component": "data-table",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 76.18
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 52.5
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 49.13
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 369,
+    "foregroundMeanAbsoluteRGB": 48.19
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 370,
+    "foregroundMeanAbsoluteRGB": 51.07
+  },
+  {
+    "component": "data-table",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 48.22
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 74.77
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 68,
+    "foregroundMeanAbsoluteRGB": 70.17
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 69,
+    "foregroundMeanAbsoluteRGB": 62.17
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "android",
+    "height": 76,
+    "foregroundMeanAbsoluteRGB": 73.46
+  },
+  {
+    "component": "date-picker",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 68.42
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.97
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 68,
+    "foregroundMeanAbsoluteRGB": 20.77
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 69,
+    "foregroundMeanAbsoluteRGB": 20.87
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 76,
+    "foregroundMeanAbsoluteRGB": 16.41
+  },
+  {
+    "component": "date-picker",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.99
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.62
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.48
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.42
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.54
+  },
+  {
+    "component": "dialog",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 32.87
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.41
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.4
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.63
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.82
+  },
+  {
+    "component": "dialog",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.87
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "web",
+    "height": 357,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 359,
+    "foregroundMeanAbsoluteRGB": 32.12
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 75.02
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 73.84
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "android",
+    "height": 360,
+    "foregroundMeanAbsoluteRGB": 48.32
+  },
+  {
+    "component": "direction",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 359,
+    "foregroundMeanAbsoluteRGB": 40.56
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 357,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 359,
+    "foregroundMeanAbsoluteRGB": 9.7
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 17.41
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 404,
+    "foregroundMeanAbsoluteRGB": 17.34
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 360,
+    "foregroundMeanAbsoluteRGB": 11.2
+  },
+  {
+    "component": "direction",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 359,
+    "foregroundMeanAbsoluteRGB": 14.52
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.83
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.83
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.95
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.32
+  },
+  {
+    "component": "drawer",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.08
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.52
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.46
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.61
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.36
+  },
+  {
+    "component": "drawer",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.57
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.93
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.93
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.49
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.83
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 42.66
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.28
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.35
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.69
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.7
+  },
+  {
+    "component": "dropdown-menu",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.12
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "web",
+    "height": 216,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 223,
+    "foregroundMeanAbsoluteRGB": 71.89
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 236,
+    "foregroundMeanAbsoluteRGB": 71.9
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 236,
+    "foregroundMeanAbsoluteRGB": 70.76
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "android",
+    "height": 238,
+    "foregroundMeanAbsoluteRGB": 68.71
+  },
+  {
+    "component": "empty",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 211,
+    "foregroundMeanAbsoluteRGB": 67.23
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 216,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 223,
+    "foregroundMeanAbsoluteRGB": 58.95
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 236,
+    "foregroundMeanAbsoluteRGB": 57.02
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 236,
+    "foregroundMeanAbsoluteRGB": 56.9
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 238,
+    "foregroundMeanAbsoluteRGB": 56.17
+  },
+  {
+    "component": "empty",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 211,
+    "foregroundMeanAbsoluteRGB": 59.45
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "web",
+    "height": 193,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 57.6
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 205,
+    "foregroundMeanAbsoluteRGB": 47.47
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 206,
+    "foregroundMeanAbsoluteRGB": 45.25
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "android",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 39.34
+  },
+  {
+    "component": "field",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 172,
+    "foregroundMeanAbsoluteRGB": 62.14
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 193,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 180,
+    "foregroundMeanAbsoluteRGB": 27.99
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 205,
+    "foregroundMeanAbsoluteRGB": 22.96
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 206,
+    "foregroundMeanAbsoluteRGB": 23.61
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 21.55
+  },
+  {
+    "component": "field",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 172,
+    "foregroundMeanAbsoluteRGB": 30.52
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.05
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 27.83
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.62
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.43
+  },
+  {
+    "component": "hover-card",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 77.33
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 31.68
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 24.84
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.33
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 22.59
+  },
+  {
+    "component": "hover-card",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 65.25
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.17
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.01
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.69
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.83
+  },
+  {
+    "component": "input",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.69
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 11.09
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 11.11
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 10.96
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 11.43
+  },
+  {
+    "component": "input",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.73
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "web",
+    "height": 89,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 80,
+    "foregroundMeanAbsoluteRGB": 51.18
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 81,
+    "foregroundMeanAbsoluteRGB": 41.91
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 81,
+    "foregroundMeanAbsoluteRGB": 41.39
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "android",
+    "height": 84,
+    "foregroundMeanAbsoluteRGB": 41.99
+  },
+  {
+    "component": "input-group",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 76,
+    "foregroundMeanAbsoluteRGB": 53.81
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 89,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 80,
+    "foregroundMeanAbsoluteRGB": 29.66
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 81,
+    "foregroundMeanAbsoluteRGB": 28.61
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 81,
+    "foregroundMeanAbsoluteRGB": 28.43
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 84,
+    "foregroundMeanAbsoluteRGB": 26.72
+  },
+  {
+    "component": "input-group",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 76,
+    "foregroundMeanAbsoluteRGB": 30.95
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.81
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 30.24
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.06
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.83
+  },
+  {
+    "component": "input-otp",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 39.32
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.24
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.17
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.61
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 14.2
+  },
+  {
+    "component": "input-otp",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 45.19
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "web",
+    "height": 133,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 130,
+    "foregroundMeanAbsoluteRGB": 68.31
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 134,
+    "foregroundMeanAbsoluteRGB": 67.49
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 135,
+    "foregroundMeanAbsoluteRGB": 64.0
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "android",
+    "height": 169,
+    "foregroundMeanAbsoluteRGB": 72.64
+  },
+  {
+    "component": "item",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 140,
+    "foregroundMeanAbsoluteRGB": 68.27
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 133,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 130,
+    "foregroundMeanAbsoluteRGB": 56.61
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 134,
+    "foregroundMeanAbsoluteRGB": 54.22
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 135,
+    "foregroundMeanAbsoluteRGB": 51.63
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 169,
+    "foregroundMeanAbsoluteRGB": 60.32
+  },
+  {
+    "component": "item",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 140,
+    "foregroundMeanAbsoluteRGB": 61.7
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 14.52
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.12
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.39
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 14.01
+  },
+  {
+    "component": "kbd",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.3
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.65
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.36
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.56
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.78
+  },
+  {
+    "component": "kbd",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.18
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 43.34
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.38
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 45.69
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.49
+  },
+  {
+    "component": "label",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 88.36
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 239.79
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 240.32
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 239.7
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 240.3
+  },
+  {
+    "component": "label",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 237.03
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "web",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 18.13
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 16.1
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 16.1
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "android",
+    "height": 123,
+    "foregroundMeanAbsoluteRGB": 27.68
+  },
+  {
+    "component": "marker",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 26.96
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 17.35
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 15.79
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 15.7
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 123,
+    "foregroundMeanAbsoluteRGB": 26.99
+  },
+  {
+    "component": "marker",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 124,
+    "foregroundMeanAbsoluteRGB": 29.53
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 85.22
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 45.57
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 54.06
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.54
+  },
+  {
+    "component": "menubar",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 47.82
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 236.04
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 239.46
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 238.94
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 240.12
+  },
+  {
+    "component": "menubar",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 238.75
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "web",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 199,
+    "foregroundMeanAbsoluteRGB": 28.59
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 29.57
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 29.29
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "android",
+    "height": 199,
+    "foregroundMeanAbsoluteRGB": 9.6
+  },
+  {
+    "component": "message",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 32.1
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 199,
+    "foregroundMeanAbsoluteRGB": 184.26
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 184.09
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 183.94
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 199,
+    "foregroundMeanAbsoluteRGB": 178.9
+  },
+  {
+    "component": "message",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 197,
+    "foregroundMeanAbsoluteRGB": 183.31
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "web",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 91.51
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 81.39
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 85.78
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "android",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 85.97
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 82.18
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 215.7
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 217.95
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 218.08
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 218.18
+  },
+  {
+    "component": "message-scroller",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 418,
+    "foregroundMeanAbsoluteRGB": 218.32
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 79.68
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 79.61
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 76.84
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 38.09
+  },
+  {
+    "component": "native-select",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 62.69
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 30.3
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 30.34
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.56
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.62
+  },
+  {
+    "component": "native-select",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 25.04
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 126.74
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 144.89
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 141.11
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 141.35
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 125.28
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 109.08
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 114.59
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 78,
+    "foregroundMeanAbsoluteRGB": 116.32
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 114.79
+  },
+  {
+    "component": "navigation-menu",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 66,
+    "foregroundMeanAbsoluteRGB": 111.54
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 77.27
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 75.68
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 73.37
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 80.23
+  },
+  {
+    "component": "pagination",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 81.05
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 242.41
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 242.65
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 242.61
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 242.46
+  },
+  {
+    "component": "pagination",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 242.33
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 25.79
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.87
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 27.41
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.35
+  },
+  {
+    "component": "popover",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.82
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.34
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.94
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.29
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.9
+  },
+  {
+    "component": "popover",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.93
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.61
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.46
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.59
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.3
+  },
+  {
+    "component": "progress",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.78
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.42
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.25
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.88
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.72
+  },
+  {
+    "component": "progress",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 1.98
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "web",
+    "height": 306,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 295,
+    "foregroundMeanAbsoluteRGB": 79.54
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 308,
+    "foregroundMeanAbsoluteRGB": 75.02
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 308,
+    "foregroundMeanAbsoluteRGB": 72.48
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "android",
+    "height": 325,
+    "foregroundMeanAbsoluteRGB": 68.67
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 287,
+    "foregroundMeanAbsoluteRGB": 80.59
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 306,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 295,
+    "foregroundMeanAbsoluteRGB": 34.93
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 308,
+    "foregroundMeanAbsoluteRGB": 32.26
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 308,
+    "foregroundMeanAbsoluteRGB": 31.56
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 325,
+    "foregroundMeanAbsoluteRGB": 33.51
+  },
+  {
+    "component": "questionnaire",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 287,
+    "foregroundMeanAbsoluteRGB": 36.0
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 70,
+    "foregroundMeanAbsoluteRGB": 69.57
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 132,
+    "foregroundMeanAbsoluteRGB": 90.64
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 132,
+    "foregroundMeanAbsoluteRGB": 88.24
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "android",
+    "height": 75,
+    "foregroundMeanAbsoluteRGB": 79.01
+  },
+  {
+    "component": "radio-group",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 60.45
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 70,
+    "foregroundMeanAbsoluteRGB": 55.64
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 132,
+    "foregroundMeanAbsoluteRGB": 66.6
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 132,
+    "foregroundMeanAbsoluteRGB": 66.15
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 75,
+    "foregroundMeanAbsoluteRGB": 60.27
+  },
+  {
+    "component": "radio-group",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 46.91
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "web",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 80.28
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 74.45
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 77.42
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "android",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 75.38
+  },
+  {
+    "component": "resizable",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 69.64
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 241.89
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 241.95
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 241.93
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 241.81
+  },
+  {
+    "component": "resizable",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 200,
+    "foregroundMeanAbsoluteRGB": 241.77
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "web",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 93.41
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 74.94
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 75.67
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "android",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 79.65
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 88.79
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 235.58
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 236.43
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 236.67
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 236.2
+  },
+  {
+    "component": "scroll-area",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 288,
+    "foregroundMeanAbsoluteRGB": 235.78
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.95
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 11.24
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 10.13
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.85
+  },
+  {
+    "component": "select",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 34.23
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 238.26
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 238.3
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 238.24
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 237.98
+  },
+  {
+    "component": "select",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 240.79
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "web",
+    "height": 113,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 111,
+    "foregroundMeanAbsoluteRGB": 77.5
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 112,
+    "foregroundMeanAbsoluteRGB": 81.08
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 113,
+    "foregroundMeanAbsoluteRGB": 75.78
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "android",
+    "height": 118,
+    "foregroundMeanAbsoluteRGB": 83.26
+  },
+  {
+    "component": "separator",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 103,
+    "foregroundMeanAbsoluteRGB": 88.86
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 113,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 111,
+    "foregroundMeanAbsoluteRGB": 225.03
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 112,
+    "foregroundMeanAbsoluteRGB": 225.55
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 113,
+    "foregroundMeanAbsoluteRGB": 225.25
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 118,
+    "foregroundMeanAbsoluteRGB": 224.09
+  },
+  {
+    "component": "separator",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 103,
+    "foregroundMeanAbsoluteRGB": 223.8
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 13.93
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.93
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.49
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.83
+  },
+  {
+    "component": "sheet",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 42.51
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.28
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.35
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.69
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.7
+  },
+  {
+    "component": "sheet",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.27
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "web",
+    "height": 176,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 95.39
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 92.66
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 90.95
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "android",
+    "height": 172,
+    "foregroundMeanAbsoluteRGB": 83.2
+  },
+  {
+    "component": "sidebar",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 14.6
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 176,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 13.49
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 11.89
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 11.62
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 172,
+    "foregroundMeanAbsoluteRGB": 10.97
+  },
+  {
+    "component": "sidebar",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 188,
+    "foregroundMeanAbsoluteRGB": 23.25
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.12
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.12
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.12
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.13
+  },
+  {
+    "component": "skeleton",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.1
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.3
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.3
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.38
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.32
+  },
+  {
+    "component": "skeleton",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.24
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.82
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 8.85
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 9.99
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.21
+  },
+  {
+    "component": "slider",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 31.99
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.14
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.13
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.71
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.19
+  },
+  {
+    "component": "slider",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.39
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.88
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.6
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.46
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.52
+  },
+  {
+    "component": "sonner",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 55.32
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.05
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.06
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.38
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.39
+  },
+  {
+    "component": "sonner",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.6
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.59
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.83
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.1
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 32.23
+  },
+  {
+    "component": "spinner",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 24.55
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.75
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.98
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.16
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 24.99
+  },
+  {
+    "component": "spinner",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.21
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 27.25
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.08
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.97
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 29.58
+  },
+  {
+    "component": "switch",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 82.74
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.28
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.02
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 22.77
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.1
+  },
+  {
+    "component": "switch",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 72.78
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "web",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 30.52
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 55.15
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 48.27
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "android",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 59.66
+  },
+  {
+    "component": "table",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 47.97
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 26.48
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 29.64
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 26.2
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 371,
+    "foregroundMeanAbsoluteRGB": 34.25
+  },
+  {
+    "component": "table",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 372,
+    "foregroundMeanAbsoluteRGB": 47.73
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 82.1
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 82.4
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 81.63
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 92.06
+  },
+  {
+    "component": "tabs",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 94.81
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 74.97
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 71.21
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 72.18
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 81.62
+  },
+  {
+    "component": "tabs",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 86.55
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 35.16
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 37.85
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 35.84
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.52
+  },
+  {
+    "component": "textarea",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 44.13
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 3.78
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.14
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 3.96
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 3.25
+  },
+  {
+    "component": "textarea",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.86
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 16.88
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.6
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.46
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.52
+  },
+  {
+    "component": "toast",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 55.32
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.05
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.06
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.38
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 5.39
+  },
+  {
+    "component": "toast",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 23.6
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 80.93
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 81.81
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 79.46
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 82.26
+  },
+  {
+    "component": "toggle",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 76.28
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 70.99
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 70.95
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 69.83
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 71.11
+  },
+  {
+    "component": "toggle",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 68.17
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 49.22
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 49.23
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 48.23
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 46.44
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 44.01
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 48.3
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 48.63
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 48.01
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 43.79
+  },
+  {
+    "component": "toggle-group",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 46.6
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 24.04
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.74
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 25.63
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 12.71
+  },
+  {
+    "component": "tooltip",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 39.31
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.59
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 6.04
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 7.71
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 4.6
+  },
+  {
+    "component": "tooltip",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 20.47
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.21
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 21.24
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 18.39
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 15.49
+  },
+  {
+    "component": "trace",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 72.63
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.66
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 19.15
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 17.42
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 14.69
+  },
+  {
+    "component": "trace",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 66.11
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 33.71
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 31.89
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 39.76
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 96.17
+  },
+  {
+    "component": "typography",
+    "appearance": "light",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 100.38
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "web",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 0.0
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "mac",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 28.15
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "ios",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 26.71
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "ipad",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 33.98
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "android",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 80.11
+  },
+  {
+    "component": "typography",
+    "appearance": "dark",
+    "platform": "harmony",
+    "height": 64,
+    "foregroundMeanAbsoluteRGB": 91.86
+  }
+]

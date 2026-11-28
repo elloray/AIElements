@@ -41,14 +41,15 @@ private struct AIMessageWidth: ViewModifier {
     var role: AIMessageRole
     func body(content: Content) -> some View { if role == .user { AIAlignedWidthLayout(fraction: 0.8) { content } } else { content } }
 }
-private struct AIAlignedWidthLayout: Layout {
+struct AIAlignedWidthLayout: Layout {
     var fraction: CGFloat
+    var trailing = true
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         let width = proposal.width ?? 384
         return CGSize(width: width, height: subviews[0].sizeThatFits(.init(width: width * fraction, height: nil)).height)
     }
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
-        subviews[0].place(at: CGPoint(x: bounds.maxX, y: bounds.minY), anchor: .topTrailing, proposal: .init(width: bounds.width * fraction, height: nil))
+        subviews[0].place(at: CGPoint(x: trailing ? bounds.maxX : bounds.minX, y: bounds.minY), anchor: trailing ? .topTrailing : .topLeading, proposal: .init(width: bounds.width * fraction, height: nil))
     }
 }
 public struct AIMessageActions: View {

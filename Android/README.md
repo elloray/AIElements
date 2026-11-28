@@ -1,5 +1,7 @@
 # AIElements for Android
 
+The gallery includes all 67 entries from the shadcn/ui component indexes (Base UI, Radix UI, and React Aria). Search the **shadcn/ui** section to open a native example. [Public API and usage](../Documentation/Shadcn-Components.md) · [Light and dark comparisons](../Documentation/Images/Shadcn/README.md)
+
 Native **Kotlin + Jetpack Compose** counterpart to this repository’s SwiftUI library. Android 8.0 / API 26+, compile/target SDK 35, JDK 17. This is an unofficial independent port of shadcn/ui’s visual patterns; see the repository’s [third-party notices](../THIRD_PARTY_NOTICES.md).
 
 - `aielements`: reusable composables, Geist / Geist Mono, Lucide vectors, light/dark themes and native 48 dp touch targets.

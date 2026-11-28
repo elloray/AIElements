@@ -3,6 +3,7 @@ import SwiftUI
 /// Wrapping layout used by source and capability badges.
 struct AIFlowLayout: Layout {
     var spacing: CGFloat = 6
+    var fitsContent = false
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         arrange(width: proposal.width ?? 640, subviews: subviews).size
     }
@@ -15,12 +16,21 @@ struct AIFlowLayout: Layout {
     private func arrange(width: CGFloat, subviews: Subviews) -> (size: CGSize, points: [CGPoint]) {
         var x: CGFloat = 0, y: CGFloat = 0, rowHeight: CGFloat = 0
         var points: [CGPoint] = []
+        var occupied: CGFloat = 0
+        var heights: [CGFloat] = []
         for view in subviews {
             let size = view.sizeThatFits(ProposedViewSize(width: width, height: nil))
             if x > 0 && x + size.width > width { y += rowHeight + spacing; x = 0; rowHeight = 0 }
-            points.append(CGPoint(x: x, y: y)); x += size.width + spacing; rowHeight = max(rowHeight, size.height)
+            points.append(CGPoint(x: x, y: y)); heights.append(size.height); occupied = max(occupied, x + size.width); x += size.width + spacing; rowHeight = max(rowHeight, size.height)
         }
-        return (CGSize(width: width, height: y + rowHeight), points)
+        if fitsContent {
+            let rows = Dictionary(grouping: points.indices, by: { points[$0].y })
+            for indices in rows.values {
+                let height = indices.map { heights[$0] }.max() ?? 0
+                for i in indices { points[i].y += (height - heights[i]) / 2 }
+            }
+        }
+        return (CGSize(width: fitsContent ? occupied : width, height: y + rowHeight), points)
     }
 }
 private struct ScrollExtentKey: PreferenceKey {

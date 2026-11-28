@@ -1,8 +1,8 @@
 # AIElements
 
-**Native [shadcn/ui AI Elements](https://ui.shadcn.com/docs/ai-elements) for Apple platforms, Android, and HarmonyOS.**
+**Native shadcn/ui and AI Elements for Apple platforms, Android, and HarmonyOS.**
 
-AIElements 将 21 种 AI 界面模式和 15 种基础节点实现为可复用的原生组件。各端提供浅深色主题和交互画廊，复用同一套 JSONL 流式协议与样例。
+AIElements 提供 shadcn/ui 三个官方目录去重后的 **67 个组件**、**21 个 AI Elements 模式**和 **15 种流式协议节点**。三套原生组件库共用示例数据，画廊支持搜索和浅深色。每个 shadcn/ui 组件都有官网与各端的同宽截图。[组件接入](Documentation/Shadcn-Components.md) · [67 项视觉对照](Documentation/Images/Shadcn/README.md)
 
 | 平台 | 原生组件库 | 接入与运行 |
 | --- | --- | --- |
@@ -23,6 +23,31 @@ Swift 开发者可以使用 **`aielements` CLI + `aielements-swiftui` Agent Skil
 - Apple 端共用一个 `AIElements` Swift Package，要求 Swift tools **5.9+**。Android 和鸿蒙组件库分别通过 Gradle 和 OHPM 接入。
 - 组件提供界面、状态呈现和回调。模型调用、命令执行、附件上传及数据持久化由宿主负责。
 - 21 个模式以 2026-11-05 保存的原站目录为范围。各端沿用 Geist、Lucide 和同一套视觉基准，API 和系统交互见各平台指南。
+
+## shadcn/ui 组件
+
+在任一平台的画廊打开 **shadcn/ui**，搜索组件英文名。CLI 的 `shadcn-` 前缀可精确定位同名组件。
+
+```sh
+./aielements show shadcn-data-table
+./aielements example shadcn-questionnaire
+swift run AIElementsGallery --shadcn accordion
+```
+
+```swift
+import AIElements
+import SwiftUI
+
+struct TermsCheckbox: View {
+    @State private var values: [String: String] = [:]
+
+    var body: some View {
+        AIShadcnView(.init(.checkbox, "Accept terms", id: "terms"), values: $values)
+    }
+}
+```
+
+表格支持筛选、排序、选行与分页，问卷支持必填校验，轮播和分栏支持拖动。[SwiftUI、Compose、ArkUI 用法与对照条件](Documentation/Shadcn-Components.md)
 
 ## 流式 UI
 
@@ -60,7 +85,7 @@ try store.finish()
 | 表单 | `Input`、`Select`、`Switch` |
 | 数据展示 | `Table`、`BarChart`、`LineChart`、`AreaChart` |
 
-基础组件以 [shadcn/ui 基础组件](https://ui.shadcn.com/docs/components)及图表示例为视觉参考；当前尚未移植全部基础组件或图表变体。节点属性、绑定和回调见 [协议目录](Documentation/StreamingUI.md#component-catalog)，最新视觉结果见 [15 种基础组件同宽验收](Documentation/Foundation-Visual-Validation.md)。
+这 15 种节点沿用现有的 JSONL 协议。67 个 shadcn/ui 组件通过各端的 `AIShadcnView` 接入。[协议目录](Documentation/StreamingUI.md#component-catalog) · [流式基础节点视觉验收](Documentation/Foundation-Visual-Validation.md)
 
 ## 安装
 
@@ -149,7 +174,7 @@ cd AIElements
 /path/to/AIElements/aielements example prompt-input
 ```
 
-`show` 提供使用说明、原站链接和完整 Swift 示例；`example` 输出源码。目录覆盖 **21 个 AI 模式 + 15 种基础节点 + 1 个流式接入示例**，共 37 项；例如 `show select`、`show LineChart`、`example streaming-ui`。`ui example select` 则输出可校验的协议 JSON。CLI 的 `--json` 查询结果便于 AI 工具读取。
+`show` 提供使用说明、原站链接和完整 Swift 示例。目录现有 **104 项**，包括 67 个 shadcn/ui 组件、21 个 AI 模式、15 种协议节点和 1 个流式接入示例。可用 `example shadcn-select` 读取原生 Swift 源码，或用 `ui example select` 读取流式协议 JSON。
 
 CLI 还可以生成新的 UI Package、安装项目级 Skill；这些是可选能力，完整命令见 [CLI 指南](Documentation/CLI.md)。已有 App 直接按 [使用指南](Documentation/Usage.md) 接入组件即可。
 
@@ -271,13 +296,13 @@ xcodegen generate --spec Examples/project.yml
 
 项目以原站为视觉基准。各平台的验收范围随构建和设备而异。
 
-- **Android**：调试 APK、发布 AAR、单元测试和设备测试已有记录。[Android 验证](Documentation/Android-Validation.md) · [同宽视觉对比](Documentation/Android-Visual-Fidelity-2026-11-11.md)
-- **HarmonyOS**：8 项自动化测试通过，已用 API 12 工具完成 ArkTS 编译、资源打包和未签名 HAP 检查。设备安装与视觉验收待完成。[鸿蒙验证](HarmonyOS/README.md#验证)
+- **Android** 在 API 35 模拟器通过 7 项 shadcn 组件回归和 1 项截图测试，覆盖全部 67 个组件的浅深色示例。[组件验证](Documentation/Shadcn-Components.md#已执行的交互验证) · [Android 构建记录](Documentation/Android-Validation.md)
+- **HarmonyOS** 通过 9 项自动化测试和未签名 HAP 完整性检查。API 12 SDK Previewer 已渲染 134 份组件样本，真机效果仍待验收。[鸿蒙验证](HarmonyOS/README.md#验证)
 
 ### Apple 平台
 
 - **15 种基础节点（2026-11-08 第二轮）**：重新采集 30 张原站、60 张原生浅深色截图，以 **360 CSS px / SwiftUI pt** 画布形成 30 张「原站 / macOS / iOS」对照图；修正深色 Progress 填充颜色，并补全无标签 Select 的辅助功能名称。详见 [逐项结果与全部截图](Documentation/Foundation-Visual-Validation.md)。
-- **构建与测试**：最新一轮 macOS `swift test` 共 **51 项通过**（组件库 31、协议 11、CLI 9）；iOS 和 macOS 示例均通过 Debug 构建，iOS 模拟器完成安装、启动与截图导出。此处不将 macOS 单元测试计为 iOS 测试。
+- **构建与测试** 在 macOS 运行 `swift test`，共 **52 项通过**（组件库 32、协议 11、CLI 9）。iPhone 模拟器另通过 6 项 shadcn 交互测试，iPhone 和 iPad 模拟器分别导出了 134 份浅深色样本。[交互和视觉验证](Documentation/Shadcn-Components.md#已执行的交互验证)
 - **iOS 触控区**：默认密度下 Button、Input、Select、Switch 的外层布局高度均实测为 **44 pt**，结合命中区实现检查；没有通过压缩触控区来匹配网页高度。[尺寸记录](Reference/foundation-control-sizes.json)。
 - **原有 21 个模式**：已对默认示例及待审批态做过 360 CSS px / pt、2×、浅深色、双端对照；此前 iOS 包测试 30 项、macOS 包测试 29 项及 8 项针对性交互测试通过。这些为此前验收记录，不代表本轮重跑，详见 [验证范围](Documentation/VALIDATION.md)。
 

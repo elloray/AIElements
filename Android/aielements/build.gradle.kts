@@ -1,8 +1,9 @@
-plugins { id("com.android.library"); kotlin("android"); id("org.jetbrains.kotlin.plugin.compose") }
+plugins { id("com.android.library"); kotlin("android"); kotlin("plugin.serialization"); id("org.jetbrains.kotlin.plugin.compose") }
 android {
     namespace = "dev.aielements.compose"
     compileSdk = 35
     defaultConfig { minSdk = 26; consumerProguardFiles("consumer-rules.pro"); testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" }
+    sourceSets.getByName("main").assets.srcDir("../../Sources/AIElementsCatalog/Resources")
     buildFeatures { compose = true }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     testOptions { unitTests.isIncludeAndroidResources = true }

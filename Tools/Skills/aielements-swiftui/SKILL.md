@@ -37,7 +37,7 @@ components needed for the task:
 
 `show` includes public symbol names, implementation paths, behavioral notes, the
 original design URL, and a complete Swift source example. The catalog contains
-21 AI patterns, 15 foundation nodes, and one `streaming-ui` integration example.
+67 entries from the official shadcn/ui component indexes (Base UI, Radix UI, and React Aria), 21 AI patterns, 15 foundation nodes, and one `streaming-ui` integration example. Use `show shadcn-select` or `example shadcn-message` for names shared with earlier entries.
 IDs such as `file-tree`, symbols such as `AIFileTree`, and protocol types such as
 `LineChart` work. Shared `AIChart` symbols require choosing `bar-chart`, `line-chart`,
 or `area-chart`. `protocolType` identifies a JSON node; an empty `symbols` array
@@ -46,7 +46,7 @@ errors are on stderr with nonzero exit status. The checkout launcher may also em
 SwiftPM diagnostics on stderr. Examples and the catalog ship with the CLI; queries
 do not call a model service or require network access after the checkout is available.
 
-If the CLI is unavailable, read `Tools/Catalog/catalog.json` and the relevant
+The shadcn examples are defined in `Sources/AIElementsCatalog/Resources/shadcn-catalog.json` and exposed by `AIShadcnView`. If the CLI is unavailable, read this file or `Tools/Catalog/catalog.json` and the relevant
 `Tools/Catalog/Examples/*.swift` in the library checkout. If neither is available,
 obtain the repository within the user's task scope. Do not guess constructors.
 Compare the installed library revision with the CLI checkout when APIs differ.

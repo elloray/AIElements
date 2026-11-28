@@ -1,0 +1,1990 @@
+[
+  {
+    "id": "accordion",
+    "title": "Accordion",
+    "summary": "A vertically stacked set of interactive headings that each reveal a section of content.",
+    "root": {
+      "kind": "accordion",
+      "width": 512,
+      "value": "shipping",
+      "items": [
+        {
+          "label": "What are your shipping options?",
+          "detail": "We offer standard (5-7 days), express (2-3 days), and overnight shipping. Free shipping on international orders.",
+          "id": "shipping"
+        },
+        {
+          "label": "What is your return policy?",
+          "detail": "Returns accepted within 30 days. Items must be unused and in original packaging. Refunds processed within 5-7 business days.",
+          "id": "returns"
+        },
+        {
+          "label": "How can I contact customer support?",
+          "detail": "Reach us via email, live chat, or phone. We respond within 24 hours during business days.",
+          "id": "support"
+        }
+      ]
+    }
+  },
+  {
+    "id": "alert",
+    "title": "Alert",
+    "summary": "Displays a callout for user attention.",
+    "section": "basic",
+    "root": {
+      "kind": "alert",
+      "label": "Account updated successfully",
+      "detail": "Your profile information has been saved. Changes will be reflected immediately.",
+      "icon": "circle-check",
+      "width": 448
+    }
+  },
+  {
+    "id": "alert-dialog",
+    "title": "Alert Dialog",
+    "summary": "A modal dialog that interrupts the user with important content and expects a response.",
+    "root": {
+      "kind": "alert-dialog",
+      "label": "Show Dialog",
+      "detail": "This action cannot be undone. This will permanently delete your account from our servers.",
+      "heading": "Are you absolutely sure?",
+      "action": "Continue"
+    }
+  },
+  {
+    "id": "aspect-ratio",
+    "title": "Aspect Ratio",
+    "summary": "Displays content within a desired ratio.",
+    "root": {
+      "kind": "aspect-ratio",
+      "label": "Photo",
+      "value": "1.77777778",
+      "width": 384,
+      "children": [
+        {
+          "kind": "image",
+          "label": "Photo",
+          "value": "shadcn-aspect"
+        }
+      ]
+    }
+  },
+  {
+    "id": "attachment",
+    "title": "Attachment",
+    "summary": "Displays a file or image attachment with media, metadata, upload state, and actions.",
+    "section": "sizes",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "attachment",
+          "label": "Default attachment",
+          "detail": "PDF · 2.4 MB",
+          "variant": "default",
+          "icon": "file-text"
+        },
+        {
+          "kind": "attachment",
+          "label": "Small attachment",
+          "detail": "PDF · 2.4 MB",
+          "variant": "sm",
+          "icon": "file-text"
+        },
+        {
+          "kind": "attachment",
+          "label": "Extra small attachment",
+          "detail": "",
+          "variant": "xs",
+          "icon": "file-text"
+        }
+      ],
+      "gap": 12,
+      "width": 384
+    }
+  },
+  {
+    "id": "avatar",
+    "title": "Avatar",
+    "summary": "An image element with a fallback for representing the user.",
+    "section": "basic",
+    "root": {
+      "kind": "avatar",
+      "label": "@shadcn",
+      "value": "CN",
+      "asset": "shadcn-avatar",
+      "size": 32
+    }
+  },
+  {
+    "id": "badge",
+    "title": "Badge",
+    "summary": "Displays a badge or a component that looks like a badge.",
+    "root": {
+      "kind": "row",
+      "children": [
+        {
+          "kind": "badge",
+          "label": "Badge",
+          "variant": "primary"
+        },
+        {
+          "kind": "badge",
+          "label": "Secondary",
+          "variant": "secondary"
+        },
+        {
+          "kind": "badge",
+          "label": "Destructive",
+          "variant": "destructive"
+        },
+        {
+          "kind": "badge",
+          "label": "Outline",
+          "variant": "outline"
+        }
+      ],
+      "gap": 8
+    }
+  },
+  {
+    "id": "breadcrumb",
+    "title": "Breadcrumb",
+    "summary": "Displays the path to the current resource using a hierarchy of links.",
+    "section": "basic",
+    "root": {
+      "kind": "breadcrumb",
+      "items": [
+        {
+          "label": "Home"
+        },
+        {
+          "label": "Components"
+        },
+        {
+          "label": "Breadcrumb"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bubble",
+    "title": "Bubble",
+    "summary": "Message content with leading or trailing alignment and a choice of bubble treatments.",
+    "section": "alignment",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "bubble",
+          "label": "This bubble is aligned to the start. This is the default alignment.",
+          "variant": "muted"
+        },
+        {
+          "kind": "bubble",
+          "label": "This bubble is aligned to the end. Use this for user messages.",
+          "align": "end"
+        }
+      ],
+      "gap": 32,
+      "width": 384
+    }
+  },
+  {
+    "id": "button",
+    "title": "Button",
+    "summary": "Displays a button or a component that looks like a button.",
+    "section": "default",
+    "root": {
+      "kind": "button",
+      "label": "Button",
+      "variant": "primary"
+    }
+  },
+  {
+    "id": "button-group",
+    "title": "Button Group",
+    "summary": "A container that groups related buttons together with consistent styling.",
+    "section": "split",
+    "root": {
+      "kind": "button-group",
+      "variant": "secondary",
+      "items": [
+        {
+          "label": "Button"
+        },
+        {
+          "label": "Add",
+          "icon": "plus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "calendar",
+    "title": "Calendar",
+    "summary": "A calendar component that allows users to select a date or a range of dates.",
+    "section": "basic",
+    "root": {
+      "kind": "calendar",
+      "width": 214
+    }
+  },
+  {
+    "id": "card",
+    "title": "Card",
+    "summary": "Displays a card with header, content, and footer.",
+    "root": {
+      "kind": "card",
+      "label": "Login to your account",
+      "detail": "Enter your email below to login to your account",
+      "width": 384,
+      "action": "Sign Up",
+      "children": [
+        {
+          "kind": "input",
+          "label": "Email",
+          "placeholder": "m@example.com"
+        },
+        {
+          "kind": "input",
+          "label": "Password",
+          "variant": "password",
+          "action": "Forgot your password?"
+        }
+      ],
+      "items": [
+        {
+          "label": "Login"
+        },
+        {
+          "label": "Login with Google"
+        }
+      ]
+    }
+  },
+  {
+    "id": "carousel",
+    "title": "Carousel",
+    "summary": "A carousel with swipe gestures and previous and next controls.",
+    "root": {
+      "kind": "carousel",
+      "width": 360,
+      "items": [
+        {
+          "label": "1"
+        },
+        {
+          "label": "2"
+        },
+        {
+          "label": "3"
+        },
+        {
+          "label": "4"
+        },
+        {
+          "label": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chart",
+    "title": "Chart",
+    "summary": "Bar, line, and area charts with selectable data points.",
+    "selector": "https://ui.shadcn.com/view/new-york-v4/chart-bar-default",
+    "root": {
+      "kind": "chart",
+      "label": "Bar Chart",
+      "detail": "January - June 2024",
+      "width": 384,
+      "columns": [
+        "Month",
+        "Desktop"
+      ],
+      "rows": [
+        [
+          "Jan",
+          "186"
+        ],
+        [
+          "Feb",
+          "305"
+        ],
+        [
+          "Mar",
+          "237"
+        ],
+        [
+          "Apr",
+          "73"
+        ],
+        [
+          "May",
+          "209"
+        ],
+        [
+          "Jun",
+          "214"
+        ]
+      ],
+      "action": "Trending up by 5.2% this month",
+      "placeholder": "Showing total visitors for the last 6 months"
+    }
+  },
+  {
+    "id": "checkbox",
+    "title": "Checkbox",
+    "summary": "A control that allows the user to toggle between checked and not checked.",
+    "section": "basic",
+    "root": {
+      "kind": "checkbox",
+      "label": "Accept terms and conditions",
+      "width": 224
+    }
+  },
+  {
+    "id": "code-block",
+    "title": "Code Block",
+    "summary": "Displays code, terminal output and diffs with an optional header, line numbers and a copy button.",
+    "section": "basic",
+    "root": {
+      "kind": "code-block",
+      "value": "$ pnpm build\n> next build\n\n ✓ Compiled successfully in 4.2s\n ✓ Generating static pages (12/12)\n\nRoute (app)                Size  First Load JS\n┌ ○ /                    1.9 kB         112 kB\n├ ○ /_not-found           993 B         103 kB\n└ ƒ /api/chat             141 B         102 kB",
+      "width": 448
+    }
+  },
+  {
+    "id": "collapsible",
+    "title": "Collapsible",
+    "summary": "An interactive component which expands/collapses a panel.",
+    "section": "basic",
+    "root": {
+      "kind": "collapsible",
+      "label": "Product details",
+      "detail": "This panel can be expanded or collapsed to reveal additional content.",
+      "action": "Learn More",
+      "width": 384
+    }
+  },
+  {
+    "id": "combobox",
+    "title": "Combobox",
+    "summary": "Autocomplete input with a list of suggestions.",
+    "section": "basic",
+    "root": {
+      "kind": "combobox",
+      "placeholder": "Select a framework",
+      "width": 256,
+      "items": [
+        {
+          "label": "Next.js"
+        },
+        {
+          "label": "SvelteKit"
+        },
+        {
+          "label": "Nuxt.js"
+        },
+        {
+          "label": "Remix"
+        },
+        {
+          "label": "Astro"
+        }
+      ]
+    }
+  },
+  {
+    "id": "command",
+    "title": "Command",
+    "summary": "Command menu for search and quick actions.",
+    "section": "basic",
+    "root": {
+      "kind": "command",
+      "label": "Open Menu",
+      "placeholder": "Type a command or search...",
+      "heading": "Suggestions",
+      "items": [
+        {
+          "label": "Calendar"
+        },
+        {
+          "label": "Search Emoji"
+        },
+        {
+          "label": "Calculator"
+        }
+      ]
+    }
+  },
+  {
+    "id": "context-menu",
+    "title": "Context Menu",
+    "summary": "Displays a menu of actions triggered by a right click.",
+    "section": "basic",
+    "root": {
+      "kind": "context-menu",
+      "label": "Right click here",
+      "width": 320,
+      "height": 180,
+      "items": [
+        {
+          "label": "Back"
+        },
+        {
+          "label": "Forward",
+          "disabled": true
+        },
+        {
+          "label": "Reload"
+        }
+      ]
+    }
+  },
+  {
+    "id": "data-table",
+    "title": "Data Table",
+    "summary": "A table with row selection, filtering, sortable columns, and pagination.",
+    "root": {
+      "kind": "data-table",
+      "placeholder": "Filter emails...",
+      "filterColumn": 1,
+      "columns": [
+        "Status",
+        "Email",
+        "Amount"
+      ],
+      "rows": [
+        [
+          "Success",
+          "ken99@example.com",
+          "$316.00"
+        ],
+        [
+          "Success",
+          "abe45@example.com",
+          "$242.00"
+        ],
+        [
+          "Processing",
+          "monserrat44@example.com",
+          "$837.00"
+        ],
+        [
+          "Success",
+          "silas22@example.com",
+          "$874.00"
+        ],
+        [
+          "Failed",
+          "carmella@example.com",
+          "$721.00"
+        ]
+      ],
+      "width": 640
+    }
+  },
+  {
+    "id": "date-picker",
+    "title": "Date Picker",
+    "summary": "A date picker component with range and presets.",
+    "section": "basic",
+    "root": {
+      "kind": "date-picker",
+      "label": "Date",
+      "placeholder": "Pick a date",
+      "width": 176
+    }
+  },
+  {
+    "id": "dialog",
+    "title": "Dialog",
+    "summary": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.",
+    "root": {
+      "kind": "dialog",
+      "label": "Open Dialog",
+      "heading": "Edit profile",
+      "detail": "Make changes to your profile here. Click save when you’re done.",
+      "action": "Save changes",
+      "children": [
+        {
+          "kind": "input",
+          "label": "Name",
+          "value": "Pedro Duarte"
+        },
+        {
+          "kind": "input",
+          "label": "Username",
+          "value": "@peduarte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "direction",
+    "title": "Direction",
+    "summary": "A provider component that sets the text direction for your application.",
+    "root": {
+      "kind": "direction",
+      "label": "Language",
+      "value": "ar",
+      "items": [
+        {
+          "label": "English",
+          "detail": "ltr",
+          "id": "en"
+        },
+        {
+          "label": "Arabic (العربية)",
+          "detail": "rtl",
+          "id": "ar"
+        },
+        {
+          "label": "Hebrew (עברית)",
+          "detail": "rtl",
+          "id": "he"
+        }
+      ],
+      "children": [
+        {
+          "kind": "card",
+          "label": "Login to your account",
+          "detail": "Enter your email below to login to your account",
+          "width": 384,
+          "action": "Sign Up",
+          "children": [
+            {
+              "kind": "input",
+              "label": "Email",
+              "placeholder": "m@example.com"
+            },
+            {
+              "kind": "input",
+              "label": "Password",
+              "variant": "password",
+              "action": "Forgot your password?"
+            }
+          ],
+          "items": [
+            {
+              "label": "Login"
+            },
+            {
+              "label": "Login with Google"
+            }
+          ]
+        },
+        {
+          "kind": "card",
+          "label": "تسجيل الدخول إلى حسابك",
+          "detail": "أدخل بريدك الإلكتروني أدناه لتسجيل الدخول إلى حسابك",
+          "width": 384,
+          "action": "إنشاء حساب",
+          "children": [
+            {
+              "kind": "input",
+              "label": "البريد الإلكتروني",
+              "placeholder": "m@example.com"
+            },
+            {
+              "kind": "input",
+              "label": "كلمة المرور",
+              "variant": "password",
+              "action": "نسيت كلمة المرور؟"
+            }
+          ],
+          "items": [
+            {
+              "label": "تسجيل الدخول"
+            },
+            {
+              "label": "تسجيل الدخول باستخدام Google"
+            }
+          ]
+        },
+        {
+          "kind": "card",
+          "label": "התחבר לחשבון שלך",
+          "detail": "הזן את האימייל שלך למטה כדי להתחבר לחשבון שלך",
+          "width": 384,
+          "action": "הירשם",
+          "children": [
+            {
+              "kind": "input",
+              "label": "אימייל",
+              "placeholder": "m@example.com"
+            },
+            {
+              "kind": "input",
+              "label": "סיסמה",
+              "variant": "password",
+              "action": "שכחת את הסיסמה?"
+            }
+          ],
+          "items": [
+            {
+              "label": "התחבר"
+            },
+            {
+              "label": "התחבר עם Google"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "drawer",
+    "title": "Drawer",
+    "summary": "A panel that opens from the bottom of the screen.",
+    "root": {
+      "kind": "drawer",
+      "label": "Open Drawer",
+      "heading": "Pick a delivery time",
+      "detail": "We’ll prepare your order as soon as possible.",
+      "action": "Confirm Delivery Time",
+      "children": [
+        {
+          "kind": "radio-group",
+          "value": "Standard delivery",
+          "items": [
+            {
+              "label": "Standard delivery",
+              "detail": "25–35 min · Driver assigned now"
+            },
+            {
+              "label": "5:00 PM – 5:15 PM",
+              "detail": "Prep starts at 4:45 PM"
+            },
+            {
+              "label": "5:30 PM – 5:45 PM",
+              "detail": "Good if you’re heading home"
+            },
+            {
+              "label": "6:00 PM – 6:15 PM",
+              "detail": "Most popular · High demand"
+            },
+            {
+              "label": "6:30 PM – 6:45 PM",
+              "detail": "Last slot before kitchen closes"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dropdown-menu",
+    "title": "Dropdown Menu",
+    "summary": "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+    "section": "basic",
+    "root": {
+      "kind": "dropdown-menu",
+      "label": "Open",
+      "heading": "My Account",
+      "items": [
+        {
+          "label": "Profile"
+        },
+        {
+          "label": "Billing"
+        },
+        {
+          "label": "Settings"
+        },
+        {
+          "label": "GitHub"
+        },
+        {
+          "label": "Support"
+        },
+        {
+          "label": "API",
+          "disabled": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "empty",
+    "title": "Empty",
+    "summary": "Use the Empty component to display an empty state.",
+    "section": "outline",
+    "root": {
+      "kind": "empty",
+      "label": "Cloud Storage Empty",
+      "detail": "Upload files to your cloud storage to access them anywhere.",
+      "icon": "cloud",
+      "variant": "outline",
+      "action": "Upload Files"
+    }
+  },
+  {
+    "id": "field",
+    "title": "Field",
+    "summary": "Combine labels, controls, and help text to compose accessible form fields and grouped inputs.",
+    "section": "input",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "field",
+          "label": "Username",
+          "detail": "Choose a unique username for your account.",
+          "children": [
+            {
+              "kind": "input",
+              "placeholder": "Max Leiter"
+            }
+          ]
+        },
+        {
+          "kind": "field",
+          "label": "Password",
+          "detail": "Must be at least 8 characters long.",
+          "variant": "description-first",
+          "children": [
+            {
+              "kind": "input",
+              "placeholder": "••••••••",
+              "variant": "password"
+            }
+          ]
+        }
+      ],
+      "gap": 20,
+      "width": 320
+    }
+  },
+  {
+    "id": "hover-card",
+    "title": "Hover Card",
+    "summary": "For sighted users to preview content available behind a link.",
+    "section": "basic",
+    "root": {
+      "kind": "hover-card",
+      "label": "Hover Here",
+      "heading": "@nextjs",
+      "detail": "The React Framework – created and maintained by @vercel.",
+      "value": "Joined December 2021"
+    }
+  },
+  {
+    "id": "input",
+    "title": "Input",
+    "summary": "A text input component for forms and user data entry with built-in styling and accessibility features.",
+    "section": "basic",
+    "root": {
+      "kind": "input",
+      "placeholder": "Enter text",
+      "width": 320
+    }
+  },
+  {
+    "id": "input-group",
+    "title": "Input Group",
+    "summary": "Add addons, buttons, and helper content to inputs.",
+    "section": "inline-start",
+    "root": {
+      "kind": "field",
+      "label": "Input",
+      "detail": "Icon positioned at the start.",
+      "children": [
+        {
+          "kind": "input-group",
+          "placeholder": "Search...",
+          "icon": "search"
+        }
+      ],
+      "width": 384
+    }
+  },
+  {
+    "id": "input-otp",
+    "title": "Input OTP",
+    "summary": "Accessible one-time password component with copy-paste functionality.",
+    "root": {
+      "kind": "input-otp",
+      "label": "One-time password",
+      "value": "123456",
+      "size": 6
+    }
+  },
+  {
+    "id": "item",
+    "title": "Item",
+    "summary": "A versatile component for displaying content with media, title, description, and actions.",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "item",
+          "label": "Basic Item",
+          "detail": "A simple item with title and description.",
+          "action": "Action"
+        },
+        {
+          "kind": "item",
+          "label": "Your profile has been verified.",
+          "icon": "circle-check",
+          "variant": "link"
+        }
+      ],
+      "gap": 24,
+      "width": 448
+    }
+  },
+  {
+    "id": "kbd",
+    "title": "Kbd",
+    "summary": "Used to display textual user input from keyboard.",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "row",
+          "children": [
+            {
+              "kind": "kbd",
+              "label": "⌘"
+            },
+            {
+              "kind": "kbd",
+              "label": "⇧"
+            },
+            {
+              "kind": "kbd",
+              "label": "⌥"
+            },
+            {
+              "kind": "kbd",
+              "label": "⌃"
+            }
+          ],
+          "gap": 4
+        },
+        {
+          "kind": "row",
+          "children": [
+            {
+              "kind": "kbd",
+              "label": "Ctrl"
+            },
+            {
+              "kind": "text",
+              "label": "+",
+              "variant": "body"
+            },
+            {
+              "kind": "kbd",
+              "label": "B"
+            }
+          ],
+          "gap": 4
+        }
+      ],
+      "align": "center",
+      "gap": 16
+    }
+  },
+  {
+    "id": "label",
+    "title": "Label",
+    "summary": "Renders an accessible label associated with controls.",
+    "root": {
+      "kind": "label",
+      "label": "Accept terms and conditions",
+      "children": [
+        {
+          "kind": "checkbox"
+        }
+      ]
+    }
+  },
+  {
+    "id": "marker",
+    "title": "Marker",
+    "summary": "Displays an inline status, system note, bordered row, or labeled separator in a conversation.",
+    "section": "separator",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "marker",
+          "label": "Today",
+          "variant": "separator"
+        },
+        {
+          "kind": "marker",
+          "label": "Worked for 42s",
+          "variant": "separator"
+        },
+        {
+          "kind": "marker",
+          "label": "Conversation compacted",
+          "variant": "separator"
+        }
+      ],
+      "gap": 32,
+      "width": 384
+    }
+  },
+  {
+    "id": "menubar",
+    "title": "Menubar",
+    "summary": "A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.",
+    "root": {
+      "kind": "menubar",
+      "width": 288,
+      "children": [
+        {
+          "kind": "dropdown-menu",
+          "label": "File",
+          "items": [
+            {
+              "label": "New Tab"
+            },
+            {
+              "label": "New Window"
+            },
+            {
+              "label": "Print…"
+            }
+          ]
+        },
+        {
+          "kind": "dropdown-menu",
+          "label": "Edit",
+          "items": [
+            {
+              "label": "Undo"
+            },
+            {
+              "label": "Redo"
+            },
+            {
+              "label": "Cut"
+            },
+            {
+              "label": "Copy"
+            },
+            {
+              "label": "Paste"
+            }
+          ]
+        },
+        {
+          "kind": "dropdown-menu",
+          "label": "View",
+          "items": [
+            {
+              "label": "Always Show Bookmarks Bar"
+            },
+            {
+              "label": "Reload"
+            },
+            {
+              "label": "Toggle Fullscreen"
+            }
+          ]
+        },
+        {
+          "kind": "dropdown-menu",
+          "label": "Profiles",
+          "items": [
+            {
+              "label": "Edit"
+            },
+            {
+              "label": "Add Profile…"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "message",
+    "title": "Message",
+    "summary": "Displays a message in a conversation, with optional avatar, header, footer, and alignment.",
+    "section": "header-and-footer",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "message",
+          "label": "Olivia",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "I already checked the logs.",
+              "variant": "muted"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "detail": "Read   Yesterday",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Send the report to the team. Ping @shadcn if you need help.",
+              "align": "end"
+            }
+          ]
+        }
+      ],
+      "gap": 32,
+      "width": 384
+    }
+  },
+  {
+    "id": "message-scroller",
+    "title": "Message Scroller",
+    "summary": "A chat scroll container that anchors turns, opens saved transcripts, follows streamed responses, loads history without jumping, and jumps to any message.",
+    "section": "reading-scroll-state",
+    "root": {
+      "kind": "message-scroller",
+      "height": 418,
+      "align": "start",
+      "children": [
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 1.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 2 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 3.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 4 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 5.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 6 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 7.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 8 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 9.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 10 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "end",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Review scroll checkpoint 11.",
+              "variant": "muted",
+              "align": "end"
+            }
+          ]
+        },
+        {
+          "kind": "message",
+          "align": "start",
+          "children": [
+            {
+              "kind": "bubble",
+              "label": "Checkpoint 12 is synced. The scrollable hook updates as the viewport moves.\n\nWhen the reader is at the first message, the footer should only point them down. Once they move into the middle of the transcript, it should explain that both directions are available.\n\nAt the latest message, the footer should switch again and only point them back up.",
+              "variant": "ghost",
+              "align": "start"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "native-select",
+    "title": "Native Select",
+    "summary": "A compact native menu for selecting one option.",
+    "root": {
+      "kind": "native-select",
+      "placeholder": "Select status",
+      "items": [
+        {
+          "label": "Todo"
+        },
+        {
+          "label": "In Progress"
+        },
+        {
+          "label": "Done"
+        },
+        {
+          "label": "Cancelled"
+        }
+      ]
+    }
+  },
+  {
+    "id": "navigation-menu",
+    "title": "Navigation Menu",
+    "summary": "A collection of links for navigating websites.",
+    "root": {
+      "kind": "navigation-menu",
+      "children": [
+        {
+          "kind": "dropdown-menu",
+          "label": "Getting started",
+          "items": [
+            {
+              "label": "Introduction"
+            },
+            {
+              "label": "Installation"
+            },
+            {
+              "label": "Typography"
+            }
+          ]
+        },
+        {
+          "kind": "dropdown-menu",
+          "label": "Components",
+          "items": [
+            {
+              "label": "Alert Dialog"
+            },
+            {
+              "label": "Hover Card"
+            },
+            {
+              "label": "Progress"
+            },
+            {
+              "label": "Scroll-area"
+            },
+            {
+              "label": "Tabs"
+            },
+            {
+              "label": "Tooltip"
+            }
+          ]
+        },
+        {
+          "kind": "dropdown-menu",
+          "label": "With Icon",
+          "items": [
+            {
+              "label": "Backlog"
+            },
+            {
+              "label": "To Do"
+            },
+            {
+              "label": "Done"
+            }
+          ]
+        },
+        {
+          "kind": "button",
+          "label": "Docs",
+          "variant": "ghost"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pagination",
+    "title": "Pagination",
+    "summary": "Pagination with page navigation, next and previous links.",
+    "section": "simple",
+    "root": {
+      "kind": "pagination",
+      "value": "2",
+      "items": [
+        {
+          "label": "1"
+        },
+        {
+          "label": "2"
+        },
+        {
+          "label": "3"
+        },
+        {
+          "label": "4"
+        },
+        {
+          "label": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "popover",
+    "title": "Popover",
+    "summary": "Displays rich content in a portal, triggered by a button.",
+    "section": "basic",
+    "root": {
+      "kind": "popover",
+      "label": "Open Popover",
+      "heading": "Dimensions",
+      "detail": "Set the dimensions for the layer."
+    }
+  },
+  {
+    "id": "progress",
+    "title": "Progress",
+    "summary": "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    "root": {
+      "kind": "progress",
+      "value": "66",
+      "width": 216
+    }
+  },
+  {
+    "id": "questionnaire",
+    "title": "Questionnaire",
+    "summary": "A multi-step form with answer selection, required-field validation, and backward navigation.",
+    "section": "controlled",
+    "root": {
+      "kind": "questionnaire",
+      "width": 448,
+      "children": [
+        {
+          "kind": "radio-group",
+          "label": "What may the agent change?",
+          "heading": "Change scope",
+          "detail": "The host stores the active checkpoint while Questionnaire navigates.",
+          "items": [
+            {
+              "label": "Only the target component"
+            },
+            {
+              "label": "Component and related tests"
+            },
+            {
+              "label": "The complete feature area"
+            }
+          ]
+        },
+        {
+          "kind": "radio-group",
+          "label": "Which verification level should it use?",
+          "heading": "Verification",
+          "items": [
+            {
+              "label": "Targeted tests"
+            },
+            {
+              "label": "Package tests and typecheck"
+            },
+            {
+              "label": "Full workspace verification"
+            }
+          ]
+        },
+        {
+          "kind": "radio-group",
+          "label": "What should the agent return when finished?",
+          "heading": "Final output",
+          "items": [
+            {
+              "label": "Concise summary"
+            },
+            {
+              "label": "Summary with changed files"
+            },
+            {
+              "label": "Detailed implementation handoff"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "radio-group",
+    "title": "Radio Group",
+    "summary": "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
+    "root": {
+      "kind": "radio-group",
+      "value": "Comfortable",
+      "items": [
+        {
+          "label": "Default"
+        },
+        {
+          "label": "Comfortable"
+        },
+        {
+          "label": "Compact"
+        }
+      ]
+    }
+  },
+  {
+    "id": "resizable",
+    "title": "Resizable",
+    "summary": "Accessible resizable panel groups and layouts with keyboard support.",
+    "section": "handle",
+    "root": {
+      "kind": "resizable",
+      "value": "25",
+      "width": 384,
+      "height": 200,
+      "children": [
+        {
+          "kind": "text",
+          "label": "Sidebar",
+          "variant": "semibold"
+        },
+        {
+          "kind": "text",
+          "label": "Content",
+          "variant": "semibold"
+        }
+      ]
+    }
+  },
+  {
+    "id": "scroll-area",
+    "title": "Scroll Area",
+    "summary": "Augments native scroll functionality for custom, cross-browser styling.",
+    "root": {
+      "kind": "scroll-area",
+      "label": "Tags",
+      "width": 192,
+      "height": 288,
+      "items": [
+        {
+          "label": "v1.2.0-beta.50"
+        },
+        {
+          "label": "v1.2.0-beta.49"
+        },
+        {
+          "label": "v1.2.0-beta.48"
+        },
+        {
+          "label": "v1.2.0-beta.47"
+        },
+        {
+          "label": "v1.2.0-beta.46"
+        },
+        {
+          "label": "v1.2.0-beta.45"
+        },
+        {
+          "label": "v1.2.0-beta.44"
+        },
+        {
+          "label": "v1.2.0-beta.43"
+        },
+        {
+          "label": "v1.2.0-beta.42"
+        },
+        {
+          "label": "v1.2.0-beta.41"
+        },
+        {
+          "label": "v1.2.0-beta.40"
+        },
+        {
+          "label": "v1.2.0-beta.39"
+        },
+        {
+          "label": "v1.2.0-beta.38"
+        },
+        {
+          "label": "v1.2.0-beta.37"
+        },
+        {
+          "label": "v1.2.0-beta.36"
+        },
+        {
+          "label": "v1.2.0-beta.35"
+        },
+        {
+          "label": "v1.2.0-beta.34"
+        },
+        {
+          "label": "v1.2.0-beta.33"
+        },
+        {
+          "label": "v1.2.0-beta.32"
+        },
+        {
+          "label": "v1.2.0-beta.31"
+        },
+        {
+          "label": "v1.2.0-beta.30"
+        },
+        {
+          "label": "v1.2.0-beta.29"
+        },
+        {
+          "label": "v1.2.0-beta.28"
+        },
+        {
+          "label": "v1.2.0-beta.27"
+        },
+        {
+          "label": "v1.2.0-beta.26"
+        },
+        {
+          "label": "v1.2.0-beta.25"
+        },
+        {
+          "label": "v1.2.0-beta.24"
+        },
+        {
+          "label": "v1.2.0-beta.23"
+        },
+        {
+          "label": "v1.2.0-beta.22"
+        },
+        {
+          "label": "v1.2.0-beta.21"
+        },
+        {
+          "label": "v1.2.0-beta.20"
+        },
+        {
+          "label": "v1.2.0-beta.19"
+        },
+        {
+          "label": "v1.2.0-beta.18"
+        },
+        {
+          "label": "v1.2.0-beta.17"
+        },
+        {
+          "label": "v1.2.0-beta.16"
+        },
+        {
+          "label": "v1.2.0-beta.15"
+        },
+        {
+          "label": "v1.2.0-beta.14"
+        },
+        {
+          "label": "v1.2.0-beta.13"
+        },
+        {
+          "label": "v1.2.0-beta.12"
+        },
+        {
+          "label": "v1.2.0-beta.11"
+        },
+        {
+          "label": "v1.2.0-beta.10"
+        },
+        {
+          "label": "v1.2.0-beta.9"
+        },
+        {
+          "label": "v1.2.0-beta.8"
+        },
+        {
+          "label": "v1.2.0-beta.7"
+        },
+        {
+          "label": "v1.2.0-beta.6"
+        },
+        {
+          "label": "v1.2.0-beta.5"
+        },
+        {
+          "label": "v1.2.0-beta.4"
+        },
+        {
+          "label": "v1.2.0-beta.3"
+        },
+        {
+          "label": "v1.2.0-beta.2"
+        },
+        {
+          "label": "v1.2.0-beta.1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "select",
+    "title": "Select",
+    "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+    "root": {
+      "kind": "select",
+      "placeholder": "Select a fruit",
+      "heading": "Fruits",
+      "width": 192,
+      "items": [
+        {
+          "label": "Apple"
+        },
+        {
+          "label": "Banana"
+        },
+        {
+          "label": "Blueberry"
+        },
+        {
+          "label": "Grapes"
+        },
+        {
+          "label": "Pineapple"
+        }
+      ]
+    }
+  },
+  {
+    "id": "separator",
+    "title": "Separator",
+    "summary": "Visually or semantically separates content.",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "column",
+          "children": [
+            {
+              "kind": "text",
+              "label": "shadcn/ui",
+              "variant": "label"
+            },
+            {
+              "kind": "text",
+              "label": "The Foundation for your Design System",
+              "variant": "muted"
+            }
+          ],
+          "gap": 6
+        },
+        {
+          "kind": "separator"
+        },
+        {
+          "kind": "text",
+          "label": "A set of beautifully designed components that you can customize, extend, and build on.",
+          "variant": "body"
+        }
+      ],
+      "gap": 16,
+      "width": 384
+    }
+  },
+  {
+    "id": "sheet",
+    "title": "Sheet",
+    "summary": "Extends the Dialog component to display content that complements the main content of the screen.",
+    "root": {
+      "kind": "sheet",
+      "label": "Open",
+      "heading": "Edit profile",
+      "detail": "Make changes to your profile here. Click save when you’re done.",
+      "action": "Save changes",
+      "children": [
+        {
+          "kind": "input",
+          "label": "Name",
+          "value": "Pedro Duarte"
+        },
+        {
+          "kind": "input",
+          "label": "Username",
+          "value": "@peduarte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sidebar",
+    "title": "Sidebar",
+    "summary": "A composable, themeable and customizable sidebar component.",
+    "selector": "https://ui.shadcn.com/view/base-nova/sidebar-demo",
+    "root": {
+      "kind": "sidebar",
+      "label": "Projects",
+      "width": 256,
+      "items": [
+        {
+          "label": "Design Engineering",
+          "icon": "frame"
+        },
+        {
+          "label": "Sales & Marketing",
+          "icon": "chart-pie"
+        },
+        {
+          "label": "Travel",
+          "icon": "map"
+        },
+        {
+          "label": "More",
+          "icon": "ellipsis"
+        }
+      ]
+    }
+  },
+  {
+    "id": "skeleton",
+    "title": "Skeleton",
+    "summary": "Use to show a placeholder while content is loading.",
+    "section": "text",
+    "root": {
+      "kind": "column",
+      "children": [
+        {
+          "kind": "skeleton",
+          "height": 16
+        },
+        {
+          "kind": "skeleton",
+          "height": 16
+        },
+        {
+          "kind": "skeleton",
+          "height": 16,
+          "width": 240
+        }
+      ],
+      "width": 320,
+      "gap": 8
+    }
+  },
+  {
+    "id": "slider",
+    "title": "Slider",
+    "summary": "An input where the user selects a value from within a given range.",
+    "root": {
+      "kind": "slider",
+      "label": "Value",
+      "value": "75",
+      "width": 320
+    }
+  },
+  {
+    "id": "sonner",
+    "title": "Sonner",
+    "summary": "Queues transient notifications with a description and an optional action.",
+    "selector": "https://ui.shadcn.com/docs/components/radix/sonner",
+    "root": {
+      "kind": "sonner",
+      "label": "Show Toast",
+      "heading": "Event has been created",
+      "detail": "Sunday, December 03, 2023 at 9:00 AM",
+      "action": "Undo"
+    }
+  },
+  {
+    "id": "spinner",
+    "title": "Spinner",
+    "summary": "An indicator that can be used to show a loading state.",
+    "section": "size",
+    "root": {
+      "kind": "row",
+      "children": [
+        {
+          "kind": "spinner",
+          "size": 12
+        },
+        {
+          "kind": "spinner",
+          "size": 16
+        },
+        {
+          "kind": "spinner",
+          "size": 24
+        },
+        {
+          "kind": "spinner",
+          "size": 32
+        }
+      ],
+      "gap": 24
+    }
+  },
+  {
+    "id": "switch",
+    "title": "Switch",
+    "summary": "A control that allows the user to toggle between checked and not checked.",
+    "root": {
+      "kind": "switch",
+      "label": "Airplane Mode"
+    }
+  },
+  {
+    "id": "table",
+    "title": "Table",
+    "summary": "A responsive table component.",
+    "root": {
+      "kind": "table",
+      "width": 600,
+      "columns": [
+        "Invoice",
+        "Status",
+        "Method",
+        "Amount"
+      ],
+      "rows": [
+        [
+          "INV001",
+          "Paid",
+          "Credit Card",
+          "$250.00"
+        ],
+        [
+          "INV002",
+          "Pending",
+          "PayPal",
+          "$150.00"
+        ],
+        [
+          "INV003",
+          "Unpaid",
+          "Bank Transfer",
+          "$350.00"
+        ],
+        [
+          "INV004",
+          "Paid",
+          "Credit Card",
+          "$450.00"
+        ],
+        [
+          "INV005",
+          "Paid",
+          "PayPal",
+          "$550.00"
+        ],
+        [
+          "INV006",
+          "Pending",
+          "Bank Transfer",
+          "$200.00"
+        ],
+        [
+          "INV007",
+          "Unpaid",
+          "Credit Card",
+          "$300.00"
+        ]
+      ],
+      "detail": "A list of your recent invoices.",
+      "items": [
+        {
+          "label": "Total",
+          "detail": "$2,500.00"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tabs",
+    "title": "Tabs",
+    "summary": "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    "section": "line",
+    "root": {
+      "kind": "tabs",
+      "items": [
+        {
+          "label": "Overview"
+        },
+        {
+          "label": "Analytics"
+        },
+        {
+          "label": "Reports"
+        }
+      ],
+      "variant": "line"
+    }
+  },
+  {
+    "id": "textarea",
+    "title": "Textarea",
+    "summary": "Displays a form textarea or a component that looks like a textarea.",
+    "root": {
+      "kind": "textarea",
+      "placeholder": "Type your message here.",
+      "width": 320
+    }
+  },
+  {
+    "id": "toast",
+    "title": "Toast",
+    "summary": "A succinct message that is displayed temporarily.",
+    "root": {
+      "kind": "toast",
+      "label": "Show Toast",
+      "heading": "Event created",
+      "detail": "Sunday, December 3 at 9:00 AM",
+      "action": "Undo"
+    }
+  },
+  {
+    "id": "toggle",
+    "title": "Toggle",
+    "summary": "A two-state button that can be either on or off.",
+    "root": {
+      "kind": "toggle",
+      "label": "Bookmark",
+      "icon": "bookmark",
+      "variant": "outline"
+    }
+  },
+  {
+    "id": "toggle-group",
+    "title": "Toggle Group",
+    "summary": "A set of two-state buttons that can be toggled on or off.",
+    "root": {
+      "kind": "toggle-group",
+      "variant": "multiple",
+      "items": [
+        {
+          "label": "Bold",
+          "icon": "bold"
+        },
+        {
+          "label": "Italic",
+          "icon": "italic"
+        },
+        {
+          "label": "Underline",
+          "icon": "underline"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tooltip",
+    "title": "Tooltip",
+    "summary": "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    "root": {
+      "kind": "tooltip",
+      "label": "Hover",
+      "detail": "Add to library"
+    }
+  },
+  {
+    "id": "trace",
+    "title": "Trace",
+    "summary": "The building block for reasoning, tool calls, sources and more.",
+    "section": "trace-line",
+    "root": {
+      "kind": "trace",
+      "label": "Created branch fix/frozen-lockfile",
+      "icon": "git-branch",
+      "width": 384
+    }
+  },
+  {
+    "id": "typography",
+    "title": "Typography",
+    "summary": "Styles for headings, paragraphs, lists, etc.",
+    "selector": "https://ui.shadcn.com/view/new-york-v4/typography-h3",
+    "root": {
+      "kind": "typography",
+      "label": "The Joke Tax",
+      "variant": "h3"
+    }
+  }
+]

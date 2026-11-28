@@ -41,3 +41,7 @@ The Android implementation under `Android/` also uses the existing shadcn refere
 ## HarmonyOS distribution
 
 The ArkUI implementation under `HarmonyOS/` uses the existing shadcn reference patterns. The HAR includes unmodified Geist fonts and SVGs derived from the repository’s Lucide paths. Both upstream license texts are bundled in `aielements/src/main/resources/rawfile/`.
+
+## shadcn/ui native component gallery
+
+The component names, reference examples and upstream browser captures in the shadcn/ui gallery are based on the [official component documentation](https://ui.shadcn.com/docs/components) and [shadcn/ui](https://github.com/shadcn-ui/ui) (MIT). The aspect-ratio image reproduces the documented `avatar.vercel.sh/shadcn1` placeholder. The Avatar example uses the documented [shadcn profile image](https://github.com/shadcn.png). These assets are included for the corresponding demonstrations.

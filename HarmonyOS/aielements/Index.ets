@@ -16,3 +16,5 @@ export { validateDocument } from './src/main/ets/protocol/Validation';
 export { decodeDocument, AIUIStreamDecoder, AIUISession, AIUIPhase } from './src/main/ets/protocol/Streaming';
 export { AIUIStore } from './src/main/ets/protocol/Store';
 export { AIUIRenderer } from './src/main/ets/ui/GenerativeUI';
+export { AIShadcnView } from './src/main/ets/shadcn/ShadcnView';
+export { AIShadcnNode, AIShadcnItem, AIShadcnState, AIShadcnExample, loadAIShadcnCatalog } from './src/main/ets/shadcn/Model';

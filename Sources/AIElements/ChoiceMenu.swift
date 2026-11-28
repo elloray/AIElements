@@ -1,5 +1,5 @@
 import SwiftUI
-struct AIChoice { var id: String; var title: String; var group: String? = nil }
+struct AIChoice { var id: String; var title: String; var group: String? = nil; var disabled = false }
 struct AIChoiceMenu: View {
     var title: String
     var accessibilityLabel: String
@@ -31,7 +31,7 @@ struct AIChoiceMenu: View {
             if let group = choice.group, index == 0 || choices[index - 1].group != group { Text(group) }
             Button { onSelect(choice.id) } label: {
                 if selected == choice.id { Label(choice.title, systemImage: "checkmark") } else { Text(choice.title) }
-            }
+            }.disabled(choice.disabled)
         }
     }
     private var label: some View {
@@ -79,6 +79,7 @@ struct NativeChoiceMenu: NSViewRepresentable {
                 }
                 let item = NSMenuItem(title: choice.title, action: #selector(choose(_:)), keyEquivalent: "")
                 item.target = self; item.representedObject = choice.id; item.state = choice.id == parent.selected ? .on : .off
+                item.isEnabled = !choice.disabled
                 menu.addItem(item); if choice.id == parent.selected { selectedItem = item }
             }
             menu.popUp(positioning: selectedItem, at: NSPoint(x: 0, y: sender.bounds.minY), in: sender)

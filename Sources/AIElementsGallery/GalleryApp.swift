@@ -4,11 +4,17 @@ import AIElements
 import AppKit
 #endif
 
+private func directionPreview(_ node: AIShadcnNode) -> AIShadcnNode {
+    var preview = node
+    preview.variant = "picker"
+    return preview
+}
+
 @main
 struct GalleryApp: App {
     init() {
         #if os(macOS)
-        if CommandLine.arguments.contains("--foundation-snapshots") {
+        if (CommandLine.arguments.contains("--foundation-snapshots") || CommandLine.arguments.contains("--shadcn-snapshots")) {
             MainActor.assumeIsolated { FoundationAuditExporter.export() }; exit(0)
         }
         if CommandLine.arguments.contains("--ui-snapshots") {
@@ -23,7 +29,7 @@ struct GalleryApp: App {
     }
     var body: some Scene {
         WindowGroup("AI Elements · Swift") {
-            if CommandLine.arguments.contains("--foundation-snapshots") {
+            if (CommandLine.arguments.contains("--foundation-snapshots") || CommandLine.arguments.contains("--shadcn-snapshots")) {
                 Text("Capturing foundation fixtures")
                     #if os(iOS)
                     .task { await FoundationAuditExporter.export() }
@@ -44,7 +50,7 @@ struct GalleryApp: App {
 }
 
 struct GalleryView: View {
-    @State private var selection: Pattern? = .tool
+    @State private var selection: String? = Pattern.tool.rawValue
     @State private var query = ""
     @State private var dark = false
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
@@ -53,14 +59,32 @@ struct GalleryView: View {
             List(selection: $selection) {
                 Section("AI Elements") {
                     ForEach(Pattern.allCases.filter { query.isEmpty || $0.title.localizedCaseInsensitiveContains(query) }) { pattern in
-                        NavigationLink(value: pattern) { Text(pattern.title).font(AITypography.font()) }
+                        NavigationLink(value: pattern.rawValue) { Text(pattern.title).font(AITypography.font()) }
+                    }
+                }
+                Section("shadcn/ui") {
+                    ForEach(AIShadcnCatalog.examples.filter { query.isEmpty || $0.title.localizedCaseInsensitiveContains(query) }) { entry in
+                        NavigationLink(value: "shadcn/" + entry.id) { Text(entry.title).font(AITypography.font()) }
                     }
                 }
             }.searchable(text: $query, prompt: "Find a component")
                 .navigationTitle("AI Elements")
                 .navigationSplitViewColumnWidth(min: 190, ideal: 230, max: 280)
         } detail: {
-            if let selection {
+            if let selection, selection.hasPrefix("shadcn/"),
+               let entry = AIShadcnCatalog.examples.first(where: { "shadcn/" + $0.id == selection }) {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 24) {
+                        Text(entry.summary).font(AITypography.font(15)).foregroundStyle(.secondary)
+                        let preview = entry.id == "direction" ? directionPreview(entry.root) : entry.root
+                        AIShadcnView(preview).id(entry.id)
+                            .padding(20).frame(maxWidth: .infinity, minHeight: 200)
+                            .overlay(RoundedRectangle(cornerRadius: 14).strokeBorder(dark ? AITheme.dark.border : AITheme.light.border))
+                        Link("View official example ↗", destination: entry.source)
+                    }.padding(20).frame(maxWidth: 800)
+                }.navigationTitle(entry.title)
+                    .toolbar { Button { dark.toggle() } label: { AIIcon(dark ? .sun : .moon) }.accessibilityLabel("Toggle appearance") }
+            } else if let selection = selection.flatMap(Pattern.init(rawValue:)) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 28) {
                         VStack(alignment: .leading, spacing: 8) {
@@ -94,7 +118,10 @@ struct GalleryView: View {
             .tint(dark ? .white : .black)
             .onAppear {
                 if let index = CommandLine.arguments.firstIndex(of: "--pattern"), CommandLine.arguments.indices.contains(index + 1) {
-                    selection = Pattern(rawValue: CommandLine.arguments[index + 1]) ?? .tool
+                    selection = (Pattern(rawValue: CommandLine.arguments[index + 1]) ?? .tool).rawValue
+                }
+                if let i = CommandLine.arguments.firstIndex(of: "--shadcn"), CommandLine.arguments.indices.contains(i+1) {
+                    selection = "shadcn/" + CommandLine.arguments[i+1]
                 }
                 if CommandLine.arguments.contains("--dark") { dark = true }
             }
