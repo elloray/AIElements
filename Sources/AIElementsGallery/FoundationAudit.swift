@@ -125,6 +125,18 @@ private extension View {
     }
 }
 
+private enum AuditSelection {
+    static var shadcn: Bool { CommandLine.arguments.contains("--shadcn-snapshots") }
+    static var names: [String] { shadcn ? AIShadcnCatalog.examples.map(\.id) : FoundationAudit.names }
+
+    @ViewBuilder static func view(_ name: String) -> some View {
+        if shadcn, let entry = AIShadcnCatalog.examples.first(where: { $0.id == name }) {
+            AIShadcnView(entry.root).aiAnimationsEnabled(false)
+                .frame(width: 360).frame(minHeight: 64).fixedSize(horizontal: false, vertical: true)
+        } else { FoundationAuditView(name: name) }
+    }
+}
+
 #if os(macOS)
 import AppKit
 @MainActor enum FoundationAuditExporter {
@@ -141,10 +153,10 @@ import AppKit
         if let data = try? JSONSerialization.data(withJSONObject: controlSizes, options: [.prettyPrinted, .sortedKeys]) {
             try? data.write(to: root.appendingPathComponent("mac-control-sizes.json"))
         }
-        for name in FoundationAudit.names {
+        for name in AuditSelection.names {
             for scheme in [ColorScheme.light, .dark] {
                 let theme: AITheme = scheme == .dark ? .dark : .light
-                let host = NSHostingView(rootView: FoundationAuditView(name: name).background(theme.background).environment(\.colorScheme, scheme).aiTheme(theme))
+                let host = NSHostingView(rootView: AuditSelection.view(name).background(theme.background).environment(\.colorScheme, scheme).aiTheme(theme))
                 let window = NSWindow(contentRect: NSRect(origin: .zero, size: host.fittingSize), styleMask: .borderless, backing: .buffered, defer: false)
                 window.contentView = host; window.appearance = NSAppearance(named: scheme == .dark ? .darkAqua : .aqua)
                 host.frame = NSRect(origin: .zero, size: host.fittingSize); host.layoutSubtreeIfNeeded(); window.displayIfNeeded()
@@ -163,7 +175,7 @@ import AppKit
 import UIKit
 @MainActor enum FoundationAuditExporter {
     static func export() async {
-        let root = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("foundation-audit")
+        let root = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(AuditSelection.shadcn ? "shadcn-audit" : "foundation-audit")
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
         let window = UIWindow(windowScene: scene); window.windowLevel = .alert + 1
@@ -176,10 +188,10 @@ import UIKit
         if let data = try? JSONSerialization.data(withJSONObject: controlSizes, options: [.prettyPrinted, .sortedKeys]) {
             try? data.write(to: root.appendingPathComponent("ios-control-sizes.json"))
         }
-        for name in FoundationAudit.names {
+        for name in AuditSelection.names {
             for scheme in [ColorScheme.light, .dark] {
                 let theme: AITheme = scheme == .dark ? .dark : .light
-                let view = FoundationAuditView(name: name).background(theme.background).environment(\.colorScheme, scheme).aiTheme(theme)
+                let view = AuditSelection.view(name).background(theme.background).environment(\.colorScheme, scheme).aiTheme(theme)
                 let host = UIHostingController(rootView: view); host.safeAreaRegions = []; host.view.backgroundColor = UIColor(theme.background)
                 let size = host.sizeThatFits(in: CGSize(width: 360, height: 2000))
                 window.rootViewController = host; window.frame = CGRect(origin: CGPoint(x: 0, y: 100), size: size); window.isHidden = false

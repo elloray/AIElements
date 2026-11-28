@@ -12,6 +12,8 @@ git clone https://github.com/elloray/AIElements.git
 cd AIElements
 ./aielements help
 ./aielements show chat --json
+./aielements show shadcn-calendar --json
+./aielements example shadcn-message
 ```
 
 仓库根目录的 `aielements` 脚本会自动构建和运行 CLI，并复用 SwiftPM 缓存，不需要安装或配置 PATH。在宿主项目目录用 `/path/to/AIElements/aielements …` 调用即可；生成文件的相对路径仍以**调用时的工作目录**为准。保留 checkout，后续即可继续查询。
@@ -46,7 +48,7 @@ swift run --package-path /path/to/AIElements aielements list --json
 
 | 命令 | 输出／效果 |
 | --- | --- |
-| `list [--search TEXT]` | 37 个条目：21 个 AI 模式、15 种基础节点、1 个流式接入示例；支持 slug、英文名、中文摘要、Swift 符号和协议类型搜索 |
+| `list [--search TEXT]` | 104 个条目，包括 67 个 shadcn/ui 组件、21 个 AI 模式、15 种基础节点和 1 个流式接入示例；支持 slug、英文名、中文摘要、Swift 符号和协议类型搜索 |
 | `show COMPONENT` | 符号、源码相对路径、行为说明、上游设计链接、完整 Swift 示例 |
 | `example COMPONENT` | 只在 stdout 输出完整 Swift 文件，不自行写文件 |
 | `ui schema` | 输出文档与流式事件的 JSON Schema |
@@ -121,6 +123,6 @@ swift test --filter CLIKitTests
 python3 Scripts/validate-cli.py --ios
 ```
 
-第一条检查 CLI 的查询、JSON 输出、参数错误、预览、生成和覆盖保护。第二条运行真实 CLI，验证 16 份完整 JSON 文档和完整/未完成 JSONL，生成临时消费者 Package，将 37 个 Swift 示例全部编译到 macOS 和 iOS Simulator 目标，并验证特殊字符路径、revision 依赖及 Skill 安装。该脚本需要 Python 3 和完整 Xcode；不加 `--ios` 只检查 macOS。它不调用模型服务，也不安装或启动模拟器 App。
+第一条检查 CLI 的查询、JSON 输出、参数错误、预览、生成和覆盖保护。第二条运行真实 CLI，验证 16 份完整 JSON 文档和完整/未完成 JSONL，生成临时消费者 Package，将 104 个 Swift 示例全部编译到 macOS 和 iOS Simulator 目标，并验证特殊字符路径、revision 依赖及 Skill 安装。该脚本需要 Python 3 和完整 Xcode；不加 `--ios` 只检查 macOS。它不调用模型服务，也不安装或启动模拟器 App。
 
 仅改工具链时无需重复截图验证；修改 SwiftUI 组件时仍按 [组件验证范围](VALIDATION.md) 验证对应平台和外观。

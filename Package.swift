@@ -11,9 +11,10 @@ let package = Package(
     ],
     targets: [
         .target(name: "AIElementsUIProtocol", resources: [.copy("Resources")]),
-        .target(name: "AIElements", dependencies: ["AIElementsUIProtocol"], resources: [.process("Resources")]),
+        .target(name: "AIElementsCatalog", resources: [.process("Resources")]),
+        .target(name: "AIElements", dependencies: ["AIElementsUIProtocol", "AIElementsCatalog"], resources: [.process("Resources")]),
         .executableTarget(name: "AIElementsGallery", dependencies: ["AIElements"]),
-        .target(name: "AIElementsCLIKit", dependencies: ["AIElementsUIProtocol"], path: "Tools", resources: [.copy("Catalog"), .copy("Skills")]),
+        .target(name: "AIElementsCLIKit", dependencies: ["AIElementsUIProtocol", "AIElementsCatalog"], path: "Tools", resources: [.copy("Catalog"), .copy("Skills")]),
         .executableTarget(name: "AIElementsCLI", dependencies: ["AIElementsCLIKit"]),
         .testTarget(name: "AIElementsTests", dependencies: ["AIElements"]),
         .testTarget(name: "AIElementsCLIKitTests", dependencies: ["AIElementsCLIKit"]),

@@ -175,7 +175,10 @@ public struct AISwitch: View {
 public struct AISelectOption: Identifiable, Sendable {
     public var id: String
     public var label: String
-    public init(_ id: String, label: String) { self.id = id; self.label = label }
+    public var disabled: Bool
+    public init(_ id: String, label: String, disabled: Bool = false) {
+        self.id = id; self.label = label; self.disabled = disabled
+    }
 }
 public struct AISelect: View {
     public var label: String
@@ -192,11 +195,11 @@ public struct AISelect: View {
             if !label.isEmpty { AITextLabel(label, weight: .medium).padding(.vertical, -2) }
             #if os(macOS)
             selectLabel.overlay {
-                NativeChoiceMenu(label: label.isEmpty ? placeholder : label, choices: options.map { AIChoice(id: $0.id, title: $0.label) }, selected: selection) { selection = $0 }
+                NativeChoiceMenu(label: label.isEmpty ? placeholder : label, choices: options.map { AIChoice(id: $0.id, title: $0.label, disabled: $0.disabled) }, selected: selection) { selection = $0 }
             }.disabled(options.isEmpty)
             #else
             Menu {
-                ForEach(options) { option in Button(option.label) { selection = option.id } }
+                ForEach(options) { option in Button(option.label) { selection = option.id }.disabled(option.disabled) }
             } label: { selectLabel }
                 .buttonStyle(.plain).disabled(options.isEmpty)
                 .accessibilityLabel(label.isEmpty ? placeholder : label).accessibilityValue(selectedLabel)

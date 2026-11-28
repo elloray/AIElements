@@ -1,6 +1,7 @@
 import Foundation
 import XCTest
 import AIElementsUIProtocol
+import AIElementsCatalog
 @testable import AIElementsCLIKit
 
 final class CLIKitTests: XCTestCase {
@@ -38,9 +39,11 @@ final class CLIKitTests: XCTestCase {
     func testEveryCatalogEntryHasAnExampleAndUniqueIdentity() throws {
         let catalog = try Catalog.bundled()
         XCTAssertEqual(catalog.schemaVersion, 1)
-        XCTAssertEqual(catalog.components.count, 37)
-        XCTAssertEqual(Set(catalog.components.map(\.id)).count, 37)
-        XCTAssertEqual(Set(catalog.components.map(\.exampleFile)).count, 37)
+        let count = 37 + AIShadcnCatalog.examples.count
+        XCTAssertEqual(Set(catalog.components.compactMap(\.shadcnID)), Set(AIShadcnCatalog.examples.map(\.id)))
+        XCTAssertEqual(catalog.components.count, count)
+        XCTAssertEqual(Set(catalog.components.map(\.id)).count, count)
+        XCTAssertEqual(Set(catalog.components.map(\.exampleFile)).count, count)
         XCTAssertEqual(Set(catalog.components.compactMap(\.protocolType)), Set(AIUIComponentCatalog.types))
         XCTAssertEqual(Set(catalog.components.filter { $0.protocolType != nil }.map(\.id)), Set(AIUIResources.exampleNames.filter { $0 != "dashboard" }))
         for component in catalog.components {

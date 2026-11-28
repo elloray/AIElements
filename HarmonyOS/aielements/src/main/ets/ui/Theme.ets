@@ -29,6 +29,26 @@ export class AIColors {
 
 // Lucide 0.468 paths shared with the Swift and Compose ports.
 export class AIIcons {
+  static readonly chevronsUpDown: Resource = $r('app.media.aie_chevronsupdown');
+  static readonly ellipsis: Resource = $r('app.media.aie_ellipsis');
+  static readonly map: Resource = $r('app.media.aie_map');
+  static readonly chartPie: Resource = $r('app.media.aie_chartpie');
+  static readonly frame: Resource = $r('app.media.aie_frame');
+  static readonly cloud: Resource = $r('app.media.aie_cloud');
+  static readonly bookmark: Resource = $r('app.media.aie_bookmark');
+  static readonly bold: Resource = $r('app.media.aie_bold');
+  static readonly italic: Resource = $r('app.media.aie_italic');
+  static readonly underline: Resource = $r('app.media.aie_underline');
+  static readonly calendar: Resource = $r('app.media.aie_calendar');
+  static readonly settings: Resource = $r('app.media.aie_settings');
+  static readonly gitBranch: Resource = $r('app.media.aie_gitbranch');
+  static readonly chevronLeft: Resource = $r('app.media.aie_chevronleft');
+  static readonly chevronsLeft: Resource = $r('app.media.aie_chevronsleft');
+  static readonly chevronsRight: Resource = $r('app.media.aie_chevronsright');
+  static readonly panelLeft: Resource = $r('app.media.aie_panelleft');
+  static readonly gripVertical: Resource = $r('app.media.aie_gripvertical');
+  static readonly arrowLeft: Resource = $r('app.media.aie_arrowleft');
+  static readonly arrowRight: Resource = $r('app.media.aie_arrowright');
   static readonly arrowUp: Resource = $r('app.media.aie_arrowup');
   static readonly arrowDown: Resource = $r('app.media.aie_arrowdown');
   static readonly arrowUpRight: Resource = $r('app.media.aie_arrowupright');

@@ -1,6 +1,6 @@
 import { common, ConfigurationConstant } from '@kit.AbilityKit';
 import { AIColors, AIIcon, AIIconButton, AIIcons, AIInput, AISeparator, AIText,
-  registerAIElementsFonts } from '@aielements/arkui';
+  AIShadcnView, AIShadcnNode, AIShadcnExample, loadAIShadcnCatalog, registerAIElementsFonts } from '@aielements/arkui';
 import { GalleryExample, foundations, patterns, streaming } from './Catalog';
 import { ChatDemo, PatternDemo } from './PatternDemo';
 import { StreamDemo } from './StreamDemo';
@@ -13,12 +13,17 @@ const emptySelection: GalleryExample = { id: '', title: '' };
 struct Index {
   @State selected: GalleryExample = emptySelection;
   @State query: string = '';
+  @State private shadcn: AIShadcnExample[] = [];
+  @State private catalogError: string = '';
   @State wide: boolean = false;
   @State short: boolean = false;
   @State appearance: string = 'System';
   @State appearanceError: string = '';
 
   aboutToAppear(): void {
+    try {
+      this.shadcn = loadAIShadcnCatalog();
+    } catch (error) { this.catalogError = String(error); }
     try {
       registerAIElementsFonts();
     } catch (error) {
@@ -49,6 +54,16 @@ struct Index {
   private matches(items: GalleryExample[]): GalleryExample[] {
     const query = this.query.trim().toLowerCase();
     return items.filter((item: GalleryExample) => item.title.toLowerCase().includes(query));
+  }
+
+  private shadcnEntries(): GalleryExample[] {
+    return this.shadcn.map((e: AIShadcnExample): GalleryExample => ({ id: 'shadcn/' + e.id, title: e.title }));
+  }
+
+  private previewNode(entry: AIShadcnExample): AIShadcnNode {
+    if (entry.id !== 'direction') return entry.root;
+    return { kind: 'direction', label: entry.root.label, value: entry.root.value,
+      items: entry.root.items, children: entry.root.children, variant: 'picker' };
   }
 
   private openExample(): GalleryExample[] {
@@ -104,7 +119,9 @@ struct Index {
         this.group('', streaming)
         this.group('AI patterns', patterns)
         this.group('Foundation', foundations)
-        if (this.matches(patterns).length + this.matches(foundations).length + this.matches(streaming).length === 0) {
+        this.group('shadcn/ui', this.shadcnEntries())
+        if (this.catalogError) { ListItem() { AIText({ text: this.catalogError }) } }
+        if (this.matches(patterns).length + this.matches(foundations).length + this.matches(streaming).length + this.matches(this.shadcnEntries()).length === 0) {
           ListItem() {
             AIText({ text: 'No components match your search.', variant: 'muted' }).padding(10)
           }
@@ -124,7 +141,12 @@ struct Index {
       } else {
         Scroll() {
           Column({ space: 16 }) {
-            if (item.id === 'generative-ui' || foundations.some((example: GalleryExample) => example.id === item.id)) {
+            if (item.id.startsWith('shadcn/')) {
+              ForEach(this.shadcn.filter((e: AIShadcnExample) => 'shadcn/' + e.id === item.id), (entry: AIShadcnExample) => {
+                AIText({ text: entry.summary, variant: 'muted' })
+                AIShadcnView({ node: this.previewNode(entry) })
+              }, (entry: AIShadcnExample) => entry.id)
+            } else if (item.id === 'generative-ui' || foundations.some((example: GalleryExample) => example.id === item.id)) {
               StreamDemo({ example: item.id })
             } else {
               PatternDemo({ name: item.id })

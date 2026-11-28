@@ -1,5 +1,7 @@
 # AIElements for HarmonyOS
 
+The gallery includes all 67 entries from the shadcn/ui component indexes (Base UI, Radix UI, and React Aria). Search the **shadcn/ui** section to open a native example. [Public API and usage](../Documentation/Shadcn-Components.md) · [Light and dark comparisons](../Documentation/Images/Shadcn/README.md)
+
 原生 ArkTS + ArkUI 组件库，面向 HarmonyOS NEXT 5.0（API 12）及以上的手机和平板。
 
 - `aielements` 提供 21 个 AI 界面模式、15 种基础节点、JSONL 流式协议和原生渲染器。它可以作为单个 HAR 接入应用。
@@ -108,6 +110,6 @@ this.store.finish();
 ./tests/run.sh
 ```
 
-需要 Node.js 22+、npm 和 Python 3。8 项测试读取与 Swift、Android 相同的仓库样例，覆盖 UTF-8 字节流、失序和中断、表单状态、动作输出、Markdown 解析和图表几何。更新上游样例后，运行 `python3 sync-fixtures.py` 同步应用随包资源。
+需要 Node.js 22+、npm 和 Python 3。9 项测试覆盖 UTF-8 字节流、失序和中断、表单状态、动作输出、Markdown 解析、图表几何和 shadcn 数据表的稳定行 ID 与筛选。更新共享样例后，运行 `python3 sync-fixtures.py` 同步应用随包资源。
 
-首版通过 OpenHarmony API 12 SDK 的 ArkTS 检查、字节码编译和资源打包，生成了未签名 HAP 并通过完整性检查。真机和模拟器安装、图形渲染及交互验收待完成。
+已用 OpenHarmony API 12 SDK 检查 ArkTS、编译字节码并打包资源，未签名 HAP 通过完整性检查。SDK Previewer 已渲染 67 个 shadcn 组件的浅深色示例。真机安装和交互仍待验证。[逐项对照与测量](../Documentation/Shadcn-Components.md)

@@ -143,7 +143,7 @@ export struct AICard {
     Column({ space: this.chartStyle ? 24 : 16 }) {
       if (this.title || this.description) {
         Row({ space: 8 }) {
-          Column({ space: 4 }) {
+          Column({ space: this.chartStyle ? 6 : 4 }) {
             if (this.title) {
               AIText({ text: this.title, variant: 'title' })
             }
@@ -158,7 +158,7 @@ export struct AICard {
       }
       this.content()
       if (this.footer || this.footnote) {
-        Column({ space: 4 }) {
+        Column({ space: this.chartStyle ? 8 : 4 }) {
           if (this.footer) {
             Row({ space: 6 }) {
               AIText({ text: this.footer, variant: 'label' })
@@ -176,7 +176,7 @@ export struct AICard {
     }
     .alignItems(HorizontalAlign.Start)
     .width('100%')
-    .padding(this.chartStyle ? 16 : 14)
+    .padding(this.chartStyle ? 24 : 14)
     .border({ width: 1, color: AIColors.border, radius: 14 })
     .backgroundColor(AIColors.card)
   }
@@ -280,6 +280,7 @@ export struct AIProgress {
   @Prop value: number = 0;
   @Prop total: number = 100;
   @Prop label: string = '';
+  @Prop strokeWidth: number = 8;
 
   build() {
     Column({ space: 8 }) {
@@ -290,7 +291,7 @@ export struct AIProgress {
         .width('100%')
         .color(AIColors.primary)
         .backgroundColor(AIColors.muted)
-        .style({ strokeWidth: 8 })
+        .style({ strokeWidth: this.strokeWidth })
         .accessibilityText(this.label || 'Progress')
     }
     .alignItems(HorizontalAlign.Start)

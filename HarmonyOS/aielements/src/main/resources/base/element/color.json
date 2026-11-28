@@ -47,6 +47,8 @@
     {
       "name": "aie_prompt",
       "value": "#F2F2F2"
-    }
+    },
+    {"name": "aie_shadcn_bubble", "value": "#1447E6"},
+    {"name": "aie_shadcn_photo_scrim", "value": "#00000000"}
   ]
 }

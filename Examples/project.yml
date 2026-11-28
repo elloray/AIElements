@@ -27,6 +27,8 @@ targets:
         SWIFT_VERSION: '5.9'
     scheme:
       gatherCoverageData: false
+      testTargets:
+        - ShadcnUITests
   AIElementsMac:
     type: application
     platform: macOS
@@ -38,6 +40,20 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.aielements.gallery.mac
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        SWIFT_VERSION: '5.9'
+
+  ShadcnUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - ShadcnUITests
+    dependencies:
+      - target: AIElementsDemo
+    settings:
+      base:
+        TEST_TARGET_NAME: AIElementsDemo
         GENERATE_INFOPLIST_FILE: YES
         CODE_SIGNING_ALLOWED: NO
         SWIFT_VERSION: '5.9'
